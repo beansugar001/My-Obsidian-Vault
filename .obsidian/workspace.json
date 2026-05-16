@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/skills/memory-manager.md",
+                "file": "beansugar/vibe coding/skills/审查.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "memory-manager"
+              "title": "审查"
             }
           }
         ]
@@ -208,8 +208,9 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
-    "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
     "beansugar/vibe coding/skills/memory-manager.md",
+    "beansugar/vibe coding/skills/审查.md",
+    "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
     "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",
     "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
     "beansugar/vibe coding/skills/md-to-latex.md",
