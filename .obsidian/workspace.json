@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/skills/审查.md",
+                "file": "beansugar/vibe coding/vibe reserch/DeepScientist使用指南.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "审查"
+              "title": "DeepScientist使用指南"
             }
           }
         ]
@@ -206,12 +206,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70fe84cdd4b67d56",
+  "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
+    "beansugar/vibe coding/skills/审查.md",
     "beansugar/vibe coding/vibe reserch/DeepScientist使用指南.md",
     "beansugar/vibe coding/vibe reserch",
     "beansugar/vibe coding/skills/analyze-paper.md",
-    "beansugar/vibe coding/skills/审查.md",
     "beansugar/vibe coding/skills/memory-manager.md",
     "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
     "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",

@@ -85,32 +85,78 @@ pause
 
 ## 三、Web UI 界面概览
 
-打开 `http://127.0.0.1:20999` 后，主要区域：
+打开 `http://127.0.0.1:20999` 后，首页有三个主要入口，对应三种不同状态：
+
+### 三大入口
+
+| 入口 | 对应状态 | 功能 |
+|------|----------|------|
+| **Start Research** | "我已经知道要研究什么" | 直接打开启动输入框，把目标、材料、限制、期望产物写进去，SetupAgent 会先做启动规划 |
+| **BenchStore** | "我还没确定任务" | 像 App Store 一样浏览 benchmark，已安装的直接 Start，未安装的先 GET / Download |
+| **Settings** | "我先调整系统配置" | 处理系统层问题：runner（Codex/Claude/Kimi/OpenCode）、connector、DeepXiv、代理、诊断 |
+
+> **一句话记住**：Start Research 是自定义任务入口，BenchStore 是开放 benchmark 入口，Settings 是系统控制面。
+
+### 进入项目后的工作区
 
 | 区域 | 功能 |
 |------|------|
-| **首页 (Home)** | 项目列表，创建新项目 |
-| **Start Research** | 创建新 Quest |
-| **Open Project** | 打开已有 Quest |
-| **Settings** | 配置 Runner、模型、语言等 |
-| **Canvas** | 项目可视化面板（研究图、进度） |
-| **Studio** | 查看实时工作进展 |
-| **BenchStore** | 浏览可复现的 benchmark |
+| **Open Project** | 打开已有 Quest，继续之前的研究 |
+| **Canvas** | 项目可视化面板（研究图、阶段进度） |
+| **Studio** | 实时查看 AI 在工作区里做什么 |
+| **Files** | 浏览项目文件（代码、数据、图表、论文） |
+| **Memory** | 查看全局和项目级别的记忆卡片 |
+| **Diff** | 对比文件变更，回看修改历史 |
 
 ---
 
-## 四、创建第一个 Quest（研究项目）
+## 四、研究启动页：从一个想法到一个 Quest
 
-### 4.1 选择启动模式
+欢迎来到 DeepScientist 的研究启动页。
+
+这里**不是普通聊天入口**，而是把研究想法推进成**本地可审计、可复现 Quest** 的起点。
+
+### 4.1 DeepScientist 主线流程
+
+```
+选择任务 → 启动规划 → 执行研究 → 审计结果 → 系统监管
+```
+
+| 阶段 | 说明 |
+|------|------|
+| **① 选择任务** | 自己用自然语言描述研究目标，或从 BenchStore 选一个 benchmark |
+| **② 启动规划** | SetupAgent 自动整理目标、材料、限制和启动合同（startup contract） |
+| **③ 执行研究** | 进入 Quest 工作区，持续运行 scout → idea → experiment → write 等阶段 |
+| **④ 审计结果** | 用 Canvas、Files、Diff、Memory 和 Copilot 回看证据链 |
+| **⑤ 系统监管** | 需要时到 Settings / Admin 查看运行状态、runner、connector 和诊断 |
+
+### 4.2 核心原则：不要只写"研究某个方向"
+
+❌ **差的请求**：
+> 研究一下图像识别
+
+✅ **好的请求**：
+> 基于 Swin Transformer 的植物病害识别，在 PlantVillage 数据集 39 类分类任务上，尝试 CutMix + Mixup 数据增强策略，目标相对 baseline 提升 ≥ 3% 准确率。使用 GTX 1650 4GB，单次实验 ≤ 30 分钟，生成实验对比图表和论文初稿。
+
+**好的启动请求 = 目标 + 证据 + 约束 + 预期产物**，必须包含：
+
+| 要素 | 说明 | 示例 |
+|------|------|------|
+| **研究问题或 benchmark** | 要解决什么问题 | 植物病害细粒度分类 |
+| **已有论文、代码、数据或 baseline** | 从哪开始 | arXiv 2312.xxxxx + GitHub repo 链接 |
+| **机器和时间限制** | 现实约束 | GTX 1650 4GB，24小时内 |
+| **成功标准** | 什么算完成 | 复现 baseline、改进 ≥ 3%、图表、报告或论文草稿 |
+
+### 4.3 选择启动模式
 
 点击 "Start Research" 后，先选择模式：
 
-- **Copilot Mode（推荐新手）**：AI 等你发指令，做完一件事就停下来等你
-- **Autonomous Mode**：AI 自主推进研究，自动连续运行多个步骤
+- **Copilot Mode（推荐新手）**：安静启动，AI 等你发指令，做完一件事就停下来等你发下一个指令。适合先熟悉流程、需要精细控制每一步的情况。
+- **Autonomous Mode**：标准 DeepScientist 模式，AI 自主推进研究，自动连续运行多个阶段。适合目标明确、想放手的场景。
 
-> 建议第一次用 **Copilot Mode** 熟悉流程。
+> 建议第一次用 **Copilot Mode** 熟悉流程，后续成熟项目切换 Autonomous。
 
-### 4.2 填写项目信息
+### 4.4 填写项目信息
 
 | 字段 | 说明 | 示例 |
 |------|------|------|
@@ -125,7 +171,7 @@ pause
 | Decision mode | 决策模式 | Autonomous（自动推进），Manual（每步人工确认） |
 | Language | 语言 | 中文或 English |
 
-### 4.3 Quest 创建示例
+### 4.5 Quest 创建示例
 
 **从零开始的研究（自然语言描述）**：
 
