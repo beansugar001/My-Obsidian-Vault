@@ -206,8 +206,10 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "ff31180f7a9b476c",
+  "active": "70fe84cdd4b67d56",
   "lastOpenFiles": [
+    "beansugar/vibe coding/vibe reserch/DeepScientist使用指南.md",
+    "beansugar/vibe coding/vibe reserch",
     "beansugar/vibe coding/skills/analyze-paper.md",
     "beansugar/vibe coding/skills/审查.md",
     "beansugar/vibe coding/skills/memory-manager.md",
@@ -231,7 +233,6 @@
     "beansugar/vibe coding/skills",
     "beansugar/vibe coding",
     "未命名",
-    "beansugar",
-    "未命名.base"
+    "beansugar"
   ]
 }
