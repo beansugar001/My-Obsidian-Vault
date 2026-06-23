@@ -1,0 +1,15 @@
+{
+  "VAULT_PATH": "D:/Obsidian/notes/笔记/beansugar",
+  "paper_notes_folder": "论文笔记",
+  "concepts_folder": "_概念",
+  "daily_papers_folder": "DailyPapers",
+  "AUTO_REFRESH_INDEXES": true,
+  "GIT_COMMIT_ENABLED": false,
+  "GIT_PUSH_ENABLED": false,
+  "KEYWORDS": ["FSM", "Verilog", "HDL", "hardware security", "LLM", "RTL", "EDA", "knowledge graph"],
+  "NEGATIVE_KEYWORDS": [],
+  "DOMAIN_BOOST_KEYWORDS": ["FSM", "Verilog", "hardware security", "RTL generation"],
+  "ARXIV_CATEGORIES": ["cs.AR", "cs.CR", "cs.AI"],
+  "MIN_SCORE": 5,
+  "TOP_N": 30
+}
