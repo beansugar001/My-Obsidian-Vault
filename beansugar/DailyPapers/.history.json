@@ -3,5 +3,10 @@
     "id": "TDSC.2026.3679566",
     "date": "2026-06-23",
     "title": "SecFSM: Knowledge Graph-Guided LLMs for Generating Secure Verilog Code of Finite State Machine in SoCs"
+  },
+  {
+    "id": "2508.13092",
+    "date": "2026-06-23",
+    "title": "VerilogLAVD: LLM-Aided Rule Generation for Vulnerability Detection in Verilog"
   }
 ]
