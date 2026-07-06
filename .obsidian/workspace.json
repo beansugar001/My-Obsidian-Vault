@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
+                "file": "beansugar/论文笔记/_概念/0-待分类/DDG.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VerilogLAVD"
+              "title": "DDG"
             }
           }
         ]
@@ -208,16 +208,16 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
+    "beansugar/论文笔记/_概念/0-待分类/CFG.md",
+    "beansugar/论文笔记/_概念/0-待分类/AST.md",
+    "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
     "beansugar/论文笔记/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/_概念/0-待分类/DDG.md",
     "beansugar/vibe coding/skills/每日论文.zip",
-    "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
     "beansugar/论文笔记/_概念/0-待分类/RTLCoder.md",
     "beansugar/论文笔记/_概念/0-待分类/FSM.md",
     "beansugar/论文笔记/_概念/0-待分类/Cypher.md",
     "beansugar/论文笔记/_概念/0-待分类/ChipNeMo.md",
-    "beansugar/论文笔记/_概念/0-待分类/CFG.md",
-    "beansugar/论文笔记/_概念/0-待分类/AST.md",
     "beansugar/论文笔记/_概念/10-数据集/VerilogEval.md",
     "beansugar/论文笔记/_概念/10-数据集/RTLLM.md",
     "beansugar/论文笔记/_概念/11-深度学习基础/Cohen's Kappa.md",
