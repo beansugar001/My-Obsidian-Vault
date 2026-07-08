@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/skills/每日论文/paper-reader/SKILL.md",
+                "file": "beansugar/论文笔记/_概念/0-待分类/AST抽象语法树.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "SKILL"
+              "title": "AST抽象语法树"
             }
           }
         ]
@@ -208,14 +208,22 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
+    "beansugar/论文笔记/_概念/0-待分类/Verilog语法要点.md",
+    "beansugar/论文笔记/_概念/0-待分类/Verilog.md",
+    "beansugar/论文笔记/_概念/0-待分类/State Transition Graph.md",
     "beansugar/论文笔记/_概念/0-待分类/AST抽象语法树.md",
+    "beansugar/论文笔记/_概念/0-待分类/CFG.md",
+    "beansugar/论文笔记/_概念/0-待分类/Cypher.md",
+    "beansugar/论文笔记/_概念/0-待分类/ChipNeMo.md",
+    "beansugar/论文笔记/_概念/10-数据集/VerilogEval.md",
+    "beansugar/论文笔记/_概念/10-数据集/RTLLM.md",
+    "beansugar/vibe coding/skills/每日论文/paper-reader/SKILL.md",
     "beansugar/DailyPapers/2026-06-23-论文推荐.md",
     "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
     "beansugar/论文笔记/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性/FSKG.md",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性/CWE-190.md",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性/CWE.md",
-    "beansugar/论文笔记/_概念/0-待分类/CFG.md",
     "beansugar/知识图谱/Neo4j 本地知识图谱学习环境.md",
     "beansugar/知识图谱",
     "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
@@ -225,17 +233,9 @@
     "beansugar/vibe coding/skills/每日论文.zip",
     "beansugar/论文笔记/_概念/0-待分类/RTLCoder.md",
     "beansugar/论文笔记/_概念/0-待分类/FSM.md",
-    "beansugar/论文笔记/_概念/0-待分类/Cypher.md",
-    "beansugar/论文笔记/_概念/0-待分类/ChipNeMo.md",
-    "beansugar/论文笔记/_概念/10-数据集/VerilogEval.md",
-    "beansugar/论文笔记/_概念/10-数据集/RTLLM.md",
     "beansugar/论文笔记/_概念/11-深度学习基础/Cohen's Kappa.md",
     "beansugar/论文笔记/_概念/11-深度学习基础/Few-shot Prompting.md",
     "beansugar/论文笔记/_概念/11-深度学习基础/GPT-4o.md",
-    "beansugar/论文笔记/_概念/11-深度学习基础/TinyRAG.md",
-    "beansugar/论文笔记/_概念/11-深度学习基础/RAG.md",
-    "beansugar/论文笔记/_概念/11-深度学习基础/Knowledge Graph.md",
-    "beansugar/论文笔记/_概念/11-深度学习基础/LLM.md",
     "beansugar/论文笔记/14-安全与鲁棒性",
     "beansugar/论文笔记/0-待整理",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性",
