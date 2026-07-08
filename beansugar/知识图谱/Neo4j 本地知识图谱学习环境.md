@@ -343,3 +343,292 @@ tasklist /FI "PID eq 8332"
 2. localhost:7687 可以连接
 3. notebook 中的用户名、密码、数据库名正确
 ```
+## SEC 添加关系课程要点
+
+“向 SEC 知识图谱中添加关系”的核心不是 SEC 业务本身，而是学习如何把实体和关系写入 Neo4j。
+
+基本流程：
+
+```text
+1. 确定实体节点
+2. 确定实体之间的语义关系
+3. 用 MERGE / MATCH 创建节点和边
+4. 查询验证图谱是否正确
+```
+
+常见 SEC 图谱节点：
+
+```text
+Company：公司
+Form：SEC 表单
+Ticker：股票代码
+CIK：公司识别码
+Industry：行业
+Manager：管理者
+```
+
+常见关系：
+
+```text
+Company -[:FILED]-> Form
+Company -[:HAS_TICKER]-> Ticker
+Company -[:HAS_CIK]-> CIK
+Company -[:IN_INDUSTRY]-> Industry
+Manager -[:WORKS_FOR]-> Company
+```
+
+创建关系的标准 Cypher 模式：
+
+```cypher
+MERGE (c:Company {cik: $cik})
+MERGE (f:Form {formId: $formId})
+MERGE (c)-[:FILED]->(f)
+```
+
+`MERGE` 的作用是：存在就匹配，不存在就创建。相比 `CREATE`，它可以减少重复节点和重复关系。
+
+带属性的关系：
+
+```cypher
+MERGE (c)-[r:FILED]->(f)
+ON CREATE SET
+    r.source = "SEC",
+    r.filedAt = $filedAt
+```
+
+课程里常见参数传入方式：
+
+```python
+kg.query(cypher, params={"formInfoParam": form_info})
+```
+
+Cypher 中可以这样使用嵌套参数：
+
+```cypher
+$formInfoParam.formId
+$formInfoParam.cik
+$formInfoParam.names
+```
+
+## 与 VerilogLAVD 的对应关系
+
+SEC 知识图谱和 VerilogLAVD 的底层图思想相同：都是把对象建成节点，把对象之间的关系建成边。
+
+SEC 图谱：
+
+```text
+Company -[:FILED]-> Form
+Company -[:IN_INDUSTRY]-> Industry
+```
+
+VerilogLAVD：
+
+```text
+Assign -[:AST {condition: "left"}]-> Identifier
+IfStatement -[:CFG {condition: "true"}]-> Statement
+Decl -[:DDG]-> Assign
+```
+
+区别在于对象不同：
+
+```text
+SEC：公司、表单、行业、证券代码等业务实体
+VerilogLAVD：Always、IfStatement、Assign、Identifier 等代码结构
+```
+
+VerilogLAVD 里对应的代码位置：
+
+```text
+create_node_by_astnode()：创建 Neo4j 节点
+create_relationship()：创建 Neo4j 关系
+set_assign_relationship()：给赋值语句左右两侧加 left/right 关系
+cfg2neo4j()：创建控制流 CFG 关系
+ddg2neo4j()：创建数据依赖 DDG 关系
+```
+
+因此，学习 SEC 添加关系课程时，重点关注：
+
+```text
+MERGE 如何创建节点
+MERGE 如何创建关系
+关系方向怎么设计
+关系属性怎么设置
+如何避免重复节点和重复边
+如何用 MATCH 验证创建结果
+```
+
+SEC 的金融业务细节可以暂时略看。
+
+## VerilogLAVD 还需要补的技术栈
+
+当前已经补上的部分：
+
+```text
+Neo4j 基础
+Cypher 查询
+属性图模型
+Python 连接 Neo4j
+向图谱中添加节点和关系
+```
+
+接下来建议按以下顺序补齐。
+
+### 1. Verilog 语义
+
+重点掌握：
+
+```text
+module / port / wire / reg / logic
+assign 连续赋值
+always @(*) 组合逻辑
+always @(posedge clk) 时序逻辑
+阻塞赋值 = / 非阻塞赋值 <=
+if / case / for
+位宽、切片、拼接
+FSM 写法
+```
+
+目标：看到 Verilog 代码，能判断它是组合逻辑、时序逻辑、状态机，还是普通赋值结构。
+
+### 2. PyVerilog
+
+VerilogLAVD 使用 PyVerilog 解析 Verilog 源码。
+
+需要理解：
+
+```text
+parse()
+AST 节点类型
+children()
+attr_names
+Identifier
+Assign
+Always
+IfStatement
+BlockingSubstitution
+NonblockingSubstitution
+```
+
+目标：给一个小 Verilog 文件，能打印 AST，并看懂主要节点。
+
+### 3. AST / CFG / DDG
+
+需要和 VerilogLAVD 代码结合理解：
+
+```text
+AST：语法结构，表示代码“怎么嵌套”
+CFG：控制流，表示执行可能“从哪里走到哪里”
+DDG：数据依赖，表示变量值“从哪里影响到哪里”
+```
+
+在 VerilogLAVD 中：
+
+```text
+AST 边：语法父子关系
+CFG 边：always / if / for / case 的执行路径
+DDG 边：变量声明、使用、赋值之间的数据依赖
+```
+
+### 4. Cypher 路径查询
+
+VerilogLAVD 的遍历函数大量依赖路径查询。
+
+重点语法：
+
+```cypher
+MATCH (a)-[:AST]->(b)
+MATCH (a)-[:AST*0..]->(b)
+MATCH p = (a)-[:CFG*0..5]->(b)
+RETURN nodes(p), relationships(p)
+WHERE elementId(a) = $id
+RETURN DISTINCT elementId(b)
+```
+
+关系属性查询：
+
+```cypher
+MATCH (n)-[r:AST]->(m)
+WHERE r.condition = "left"
+RETURN m
+```
+
+对应 VerilogLAVD 函数：
+
+```text
+ASTOffspring
+CFGOffspring
+DriverVar
+LoadVar
+ConditionVar
+GetBranch
+```
+
+### 5. traversal_engine.py
+
+这是 VerilogLAVD 的模板执行器。
+
+需要理解：
+
+```text
+Func：调用哪个图查询函数
+Params：传什么参数
+Path：沿图连续执行多步
+Filter：对候选节点做筛选
+```
+
+目标：能看懂一个检测模板如何被转换成一连串 Neo4j 查询。
+
+### 6. 硬件安全 CWE 基础
+
+VerilogLAVD 的目标是检测 Verilog CWE，因此需要补一点硬件安全背景。
+
+先掌握：
+
+```text
+CWE 是什么
+硬件漏洞和软件漏洞的区别
+权限控制错误
+调试/测试接口未关闭
+状态机错误
+复位逻辑问题
+锁定机制绕过
+信息泄露
+```
+
+目标：看到一个检测模板时，能理解它想找哪类硬件安全问题。
+
+### 7. LLM 模板生成部分后置
+
+`template_extraction/` 目录涉及：
+
+```text
+LLM prompt
+约束路径
+模板生成
+路径验证
+AutoGen
+```
+
+这部分可以放到后面。当前优先吃透 `traversal_engine/`。
+
+## 下一步实践建议
+
+先写 3 个小 Verilog 例子：
+
+```text
+1. assign out = a & b;
+2. always @(posedge clk) q <= d;
+3. if / else 状态机片段
+```
+
+然后用 PyVerilog 打印 AST，并对照 VerilogLAVD 的建图逻辑：
+
+```text
+Verilog 代码
+  -> PyVerilog AST
+  -> Neo4j AST 节点与 AST 边
+  -> CFG / DDG 边
+  -> traversal_engine 图遍历
+```
+
+这条线打通后，再继续看 `traversal_functions.py` 和 `traversal_engine.py` 会更顺。
