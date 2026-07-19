@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
+                "file": "beansugar/论文笔记/WorldMM.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems"
+              "title": "WorldMM"
             }
           }
         ]
@@ -208,8 +208,9 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
-    "beansugar/DailyPapers/2026-06-23-论文推荐.md",
     "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
+    "beansugar/论文笔记/WorldMM.md",
+    "beansugar/DailyPapers/2026-06-23-论文推荐.md",
     "beansugar/论文笔记/daily_paper_reading.md",
     "beansugar/vibe coding/skills/每日论文/paper-reader/assets/paper-note-template.md",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/write_artifact.py",
@@ -242,7 +243,6 @@
     "beansugar/论文笔记/_概念/0-待分类/Verilog.md",
     "beansugar/论文笔记/_概念/0-待分类/State Transition Graph.md",
     "beansugar/论文笔记/_概念/0-待分类/CFG.md",
-    "beansugar/论文笔记/_概念/0-待分类/Cypher.md",
-    "beansugar/论文笔记/_概念/0-待分类/ChipNeMo.md"
+    "beansugar/论文笔记/_概念/0-待分类/Cypher.md"
   ]
 }
