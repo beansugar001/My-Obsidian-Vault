@@ -208,8 +208,9 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
-    "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
+    "Semantic Memory.md",
     "beansugar/论文笔记/WorldMM.md",
+    "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
     "beansugar/DailyPapers/2026-06-23-论文推荐.md",
     "beansugar/论文笔记/daily_paper_reading.md",
     "beansugar/vibe coding/skills/每日论文/paper-reader/assets/paper-note-template.md",
@@ -242,7 +243,6 @@
     "beansugar/论文笔记/_概念/0-待分类/AST抽象语法树.md",
     "beansugar/论文笔记/_概念/0-待分类/Verilog.md",
     "beansugar/论文笔记/_概念/0-待分类/State Transition Graph.md",
-    "beansugar/论文笔记/_概念/0-待分类/CFG.md",
-    "beansugar/论文笔记/_概念/0-待分类/Cypher.md"
+    "beansugar/论文笔记/_概念/0-待分类/CFG.md"
   ]
 }
