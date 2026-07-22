@@ -11,10 +11,14 @@
             "id": "ff31180f7a9b476c",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "关系图谱"
+              "type": "markdown",
+              "state": {
+                "file": "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems"
             }
           }
         ]
