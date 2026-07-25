@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/课程笔记/CS224N Natural Language Processing with Deep Learning.md",
+                "file": "beansugar/课程笔记/CS224N 第21-30章详细内容笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CS224N Natural Language Processing with Deep Learning"
+              "title": "CS224N 第21-30章详细内容笔记"
             }
           },
           {
@@ -222,8 +222,10 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
-    "beansugar/课程笔记/CS224N 前10章知识点测试.md",
+    "beansugar/课程笔记/CS224N 后10章详细内容笔记.md",
+    "beansugar/课程笔记/CS224N 第21-30章详细内容笔记.md",
     "beansugar/课程笔记/CS224N Natural Language Processing with Deep Learning.md",
+    "beansugar/课程笔记/CS224N 前10章知识点测试.md",
     "beansugar/论文笔记/_概念/0-待分类/AST抽象语法树.md",
     "beansugar/论文笔记/_概念/0-待分类/ARC-FSM.md",
     "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
@@ -255,8 +257,6 @@
     "beansugar/vibe coding/skills/superpowers-review/SKILL.md",
     "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
     "beansugar/论文笔记/14-安全与鲁棒性/SecFSM.md",
-    "beansugar/论文笔记/_概念/0-待分类/Verilog语法要点.md",
-    "beansugar/知识图谱/Neo4j 本地知识图谱学习环境.md",
-    "beansugar/论文笔记/_概念/0-待分类/Verilog.md"
+    "beansugar/论文笔记/_概念/0-待分类/Verilog语法要点.md"
   ]
 }
