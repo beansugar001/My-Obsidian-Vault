@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
+                "file": "beansugar/vibe coding/prompt/论文阅读.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-07-29 VerilogLAVD学习状态与进组技术栈"
+              "title": "论文阅读"
             }
           },
           {
@@ -222,8 +222,12 @@
   },
   "active": "ff31180f7a9b476c",
   "lastOpenFiles": [
-    "beansugar/vibe coding/skills/审查.md",
+    "beansugar/vibe coding/vibe reserch/DeepScientist使用指南.md",
+    "beansugar/vibe coding/prompt/论文阅读.md",
+    "beansugar/vibe coding/prompt",
+    "beansugar/vibe coding/rules/superpowers.md",
     "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
+    "beansugar/vibe coding/skills/审查.md",
     "beansugar/vibe coding/skills/专利.md",
     "beansugar/vibe coding/skills/analyze-paper.md",
     "beansugar/vibe coding/skills/md-to-latex.md",
@@ -248,15 +252,11 @@
     "beansugar/论文笔记/WorldMM.md",
     "beansugar/DailyPapers/2026-06-23-论文推荐.md",
     "beansugar/论文笔记/daily_paper_reading.md",
-    "beansugar/vibe coding/skills/每日论文/paper-reader/assets/paper-note-template.md",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/write_artifact.py",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/spawn_subagent.py",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/record_activation.py",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/SKILL.md",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow",
-    "beansugar/vibe coding/skills/superpowers/superpowers-tdd/SKILL.md",
-    "beansugar/vibe coding/skills/superpowers/superpowers-tdd",
-    "beansugar/vibe coding/skills/superpowers/superpowers-review"
+    "beansugar/vibe coding/skills/superpowers/superpowers-tdd"
   ]
 }
