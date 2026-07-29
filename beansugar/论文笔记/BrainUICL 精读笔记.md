@@ -1,4 +1,4 @@
-# BrainUICL 精读笔记
+﻿# BrainUICL 精读笔记
 
 > 论文：BrainUICL: An Unsupervised Individual Continual Learning Framework for EEG Applications  
 > 会议：ICLR 2025  
@@ -176,49 +176,67 @@ UDA 通常关注一次性从源域适应到目标域，但本文场景中目标�
 <details>
 <summary>详细说明：问题形式和目标函数</summary>
 
-论文定义：
+论文把 EEG 数据按“个体 domain”来定义。也就是说，一个 subject 不是普通的一条样本，而是一个有自己分布的数据域。
 
-- $D_S = \{X_S^i, Y_S^i\}_{i=1}^{N_S}$：源域 / 训练集，包含 $N_S$ 个带标签个体。
-- $D_T = \{X_T^i\}_{i=1}^{N_T}$：目标域 / 增量集，包含 $N_T$ 个无标签个体。
-- $D_G = \{X_G^i, Y_G^i\}_{i=1}^{N_G}$：泛化集，包含 $N_G$ 个带标签个体，仅用于评估。
+源域 / 训练集定义为：
 
-这里的 $X$ 表示 EEG 样本，$Y$ 表示标签。比如睡眠分期任务中，标签可能是 Wake、N1、N2、N3、REM。
+$$
+D_S = \left\{\left(X_S^i, Y_S^i\right)\right\}_{i=1}^{N_S}
+$$
+
+这里 $D_S$ 表示 source domain，也就是预训练阶段使用的有标签个体集合；$X_S^i$ 表示第 $i$ 个源域个体的 EEG 样本，$Y_S^i$ 表示对应标签，$N_S$ 表示源域个体数量。
+
+目标域 / 增量集定义为：
+
+$$
+D_T = \left\{X_T^i\right\}_{i=1}^{N_T}
+$$
+
+这里 $D_T$ 表示 target domain，也就是连续到来的无标签个体流；$X_T^i$ 表示第 $i$ 个新个体的 EEG 样本，$N_T$ 表示增量个体数量。注意这里没有 $Y_T^i$，因为论文设定中这些新个体没有真实标签。
+
+泛化集定义为：
+
+$$
+D_G = \left\{\left(X_G^i, Y_G^i\right)\right\}_{i=1}^{N_G}
+$$
+
+这里 $D_G$ 表示 generalization set，用于评估模型对未见个体的稳定性；$X_G^i$ 是第 $i$ 个泛化集个体的 EEG 样本，$Y_G^i$ 是标签，$N_G$ 是泛化集个体数量。
+
+这里的 $X$ 表示 EEG 样本，$Y$ 表示任务标签。比如睡眠分期任务中，标签可能是 Wake、N1、N2、N3、REM。
 
 论文强调不同个体分布不同：
 
 $$
-P(D_T^i) \ne P(D_T^j), \quad 1 \le i \ne j \le N_T
+P\left(D_T^i\right) \ne P\left(D_T^j\right),\quad 1 \le i \ne j \le N_T
 $$
 
-意思是：第 $i$ 个新个体和第 $j$ 个新个体不是同分布的。  
-这个公式在实验中扮演的角色是定义“为什么个体差异会造成持续域偏移”。
+这个公式的意思是：第 $i$ 个新个体和第 $j$ 个新个体的 EEG 数据分布不同。它在实验中的角色是说明“个体差异为什么会造成持续域偏移”。如果每个人的 EEG 分布都一样，模型适应新个体就不会这么困难；正因为每个个体像一个不同 domain，模型才需要持续适应。
 
-模型从 $M_0$ 开始，随着连续个体流逐步更新：
+模型从初始模型 $M_0$ 开始，随着连续个体流逐步更新：
 
 $$
 M_0 \rightarrow M_1 \rightarrow \cdots \rightarrow M_i \rightarrow \cdots \rightarrow M_{N_T}
 $$
 
-论文写出的每轮目标是：
+这里 $M_0$ 是用源域 $D_S$ 训练出的初始模型；$M_i$ 表示模型已经适应到第 $i$ 个增量个体之后的状态。
+
+论文写出的每轮理想目标是：
 
 $$
-\min_{\theta_M}
-\left(
-\mathbb{E}_{(X_T^i,Y_T^i)\sim D_T^i}
-L(M(X_T^i),Y_T^i)
+\min_{\theta_M}\Bigg(
+\underbrace{\mathbb{E}_{(X_T^i,Y_T^i)\sim D_T^i}
+L\left(M\left(X_T^i\right),Y_T^i\right)}_{\text{适应当前个体，提升 Plasticity}}
 +
-\mathbb{E}_{(X_G,Y_G)\sim D_G}
-L(M(X_G),Y_G)
-\right)
+\underbrace{\mathbb{E}_{(X_G,Y_G)\sim D_G}
+L\left(M\left(X_G\right),Y_G\right)}_{\text{保持泛化能力，提升 Stability}}
+\Bigg)
 $$
 
-注意：当前个体真实标签 $Y_T^i$ 在实际训练中不可见，因此后面会用伪标签替代。这个目标函数表达的是理想目标：
+其中 $\theta_M$ 是模型参数，$L(\cdot)$ 是任务损失。这个目标函数表达的是理想目标：第一项希望模型适应当前个体，提升可塑性；第二项希望模型在泛化集上保持好性能，提升稳定性。
 
-- 第一项：希望模型适应当前个体，提升可塑性。
-- 第二项：希望模型在泛化集上保持好性能，提升稳定性。
+注意：当前个体真实标签 $Y_T^i$ 在实际训练中不可见，因此后面会用伪标签 $\tilde{Y}_T^i$ 替代。论文先写理想目标，是为了说明 BrainUICL 要同时优化“学会当前人”和“不忘其他人”这两个方向。
 
-简单例子：  
-假设医院先用 30 个有标签患者训练模型，之后第 31 个患者来了但没有标签。模型要从这个患者的 EEG 中学习其个人特点，同时不能让模型对第 32、33、34 个未来患者的泛化能力变差。
+简单例子：假设医院先用 30 个有标签患者训练模型，之后第 31 个患者来了但没有标签。模型要从这个患者的 EEG 中学习其个人特点，同时不能让模型对第 32、33、34 个未来患者的泛化能力变差。
 
 </details>
 
@@ -339,16 +357,10 @@ CPC 损失为：
 
 $$
 L_{CPC}
-=
--\mathbb{E}_{H_b}
-\left[
+= -\mathbb{E}_{H_b}\left[
 \log
-\frac{
-\exp(h_{t+k}^{T} f_k(c_t))
-}{
-\sum_{h_j\in H_b}
-\exp(h_j^{T} f_k(c_t))
-}
+\frac{\exp\left(h_{t+k}^{T} f_k(c_t)\right)}
+{\sum_{h_j\in H_b}\exp\left(h_j^{T} f_k(c_t)\right)}
 \right]
 $$
 
@@ -435,22 +447,16 @@ $$
 论文的分类损失为：
 
 $$
-L_C(M_{i-1},\theta;X_B,X_T^i,y_B)
-=
-L_{CB}+\alpha L_{CT}
+L_C\left(M_{i-1},\theta;X_B,X_T^i,y_B\right)
+= L_{CB}+\alpha L_{CT}
 $$
 
 展开为：
 
 $$
 L_C
-=
--\sum_c y_{Bc}\log \hat{y}_{Bc}
-+
-\alpha
-\left(
--\sum_c \tilde{y}_{Tc}^{i}\log \hat{y}_{Tc}^{i}
-\right)
+= -\sum_c y_{Bc}\log \hat{y}_{Bc}
++ \alpha\left(-\sum_c \tilde{y}_{Tc}^{i}\log \hat{y}_{Tc}^{i}\right)
 $$
 
 逐项解释：
@@ -512,13 +518,11 @@ $$
 每 2 个 epoch，使用 KL divergence 对齐：
 
 $$
-L_{KL}(M_{i-1},\theta;X_B)
-=
-D_{KL}
-\left(
-P(M_{i-1}^{e})
+L_{KL}\left(M_{i-1},\theta;X_B\right)
+= D_{KL}\left(
+P\left(M_{i-1}^{e}\right)
 \parallel
-P(M_{i-1}^{e+2})
+P\left(M_{i-1}^{e+2}\right)
 \right)
 $$
 
@@ -553,8 +557,8 @@ $$
 L_{overall}
 =
 \begin{cases}
-L_C, & e \mid 2 \ne 0 \\
-L_C + L_{KL}, & e \mid 2 = 0
+L_C, & e\bmod 2 \ne 0 \\
+L_C + L_{KL}, & e\bmod 2 = 0
 \end{cases}
 $$
 
@@ -589,10 +593,7 @@ guiding model 生成的伪标签用于当前轮训练。训练结束后，主模
 
 $$
 S_{pseudo}
-=
-S_{pseudo}
-\cup
-(\tilde{X}_T^i,\tilde{Y}_T^i)
+= S_{pseudo}\cup\left(\tilde{X}_T^i,\tilde{Y}_T^i\right)
 $$
 
 这样做的角色是：
@@ -659,22 +660,16 @@ AAA 和 AAF1 公式为：
 
 $$
 AAA_i
-=
-\frac{1}{i}
-\sum_{j=1}^{i}
-\frac{1}{N_G}
-\sum_{k=1}^{N_G}
-ACC(\hat{Y}_G^i,Y_G^i)
+= \frac{1}{i}\sum_{j=1}^{i}
+\frac{1}{N_G}\sum_{k=1}^{N_G}
+ACC\left(\hat{Y}_{G,k}^{j},Y_{G,k}\right)
 $$
 
 $$
 AAF1_i
-=
-\frac{1}{i}
-\sum_{j=1}^{i}
-\frac{1}{N_G}
-\sum_{k=1}^{N_G}
-MF1(\hat{Y}_G^i,Y_G^i)
+= \frac{1}{i}\sum_{j=1}^{i}
+\frac{1}{N_G}\sum_{k=1}^{N_G}
+MF1\left(\hat{Y}_{G,k}^{j},Y_{G,k}\right)
 $$
 
 这两个指标的作用是：不是只看最后一个模型，而是看持续学习过程中每个阶段模型对泛化集的平均表现。
@@ -1020,3 +1015,6 @@ BrainUICL 的设计很有工程直觉：
 实验结果表明，它在三个 EEG 任务上能同时提升当前个体适应能力和未见个体泛化能力。对于初学者来说，读这篇论文最重要的是理解一个思想：
 
 > 持续学习不是盲目学习新数据，而是在“吸收新知识”和“保持旧能力”之间设计约束。
+
+
+
