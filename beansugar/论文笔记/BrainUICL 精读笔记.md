@@ -1,4 +1,4 @@
-﻿# BrainUICL 精读笔记
+# BrainUICL 精读笔记
 
 > 论文：BrainUICL: An Unsupervised Individual Continual Learning Framework for EEG Applications  
 > 会议：ICLR 2025  
@@ -173,8 +173,7 @@ UDA 通常关注一次性从源域适应到目标域，但本文场景中目标�
 
 每个 subject 被当成一个 individual domain。模型的目标不是只适应当前人，而是适应很多新个体后，整体变成更强的泛化模型。
 
-<details>
-<summary>详细说明：问题形式和目标函数</summary>
+### 详细说明：问题形式和目标函数
 
 论文把 EEG 数据按“个体 domain”来定义。也就是说，一个 subject 不是普通的一条样本，而是一个有自己分布的数据域。
 
@@ -238,7 +237,6 @@ $$
 
 简单例子：假设医院先用 30 个有标签患者训练模型，之后第 31 个患者来了但没有标签。模型要从这个患者的 EEG 中学习其个人特点，同时不能让模型对第 32、33、34 个未来患者的泛化能力变差。
 
-</details>
 
 ---
 
