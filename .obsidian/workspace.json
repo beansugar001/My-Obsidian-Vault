@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
+                "file": "beansugar/论文笔记/BrainUICL 精读笔记.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "科研项目管理方法论"
+              "title": "BrainUICL 精读笔记"
             }
           }
         ]
@@ -41,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -208,9 +210,13 @@
   },
   "active": "a6f875245ed3036e",
   "lastOpenFiles": [
-    "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
-    "beansugar/论文笔记/BrainUICL 精读笔记.md",
+    "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
     "beansugar/论文笔记/WorldMM.md",
+    "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
+    "beansugar/论文笔记/BrainUICL 精读笔记.md",
+    "beansugar/vibe coding/prompt/论文阅读.md",
+    "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
+    "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
     "beansugar/论文笔记/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
@@ -224,9 +230,7 @@
     "beansugar/论文笔记/BrainUICL_assets/table7_cea_interval.png",
     "beansugar/论文笔记/BrainUICL_assets/table6_dcb_ratio.png",
     "beansugar/论文笔记/BrainUICL_assets/table5_orders.png",
-    "beansugar/论文笔记/BrainUICL_assets/table1_datasets.png",
     "beansugar/论文笔记/BrainUICL_assets",
-    "beansugar/vibe coding/prompt/论文阅读.md",
     "beansugar/vibe coding/vibe reserch/DeepScientist使用指南.md",
     "beansugar/vibe coding/prompt",
     "beansugar/vibe coding/rules/superpowers.md",
@@ -238,7 +242,6 @@
     "beansugar/vibe coding/skills/memory-manager.md",
     "beansugar/vibe coding/skills/skills使用说明.md",
     "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",
-    "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
     "beansugar/vibe coding/workflows/superpowers-debug.md",
     "beansugar/vibe coding/workflows/superpowers-brainstorm.md",
     "beansugar/知识图谱/Neo4j 本地知识图谱学习环境.md",
@@ -247,7 +250,6 @@
     "beansugar/课程笔记/CS224N 第21-30章详细内容笔记.md",
     "beansugar/课程笔记/CS224N 后10章详细内容笔记.md",
     "beansugar/课程笔记/CS224N Natural Language Processing with Deep Learning.md",
-    "beansugar/论文笔记/_概念/0-待分类/AST抽象语法树.md",
     "beansugar/课程笔记",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/write_artifact.py",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/spawn_subagent.py",
