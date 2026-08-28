@@ -82,6 +82,24 @@
 - 待确认贡献者 GitHub 用户名后添加 contributor。
 - 已添加 `tourisLY` 到 README Contributors 段落。
 
+## v1.3.0 准心
+
+- 用户提出射击点添加一个点作为准心，方便自瞄关闭时手动瞄准。
+- 用户进一步说明：不是屏幕中心，而是枪械准星/红点激光位置，且需要绿色圆形准心。
+- 已改为投影 `LaserSight` 红点/Decal 位置，或回退到 `FirePoint`。
+- 新增配置：`ShowCrosshair`、`CrosshairOnlyWhenAimDisabled`、`CrosshairSize`、`LockStrength`。
+- 自瞄锁定强度默认提升到 `1.5`。
+
+## v1.4.0 死亡不掉落
+
+- 用户提出增加死亡不掉落。
+- 新增配置：`KeepItemsOnDeath`，默认 `true`。
+- 通过 Harmony 拦截死亡/重生流程中的 `ServerDropAll`、手持物品 `Drop`、`SetSyncedHolder` 和 `StartSimulateLocal`，保留背包和手持物品。
+- 死亡不掉落由服务器/房主侧逻辑生效；加入未安装本 Mod 的房间时，物品掉落仍由房主原版逻辑决定。
+- v1.4.0 已编译、安装并启动验证：`Loading [How to Fish Aim Bot 1.4.0]`，配置已生成 `KeepItemsOnDeath = true`。
+- 已生成 `HowToFish-AimBot-v1.4.0.zip`。
+- 等待用户实测死亡不掉落，并确认同步 `D:\project`、Obsidian 和 GitHub Release。
+
 ## 构建命令
 
 ```powershell

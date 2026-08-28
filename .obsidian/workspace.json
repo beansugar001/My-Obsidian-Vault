@@ -11,10 +11,14 @@
             "id": "624c9087ccf83ac4",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "beansugar/vibe coding/memory/HowToFish自瞄Mod开发日志-2026-08-28.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "HowToFish自瞄Mod开发日志-2026-08-28"
             }
           }
         ]
@@ -76,7 +80,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "79ef78987769243a",
@@ -190,7 +195,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -204,7 +210,7 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70fe84cdd4b67d56",
+  "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
     "beansugar/vibe coding/memory/HowToFish自瞄Mod开发日志-2026-08-28.md",
     "beansugar/vibe coding/prompt/论文阅读.md",
