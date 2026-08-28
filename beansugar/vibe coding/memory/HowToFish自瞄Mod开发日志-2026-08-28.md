@@ -40,8 +40,47 @@
 ## 待办
 
 - [ ] 用户确认后写入 Obsidian memory
-- [ ] 用户确认后发布 GitHub 仓库与 Release
+- [x] 用户确认后发布 GitHub 仓库与 Release
 - [ ] 可选：进一步测试 F8 热键切换和实际吸附手感
+
+## GitHub 发布
+
+- 仓库：https://github.com/beansugar001/HowToFish-AimBot
+- Release：https://github.com/beansugar001/HowToFish-AimBot/releases/tag/v1.0.0
+- 资产：`HowToFish-AimBot-v1.0.0.zip`
+
+## v1.1.0 体验反馈更新
+
+- 默认热键从 `F8` 改为 `F1`。
+- 左上角新增自瞄状态按钮，显示 `Aim: ON/OFF`，点击也可切换。
+- 右下角新增弹药 HUD，显示 `当前子弹/弹匣容量`。
+- 新增配置：`ShowStatusButton`、`ShowAmmoHud`。
+- 版本计划更新为 `v1.1.0`，需要重新安装 DLL 并发布新 Release。
+- v1.1.0 已编译、安装并启动验证：`How to Fish Aim Bot loaded. Aim bot is on. Press F1 to toggle.`
+- 已生成并发布 `HowToFish-AimBot-v1.1.0.zip`。
+- v1.1.0 Release：https://github.com/beansugar001/HowToFish-AimBot/releases/tag/v1.1.0
+
+## v1.1.1 性能优化
+
+- 用户反馈功能测试时掉帧。
+- 主要原因：自瞄每帧遍历 `ItemManager` 物品并做多次 `Physics.Linecast`。
+- 优化：按 `ScanInterval` 缓存最佳目标，只在新扫描周期遍历一次。
+- 优化：合并生物/物品扫描，去掉 `Distinct()` 和每帧 ammo 文本查询。
+- 新增配置：`ScanInterval`，默认 `0.1` 秒。
+- v1.1.1 已安装并启动验证：`How to Fish Aim Bot loaded. Aim bot is on. Press F1 to toggle.`
+- v1.1.1 Release：https://github.com/beansugar001/HowToFish-AimBot/releases/tag/v1.1.1
+- 等待用户进行帧率复测。
+
+## v1.2.0 目标切换
+
+- 用户提出打 Boss 鱼时目标很多，需要切换自瞄目标。
+- 新增 `F2` 按键：在候选目标列表里循环切换到下一个。
+- 候选目标仍按短间隔扫描缓存，不恢复每帧全量遍历。
+- 新增配置：`NextTargetKey`，默认 `F2`。
+- v1.2.0 已安装并启动验证：`How to Fish Aim Bot loaded. Aim bot is on. Press F1 to toggle.`
+- v1.2.0 Release：https://github.com/beansugar001/HowToFish-AimBot/releases/tag/v1.2.0
+- 待确认贡献者 GitHub 用户名后添加 contributor。
+- 已添加 `tourisLY` 到 README Contributors 段落。
 
 ## 构建命令
 
