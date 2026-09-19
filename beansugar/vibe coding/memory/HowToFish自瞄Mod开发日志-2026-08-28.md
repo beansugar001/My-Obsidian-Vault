@@ -98,7 +98,36 @@
 - 死亡不掉落由服务器/房主侧逻辑生效；加入未安装本 Mod 的房间时，物品掉落仍由房主原版逻辑决定。
 - v1.4.0 已编译、安装并启动验证：`Loading [How to Fish Aim Bot 1.4.0]`，配置已生成 `KeepItemsOnDeath = true`。
 - 已生成 `HowToFish-AimBot-v1.4.0.zip`。
-- 等待用户实测死亡不掉落，并确认同步 `D:\project`、Obsidian 和 GitHub Release。
+- 已同步 `D:\project` 并推送 commit `1afb283`。
+- v1.4.0 Release：https://github.com/beansugar001/HowToFish-AimBot/releases/tag/v1.4.0
+- 资产：`HowToFish-AimBot-v1.4.0.zip`
+- 等待用户实测死亡不掉落。
+
+## v2.0.0 仅开镜/机瞄自瞄
+
+- 用户提出重构自瞄逻辑：仅玩家按下鼠标右键开镜/机瞄时进行自瞄。
+- 已确认游戏原生状态来源：`Weapon.IsAds`，对应右键开镜/机瞄。
+- 已改为只有在手持武器且 `Weapon.IsAds == true` 时才接管 `PlayerAimAssist.GetRotationDelta`。
+- 钓鱼和普通持枪不再触发自瞄；鱼竿不再参与自瞄。
+- 新增配置：`RequireAimDownSights`，默认 `true`。
+- 绿色准心改为在自瞄未介入时显示，普通持枪时仍可用于手动瞄准。
+- v2.0.0 已编译、安装并启动验证：`Loading [How to Fish Aim Bot 2.0.0]`，配置已生成 `RequireAimDownSights = true`。
+- 已同步 `D:\project` 并推送 commit `7f74ec6`。
+- v2.0.0 Release：https://github.com/beansugar001/HowToFish-AimBot/releases/tag/v2.0.0
+- 资产：`HowToFish-AimBot-v2.0.0.zip`
+- 等待用户实测开镜吸附、普通持枪和钓鱼不吸附。
+- 用户提出电脑小白安装问题；新增 `Install-Mod.bat` 和 `Install-Mod.ps1` 一键安装。
+- 一键脚本会扫描 Steam 目录、自动识别游戏路径、缺少 BepInEx 时自动下载安装，并复制 DLL。
+- README 安装部分已重写为保姆级教程，包含一键安装、手动安装和常见问题。
+
+## MorePlayers 多人联机 Mod
+
+- 用户要求安装 `MorePlayers v1.0.1`（LogicMods）。
+- 下载文件位于 `C:\Users\24796\Downloads\BepInEx\plugins\MorePlayers.dll`。
+- 已复制到游戏目录 `BepInEx\plugins\MorePlayers.dll`。
+- 启动验证：`Loading [MorePlayers 1.0.1]`，`MorePlayers loaded. Lobby size set to 8.`
+- 配置已生成：`BepInEx\config\com.logicmods.howtofish.moreplayers.cfg`，默认 `MaxPlayers = 8`，可改 1-250。
+- 只有房主需要安装；朋友不需要装这个 Mod。
 
 ## 构建命令
 
