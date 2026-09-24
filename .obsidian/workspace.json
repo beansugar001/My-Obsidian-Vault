@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/知识图谱/Neo4j 本地知识图谱学习环境.md",
+                "file": "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neo4j 本地知识图谱学习环境"
+              "title": "STM32F103C8T6_一日入门完整笔记 (1)"
             }
           }
         ]
@@ -211,9 +211,12 @@
   },
   "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
+    "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
+    "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
+    "beansugar/课程笔记/stm32.md",
+    "beansugar/课程笔记/cs224n",
     "beansugar/vibe coding/rules/superpowers.md",
     "beansugar/vibe coding/prompt/论文阅读.md",
-    "beansugar/知识图谱/Neo4j 本地知识图谱学习环境.md",
     "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
     "beansugar/论文笔记/WorldMM.md",
     "beansugar/论文笔记/BrainUICL 精读笔记.md",
@@ -228,7 +231,7 @@
     "beansugar/论文笔记/BrainUICL_assets/table4_ablation.png",
     "beansugar/论文笔记/BrainUICL_assets/table3_main_comparison.png",
     "beansugar/论文笔记/BrainUICL_assets/table2_overview_performance.png",
-    "beansugar/课程笔记/CS224N 前10章知识点测试.md",
+    "beansugar/课程笔记/cs224n/CS224N 前10章知识点测试.md",
     "beansugar/论文笔记/BrainUICL_assets/fig6_model_architecture.png",
     "beansugar/论文笔记/BrainUICL_assets/table9_outliers.png",
     "beansugar/论文笔记/BrainUICL_assets/table8_hyperparams.png",
@@ -249,13 +252,10 @@
     "beansugar/vibe coding/workflows/superpowers-brainstorm.md",
     "beansugar/vibe coding/memory",
     "beansugar/vibe coding/skills/每日论文/paper-reader.zip",
-    "beansugar/课程笔记/CS224N 第21-30章详细内容笔记.md",
-    "beansugar/课程笔记/CS224N 后10章详细内容笔记.md",
     "beansugar/课程笔记",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/write_artifact.py",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/spawn_subagent.py",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/record_activation.py",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow"
+    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts"
   ]
 }
