@@ -24,6 +24,14 @@
 
 ## 当前进度
 
+### [2026-09-26] E1/E2 结果 + A2 量化曲线 ✅（数字均为真实测量）
+
+- **E1**（8/12）: 全变体 guess_rate=1.0 [0.988,1.0]，gap=85cyc，MI=1.0，m4 footprint=1行（LMUL 不缩放足迹=保真度发现#2）
+- **A2 计时器量化**（E1 离线）: 粒度≤85cyc 猜测率恒 1.0；≥128cyc 骤降至随机 1.6%——临界点=hit/miss gap，物理自洽 → "计时器粒度=RISC-V 防御旋钮"
+- **E2**（13/15）: L2 128k/512k 稳健（gap 85）；assoc4 无影响；**RandomRP: guess 0.9969 + footprint 均值 9.4/max 17（随机替换引入多热行噪声）**；**L2=1MB: 驱逐失效但信道未消**（gap 85→16，L1 vs L2 命中差，argmin 仍 100%）→ "驱逐缓冲区 vs 容量"是协议关键参数
+- 产物: `experiments/e1_leakage/{summary,timer_quant}.*.csv`, `experiments/e2_geometry/summary.*.csv`
+- 大纲已写: `docs/05_paper_outline.md`（C1信道/C2检测/C3保真度 + 7个分析作业）
+
 ### [2026-09-26] E1 泄露刻画首批结果（8/12 runs, 全部真实数据）✅
 
 - **全部变体 guess_rate=1.0**（95% CI [0.988,1.0]）: scalar / vec_e64m1 / e64m2 / e64m4
