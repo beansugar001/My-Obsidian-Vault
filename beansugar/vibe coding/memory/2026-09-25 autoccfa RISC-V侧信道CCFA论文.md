@@ -43,7 +43,15 @@
 - gem5 v24.1 **O3+RVV 支持**: release notes #1711 修复了向量指令投机执行断言 → O3+RVV+投机被官方支持
 - gem5 v24.1 **索引向量访存（硬件gather）完整实现**: `VlIndexOp::vluxei8/16/32/64_v`（`src/arch/riscv/isa/decoder.isa:705/796/887/978`）
 - gem5 RISC-V `rdcycle` 返回真实模拟周期 `curCycle()`，默认启用（`src/arch/riscv/isa.cc:428`）；`rdtime` 是秒级墙钟（无用）
-- 领先候选 Idea A: **RVV矢量扩展时序侧信道系统刻画 + RISC-V HPM/ML可检性**（工作稿 `D:\project\autoccfa\docs\02_idea_candidates.md`）
+- 领先候选 Idea A: **RVV矢量扩展时序侧信道系统刻画 + RISC-V HPM/ML可检性**（工作稿 `D:\project\autoccfa\docs\02_idea_candidates.md`，规格书 `D:\project\autoccfa\docs\spec.md`）
+
+### [2026-09-26] gem5 -j14 编译把 WSL2 VM 压崩（OOM）✅
+
+**问题**: Docker Desktop 的 WSL2 VM 默认只分配宿主 50% 内存（16GB→8GB），`scons -j14` 多个 g++ 各占 1-1.5GB → OOM，daemon 500 失联
+**解决**: 新建 `C:\Users\24796\.wslconfig`（memory=12GB, swap=8GB, processors=14）→ `wsl --shutdown` → 重启 Docker Desktop；容器幸存（Exited 255 后 start 成功），`-j8` 恢复编译
+**经验教训**: gem5 构建并行度受 VM 内存约束（12GB 用 -j8 安全）；容器 FS 内容在 daemon 崩溃重启后存活
+
+### 决策：gem5 只能在容器内克隆/构建，Windows 端 git 有 CRLF 污染
 
 **日期**: 2026-09-26
 **问题**: Windows 全局 git autocrlf 使克隆出的 gem5 shebang 行带 `\r`（`/usr/bin/env: 'python3\r': No such file or directory`），scons Kconfig 步骤报 Error 127
