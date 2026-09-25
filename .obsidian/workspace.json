@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
+                "file": "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STM32F103C8T6_一日入门完整笔记 (1)"
+              "title": "Neo4j 本地知识图谱学习环境"
             }
           }
         ]
@@ -211,8 +211,8 @@
   },
   "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
-    "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
     "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
+    "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
     "beansugar/课程笔记/stm32.md",
     "beansugar/课程笔记/cs224n",
     "beansugar/vibe coding/rules/superpowers.md",
