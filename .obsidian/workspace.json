@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
+                "file": "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Neo4j 本地知识图谱学习环境"
+              "title": "科研项目管理方法论"
             }
           }
         ]
@@ -211,11 +211,14 @@
   },
   "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
-    "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
+    "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md",
+    "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",
+    "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
+    "beansugar/vibe coding/rules/superpowers.md",
     "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
+    "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
     "beansugar/课程笔记/stm32.md",
     "beansugar/课程笔记/cs224n",
-    "beansugar/vibe coding/rules/superpowers.md",
     "beansugar/vibe coding/prompt/论文阅读.md",
     "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
     "beansugar/论文笔记/WorldMM.md",
@@ -224,7 +227,6 @@
     "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
     "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
-    "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
     "beansugar/论文笔记/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
@@ -247,9 +249,7 @@
     "beansugar/vibe coding/skills/md-to-latex.md",
     "beansugar/vibe coding/skills/memory-manager.md",
     "beansugar/vibe coding/skills/skills使用说明.md",
-    "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",
     "beansugar/vibe coding/workflows/superpowers-debug.md",
-    "beansugar/vibe coding/workflows/superpowers-brainstorm.md",
     "beansugar/vibe coding/memory",
     "beansugar/vibe coding/skills/每日论文/paper-reader.zip",
     "beansugar/课程笔记",

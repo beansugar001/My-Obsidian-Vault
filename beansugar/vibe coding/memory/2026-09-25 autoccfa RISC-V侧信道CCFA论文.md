@@ -1,0 +1,57 @@
+# 2026-09-25 autoccfa RISC-V侧信道CCFA论文
+
+# 用户偏好
+
+- **语言**: 始终使用中文回答
+- **包安装规则**: Python包装到 `D:\pythonpackage\py312-packages`（pip --target），或用 conda 环境
+- **代码风格**: 脚本可复现，路径全部用绝对路径
+- **数据铁律**: 论文中所有数字必须来自真实运行，禁止编造
+
+# 当前项目：autoccfa（RISC-V 微架构侧信道 CCF-A 论文）
+
+## 项目配置
+
+- **项目根目录**: `D:\project\autoccfa`
+- **目录结构**: `docs/ lit/ code/ data/ experiments/ figures/ paper/ scripts/ logs/`
+- **Python 3.12 主环境**: `D:/Anaconda2024/python.exe`，需要 `PYTHONPATH=D:/pythonpackage/py312-packages`
+  - 已有包: numpy 1.26.4, pandas 2.2.2, sklearn 1.4.2, matplotlib 3.8.4, scipy 1.13.1, seaborn 0.13.2, pyverilog 1.3.0, neo4j 6.2.0
+- **深度学习环境**: `C:/Users/24796/.conda/envs/thesis/python.exe` — torch 2.5.1+cu121, CUDA 可用 (GTX 1650 4GB)
+- **Linux 实验环境**: Docker Desktop 29.2.1（WSL2 后端，daemon 需手动启动：`"/c/Program Files/Docker/Docker/Docker Desktop.exe" &`）
+  - WSL 仅有 docker-desktop 发行版，无 Ubuntu
+- **LaTeX**: 本机无 pdflatex/tectonic → 计划安装 tectonic（单二进制）
+- **磁盘**: D 盘剩 61G
+- **硬件约束**: GTX 1650 4GB，无 LLM API（方法不得依赖 LLM 调用）
+
+## 当前进度
+
+1. ✅ 读完三份方法论（Sibyl 19阶段 / 科研项目管理 / md-to-latex-converter）
+2. ✅ 确认方向: RISC-V 芯片安全 → 微架构侧信道；投稿目标调研后定
+3. ✅ 环境审计: Python包/Docker/WSL/LaTeX/GPU 盘点完成
+4. ⏳ gem5 RISC-V 冒烟测试（时序可观测性硬门槛）
+5. ⏳ 文献调研（scout）
+6. ⏸ 选题决策 / 平台搭建 / 主实验 / 消融 / 绘图 / 写作 / LaTeX / 归档
+
+## 决策记录
+
+### 决策：Linux 实验环境走 Docker 而非 WSL2 原生发行版
+
+**日期**: 2026-09-25
+**背景**: gem5 无法在 Windows 原生构建；WSL 只有 docker-desktop 发行版
+**理由**: Docker Desktop 已装且有 neo4j 容器使用先例；用 `ubuntu` 容器即可获得 Linux 环境，无需新装 WSL 发行版
+**影响**: 所有 gem5/工具链命令在容器内执行；宿主机通过 volume 挂载 `D:\project\autoccfa`
+
+### 决策：方法设计不依赖 LLM API
+
+**日期**: 2026-09-25
+**背景**: 用户确认无 LLM API
+**影响**: 候选 idea 筛选时排除依赖 LLM 调用的方案；本地可用算力 = CPU + GTX 1650 4GB (torch 2.5.1)
+
+## 相关文件路径
+
+| 文件 | 路径 |
+|------|------|
+| 项目方法论(Sibyl) | `D:\Obsidian\notes\笔记\beansugar\vibe coding\vibe方法论\基于Sibyl Research System实践方法论.md` |
+| 项目管理方法论 | `D:\Obsidian\notes\笔记\beansugar\vibe coding\vibe方法论\科研项目管理方法论.md` |
+| MD转LaTeX方法论 | `D:\Obsidian\notes\笔记\beansugar\vibe coding\vibe方法论\2025-04-29-md-to-latex-converter.md` |
+| 用户背景memory | `D:\Obsidian\notes\笔记\beansugar\vibe coding\memory\2026-07-29 VerilogLAVD学习状态与进组技术栈.md` |
+| VerilogLAVD 项目 | `D:\project\VerilogLAVD` |
