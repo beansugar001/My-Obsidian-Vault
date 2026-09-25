@@ -37,7 +37,13 @@
 
 ## 决策记录
 
-### 决策：gem5 只能在容器内克隆/构建，Windows 端 git 有 CRLF 污染
+### 关键事实记录（选题依据）
+
+- **DAC 2027 截稿: 2026-11-17 AoE**（距今约7.5周），会议2027-07 加州 San Jose → 定为初步主投稿目标
+- gem5 v24.1 **O3+RVV 支持**: release notes #1711 修复了向量指令投机执行断言 → O3+RVV+投机被官方支持
+- gem5 v24.1 **索引向量访存（硬件gather）完整实现**: `VlIndexOp::vluxei8/16/32/64_v`（`src/arch/riscv/isa/decoder.isa:705/796/887/978`）
+- gem5 RISC-V `rdcycle` 返回真实模拟周期 `curCycle()`，默认启用（`src/arch/riscv/isa.cc:428`）；`rdtime` 是秒级墙钟（无用）
+- 领先候选 Idea A: **RVV矢量扩展时序侧信道系统刻画 + RISC-V HPM/ML可检性**（工作稿 `D:\project\autoccfa\docs\02_idea_candidates.md`）
 
 **日期**: 2026-09-26
 **问题**: Windows 全局 git autocrlf 使克隆出的 gem5 shebang 行带 `\r`（`/usr/bin/env: 'python3\r': No such file or directory`），scons Kconfig 步骤报 Error 127
