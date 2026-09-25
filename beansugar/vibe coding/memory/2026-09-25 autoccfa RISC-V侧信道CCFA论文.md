@@ -24,16 +24,14 @@
 
 ## 当前进度
 
-1. ✅ 读完三份方法论（Sibyl 19阶段 / 科研项目管理 / md-to-latex-converter）
-2. ✅ 确认方向: RISC-V 芯片安全 → 微架构侧信道；投稿目标调研后定
-3. ✅ 环境审计: Python包/Docker/WSL/LaTeX/GPU 盘点完成
-4. ✅ gem5 v24.1.0.0 源码获取（容器内克隆，Windows克隆有CRLF污染shebang问题）
-5. ⏳ gem5 RISCV gem5.opt 编译中（容器 `gem5build`，detached scons，日志 `D:\project\autoccfa\logs\build_log2.txt`）
-6. ✅ RISC-V工具链 riscv64-unknown-elf-gcc 13.2.0 容器内就绪
-7. ✅ 冒烟测试代码: `D:\project\autoccfa\code\smoke\smoke.c`（已编译过）+ `run_se.py`（O3+cache SE配置）
-8. ✅ 攻击侧文献侦察完成 → `D:\project\autoccfa\lit\01_attack_landscape.md`（22卡片+拥挤区+gap清单）
-9. ⏳ 防御/检测侧文献侦察（后台agent运行中）
-10. ⏸ 选题决策 / 平台搭建 / 主实验 / 消融 / 绘图 / 写作 / LaTeX / 归档
+1. ✅ 方法论阅读 + 环境审计 + gem5 v24.1 容器编译（`gem5build` 容器）
+2. ✅ 文献侦察：攻击侧+检测侧报告（`lit/01`、`lit/02`），gap 矩阵（`docs/02`）
+3. ✅ **选题决策定稿（`docs/04_decision.md`）**: RVV矢量缓存时序信道系统刻画 + HPM/ML可检性 → 投 DAC 2027（2026-11-17 截稿）
+4. ✅ 冒烟测试四发现（`docs/03_smoke_findings.md`）: fence测量方法学、vle装线✓、**gem5 vluxei gather 功能缺陷**（数据错误+不装线，论文级发现）、向量指令icache异常
+5. ✅ 冒烟攻击数据: 标量 320/320=100%；vle e64m1 320/320=100%；e64m4 320/320=100%
+6. ✅ harness: run_exp.py（并行run管理）/parse_stats.py（v24字段名适配）/leakage_metrics.py/train_detector.py
+7. ⏳ **主实验矩阵运行中**（后台）: E1泄露刻画12runs + E2几何敏感性15runs + E3检测24runs，产物到 `experiments/e1_leakage|e2_geometry|e3_detection/`
+8. ⏸ 分析+消融+绘图+写作+LaTeX+归档
 
 ## 决策记录
 
