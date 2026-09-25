@@ -37,6 +37,14 @@
 
 ## 决策记录
 
+### [2026-09-26] gem5 侧信道测量的四个关键技术事实（调试中确立）✅
+
+1. **O3 上测访存延迟必须用 fence**：无数据依赖时第二次 `csrr cycle` 被乱序提前执行，miss 惩罚不可见 → `csrr; ld; addi(dep); fence rw,rw; csrr` 模板（`wl_common.h: time_load`）
+2. **gem5 RISC-V 的 VLEN=256, ELEN=64**（`isa.cc:279` info），e64/m1 → vl=4（不是 8）
+3. **vluxei64 索引单位是元素(8字节)**：访问 `cand[s]`（第 s 条 64B 线）索引应为 `s*8`；decoy 索引必须指向已映射地址否则页错误 panic
+4. **`-nostdlib` 必须加 `-fno-builtin`**：否则 gcc 把手写循环识别为 strlen/memcpy 生成 libc 调用导致链接失败
+5. 输出函数 `print_u64` 不自带换行，行末必须显式 `print_nl()`（否则行被打碎解析失败）
+
 ### 关键事实记录（选题依据）
 
 - **DAC 2027 截稿: 2026-11-17 AoE**（距今约7.5周），会议2027-07 加州 San Jose → 定为初步主投稿目标
