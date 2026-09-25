@@ -211,6 +211,7 @@
   },
   "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md.tmp.32000.2e68291f9661",
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md.tmp.32000.e705cd294db7",
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md",
     "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",
@@ -255,7 +256,6 @@
     "beansugar/课程笔记",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/write_artifact.py",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/spawn_subagent.py",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/record_activation.py",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts"
+    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/record_activation.py"
   ]
 }

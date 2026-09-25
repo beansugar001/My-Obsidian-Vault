@@ -1,5 +1,7 @@
 # 2026-09-25 autoccfa RISC-V侧信道CCFA论文
 
+> **状态: 全流程已完成（2026-09-26）** — 从选题到 LaTeX 论文成品的完整自动科研闭环
+
 # 用户偏好
 
 - **语言**: 始终使用中文回答
@@ -7,98 +9,84 @@
 - **代码风格**: 脚本可复现，路径全部用绝对路径
 - **数据铁律**: 论文中所有数字必须来自真实运行，禁止编造
 
-# 当前项目：autoccfa（RISC-V 微架构侧信道 CCF-A 论文）
+# 项目档案（最终状态）
 
 ## 项目配置
 
-- **项目根目录**: `D:\project\autoccfa`
-- **目录结构**: `docs/ lit/ code/ data/ experiments/ figures/ paper/ scripts/ logs/`
-- **Python 3.12 主环境**: `D:/Anaconda2024/python.exe`，需要 `PYTHONPATH=D:/pythonpackage/py312-packages`
-  - 已有包: numpy 1.26.4, pandas 2.2.2, sklearn 1.4.2, matplotlib 3.8.4, scipy 1.13.1, seaborn 0.13.2, pyverilog 1.3.0, neo4j 6.2.0
-- **深度学习环境**: `C:/Users/24796/.conda/envs/thesis/python.exe` — torch 2.5.1+cu121, CUDA 可用 (GTX 1650 4GB)
-- **Linux 实验环境**: Docker Desktop 29.2.1（WSL2 后端，daemon 需手动启动：`"/c/Program Files/Docker/Docker/Docker Desktop.exe" &`）
-  - WSL 仅有 docker-desktop 发行版，无 Ubuntu
-- **LaTeX**: 本机无 pdflatex/tectonic → 计划安装 tectonic（单二进制）
-- **磁盘**: D 盘剩 61G
-- **硬件约束**: GTX 1650 4GB，无 LLM API（方法不得依赖 LLM 调用）
+| 项 | 值 |
+|----|----|
+| 项目根目录 | `D:\project\autoccfa`（含 README.md 总览） |
+| 主环境 | `D:/Anaconda2024/python.exe` + `PYTHONPATH=D:/pythonpackage/py312-packages` |
+| 深度学习环境 | `C:/Users/24796/.conda/envs/thesis/python.exe`（torch 2.5.1+cu121, GTX 1650） |
+| gem5 容器 | `gem5build`（ghcr.io/gem5/ubuntu-24.04_all-dependencies，gem5 v24.1.0.0 源码编译 `scons -j8`，RISC-V 工具链 13.2.0） |
+| 容器内路径 | gem5: `/gem5src`；项目挂载: `/autoccfa`；本地盘输出: `/e3fast` |
+| LaTeX | `D:\project\autoccfa\tools\tectonic.exe`（0.15.0） |
+| WSL 配置 | `C:\Users\24796\.wslconfig`（memory=12GB, swap=8GB）— gem5 编译 OOM 事故后新建 |
+| 选题 | RVV 向量缓存时序信道刻画 + HPM/ML 可检性 + gem5 RVV 保真度审计 |
+| 投稿目标 | DAC 2027（截稿 2026-11-17 AoE），备选 DATE/ACSAC/HOST |
 
-## 当前进度
+## 成品
 
-### [2026-09-26] E1/E2 结果 + A2 量化曲线 ✅（数字均为真实测量）
+- **论文**: `D:\project\autoccfa\paper\autoccfa_paper\main.pdf`（7页 IEEE 双栏；tectonic 编译通过；28条引用全解析；页面逐页目检通过）
+- **Overleaf 上传指南**: `D:\project\autoccfa\paper\autoccfa_paper\UPLOAD_GUIDE.md`
+- **MD 主稿**: `D:\project\autoccfa\paper\autoccfa_paper.md`
+- **项目总览**: `D:\project\autoccfa\README.md`
 
-- **E1**（8/12）: 全变体 guess_rate=1.0 [0.988,1.0]，gap=85cyc，MI=1.0，m4 footprint=1行（LMUL 不缩放足迹=保真度发现#2）
-- **A2 计时器量化**（E1 离线）: 粒度≤85cyc 猜测率恒 1.0；≥128cyc 骤降至随机 1.6%——临界点=hit/miss gap，物理自洽 → "计时器粒度=RISC-V 防御旋钮"
-- **E2**（13/15）: L2 128k/512k 稳健（gap 85）；assoc4 无影响；**RandomRP: guess 0.9969 + footprint 均值 9.4/max 17（随机替换引入多热行噪声）**；**L2=1MB: 驱逐失效但信道未消**（gap 85→16，L1 vs L2 命中差，argmin 仍 100%）→ "驱逐缓冲区 vs 容量"是协议关键参数
-- 产物: `experiments/e1_leakage/{summary,timer_quant}.*.csv`, `experiments/e2_geometry/summary.*.csv`
-- 大纲已写: `docs/05_paper_outline.md`（C1信道/C2检测/C3保真度 + 7个分析作业）
+## 最终结果数字（全部真实测量，产物在 experiments/）
 
-### [2026-09-26] E1 泄露刻画首批结果（8/12 runs, 全部真实数据）✅
+### 信道刻画（E1, 12 runs）
+- 全部 6 变体（scalar + vle e16/m1, e32/m1, e64/m1, m2, m4）× 2 seeds: **guess_rate = 1.0**（320/320, Wilson 95% CI [0.988,1.0]）
+- hit=21 / miss=106 cycles, gap=85, Cohen's d −2.60~−2.75, MI=1.0
 
-- **全部变体 guess_rate=1.0**（95% CI [0.988,1.0]）: scalar / vec_e64m1 / e64m2 / e64m4
-- hit/miss gap = 85 cyc（21 vs 106），Cohen's d ≈ -2.6~-2.75，归一化 MI = 1.0
-- **足迹发现**: m4（架构 128B）热行仍只有 1 条 → **gem5 v24.1 向量加载足迹不随 LMUL 缩放**（保真度发现 #2，与 gather bug 并列）
-- 论文叙事定型: 信道刻画 + HPM/ML 检测 + gem5 RVV 安全面向保真度审计
-- 分析产物: `experiments/e1_leakage/summary.summary.csv` / `analysis.guest.csv`
+### 鲁棒性（E2 15 runs + A2 离线量化）
+- 计时器量化: ≤85cyc 猜测率恒 1.0；≥128cyc → 随机（1.6%）——临界点=hit/miss gap
+- L2 128K/512K + assoc4: 稳健（gap 85）；L2=1M: gap 85→16（驱逐失效但 L1/L2 残差仍在，argmin 仍 100%）
+- RandomRP: guess 0.9938–0.9969，热行 1→9.2–9.4 均值/17–19 最大
 
-1. ✅ 方法论阅读 + 环境审计 + gem5 v24.1 容器编译（`gem5build` 容器）
-2. ✅ 文献侦察：攻击侧+检测侧报告（`lit/01`、`lit/02`），gap 矩阵（`docs/02`）
-3. ✅ **选题决策定稿（`docs/04_decision.md`）**: RVV矢量缓存时序信道系统刻画 + HPM/ML可检性 → 投 DAC 2027（2026-11-17 截稿）
-4. ✅ 冒烟测试四发现（`docs/03_smoke_findings.md`）: fence测量方法学、vle装线✓、**gem5 vluxei gather 功能缺陷**（数据错误+不装线，论文级发现）、向量指令icache异常
-5. ✅ 冒烟攻击数据: 标量 320/320=100%；vle e64m1 320/320=100%；e64m4 320/320=100%
-6. ✅ harness: run_exp.py（并行run管理）/parse_stats.py（v24字段名适配）/leakage_metrics.py/train_detector.py
-7. ⏳ **主实验矩阵运行中**（后台）: E1泄露刻画12runs + E2几何敏感性15runs + E3检测24runs，产物到 `experiments/e1_leakage|e2_geometry|e3_detection/`
-8. ⏸ 分析+消融+绘图+写作+LaTeX+归档
+### 检测（E3 24 runs, HPM 每 1e5 cycles 快照, 84 特征）
+- 二分类（attack vs benign, 9v15）5折CV: LogReg/RF/CNN 全部 acc=F1=AUC=TPR@FPR1%=1.0
+- 多类归因（8类×3seeds）: macro-F1=0.354（如实报告）
+- 主特征: writebacks 方差、icache 压力（向量代码 icache 取指 4.4×: 5.41M vs 1.22M）、分支误预测率
 
-## 决策记录
+### 保真度审计（gem5 v24.1 RVV, 论文发现）
+- F1: **vluxei64 gather 功能损坏**（lane0 数据=0 应为1004；不装线 probe=134cyc；gather攻击=随机4/320）复现 `code/workloads/gather_debug3.c`
+- F2: **向量足迹不随 LMUL 缩放**（e64/m4 架构128B 应跨2行，实测恒1行）
+- F3: 向量代码 icache 取指 4.4× 异常
+- F4/F5（正面）: vle 数据/装线正确；rdcycle=精确周期
 
-### [2026-09-26] gem5 侧信道测量的四个关键技术事实（调试中确立）✅
+## 实验清单（51 runs 全部有 manifest+sha256）
 
-1. **O3 上测访存延迟必须用 fence**：无数据依赖时第二次 `csrr cycle` 被乱序提前执行，miss 惩罚不可见 → `csrr; ld; addi(dep); fence rw,rw; csrr` 模板（`wl_common.h: time_load`）
-2. **gem5 RISC-V 的 VLEN=256, ELEN=64**（`isa.cc:279` info），e64/m1 → vl=4（不是 8）
-3. **vluxei64 索引单位是元素(8字节)**：访问 `cand[s]`（第 s 条 64B 线）索引应为 `s*8`；decoy 索引必须指向已映射地址否则页错误 panic
-4. **`-nostdlib` 必须加 `-fno-builtin`**：否则 gcc 把手写循环识别为 strlen/memcpy 生成 libc 调用导致链接失败
-5. 输出函数 `print_u64` 不自带换行，行末必须显式 `print_nl()`（否则行被打碎解析失败）
+| 实验 | 规模 | 产物 |
+|------|------|------|
+| E1 泄露刻画 | 12 runs | `experiments/e1_leakage/`（summary/timer_quant CSV） |
+| E2 几何敏感性 | 15 runs | `experiments/e2_geometry/` |
+| E3 检测 | 24 runs | `experiments/e3_detection/`（analysis.hpm.csv 10581快照） |
+| 冒烟+调试 | 若干 | `experiments/smoke_*/`, `logs/` |
 
-### 关键事实记录（选题依据）
+## 关键技术事实（复用价值）
 
-- **DAC 2027 截稿: 2026-11-17 AoE**（距今约7.5周），会议2027-07 加州 San Jose → 定为初步主投稿目标
-- gem5 v24.1 **O3+RVV 支持**: release notes #1711 修复了向量指令投机执行断言 → O3+RVV+投机被官方支持
-- gem5 v24.1 **索引向量访存（硬件gather）完整实现**: `VlIndexOp::vluxei8/16/32/64_v`（`src/arch/riscv/isa/decoder.isa:705/796/887/978`）
-- gem5 RISC-V `rdcycle` 返回真实模拟周期 `curCycle()`，默认启用（`src/arch/riscv/isa.cc:428`）；`rdtime` 是秒级墙钟（无用）
-- 领先候选 Idea A: **RVV矢量扩展时序侧信道系统刻画 + RISC-V HPM/ML可检性**（工作稿 `D:\project\autoccfa\docs\02_idea_candidates.md`，规格书 `D:\project\autoccfa\docs\spec.md`）
+1. **O3 计时模板**: `csrr t0; ld; addi(dep); fence rw,rw; csrr t1` —— 无 fence 时第二次 csrr 被乱序提前执行，miss 不可见
+2. gem5 ticks≠cycles：1GHz → 1000 ticks/cycle（periodicStatDump 参数按 ticks）
+3. `-nostdlib` 必须 `-fno-builtin`（gcc 会把手写循环替换成 libc 调用）
+4. RVV: VLEN=256/ELEN=64 → e64/m1 的 vl=4；vluxei 索引单位=元素(8B)；无 libc 时 shebang/输出函数都易踩坑
+5. Windows git autocrlf 污染 Linux 脚本 → 容器内克隆
+6. 9p 挂载写大量小文件极慢 → gem5 stats 输出走容器本地盘，结束后 docker cp
 
-### [2026-09-26] gem5 -j14 编译把 WSL2 VM 压崩（OOM）✅
+## 遗留事项（给用户）
 
-**问题**: Docker Desktop 的 WSL2 VM 默认只分配宿主 50% 内存（16GB→8GB），`scons -j14` 多个 g++ 各占 1-1.5GB → OOM，daemon 500 失联
-**解决**: 新建 `C:\Users\24796\.wslconfig`（memory=12GB, swap=8GB, processors=14）→ `wsl --shutdown` → 重启 Docker Desktop；容器幸存（Exited 255 后 start 成功），`-j8` 恢复编译
-**经验教训**: gem5 构建并行度受 VM 内存约束（12GB 用 -j8 安全）；容器 FS 内容在 daemon 崩溃重启后存活
+- [ ] 论文人工审阅 + 导师意见（尤其贡献定位与相关工作的边界表述）
+- [ ] DAC 2027 注册与截稿确认（2026-11-17 AoE）
+- [ ] 可选增强: 投机向量访存原语（Spectre-gather）、防御评估（fence/way-pin）、更多 benign 负载、跨核竞争
+- [ ] C 盘只剩 ~3GB（98%）——与本项目无关（Docker vhdx 在 `D:\DockerData`），建议按你的《C盘清理评估》处理
+- [ ] gem5 gather bug 可考虑上游报 issue（复现脚本已备好）
 
-### 决策：gem5 只能在容器内克隆/构建，Windows 端 git 有 CRLF 污染
-
-**日期**: 2026-09-26
-**问题**: Windows 全局 git autocrlf 使克隆出的 gem5 shebang 行带 `\r`（`/usr/bin/env: 'python3\r': No such file or directory`），scons Kconfig 步骤报 Error 127
-**解决**: 在容器内重新克隆（Linux FS 无 CRLF 问题）；不改用户全局 git 配置
-**预防**: 以后所有在 Linux/容器内执行的脚本源码，一律在容器内创建或克隆，不在 Windows 侧写后再拷贝（若必须拷贝，用 `dos2unix` 处理）
-
-### 决策：Linux 实验环境走 Docker 而非 WSL2 原生发行版
-
-**日期**: 2026-09-25
-**背景**: gem5 无法在 Windows 原生构建；WSL 只有 docker-desktop 发行版
-**理由**: Docker Desktop 已装且有 neo4j 容器使用先例；用 `ubuntu` 容器即可获得 Linux 环境，无需新装 WSL 发行版
-**影响**: 所有 gem5/工具链命令在容器内执行；宿主机通过 volume 挂载 `D:\project\autoccfa`
-
-### 决策：方法设计不依赖 LLM API
-
-**日期**: 2026-09-25
-**背景**: 用户确认无 LLM API
-**影响**: 候选 idea 筛选时排除依赖 LLM 调用的方案；本地可用算力 = CPU + GTX 1650 4GB (torch 2.5.1)
-
-## 相关文件路径
+## 项目方法论文件
 
 | 文件 | 路径 |
 |------|------|
 | 项目方法论(Sibyl) | `D:\Obsidian\notes\笔记\beansugar\vibe coding\vibe方法论\基于Sibyl Research System实践方法论.md` |
 | 项目管理方法论 | `D:\Obsidian\notes\笔记\beansugar\vibe coding\vibe方法论\科研项目管理方法论.md` |
 | MD转LaTeX方法论 | `D:\Obsidian\notes\笔记\beansugar\vibe coding\vibe方法论\2025-04-29-md-to-latex-converter.md` |
-| 用户背景memory | `D:\Obsidian\notes\笔记\beansugar\vibe coding\memory\2026-07-29 VerilogLAVD学习状态与进组技术栈.md` |
-| VerilogLAVD 项目 | `D:\project\VerilogLAVD` |
+| 用户背景 | `D:\Obsidian\notes\笔记\beansugar\vibe coding\memory\2026-07-29 VerilogLAVD学习状态与进组技术栈.md` |
+| 文献报告 | `D:\project\autoccfa\lit\01_attack_landscape.md`, `lit\02_defense_detection_landscape.md` |
+| 决策/大纲/审计 | `D:\project\autoccfa\docs\04_decision.md`, `docs\05_paper_outline.md`, `docs\06_audit_table.md` |
