@@ -24,6 +24,14 @@
 
 ## 当前进度
 
+### [2026-09-26] E1 泄露刻画首批结果（8/12 runs, 全部真实数据）✅
+
+- **全部变体 guess_rate=1.0**（95% CI [0.988,1.0]）: scalar / vec_e64m1 / e64m2 / e64m4
+- hit/miss gap = 85 cyc（21 vs 106），Cohen's d ≈ -2.6~-2.75，归一化 MI = 1.0
+- **足迹发现**: m4（架构 128B）热行仍只有 1 条 → **gem5 v24.1 向量加载足迹不随 LMUL 缩放**（保真度发现 #2，与 gather bug 并列）
+- 论文叙事定型: 信道刻画 + HPM/ML 检测 + gem5 RVV 安全面向保真度审计
+- 分析产物: `experiments/e1_leakage/summary.summary.csv` / `analysis.guest.csv`
+
 1. ✅ 方法论阅读 + 环境审计 + gem5 v24.1 容器编译（`gem5build` 容器）
 2. ✅ 文献侦察：攻击侧+检测侧报告（`lit/01`、`lit/02`），gap 矩阵（`docs/02`）
 3. ✅ **选题决策定稿（`docs/04_decision.md`）**: RVV矢量缓存时序信道系统刻画 + HPM/ML可检性 → 投 DAC 2027（2026-11-17 截稿）
