@@ -27,11 +27,22 @@
 1. ✅ 读完三份方法论（Sibyl 19阶段 / 科研项目管理 / md-to-latex-converter）
 2. ✅ 确认方向: RISC-V 芯片安全 → 微架构侧信道；投稿目标调研后定
 3. ✅ 环境审计: Python包/Docker/WSL/LaTeX/GPU 盘点完成
-4. ⏳ gem5 RISC-V 冒烟测试（时序可观测性硬门槛）
-5. ⏳ 文献调研（scout）
-6. ⏸ 选题决策 / 平台搭建 / 主实验 / 消融 / 绘图 / 写作 / LaTeX / 归档
+4. ✅ gem5 v24.1.0.0 源码获取（容器内克隆，Windows克隆有CRLF污染shebang问题）
+5. ⏳ gem5 RISCV gem5.opt 编译中（容器 `gem5build`，detached scons，日志 `D:\project\autoccfa\logs\build_log2.txt`）
+6. ✅ RISC-V工具链 riscv64-unknown-elf-gcc 13.2.0 容器内就绪
+7. ✅ 冒烟测试代码: `D:\project\autoccfa\code\smoke\smoke.c`（已编译过）+ `run_se.py`（O3+cache SE配置）
+8. ✅ 攻击侧文献侦察完成 → `D:\project\autoccfa\lit\01_attack_landscape.md`（22卡片+拥挤区+gap清单）
+9. ⏳ 防御/检测侧文献侦察（后台agent运行中）
+10. ⏸ 选题决策 / 平台搭建 / 主实验 / 消融 / 绘图 / 写作 / LaTeX / 归档
 
 ## 决策记录
+
+### 决策：gem5 只能在容器内克隆/构建，Windows 端 git 有 CRLF 污染
+
+**日期**: 2026-09-26
+**问题**: Windows 全局 git autocrlf 使克隆出的 gem5 shebang 行带 `\r`（`/usr/bin/env: 'python3\r': No such file or directory`），scons Kconfig 步骤报 Error 127
+**解决**: 在容器内重新克隆（Linux FS 无 CRLF 问题）；不改用户全局 git 配置
+**预防**: 以后所有在 Linux/容器内执行的脚本源码，一律在容器内创建或克隆，不在 Windows 侧写后再拷贝（若必须拷贝，用 `dos2unix` 处理）
 
 ### 决策：Linux 实验环境走 Docker 而非 WSL2 原生发行版
 
