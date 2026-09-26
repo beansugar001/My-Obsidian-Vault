@@ -18,7 +18,7 @@
 | 项目根目录 | `D:\project\autoccfa`（含 README.md 总览） |
 | 主环境 | `D:/Anaconda2024/python.exe` + `PYTHONPATH=D:/pythonpackage/py312-packages` |
 | 深度学习环境 | `C:/Users/24796/.conda/envs/thesis/python.exe`（torch 2.5.1+cu121, GTX 1650） |
-| gem5 容器 | `gem5build`（ghcr.io/gem5/ubuntu-24.04_all-dependencies，gem5 v24.1.0.0 源码编译 `scons -j8`，RISC-V 工具链 13.2.0） |
+| gem5 容器 | **已删除（2026-09-26 用户批准方案3）**——原 `gem5build` 容器（gem5 v24.1.0.0 源码编译 `scons -j8` + riscv64-unknown-elf-gcc 13.2.0）已随镜像/发行版/vhdx 全部清除，D 盘回收 21.7GB。**重建: 运行 `D:\project\autoccfa\scripts\rebuild_env.sh`（一键脚本，含全部踩坑修复），约 1-1.5h** |
 | 容器内路径 | gem5: `/gem5src`；项目挂载: `/autoccfa`；本地盘输出: `/e3fast` |
 | LaTeX | `D:\project\autoccfa\tools\tectonic.exe`（0.15.0） |
 | WSL 配置 | `C:\Users\24796\.wslconfig`（memory=12GB, swap=8GB）— gem5 编译 OOM 事故后新建 |
@@ -74,6 +74,7 @@
 
 ## 遗留事项（给用户）
 
+- [x] 2026-09-26 环境清理: 用户批准方案3，已删 gem5build 容器+全部镜像+docker-desktop 发行版+docker_data.vhdx（21.7GB），D 盘 38GB→59GB；Docker Desktop 已重启为全新空环境；一键重建脚本 `D:\project\autoccfa\scripts\rebuild_env.sh`
 - [ ] 论文人工审阅 + 导师意见（尤其贡献定位与相关工作的边界表述）
 - [ ] DAC 2027 注册与截稿确认（2026-11-17 AoE）
 - [ ] 可选增强: 投机向量访存原语（Spectre-gather）、防御评估（fence/way-pin）、更多 benign 负载、跨核竞争
