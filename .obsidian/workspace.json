@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
+                "file": "beansugar/vibe coding/memory/2026-09-26 CY63300项目记忆.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "STM32F103C8T6_一日入门完整笔记 (1)"
+              "title": "2026-09-26 CY63300项目记忆"
             }
           }
         ]
@@ -209,8 +209,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70fe84cdd4b67d56",
+  "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
+    "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
     "beansugar/vibe coding/memory/2026-09-26 CY63300项目记忆.md",
     "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md.tmp.32000.2e68291f9661",
@@ -220,7 +221,6 @@
     "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
     "beansugar/vibe coding/rules/superpowers.md",
     "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
-    "beansugar/课程笔记/STM32F103C8T6_一日入门完整笔记 (1).md",
     "beansugar/课程笔记/stm32.md",
     "beansugar/课程笔记/cs224n",
     "beansugar/vibe coding/prompt/论文阅读.md",
