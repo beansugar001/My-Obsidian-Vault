@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
+                "file": "beansugar/vibe coding/memory/2026-09-26 CY63300项目记忆.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "科研项目管理方法论"
+              "title": "2026-09-26 CY63300项目记忆"
             }
           }
         ]
@@ -211,6 +211,8 @@
   },
   "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
+    "beansugar/vibe coding/memory/2026-09-26 CY63300项目记忆.md",
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md.tmp.32000.2e68291f9661",
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md.tmp.32000.e705cd294db7",
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md",
@@ -228,7 +230,6 @@
     "beansugar/vibe coding/memory/HowToFish自瞄Mod开发日志-2026-08-28.md",
     "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
-    "beansugar/vibe coding/vibe方法论/科研项目管理方法论.md",
     "beansugar/论文笔记/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/_概念/14-安全与鲁棒性/SecFSM.md",
     "beansugar/论文笔记/14-安全与鲁棒性/VerilogLAVD.md",
@@ -255,7 +256,6 @@
     "beansugar/vibe coding/skills/每日论文/paper-reader.zip",
     "beansugar/课程笔记",
     "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/write_artifact.py",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/spawn_subagent.py",
-    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/record_activation.py"
+    "beansugar/vibe coding/skills/superpowers/superpowers-workflow/scripts/spawn_subagent.py"
   ]
 }
