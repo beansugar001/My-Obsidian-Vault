@@ -77,7 +77,7 @@ RISC-V 复用表中 Pad0 的功能 0 是 `jtag_tdi`，功能 1 是 `I2C_SCL`；P
 
 ## 推荐测试流程
 
-1. 板子 USB-C 供电，DAPLink 保持 U5 JTAG 接线，OpenOCD 窗口保持运行。
+1. 板子 USB-C 供电，DAPLink 保持 U5 JTAG 接线。运行 flash.bat 前先停止手动启动的 OpenOCD。
 2. H10-1/2 保持短接，使用默认的 `i2c_diag.bin`（Pad8/Pad9）烧录到地址 `0x0`。
 3. 烧录完成后重新复位运行；使用默认 Pad8/Pad9 时不需要拆 H10。
 4. 重新上电，H2 接外部 I²C 从设备：SCL→H2-3，SDA→H2-4，GND→H2-2，设备电源→H2-1/VDD_IO。
@@ -106,4 +106,13 @@ I2C_ADDR     0x24
 I2CM_CTRL    0x28
 I2C_STATE    0x3C
 ```
+
+
+## 2026-09-27 烧录实测
+
+- 使用 flash.bat 在 1000 kHz 烧录 7204 字节，verify_image 在 0x0C48 或 0x184E 报单字节不一致。
+- 使用 flash_100k.bat 将 JTAG 频率降到 100 kHz，仍在 0x184E 报同样的不一致。
+- 使用 flash_chip_100k.bat（FLS_CTL 的 rwe_sel=3，整片擦除）后，OpenOCD 输出 'verified 7204 bytes'，脚本输出 '[2/3] Flash OK. verify passed.'。
+- 因为执行了整片擦除，原 Flash 程序已被替换为 i2c_diag.bin。此结果仅证明烧录及读回校验通过，尚未证明 I2C 读写通过。
+- 后续：断电接回四针 OLED 到 H2，重新上电，CH340 串口 115200-8-N-1，先执行 d 再执行 b，记录扫描地址；预计常见 OLED 地址为 0x3C 或 0x3D。
 
