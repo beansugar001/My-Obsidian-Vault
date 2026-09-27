@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/memory/CY63300芯片测试报告组/09-RISC-V I2C测试接线与流程.md",
+                "file": "beansugar/vibe coding/memory/CY63300芯片测试报告组/06-CY63300调试器连接判定.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "09-RISC-V I2C测试接线与流程"
+              "title": "06-CY63300调试器连接判定"
             }
           }
         ]
@@ -211,14 +211,14 @@
   },
   "active": "624c9087ccf83ac4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/06-CY63300四小时学习路线.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/08-软件位置与操作手册.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/09-RISC-V I2C测试接线与流程.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.svg",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/README.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/06-CY63300调试器连接判定.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/08-软件位置与操作手册.md.tmp.22448.cc3e360a7473",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/07-接线图.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/06-CY63300四小时学习路线.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/README.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.svg",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.png",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/03-引脚与封装大全.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/02-数字设计文档教科书式精讲.md",
@@ -248,7 +248,6 @@
     "beansugar/论文笔记/Structure-Aware Local Differential Privacy for Multimodal Collaborative Inference in Federated  Learning Systems.md",
     "beansugar/论文笔记/WorldMM.md",
     "beansugar/论文笔记/BrainUICL 精读笔记.md",
-    "beansugar/vibe coding/memory/HowToFish自瞄Mod开发日志-2026-08-28.md",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
     "beansugar/论文笔记/BrainUICL_assets/table4_ablation.png",
     "beansugar/论文笔记/BrainUICL_assets/table3_main_comparison.png",
