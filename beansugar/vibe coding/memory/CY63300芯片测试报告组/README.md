@@ -39,6 +39,8 @@ CY63300（杭州旗捷，安全耗材/加密SoC，110nm，裸片2052×1485µm）
 
 ### 2. 关于"前任 I2C 跑不通"——五个头号嫌疑（详见报告04）
 
+**现场条件（2026-09-27 确认）：不知道卡在哪一步、不知道从机是什么、没有示波器。** 为此已备好专用诊断固件 `D:\project\新建文件夹\test\i2c_diag\`（README 有完整决策树）：串口菜单四招——GPIO 线电平检查、万用表慢翻转验走线、**软件位扫全地址扫描**（绕开控制器，直接切割"电气侧 vs 控制器侧"）、硬件控制器扫描。第一小时就该跑它。
+
 1. **时钟门控没开**：`PERI_CLKEN@0x4002180C` 的 bit5 是 I2C 时钟使能，**复位值=0（关）**。不开它 I2C 寄存器写了也是白写。
 2. **引脚复用没配/配错**：I2C_SCL/SDA 不是默认引脚。RISCV 版 PAD0 复位功能是 `jtag_tdi`；I2C 要靠 GPIO 的 `AFR1@偏移0x68` 显式选功能（如 PAD8/9 上 I2C 是 AF 值 3）。还有一条暗规则：**同一 IP 复用在多个 pad 时，pad 编号小的优先**——如果 PAD0/PAD1 也被配成了 I2C 功能，总线会悄悄跑到 PAD0/PAD1 上去。
 3. **开漏没开 + 上拉缺失**：GPIO 有独立的开漏配置寄存器 `Gpio_osod_type@0x58`。I2C 是开漏线与，若配成推挽，从机拉不高总线，读出来全 0xFF 或 NACK。外部 4.7k 上拉也要实测在不在。
@@ -51,15 +53,22 @@ CY63300（杭州旗捷，安全耗材/加密SoC，110nm，裸片2052×1485µm）
 - H4 是主扩展排针：MISO/MOSI/CLK/CS/**SCL(脚8)/SDA(脚9)**/UART0_RX/TX/PADMUX/RST/XTAL_OUT/XTAL_IN/VDD_IO/GND。H7 是 JTAG 排针：TCK/TDO/TMS/TDI/PAD0/GND。
 - 出厂测试要求：所有引脚对 GND 加 -100µA 恒流，二极管压降应在 -1.0 ~ -0.2V —— 这也是你万用表快速查焊点/查线的好方法。
 
-### 4. 尚未确认、醒来后要核对的开放问题
+### 4. 工程现状（2026-09-27 更新）
 
-- [ ] 前任 I2C 具体卡在哪一步（发的什么、从机是什么器件、什么现象）？——报告04按"全失败模式"覆盖，但知道现象能直接跳到对应条目
+- **完整固件工程在 `D:\project\新建文件夹\test\`**（73 个文件：main.c/scheme.c/start.S/trap_entry.S/link.lds/Makefile + 全套 lib + coremark/benchmarks/spec_benchmarks/vuln_tests）。根目录的 test.zip 只是它的不完整快照，以 test/ 目录为准。
+- test.zip 快照与完整工程的差异：快照缺 main.c、scheme.c/h、start.S、trap_entry.S、link.lds、根 Makefile、uart.c、xprintf.c、sm3.c、sbrk.c、utils.c、trap_handler.c、spec_benchmarks/、vuln_tests/；且快照里 `risc_time.c` 是 0 字节（完整工程里有，用 mcycle CSR 实现）。
+- 完整工程里同样**没有任何 I2C 代码**（仅中断号枚举 HDURiscv_IRQn_I2C=3）——前任的 I2C 尝试不在这个仓库里。main.c 是协议测试入口（SM3 签名/批量验签/TBF）。
+- 已新增 `test/i2c_diag/` 诊断固件（i2c_diag.c + Makefile + README），无示波器排 I2C 用。
+
+### 5. 尚未确认、需要上机核对的开放问题
+
+- [ ] 前任 I2C 卡点/从机型号/地址——用 i2c_diag 的位扫直接回答"总线上有没有活物"
 - [ ] 测试板这颗是 tiny_riscv 还是 E902 版？（读 NVR1 word5 或直接看 openocd 是 JTAG-DP 还是 SWD 能否连通）
-- [ ] 底板 12MHz 晶振接在 OSCIN/OSCOUT 上，但数字文档只写内部 RCH/RCL——晶振是备用/精度模式还是接错？建议示波器量 OSCIN 有无起振
+- [ ] 底板 12MHz 晶振接在 OSCIN/OSCOUT 上，但数字文档只写内部 RCH/RCL——晶振是备用/精度模式还是接错？建议量 OSCIN 有无起振
 - [ ] 设计文档目录提到"I2C FeedBack DELAY 说明"但正文缺失（4.4节书签错误），从机时钟拉伸的具体行为只能看 RTL 或实测
-- [ ] test.zip 是残缺快照：无 main.c/start.S/link.lds/uart.c/sm3.c，`risc_time.c` 是 0 字节空文件——完整工程需要找前任要
+- [ ] SDA/SCL 在 COB 板上到底邦到哪两个 PAD（PAD8/9 还是 PAD0/1）——i2c_diag 两组引脚各扫一遍即可确认
 
-### 5. 材料可信度备注
+### 6. 材料可信度备注
 
 - 数字设计文档目录页书签大量"错误!未定义书签"，目录页码不可用；正文章节实际是 4.1~4.24（I2C 在 **4.19**，SPI 在 4.20），报告02里给了真实章节地图。
 - 文档有版本混杂痕迹：功能总表写"4组GPIO"、GPIO 章节写"3组×6脚"（实物 16 个 PAD，3 组是对的）；I/O 复用表 ARM 版和 RISCV 版各一张，查引脚时先确认手里这颗是哪个版本。
