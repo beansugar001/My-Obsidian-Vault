@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "d94a367f2ad43a66",
+        "id": "a0502dff252f2849",
         "type": "tabs",
         "children": [
           {
-            "id": "624c9087ccf83ac4",
+            "id": "db687d117a9f4fa4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "beansugar/vibe coding/memory/CY63300芯片测试报告组/11-设计文档I2C全集精讲.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "11-设计文档I2C全集精讲"
+              "title": "新标签页"
             }
           }
         ]
@@ -209,20 +205,22 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "624c9087ccf83ac4",
+  "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/10-外设写入对照实验SOP.md",
-    "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/tinyriscv_teacher_brief.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/task_plan.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/README.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/12-CY63300_I2C阶段测试汇报.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/11-设计文档I2C全集精讲.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/notes.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/JTAG排查经验.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/README.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/task_plan.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/tinyriscv_teacher_brief.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.svg",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/10-外设写入对照实验SOP.md",
+    "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/06-CY63300调试器连接判定.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/06-CY63300四小时学习路线.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/08-软件位置与操作手册.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/09-RISC-V I2C测试接线与流程.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.svg",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/08-软件位置与操作手册.md.tmp.22448.cc3e360a7473",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/07-接线图.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.png",
@@ -247,8 +245,6 @@
     "beansugar/vibe coding/memory/2026-09-25 autoccfa RISC-V侧信道CCFA论文.md",
     "beansugar/vibe coding/vibe方法论/基于Sibyl Research System实践方法论.md",
     "beansugar/vibe coding/vibe方法论/2025-04-29-md-to-latex-converter.md",
-    "beansugar/vibe coding/rules/superpowers.md",
-    "beansugar/课程笔记/知识图谱/Neo4j 本地知识图谱学习环境.md",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
     "beansugar/论文笔记/BrainUICL_assets/table4_ablation.png",
     "beansugar/论文笔记/BrainUICL_assets/table3_main_comparison.png",
