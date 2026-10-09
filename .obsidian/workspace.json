@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/memory/CY63300芯片测试报告组/15-CY63300常用命令行与注释_20261009.md",
+                "file": "beansugar/vibe coding/memory/CY63300芯片测试报告组/14-CY63300仪器测试详细清单_20261009.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15-CY63300常用命令行与注释_20261009"
+              "title": "14-CY63300仪器测试详细清单_20261009"
             }
           }
         ]
@@ -211,9 +211,9 @@
   },
   "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/15-CY63300常用命令行与注释_20261009.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/14-CY63300仪器测试详细清单_20261009.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/13-CY63300_JTAG故障与诊断固件状态_20260929.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/15-CY63300常用命令行与注释_20261009.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/12-CY63300_I2C阶段测试汇报.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/11-设计文档I2C全集精讲.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/notes.md",
