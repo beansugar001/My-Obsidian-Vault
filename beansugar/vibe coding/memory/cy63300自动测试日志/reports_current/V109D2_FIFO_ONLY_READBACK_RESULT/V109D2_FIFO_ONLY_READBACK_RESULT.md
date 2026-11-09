@@ -1,0 +1,19 @@
+# V109D2 FIFO-only 独立只读确认
+
+- 状态：`PASS_FIFO_ENABLED_I2C_DISABLED_STABLE`
+- 唯一 TAP/IDCODE：`riscv.cpu` / `0x1E200A6F`
+- CPU 最终 halted，DMSTATUS=`0x00430382`
+- 目标 MMIO 写次数：0；OpenOCD 新进程、独立会话。
+- PERI_CLKEN=`0x21`，PERI_RST=`0`
+- GPIOB AF_DG=`0x6C0`、IDR=`0x2C`，Pad8/Pad9 均释放且采样高。
+- MODULE_CTRL 连续三次=`0x0E`：bit1只读保留位为1，TX_FIFO_EN=1、RX_FIFO_EN=1、I2C_EN=0。
+- FIFO_STA=`0x5`（RX/TX FIFO empty）；STATUS=`0`（空闲）；RAW_INTR_STA=`0`。
+- CLK_DIV0/1=`0x20/0x30`；MODE=Master(1)；ADDR=`0x3C`；MCTR=`0x2`（TX FIFO 空时自动 STOP）；HOLD=`5`。
+
+证据说明：V109D 第三次写后回读 `0xE` 属于硬件正常保留位表现，独立复查确认配置生效。当前尚未置 I2C_EN，也未写 TX FIFO，不存在已开始的总线事务。下一阶段可以在前置条件复核后单独使能 I2C，再读回 idle 与两线电平；随后再做最小地址/ACK试验。
+
+原始运行目录：`C:\Users\24796\Documents\组\CY63300_I2C_BLACKBOX\runs_local_v109\BBX_V109D2_FIFO_ONLY_READBACK_01_20261109_211457_160691`
+
+- combined log SHA256：`5D3A5088B5347A6385B0CDCD7293DAB6D7637796ABB32378110AE76F1942668C`
+- stderr SHA256：`066DCD0434B26A4EF4F0EB34DCCF1292CBA3CD1809556208358020FD132EC6B1`
+- marker、命令 JSON 和完整原始 OpenOCD 输出均保留并归档。

@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V109D2_FIFO_ONLY_READBACK_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_FIFO_ENABLED_I2C_DISABLED_STABLE",
+  "halt_count": 1,
+  "target_mmio_write_count": 0,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "066DCD0434B26A4EF4F0EB34DCCF1292CBA3CD1809556208358020FD132EC6B1",
+    "openocd.combined.log": "5D3A5088B5347A6385B0CDCD7293DAB6D7637796ABB32378110AE76F1942668C"
+  },
+  "finished_local": "2026-11-09T21:14:59.358655+08:00"
+}

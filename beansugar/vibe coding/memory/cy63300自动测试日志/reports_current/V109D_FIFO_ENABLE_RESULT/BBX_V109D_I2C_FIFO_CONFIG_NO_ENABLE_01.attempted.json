@@ -1,0 +1,23 @@
+{
+  "stage": "BBX_V109D_I2C_FIFO_CONFIG_NO_ENABLE_01",
+  "created_local": "2026-11-09T21:13:29.625512+08:00",
+  "target_mmio_write_budget": 3,
+  "allowlist": [
+    {
+      "address": "0x40002828",
+      "value": "0x00000002"
+    },
+    {
+      "address": "0x40002824",
+      "value": "0x0000003C"
+    },
+    {
+      "address": "0x40002800",
+      "value": "0x0000000C"
+    }
+  ],
+  "halt_request_budget": 1,
+  "retry": "none",
+  "I2C_EN_written": false,
+  "FIFO_data_written": false
+}

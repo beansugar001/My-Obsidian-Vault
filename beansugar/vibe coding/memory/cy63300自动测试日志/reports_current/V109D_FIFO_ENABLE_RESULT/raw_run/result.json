@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V109D_I2C_FIFO_CONFIG_NO_ENABLE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "3C38BD74FDAEAAF7EE9F6962466A9D55BB1251915FB8C35C166CD9C9CF17C16A",
+    "openocd.combined.log": "6CDE065206BB8CBC93338B679FA83556CA1E36CDA39F7F8FFE172894715CF24E"
+  },
+  "finished_local": "2026-11-09T21:13:32.096767+08:00"
+}

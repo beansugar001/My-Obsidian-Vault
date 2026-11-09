@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V109B_I2C_CLOCK_GATE_BASELINE_01",
+  "created_local": "2026-11-09T21:06:13.884691+08:00",
+  "target_mmio_write_budget": 1,
+  "only_target_write": {
+    "address": "0x4002180C",
+    "value": "0x00000021"
+  },
+  "halt_request_budget": 1,
+  "retry": "none"
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V109D2_FIFO_ONLY_READBACK_01",
+  "created_local": "2026-11-09T21:14:57.160691+08:00",
+  "target_mmio_write_budget": 0,
+  "operations": "SBA reads only; DMI configuration for SBA reads only",
+  "halt_request_budget": 1,
+  "retry": "none"
+}
