@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V109F_OLED_SINGLE_CONTROL_BYTE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "0B7200A7B8469062579963EFB5C8218FEABA0A834E852358A1EA7BC5691F2D56",
+    "openocd.combined.log": "FB251328A9C101137FD729CD12056D61B5459F414F0896E76264BF0204CCFEF8"
+  },
+  "finished_local": "2026-11-09T21:26:04.965801+08:00"
+}

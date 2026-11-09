@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V109E_I2C_ENABLE_IDLE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "628812043CFDC4F7846FD2D9D299F5EE9FDC187FAD585ECC152C9A1243CBE116",
+    "openocd.combined.log": "C63D6E0BA13DC33CCC0FF0317ADF4AC1F4DDFB5F84092DA9F36E4967C02FCF13"
+  },
+  "finished_local": "2026-11-09T21:18:15.271601+08:00"
+}

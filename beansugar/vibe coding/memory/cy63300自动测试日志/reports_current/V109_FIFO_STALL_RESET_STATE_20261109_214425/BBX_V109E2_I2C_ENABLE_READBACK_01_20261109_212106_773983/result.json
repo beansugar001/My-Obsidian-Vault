@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V109E2_I2C_ENABLE_READBACK_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_I2C_EN_ON_IDLE_FIFO_EMPTY_LINES_HIGH",
+  "halt_count": 1,
+  "target_mmio_write_count": 0,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "6A2DE11888AE28CE2ECD3DCC94DD936BB3572456386823B94F5F926876D34A59",
+    "openocd.combined.log": "DBF7E3058ABAA436E0F44BB3DF9EC5F0188FC8E4691DE72BF9426201B308FBEC"
+  },
+  "finished_local": "2026-11-09T21:21:07.924080+08:00"
+}

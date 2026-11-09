@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V109E2_I2C_ENABLE_READBACK_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/v109e2_i2c_enable_readonly.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T21:21:06.773983+08:00",
+  "timeout_s": 120,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\v109e2_i2c_enable_readonly.tcl": "D769E0C6DADA525527CE4CB6E52E7AD544F055A0489A1EEE4F29A6A127DCD4B3",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\run_v109e2_i2c_enable_readonly.py": "F77FCF7BEC442FEED7690D392532B33D18ECE7B255A198F8A89C05FF6597A2C0"
+  }
+}

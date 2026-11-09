@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V109G_I2C_SOFT_RESET_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 2,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "3C194021E88423A3098E755B2E66D54C21EAC712A036B1BC1A82E364B9363A06",
+    "openocd.combined.log": "76E1E7F03E03716CC69B218F5CD512506CF0CF5B2E4095F68104028E0D2C8150"
+  }
+}

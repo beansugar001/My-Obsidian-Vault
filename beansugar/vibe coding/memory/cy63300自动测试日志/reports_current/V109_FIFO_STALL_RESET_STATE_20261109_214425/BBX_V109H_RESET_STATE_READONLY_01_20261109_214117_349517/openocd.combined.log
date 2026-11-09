@@ -1,0 +1,75 @@
+
+--- STDERR ---
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4cc0680a
+Info : gdb port disabled
+V109H_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4cc0680a
+gdb port disabled
+
+V109H_INIT_END
+V109H_CPU_INITIAL=running
+V109H_HALT_REQUEST=once
+V109H_CPU_FINAL=halted
+V109H_DMSTATUS=0x00430382
+V109H_SBCS label=PREFLIGHT value=0x20040404
+V109H_SBCS label=PERI_RST_1_PRE value=0x20040404
+V109H_DMI_READ_SETUP label=PERI_RST_1_READ_MODE reg=0x38 value=0x20140404
+V109H_SBCS label=PERI_RST_1_MODE value=0x20140404
+V109H_DMI_READ_SETUP label=PERI_RST_1_ADDRESS reg=0x39 value=0x40021810
+V109H_SBCS label=PERI_RST_1_DONE value=0x20140404
+V109H_DMI_READ_SETUP label=PERI_RST_1_RETURN_IDLE reg=0x38 value=0x20040404
+V109H_SBCS label=PERI_RST_1_RETURN_IDLE_CHECK value=0x20040404
+V109H_MMIO_READ label=PERI_RST_1 addr=0x40021810 value=0x00000020
+V109H_SBCS label=PERI_RST_2_PRE value=0x20040404
+V109H_DMI_READ_SETUP label=PERI_RST_2_READ_MODE reg=0x38 value=0x20140404
+V109H_SBCS label=PERI_RST_2_MODE value=0x20140404
+V109H_DMI_READ_SETUP label=PERI_RST_2_ADDRESS reg=0x39 value=0x40021810
+V109H_SBCS label=PERI_RST_2_DONE value=0x20140404
+V109H_DMI_READ_SETUP label=PERI_RST_2_RETURN_IDLE reg=0x38 value=0x20040404
+V109H_SBCS label=PERI_RST_2_RETURN_IDLE_CHECK value=0x20040404
+V109H_MMIO_READ label=PERI_RST_2 addr=0x40021810 value=0x00000020
+V109H_SBCS label=PERI_RST_3_PRE value=0x20040404
+V109H_DMI_READ_SETUP label=PERI_RST_3_READ_MODE reg=0x38 value=0x20140404
+V109H_SBCS label=PERI_RST_3_MODE value=0x20140404
+V109H_DMI_READ_SETUP label=PERI_RST_3_ADDRESS reg=0x39 value=0x40021810
+V109H_SBCS label=PERI_RST_3_DONE value=0x20140404
+V109H_DMI_READ_SETUP label=PERI_RST_3_RETURN_IDLE reg=0x38 value=0x20040404
+V109H_SBCS label=PERI_RST_3_RETURN_IDLE_CHECK value=0x20040404
+V109H_MMIO_READ label=PERI_RST_3 addr=0x40021810 value=0x00000020
+V109H_PERI_RST_TRIPLE=0x00000020,0x00000020,0x00000020
+V109H_PERI_RST_I2C_BIT5=1
+V109H_SBCS label=FINAL value=0x20040404
+V109H_FINAL_SBCS rc=0 value=537134084
+V109H_RESULT=PASS_READONLY_STABLE HALT_COUNT=1 TARGET_MMIO_WRITE_COUNT=0
+V109H_COMPLETE
+shutdown command invoked

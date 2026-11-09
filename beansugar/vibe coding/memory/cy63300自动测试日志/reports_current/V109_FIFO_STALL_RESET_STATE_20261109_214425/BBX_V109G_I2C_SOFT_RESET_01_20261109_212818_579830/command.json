@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/v109g_i2c_soft_reset.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "stage": "BBX_V109G_I2C_SOFT_RESET_01",
+  "started": "2026-11-09T21:28:18.579830+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\v109g_i2c_soft_reset.tcl": "249557049049ED53B5E0BEDA15AA7B197A5E276188B89153694DCDFAB32D1DBB",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\run_v109g_i2c_soft_reset.py": "E2AF8ACBE05FF4D299118FAAC4EAC57CA31790B036CF90604F98E068E5525DEC"
+  }
+}
