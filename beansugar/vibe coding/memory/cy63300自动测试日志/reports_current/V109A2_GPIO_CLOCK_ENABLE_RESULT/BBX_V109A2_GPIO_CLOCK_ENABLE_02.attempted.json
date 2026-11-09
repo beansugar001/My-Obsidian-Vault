@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V109A2_GPIO_CLOCK_ENABLE_02",
+  "created_local": "2026-11-09T20:50:30.764908+08:00",
+  "target_mmio_write_budget": 1,
+  "only_target_write": {
+    "address": "0x4002180C",
+    "value": "0x00000001"
+  },
+  "halt_request_budget": 1,
+  "retry": "none"
+}
