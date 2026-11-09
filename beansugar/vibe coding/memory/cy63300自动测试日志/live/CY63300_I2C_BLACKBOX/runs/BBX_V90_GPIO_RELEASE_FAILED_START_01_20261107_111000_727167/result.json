@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_RELEASE_FAILED_START_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_BOTH_LINES_RELEASED_AFTER_DELAY",
+  "target_mmio_write_count": 1,
+  "combined_sha256": "3F2E738979C8078CE9F00B0469E70F3D3D4DF7AD387517522E8685C9C20798CE",
+  "finished_local": "2026-11-07T11:10:03.317288+08:00"
+}

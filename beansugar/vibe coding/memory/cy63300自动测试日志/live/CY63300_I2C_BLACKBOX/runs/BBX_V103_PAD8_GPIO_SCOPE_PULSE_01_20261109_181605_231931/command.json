@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V103_PAD8_GPIO_SCOPE_PULSE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v103_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v103_pad8_gpio_scope_pulse.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T18:16:05.231931+08:00",
+  "timeout_s": 90,
+  "retry": "none",
+  "host_processes": [],
+  "host_ports": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v103_pad8_gpio_scope_pulse.tcl": "DEC350117450F66486DAADA42C1254FE2840F14B07547DC675CFB8A25862CA7C",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_v103_pad8_gpio_scope_pulse_once.py": "BCD74B3410508FAC32160681D4C3D54249D135F109A4FC9621C165659B407621"
+  }
+}

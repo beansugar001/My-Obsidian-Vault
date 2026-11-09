@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V83_I2C_FIFO_ENABLE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_FIFO_ENABLED_I2C_DISABLED",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "D18B519A09F2C7FE956635EFEC8DF8F6780762E8DE9CE88BEBD041F209E7674E",
+    "openocd.combined.log": "29D215CA8624862E07170866FAF0909E39C623F45EC10DFDE77F052BD101ED39"
+  },
+  "finished_local": "2026-11-05T12:55:05.765608+08:00"
+}

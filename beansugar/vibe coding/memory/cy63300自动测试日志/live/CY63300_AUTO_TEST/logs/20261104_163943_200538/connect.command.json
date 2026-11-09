@@ -1,0 +1,29 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "D:/project/tools/tinyriscv-master/tools/openocd/tinyriscv_10k_clean.cfg",
+    "-c",
+    "adapter_khz 100",
+    "-c",
+    "gdb_port disabled",
+    "-c",
+    "telnet_port disabled",
+    "-c",
+    "tcl_port disabled",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_AUTO_TEST/logs/20261104_163943_200538/connection_guard.tcl",
+    "-c",
+    "echo CY_DMSTATUS",
+    "-c",
+    "riscv dmi_read 0x11",
+    "-c",
+    "echo CY_SBCS",
+    "-c",
+    "riscv dmi_read 0x38",
+    "-c",
+    "shutdown"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "time": "2026-11-04T16:39:48+08:00"
+}

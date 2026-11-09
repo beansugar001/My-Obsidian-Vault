@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V76A_CLOCK_GATE_DELAY_02",
+  "command_argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_clock.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "files_sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_clock.tcl": "84CCD4762C18DB2A9C1BADCEE7B7AB5AB8BEA5D4800271EBB8C2CF5DC164702E",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v76a_once.py": "05838EBEE615C9D83ED14E6D0147E172CF28733B60BF6CB37B612BE37A7E1785"
+  },
+  "process_snapshot": [],
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V76A_CLOCK_GATE_DELAY_02.attempted.json",
+  "write_budget": 1,
+  "halt_budget": 1,
+  "retry_policy": "none",
+  "started_local": "2026-11-05T11:49:20.845728+08:00"
+}

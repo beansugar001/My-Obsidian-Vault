@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V102E_SCOPE_ONE_BYTE_PROBE_01",
+  "tcl_tag": "V97B",
+  "return_code": 0,
+  "complete": true,
+  "target_write_evidence": [
+    "V97B_TARGET_WRITE_ATTEMPT n=1 addr=0x40002808 value=0x00000000 label=OLED_CONTROL_BYTE_ONLY_TX_FIFO",
+    "V97B_TARGET_WRITE_ATTEMPT n=2 addr=0x40002828 value=0x00000002 label=OLED_CONTROL_BYTE_ONLY_STOP"
+  ],
+  "result_lines": [
+    [
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "FAIL_OR_UNKNOWN",
+      "2",
+      "0"
+    ]
+  ],
+  "log_sha256": "63C036D5EC95FC3140B5178F36BE57608C84540A98EF704FB822476BBF7FFA38",
+  "finished_local": "2026-11-09T16:38:31.760397+08:00"
+}

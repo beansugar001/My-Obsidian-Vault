@@ -1,0 +1,80 @@
+{
+  "time": "2026-11-04T16:45:24+08:00",
+  "overall_status": "BLOCKED",
+  "goal": "Real CY63300 I2C communication",
+  "audit": {
+    "status": "PASS",
+    "inventory_files": 583,
+    "snapshot_files": 71
+  },
+  "offline_execution": {
+    "status": "PASS",
+    "run": "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\logs\\20261104_163909_238323"
+  },
+  "original_invariants": {
+    "status": "FAIL",
+    "pass": 2,
+    "fail": 7,
+    "total_new_cases": 9
+  },
+  "candidate_invariants": {
+    "status": "FAIL",
+    "pass": 6,
+    "fail": 3,
+    "total_new_cases": 9
+  },
+  "baseline": {
+    "execution": "PASS",
+    "original_fixture_assertions": 6,
+    "candidate_fixture_assertions": 6,
+    "note": "Original fixture PASS includes expected-defect reproduction; not six healthy functional cases."
+  },
+  "framework_mock_tests": {
+    "status": "PASS",
+    "count": 29,
+    "run": "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\logs\\20261104_164524_049200_safety"
+  },
+  "hardware_preflight": {
+    "status": "FAIL",
+    "failure_class": "FRAMEWORK_LOG_DUPLICATION",
+    "reason": "capture(init) already logged its output; echo repeated the same ID. Host parser rejected two matches.",
+    "raw_result_preserved": "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\logs\\20261104_163943_200538\\results.json",
+    "observed": {
+      "idcode": "0x1E200A6F",
+      "dmstatus": "0x00430382",
+      "sbcs": "0x20040404",
+      "misa": "0x4C80680A",
+      "adapter_khz": 100,
+      "serial": "07000001006700343500000a4e57354aa5a5a5a597969908"
+    },
+    "connection_identity_evidence": "PASS",
+    "full_preflight": "FAIL",
+    "mmio_sampling": "NOT_TESTED",
+    "live_target_mmio_writes": 0,
+    "retried": false,
+    "correction": "Removed repeated init/halt echo; 29 offline tests passed. Corrected version not run on hardware."
+  },
+  "target_mmio_baseline": {
+    "status": "NOT_TESTED"
+  },
+  "target_write_experiment": {
+    "status": "BLOCKED",
+    "writes_executed": 0
+  },
+  "restore_experiment": {
+    "status": "BLOCKED",
+    "writes_executed": 0
+  },
+  "actual_i2c_communication": {
+    "status": "NOT_TESTED"
+  },
+  "actual_asic_rtl": "NOT_AVAILABLE",
+  "historical_binary_config_hashes": "NOT_TESTED",
+  "unresolved": [
+    "Candidate overlapping requests lose a response",
+    "Grant does not prove target acceptance",
+    "Current full hardware preflight did not complete",
+    "misa variability unexplained",
+    "ASIC source/driver identity unknown"
+  ]
+}

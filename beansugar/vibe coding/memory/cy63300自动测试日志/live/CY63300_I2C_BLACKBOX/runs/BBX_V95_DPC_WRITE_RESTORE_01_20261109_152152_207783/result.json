@@ -1,0 +1,12 @@
+{
+  "stage": "BBX_V95_DPC_WRITE_RESTORE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "dpc_test_write_count": 1,
+  "dpc_restore_write_count": 1,
+  "restore_pass": true,
+  "target_mmio_writes": 0,
+  "logs_sha256": "B19B1A43C886822BAD0F616F91090BC0B10D6DFCCE6B2B09AFA3E2577DC34FDF",
+  "finished_local": "2026-11-09T15:21:53.049868+08:00"
+}

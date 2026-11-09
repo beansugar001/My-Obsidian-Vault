@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V80D_GPIO_OPEN_DRAIN_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_GPIO_OPEN_DRAIN",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F41579B74B30CBC352CB6F3BC9F341771E16B758298756BA372B6A8065F4931E",
+    "openocd.combined.log": "8194C9C159CC856F41B70FA04176A7C101292A700239B9AF9F498D886F9A4BC1"
+  },
+  "finished_local": "2026-11-05T12:42:31.592738+08:00"
+}

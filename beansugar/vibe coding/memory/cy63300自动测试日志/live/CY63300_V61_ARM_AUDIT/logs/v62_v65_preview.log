@@ -1,0 +1,38 @@
+=== V6.2 ===
+V6.2: I2C peripheral clock gate
+MODE: PREVIEW ONLY — no target access or write will be performed
+Preconditions:
+  - fresh read-only preflight passes
+  - PERI_CLKEN is 0 on three consecutive reads
+  - PERI_RST is 0 on three consecutive reads
+  - unique TAP and DM status are stable
+  - separate user authorization for this exact write
+Proposed single-write tuple: address=0x4002180C, value=0x00000020
+End write session; new read-only session checks PERI_CLKEN and PERI_RST three times. No automatic retry or restore.
+=== V6.3 ===
+V6.3: CLK_DIV0 reversible control probe
+MODE: PREVIEW ONLY — no target access or write will be performed
+Preconditions:
+  - V6.2 passed
+  - clock remains on
+  - fresh read-only CLK_DIV0 reads 0x20 three times
+  - separate user authorization for 0x21
+Proposed single-write tuple: address=0x40002810, value=0x00000021
+New read-only session verifies. Restore to 0x20 is a separate V6.3-R stage and needs separate authorization.
+=== V6.3-R ===
+V6.3-R: CLK_DIV0 independent restore
+MODE: PREVIEW ONLY — no target access or write will be performed
+Preconditions:
+  - V6.3 probe was actually performed
+  - fresh read-only DIV0 shows 0x21 consistently
+  - separate user authorization for restore
+Proposed single-write tuple: address=0x40002810, value=0x00000020
+End write session and independently read back. No retry.
+=== V6.4 ===
+V6.4: PLAN ONLY — this preview tool does not generate or execute a hardware command
+Candidate order: GPIO/PADMUX/electrical evidence; clock already on; no reset; raw DIV0/1; I2CM_CTRL; HOLD; RX/TX FIFO; MODE=Master; confirmed 7-bit ADDR; I2C_EN; clear events; poll SR/RISR/FIFO_STA.
+Every MMIO write is a separately authorized one-address stage. Divider and address values stay unset until preconditions are established.
+=== V6.5 ===
+V6.5: PLAN ONLY — this preview tool does not generate or execute a hardware command
+Requires V6.4 PASS and a known compatible slave/address. Capture idle, START, address, ACK, DATA and STOP on SDA/SCL.
+No bus transaction or automatic retry is performed by this preview tool.

@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V91_STM32_COMPAT_INIT_A5_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "byte_nack_count": 26,
+  "byte_count": 26,
+  "target_gpio_write_count": 712,
+  "combined_sha256": "FFE0A95CE3973CA1980E8827D4722AC0421E8CAE7169BF8ED11730EABFB946AB",
+  "finished_local": "2026-11-07T13:11:46.652806+08:00"
+}

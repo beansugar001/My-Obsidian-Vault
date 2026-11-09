@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V107_GPIO_CLOCK_ENABLE_READ_01",
+  "return_code": 0,
+  "status": "PASS_GPIO_REGISTERS_READ",
+  "halt_requests": 1,
+  "target_mmio_write_count": 1,
+  "final_sbcs": "537134084",
+  "complete": true,
+  "log_sha256": "A5CE0440B4B35090F8C943A98411C0E87B352B4073C38D685A100E12A63A8316",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs\\BBX_V107_GPIO_CLOCK_ENABLE_READ_01_20261109_185355_317939"
+}

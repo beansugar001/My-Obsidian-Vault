@@ -1,0 +1,27 @@
+{
+  "stage": "BBX_V77_CPU_STORE_SRAM_02",
+  "command_argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_cpu_store_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v77_cpu_store.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v77_cpu_store.tcl": "54F58C4916555447B1DBD066B0FDDE77CC9C0EAF2AAF54CD3303920F4155EEA4",
+    "D:\\project\\RISCV-63300\\test\\i2c_diag\\i2c_diag.map": "96B37DC2089EC8B41C2D12861A36768DACF8A2D3A83EB01BD33FA3554745AC78",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v77_cpu_store_once.py": "8C82C7C1ABD6684233559C22EA909A1DFE10FC761915DB9C06584F85D83EA183"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "probe_serial_expected": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V77_CPU_STORE_SRAM_02.attempted.json",
+  "timeout_seconds": 180,
+  "retry": "none",
+  "started_local": "2026-11-05T12:06:15.458519+08:00"
+}

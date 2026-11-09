@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V88D_V78_EXACT_CLOCK_REPRO_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PASS_V44_ORDER_CLOCK_VISIBLE",
+  "target_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "8DE617DF708C3DB4B8EA4CFCBC02298F72E8D2D598ED89FC9B991D4479F3A683",
+    "openocd.combined.log": "21590921B32B6B61FED7725576B0241D9A099D9AAF03C00145A93E8658F1EE0A"
+  },
+  "finished_local": "2026-11-05T20:39:51.053221+08:00"
+}

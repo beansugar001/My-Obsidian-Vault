@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V88E_GPIO_CLOCK_AFTER_I2C_CLOCK_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_v88e_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v88e_gpio_clock_from_i2c_on.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v88e_gpio_clock_from_i2c_on.tcl": "D883BD30BF8AA01C1A45B817375F942226C4CB2921BD535276CDE4AA91BF6C27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v88e_gpio_clock_once.py": "4EA1EAD5578F272923F4CAB651AC29698FD31CE28D77D115FF56A20AC3EA8B8F"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "timeout_s": 120,
+  "started_local": "2026-11-05T20:43:47.491938+08:00",
+  "retry": "none"
+}

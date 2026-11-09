@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V99A_CLOCK_ON_AFTER_REPLUG_01",
+  "tcl_tag": "V92G",
+  "return_code": 0,
+  "complete": true,
+  "target_write_evidence": [
+    "V92G_TARGET_MMIO_WRITE_ATTEMPT=1 address=0x4002180C value=0x00000020"
+  ],
+  "result_lines": [
+    [
+      "PASS_CLOCK_ON_SAME_SESSION",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "log_sha256": "C471B309CE596400D6B4AE6CEDDF7A9B1FB7568C4E319A15940132CDED935650",
+  "finished_local": "2026-11-09T16:07:52.636098+08:00"
+}

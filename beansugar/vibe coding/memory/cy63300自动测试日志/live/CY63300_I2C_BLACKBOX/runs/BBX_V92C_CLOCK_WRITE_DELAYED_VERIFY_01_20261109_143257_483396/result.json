@@ -1,0 +1,19 @@
+{
+  "stage": "BBX_V92C_CLOCK_WRITE_DELAYED_VERIFY_01",
+  "write_rc": 0,
+  "verify_rc": null,
+  "write_attempts": [],
+  "target_mmio_write_count": 0,
+  "write_session_status": "FAIL_OR_UNKNOWN",
+  "write_session_complete": true,
+  "verify_session_complete": false,
+  "idcode_ok": true,
+  "serial_ok": true,
+  "verification_excerpt": [],
+  "sha256": {
+    "write_session.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "write_session.stderr.log": "0AEFE510E82686746A8579E73DB1C7ECA3E19500BFCEEBB9AC5F7B3AEBB9D4FA",
+    "write_session.combined.log": "6A35C4AB967A8C841DC25ECDF212559BE8C603C28817ED1070AEAEF5391BBD7F"
+  },
+  "finished_local": "2026-11-09T14:32:57.938239+08:00"
+}

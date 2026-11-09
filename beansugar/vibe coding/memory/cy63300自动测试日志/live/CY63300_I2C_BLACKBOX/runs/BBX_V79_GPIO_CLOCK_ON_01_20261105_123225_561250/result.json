@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V79_GPIO_CLOCK_ON_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PASS_GPIO_CLOCK_ON",
+  "target_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "82B842E8A58CAB7DF8C1832A7B5B98B1FFD711156F4796F11F3C8B78A6BF0D99",
+    "openocd.combined.log": "15B36A6D8768BE11F40DF489E645A2985E1737C131F2B41646BA7D8488C8F06B"
+  },
+  "finished_local": "2026-11-05T12:32:27.318254+08:00"
+}

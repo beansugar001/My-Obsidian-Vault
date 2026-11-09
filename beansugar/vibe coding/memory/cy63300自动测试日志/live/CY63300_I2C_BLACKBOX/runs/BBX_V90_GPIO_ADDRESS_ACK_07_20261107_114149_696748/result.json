@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_ADDRESS_ACK_07",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_ADDRESS_NACK_STOP_IDLE",
+  "target_mmio_write_count": 37,
+  "combined_sha256": "7DCF5E02A1A8F7B48C58FF9F4F04C0D2CE5891C33DD3F2C899B508F748FA6249",
+  "finished_local": "2026-11-07T11:42:05.870025+08:00"
+}

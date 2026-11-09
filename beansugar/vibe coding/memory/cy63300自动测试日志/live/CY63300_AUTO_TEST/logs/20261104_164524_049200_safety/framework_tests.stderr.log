@@ -1,0 +1,34 @@
+test_consumed_before_io (test_safety.BudgetTests) ... ok
+test_forbidden_target (test_safety.BudgetTests) ... ok
+test_independent_restore_auth (test_safety.BudgetTests) ... ok
+test_no_authorization (test_safety.BudgetTests) ... ok
+test_no_preflight (test_safety.BudgetTests) ... ok
+test_plan_blocked (test_safety.BudgetTests) ... ok
+test_skip_restore_at_20 (test_safety.BudgetTests) ... ok
+test_abnormal_misa_no_halt (test_safety.ConnectionGuardTests) ... ok
+test_capture_output_not_logged_twice (test_safety.ConnectionGuardTests) ... ok
+test_error_log_no_halt (test_safety.ConnectionGuardTests) ... ok
+test_good_connection_halts (test_safety.ConnectionGuardTests) ... ok
+test_invalid_identity_no_halt (test_safety.ConnectionGuardTests) ... ok
+test_nonzero_retains_logs (test_safety.FailureLogTests) ... ok
+test_timeout_retains_logs (test_safety.FailureLogTests) ... ok
+test_all_samples (test_safety.ParserTests) ... ok
+test_duplicate (test_safety.ParserTests) ... ok
+test_missing (test_safety.ParserTests) ... ok
+test_no_substring_success (test_safety.ParserTests) ... ok
+test_wrong_address (test_safety.ParserTests) ... ok
+test_wrong_value (test_safety.ParserTests) ... ok
+test_busy (test_safety.SbaTests) ... ok
+test_decode (test_safety.SbaTests) ... ok
+test_error (test_safety.SbaTests) ... ok
+test_idle (test_safety.SbaTests) ... ok
+test_sticky (test_safety.SbaTests) ... ok
+test_unknown_capability (test_safety.SbaTests) ... ok
+test_busy_stops_before_address_write (test_safety.TclTests) ... ok
+test_readonly_success (test_safety.TclTests) ... ok
+test_unknown_baseline_stops_once (test_safety.TclTests) ... ok
+
+----------------------------------------------------------------------
+Ran 29 tests in 0.424s
+
+OK

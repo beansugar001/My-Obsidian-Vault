@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V80F_GPIO_OUTPUT_RELEASE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_GPIO_OUTPUT_RELEASED",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F1D177B1B12293AC30635CE479CAE2D6707E3D6B7DAE46FDA84CB5A04FF9C644",
+    "openocd.combined.log": "D7591447B88497E7DAD5332D925779F4569417480F57FAD3BFB0E63A869640C7"
+  },
+  "finished_local": "2026-11-05T12:45:30.271892+08:00"
+}

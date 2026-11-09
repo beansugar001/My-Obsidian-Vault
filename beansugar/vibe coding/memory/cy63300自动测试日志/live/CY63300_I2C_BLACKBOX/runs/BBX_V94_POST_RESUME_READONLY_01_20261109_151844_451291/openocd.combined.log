@@ -1,0 +1,64 @@
+
+--- STDERR ---
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+1
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80680a
+Info : gdb port disabled
+V94_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4c80680a
+gdb port disabled
+
+V94_INIT_END
+V94_CPU_STATE_INITIAL=running
+V94_HALT_ONCE
+V94_CPU_STATE_AFTER_HALT=halted
+V94_DMSTATUS=0x00430382
+V94_SBCS=0x20040404
+V94_CSR_READ tag=DPC_A csr=0x7B1 value=0x2C006DD2
+V94_CSR_READ tag=DPC_B csr=0x7B1 value=0x2C006DD2
+V94_CSR_READ tag=DCSR_A csr=0x7B0 value=0x000000C0
+V94_CSR_READ tag=DCSR_B csr=0x7B0 value=0x000000C0
+V94_PC_BASELINE DPC_A=0x2C006DD2 DPC_B=0x2C006DD2 DCSR_A=0x000000C0 DCSR_B=0x000000C0
+V94_MMIO_READ tag=PERI_CLKEN addr=0x4002180C value=0x00000021
+V94_MMIO_READ tag=PERI_RST addr=0x40021810 value=0x00000000
+V94_MMIO_READ tag=MODULE_CTRL addr=0x40002800 value=0x0000000F
+V94_MMIO_READ tag=FIFO_STA addr=0x4000280C value=0x00000005
+V94_MMIO_READ tag=CLK_DIV0 addr=0x40002810 value=0x000003E7
+V94_MMIO_READ tag=CLK_DIV1 addr=0x40002814 value=0x000003E7
+V94_MMIO_READ tag=I2C_ADDR addr=0x40002824 value=0x0000003C
+V94_MMIO_READ tag=I2C_STA addr=0x4000283C value=0x00000000
+V94_MMIO_READ tag=RAW_INTR_STA addr=0x40002858 value=0x00000000
+V94_MMIO_READ tag=GPIOB_IDR addr=0x40000150 value=0x0000002C
+V94_I2C_STATE CLKEN=0x00000021 RST=0x00000000 MODULE=0x0000000F FIFO=0x00000005 DIV0=0x000003E7 DIV1=0x000003E7 ADDR=0x0000003C STA=0x00000000 RAW=0x00000000 IDR=0x0000002C
+V94_RESULT=PASS_READONLY_SNAPSHOT
+V94_COMPLETE
+shutdown command invoked

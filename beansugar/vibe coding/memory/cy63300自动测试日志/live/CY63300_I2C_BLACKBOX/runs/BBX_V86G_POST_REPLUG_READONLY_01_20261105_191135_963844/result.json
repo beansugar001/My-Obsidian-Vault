@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V86G_POST_REPLUG_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "BLOCKED_I2C_CLOCK_OFF",
+  "target_mmio_writes": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "9E4764DAC90E3CE4ECD5CFFFD96ADB997F17012DDDC1CA71540A1DFB7CDC85EC",
+    "openocd.combined.log": "BC6B78EC4D7814E5B6B2CAB940F7777B3A0660917C9560B00763573680018D9B"
+  },
+  "finished_local": "2026-11-05T19:11:36.765898+08:00"
+}

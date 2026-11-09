@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V103_PAD8_GPIO_SCOPE_PULSE_01",
+  "return_code": 0,
+  "status": "FAIL_OR_UNKNOWN",
+  "complete": true,
+  "target_mmio_write_count": 1,
+  "combined_sha256": "A774ECE64C3868E8CED60A3AD5D744341221BCBCA505E6969454BF0B6A882C6B",
+  "finished_local": "2026-11-09T18:16:07.031276+08:00"
+}

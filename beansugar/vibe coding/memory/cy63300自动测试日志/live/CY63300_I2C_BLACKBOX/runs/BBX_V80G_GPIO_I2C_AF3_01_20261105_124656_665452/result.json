@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V80G_GPIO_I2C_AF3_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_PAD8_PAD9_I2C_AF3",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "2C9F1545FC4F44162A71E64EABE4552379F0DDE86AF8A3CE14AD36F23962D945",
+    "openocd.combined.log": "0512EEC339C85962A2CFB60E3C9FAEB05E1E945FE8C08D218901C1ABAC53453F"
+  },
+  "finished_local": "2026-11-05T12:46:59.237106+08:00"
+}

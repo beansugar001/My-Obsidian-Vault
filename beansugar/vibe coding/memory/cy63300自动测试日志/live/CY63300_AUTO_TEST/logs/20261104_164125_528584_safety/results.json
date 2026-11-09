@@ -1,0 +1,7 @@
+{
+  "status": "PASS",
+  "mode": "OFFLINE_SAFETY",
+  "time": "2026-11-04T16:41:26+08:00",
+  "exit_code": 0,
+  "target_mmio_writes": 0
+}

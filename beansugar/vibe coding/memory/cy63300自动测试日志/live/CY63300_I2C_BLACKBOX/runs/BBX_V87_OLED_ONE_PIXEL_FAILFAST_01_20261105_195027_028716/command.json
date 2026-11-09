@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V87_OLED_ONE_PIXEL_FAILFAST_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_v87_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v87_oled_one_pixel.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-05T19:50:27.028716+08:00",
+  "timeout_s": 900,
+  "retry": "none",
+  "probe_serial": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "host_processes": [],
+  "host_ports": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v87_oled_one_pixel.tcl": "F1777F0132415E2549B04E4B441F886D0583314B7FE5ED3E76549A75A8DDE36B",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v87_oled_one_pixel_once.py": "A0B78C5080F8C2980A275A3EC9A4C92A1172BABF996C5900FA88E683DA56121E"
+  }
+}

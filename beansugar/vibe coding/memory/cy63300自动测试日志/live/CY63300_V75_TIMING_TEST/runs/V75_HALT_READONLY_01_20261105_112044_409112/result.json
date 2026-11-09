@@ -1,0 +1,16 @@
+{
+  "stage": "V75_HALT_READONLY_01",
+  "openocd_return_code": 0,
+  "status": "PASS_HALTED_READONLY",
+  "complete_marker_seen": true,
+  "halt_attempts": [
+    "1"
+  ],
+  "target_mmio_write_attempts": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "60CE6BB66830C5A7A03C1D2DEB4FC3A25C375D7E2BCF3627925452AA3C05486C",
+    "openocd.combined.log": "9C2346A20E1DBFAC41180D2BDAA9933CACB46F1FC3F06C7AB0928E72A06F11D7"
+  },
+  "finished_local": "2026-11-05T11:20:44.971707+08:00"
+}

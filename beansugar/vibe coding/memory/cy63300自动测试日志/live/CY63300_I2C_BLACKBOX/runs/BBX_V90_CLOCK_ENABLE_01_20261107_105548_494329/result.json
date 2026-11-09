@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_CLOCK_ENABLE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_CLOCK_ENABLED",
+  "target_mmio_write_count": 1,
+  "combined_sha256": "F39E55DB2B1AD8D96961D00A3BF9ACA130A3F17F8E7E2D0E2B4D3F17656560A0",
+  "finished_local": "2026-11-07T10:55:50.642413+08:00"
+}

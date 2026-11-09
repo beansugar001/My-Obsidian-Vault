@@ -1,0 +1,20 @@
+test_asserted_reset_unknown (__main__.StateTests) ... ok
+test_changed_final_clock_stops (__main__.StateTests) ... ok
+test_clock_off_log_does_not_need_i2c (__main__.StateTests) ... ok
+test_clock_off_rejects_i2c_reads (__main__.StateTests) ... ok
+test_clock_on_log_reads_i2c (__main__.StateTests) ... ok
+test_dm_error_stops (__main__.StateTests) ... ok
+test_missing_completion_stops (__main__.StateTests) ... ok
+test_missing_i2c_on_state_samples_stops (__main__.StateTests) ... ok
+test_missing_samples_unknown (__main__.StateTests) ... ok
+test_off (__main__.StateTests) ... ok
+test_on (__main__.StateTests) ... ok
+test_repeated_tap_is_rejected (__main__.StateTests) ... ok
+test_sba_success_alone_not_submission_proof (__main__.StateTests) ... ok
+test_unstable_clock_unknown (__main__.StateTests) ... ok
+test_unstable_reset_unknown (__main__.StateTests) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.003s
+
+OK

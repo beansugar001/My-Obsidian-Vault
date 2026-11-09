@@ -1,0 +1,67 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+1
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80680a
+Info : gdb port disabled
+V95_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4c80680a
+gdb port disabled
+
+V95_INIT_END
+V95_CPU_STATE_INITIAL=running
+V95_HALT_ONCE
+V95_DMSTATUS=0x00430382
+V95_SBCS=0x20040404
+V95_DMI_WRITE tag=DPC_BEFORE_A_READ_CMD reg=0x17 value=0x002207B1
+V95_ABSTRACTCS tag=DPC_BEFORE_A_READ value=0x01000003
+V95_DMI_WRITE tag=DPC_BEFORE_B_READ_CMD reg=0x17 value=0x002207B1
+V95_ABSTRACTCS tag=DPC_BEFORE_B_READ value=0x01000003
+V95_DMI_WRITE tag=DCSR_BEFORE_READ_CMD reg=0x17 value=0x002207B0
+V95_ABSTRACTCS tag=DCSR_BEFORE_READ value=0x01000003
+V95_DPC_BASELINE a=0x2C006DD2 b=0x2C006DD2 DCSR=0x000000C0
+V95_DMI_WRITE tag=DPC_TEST_DATA reg=0x04 value=0x20008000
+V95_DMI_WRITE tag=DPC_TEST_CMD reg=0x17 value=0x002307B1
+V95_ABSTRACTCS tag=DPC_TEST value=0x01000003
+V95_DMI_WRITE tag=DPC_TEST_READBACK_READ_CMD reg=0x17 value=0x002207B1
+V95_ABSTRACTCS tag=DPC_TEST_READBACK_READ value=0x01000003
+V95_DPC_TEST_READBACK=0x2C006DD2
+V95_ERROR=V95_DPC_TEST_WRITE_NOT_VISIBLE
+V95_DMI_WRITE tag=DPC_RESTORE_DATA reg=0x04 value=0x2C006DD2
+V95_DMI_WRITE tag=DPC_RESTORE_CMD reg=0x17 value=0x002307B1
+V95_ABSTRACTCS tag=DPC_RESTORE value=0x01000003
+V95_DMI_WRITE tag=DPC_RESTORE_VERIFY_READ_CMD reg=0x17 value=0x002207B1
+V95_ABSTRACTCS tag=DPC_RESTORE_VERIFY_READ value=0x01000003
+V95_DPC_RESTORE_READBACK=0x2C006DD2
+V95_DPC_RESTORE=PASS
+V95_FINAL_SBCS rc=0 value=537134084
+V95_RESULT=FAIL_OR_UNKNOWN TEST_WRITE=1 RESTORE=1
+V95_COMPLETE
+shutdown command invoked

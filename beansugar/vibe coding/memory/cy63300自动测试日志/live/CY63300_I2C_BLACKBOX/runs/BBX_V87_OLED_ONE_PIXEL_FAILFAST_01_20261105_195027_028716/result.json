@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V87_OLED_ONE_PIXEL_FAILFAST_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 9,
+  "pixel_frame_complete": 0,
+  "probe_serial": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F26F4E3E97D609DCE2EBCF96914FEFB675C925631EA906158145760AC051AAAB",
+    "openocd.combined.log": "7CB93BD9B5661615736CEBFEFC5F6C8E0E750CDA67DEEC98406B6A8043FFC4BE"
+  },
+  "finished_local": "2026-11-05T19:50:48.240145+08:00"
+}

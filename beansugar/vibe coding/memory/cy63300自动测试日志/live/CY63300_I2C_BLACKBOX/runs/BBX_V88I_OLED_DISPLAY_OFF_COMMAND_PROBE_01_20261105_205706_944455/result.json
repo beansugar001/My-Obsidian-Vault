@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V88I_OLED_DISPLAY_OFF_COMMAND_PROBE_01",
+  "return_code": 1,
+  "complete": false,
+  "status": "INCOMPLETE_OR_UNKNOWN",
+  "target_write_count": null,
+  "frame_complete": null,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "E9E1BA9172F09185122F2557134FDA82442C1CFC0A0AF1CE6F734E58E03BCCA9",
+    "openocd.combined.log": "45A8B7A14F9BA2B282A7072BC2A7DD6AF8A2EADEED1F1C0ACE8E90DDB3BF4408"
+  },
+  "finished_local": "2026-11-05T20:57:06.988689+08:00"
+}

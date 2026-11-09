@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V76B_SRAM_WRITE_CONTROL_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN_TEST",
+  "sbddata_write_requests": [
+    "0xA5A55A5A",
+    "0xD7F5F64F"
+  ],
+  "sram_write_request_count": 2,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "0DA4A856B76DA4A3F49583237A70B9310F2DFEB3ED3BC8E73DD59E19939A3E84",
+    "openocd.combined.log": "3ABBBDBBC42B112C3A16FBBE66E5FDC672C7594943CD28696406F67C0F344442"
+  },
+  "finished_local": "2026-11-05T11:54:34.293329+08:00"
+}

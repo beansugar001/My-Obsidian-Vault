@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V78_V44_ORDER_CLOCK_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PASS_V44_ORDER_CLOCK_VISIBLE",
+  "target_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "9B92898A2ABF5F4A64CCE01080D0DDE11D0048BEB6E3932E513396FC3D67EF4B",
+    "openocd.combined.log": "BB26B33AE8F2D935FE8619CD0E708AD2FC664E134AD0C3763586FBA03CE9EC79"
+  },
+  "finished_local": "2026-11-05T12:24:51.621745+08:00"
+}

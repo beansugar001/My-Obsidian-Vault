@@ -1,0 +1,8 @@
+VCD info: dumpfile misa_alias.vcd opened for output.
+V60_ALIAS_CASE id=1 x1=4c80480a misa_path=4c80480a gpr_path=4c80480a STATUS=PASS
+V60_ALIAS_CASE id=2 x1=4c80680a misa_path=4c80680a gpr_path=4c80680a STATUS=PASS
+V60_ALIAS_CASE id=3 x1=ffffffff misa_path=ffffffff gpr_path=ffffffff STATUS=PASS
+V60_ALIAS_CASE id=4 x1=12345678 misa_path=12345678 gpr_path=12345678 STATUS=PASS
+V60_ALIAS_CASE id=5 x1=00000000 misa_path=00000000 gpr_path=00000000 STATUS=PASS
+V60_REFERENCE_MISA_ALIAS_REPRODUCED
+C:\Users\24796\Documents\组\CY63300_V60\rtl_tests\tb_misa_alias.sv:55: $finish called at 3200000 (1ps)

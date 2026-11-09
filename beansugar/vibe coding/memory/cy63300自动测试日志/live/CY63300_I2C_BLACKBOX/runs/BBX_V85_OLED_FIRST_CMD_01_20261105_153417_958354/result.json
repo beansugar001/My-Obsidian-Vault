@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V85_OLED_FIRST_CMD_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 5,
+  "stop_sent": 1,
+  "nack_or_arb_seen": false,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "7243C8973D92B129E93CA456935398528A24F462762E23B9550760671AD36C76",
+    "openocd.combined.log": "F38BDA79F9CACC912EA6E4555863A83A39C5AEB6046820F413BBEA47065C5735"
+  },
+  "finished_local": "2026-11-05T15:34:22.179678+08:00"
+}

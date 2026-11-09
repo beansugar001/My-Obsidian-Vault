@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "powershell",
+    "-NoProfile",
+    "-Command",
+    "\n$ErrorActionPreference='Stop'\n$procs=@(Get-CimInstance Win32_Process -Filter \"Name='openocd.exe'\" | Select-Object ProcessId,Name)\n$devices=@(Get-PnpDevice -PresentOnly | Where-Object { $_.Status -eq 'OK' -and $_.FriendlyName -match '(CMSIS.DAP|DAPLink)' } | Select-Object Status,FriendlyName,InstanceId)\n[pscustomobject]@{processes=$procs;devices=$devices}|ConvertTo-Json -Depth 5 -Compress\n"
+  ],
+  "cwd": "None",
+  "time": "2026-11-04T16:39:43+08:00"
+}

@@ -1,0 +1,56 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+1
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 1 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80480a
+Info : gdb port disabled
+V98_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 1 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4c80480a
+gdb port disabled
+
+V98_INIT_END
+V98_CPU_STATE_INITIAL=running
+V98_HALT_ONCE
+V98_CPU_STATE_AFTER_HALT=halted
+V98_DMSTATUS=0x00430382
+V98_SBCS=0x20040404
+V98_CSR_READ tag=DPC_A csr=0x7B1 value=0x2C006DD3
+V98_CSR_READ tag=DPC_B csr=0x7B1 value=0x2C006DD3
+V98_CSR_READ tag=DCSR_A csr=0x7B0 value=0x000000C0
+V98_CSR_READ tag=DCSR_B csr=0x7B0 value=0x000000C0
+V98_PC_BASELINE DPC_A=0x2C006DD3 DPC_B=0x2C006DD3 DCSR_A=0x000000C0 DCSR_B=0x000000C0
+V98_MMIO_READ tag=PERI_CLKEN addr=0x4002180C value=0x00000000
+V98_MMIO_READ tag=PERI_RST addr=0x40021810 value=0x00000000
+V98_CLOCK_RESET CLKEN=0x00000000 RST=0x00000000
+V98_I2C_READ_SKIPPED=I2C_CLOCK_OFF
+V98_GPIO_READ_SKIPPED=GPIO_CLOCK_OFF
+V98_RESULT=CLOCK_OFF_CLASSIFIED
+V98_COMPLETE
+shutdown command invoked

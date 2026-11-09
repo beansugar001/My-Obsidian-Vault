@@ -1,0 +1,67 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+1
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 1 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80680a
+Info : gdb port disabled
+V86B_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 1 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4c80680a
+gdb port disabled
+
+V86B_INIT_END
+V86B_CPU_STATE_INITIAL=running
+V86B_HALT_REQUEST=once timeout_ms=2000
+V86B_CPU_STATE_AFTER_HALT=halted
+V86B_DMSTATUS=0x00430382
+V86B_SBCS label=PREFLIGHT value=0x20040404
+V86B_SBCS label=PERI_CLKEN_BEFORE value=0x20040404
+V86B_DMI_CONFIG_WRITE label=PERI_CLKEN_READMODE reg=0x38 value=0x20140404 (SBA setup only)
+V86B_SBCS label=PERI_CLKEN_MODE value=0x20140404
+V86B_DMI_CONFIG_WRITE label=PERI_CLKEN_ADDRESS reg=0x39 value=0x4002180C (SBA setup only)
+V86B_SBCS label=PERI_CLKEN_DATA_DONE value=0x20140404
+V86B_DMI_CONFIG_WRITE label=PERI_CLKEN_WRITEMODE reg=0x38 value=0x20040404 (SBA setup only)
+V86B_SBCS label=PERI_CLKEN_RETURN_MODE value=0x20040404
+V86B_MMIO_READ label=PERI_CLKEN addr=0x4002180C value=0x00000000
+V86B_SBCS label=PERI_RST_BEFORE value=0x20040404
+V86B_DMI_CONFIG_WRITE label=PERI_RST_READMODE reg=0x38 value=0x20140404 (SBA setup only)
+V86B_SBCS label=PERI_RST_MODE value=0x20140404
+V86B_DMI_CONFIG_WRITE label=PERI_RST_ADDRESS reg=0x39 value=0x40021810 (SBA setup only)
+V86B_SBCS label=PERI_RST_DATA_DONE value=0x20140404
+V86B_DMI_CONFIG_WRITE label=PERI_RST_WRITEMODE reg=0x38 value=0x20040404 (SBA setup only)
+V86B_SBCS label=PERI_RST_RETURN_MODE value=0x20040404
+V86B_MMIO_READ label=PERI_RST addr=0x40021810 value=0x00000000
+V86B_SYSCTRL CLKEN=0x00000000 RST=0x00000000
+V86B_I2C_REGISTERS_SKIPPED_CLOCK_OFF
+V86B_SBCS label=FINAL value=0x20040404
+V86B_FINAL_SBCS rc=0 value=537134084
+V86B_FINAL_DMSTATUS rc=0 value=4391810
+V86B_RESULT=BLOCKED_I2C_CLOCK_OFF TARGET_MMIO_WRITES=0
+V86B_COMPLETE
+shutdown command invoked

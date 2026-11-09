@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V86C_POWERON_CLOCKS_ON_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_CLOCKS_ON_I2C_RESET_IDLE",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "ABD19F6D647EF9846B5A7C639AA4DAA918563E6B5F32AD6E3A5F075DFB1ADE41",
+    "openocd.combined.log": "333F8F8C2E6BCC83D3E07F4C064F9A16A72659030C7A749F03A5A5C336674FA5"
+  },
+  "finished_local": "2026-11-05T18:52:36.469325+08:00"
+}

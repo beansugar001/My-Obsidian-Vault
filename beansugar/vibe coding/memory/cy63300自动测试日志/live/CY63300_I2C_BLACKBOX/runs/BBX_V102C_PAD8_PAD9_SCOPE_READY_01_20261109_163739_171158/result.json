@@ -1,0 +1,28 @@
+{
+  "stage": "BBX_V102C_PAD8_PAD9_SCOPE_READY_01",
+  "tcl_tag": "V92J",
+  "return_code": 0,
+  "complete": true,
+  "target_write_evidence": [
+    "V92J_TARGET_WRITE_ATTEMPT n=1 addr=0x40000100 value=0x0000000C",
+    "V92J_TARGET_WRITE_ATTEMPT n=2 addr=0x40000158 value=0x0000000C",
+    "V92J_TARGET_WRITE_ATTEMPT n=3 addr=0x4000015C value=0x00000300",
+    "V92J_TARGET_WRITE_ATTEMPT n=4 addr=0x40000104 value=0x0000000C",
+    "V92J_TARGET_WRITE_ATTEMPT n=5 addr=0x40000168 value=0x000006C0"
+  ],
+  "result_lines": [
+    [
+      "",
+      "",
+      "PASS_PAD8_PAD9_RELEASED_AF3_IDLE",
+      "5",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "log_sha256": "8D97BD857F7DC640D1DEF52379FDAB47F9730CC84543428DF8C1BCFAF6FE8D25",
+  "finished_local": "2026-11-09T16:37:42.588209+08:00"
+}

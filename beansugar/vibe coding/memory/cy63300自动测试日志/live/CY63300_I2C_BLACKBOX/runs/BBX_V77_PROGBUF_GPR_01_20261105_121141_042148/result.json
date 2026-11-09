@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V77_PROGBUF_GPR_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PROGBUF_EXECUTION_NOT_CONFIRMED",
+  "target_memory_writes": 0,
+  "target_mmio_writes": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "38B244C4E4DFEDF06CD54B122A3A5EEA5B7C2D8B2FA618782BADBF73B5F097FE",
+    "openocd.combined.log": "442A1DEB96D5255D8D29FB5D1616ED8C16680B6B247227D325D848F963451343"
+  },
+  "finished_local": "2026-11-05T12:11:42.044925+08:00"
+}

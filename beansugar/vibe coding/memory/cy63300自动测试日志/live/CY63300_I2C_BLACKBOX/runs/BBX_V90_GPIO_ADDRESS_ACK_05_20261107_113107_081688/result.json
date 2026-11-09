@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_ADDRESS_ACK_05",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_mmio_write_count": 3,
+  "combined_sha256": "EDEF5F31CE47BB9056A55052D688BF44AAA6B4BC086125767C1464DF0E1BF0F9",
+  "finished_local": "2026-11-07T11:31:10.134191+08:00"
+}

@@ -1,0 +1,28 @@
+{
+  "stage": "BBX_V99D_ARM_CONTROLLER_READY_01",
+  "tcl_tag": "V92K",
+  "return_code": 0,
+  "complete": true,
+  "target_write_evidence": [
+    "V92K_TARGET_WRITE_ATTEMPT n=1 addr=0x40002810 value=0x000003E7",
+    "V92K_TARGET_WRITE_ATTEMPT n=2 addr=0x40002814 value=0x000003E7",
+    "V92K_TARGET_WRITE_ATTEMPT n=3 addr=0x40002800 value=0x0000000E",
+    "V92K_TARGET_WRITE_ATTEMPT n=4 addr=0x40002824 value=0x0000003C",
+    "V92K_TARGET_WRITE_ATTEMPT n=5 addr=0x40002800 value=0x0000000F"
+  ],
+  "result_lines": [
+    [
+      "",
+      "",
+      "",
+      "",
+      "PASS_CONTROLLER_READY_NO_TRANSACTION",
+      "5",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "log_sha256": "D2E86849898916E5CA98BEE3AE0696671E90080268F22BFF65E9F3545C7BBC6E",
+  "finished_local": "2026-11-09T16:08:16.349819+08:00"
+}

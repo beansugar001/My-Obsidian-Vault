@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V91_GPIO_IDLE_RESTORE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_BOTH_LINES_RELEASED_IDLE",
+  "target_gpio_write_count": 1,
+  "combined_sha256": "EEDAA2F65204ECCEE2E1528436EBD66391CC7ACE234BE9592FE94F08C3AD3224",
+  "finished_local": "2026-11-07T13:15:19.573570+08:00"
+}

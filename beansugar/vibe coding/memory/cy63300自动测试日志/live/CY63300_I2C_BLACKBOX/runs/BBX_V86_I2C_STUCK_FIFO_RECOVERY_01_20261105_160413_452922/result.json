@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V86_I2C_STUCK_FIFO_RECOVERY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 2,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "D7B0FD9392C81D302C6A671FED3562AC2E80F8E61363E2EC14B232A346AEDD0A",
+    "openocd.combined.log": "E42338D0F5C6C95581505B715DD8DDB4895C66EB996DFBB86CFC730D177706B7"
+  },
+  "finished_local": "2026-11-05T16:04:16.443665+08:00"
+}

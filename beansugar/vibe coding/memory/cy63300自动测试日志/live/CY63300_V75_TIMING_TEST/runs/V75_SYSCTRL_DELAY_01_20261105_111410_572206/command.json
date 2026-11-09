@@ -1,0 +1,29 @@
+{
+  "stage": "V75_SYSCTRL_DELAY_01",
+  "command_argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_V75_TIMING_TEST/v75_100k_no_servers.cfg",
+    "-c",
+    "set ::v75_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_V75_TIMING_TEST/v75_timing_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "files_sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_V75_TIMING_TEST\\v75_100k_no_servers.cfg": "8BAC5CB2DFBAFDFAC757E62F7B84F65F4E4655C1C3E5A37D05AEB90AED6BF0BB",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_V75_TIMING_TEST\\v75_timing_once.tcl": "0ABF8DAA98D2730B8CFE4B95B5EA31A57C50FD6AD1D0DC58B986D8AE60642B6C",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_V75_TIMING_TEST\\run_v75_once.py": "1E292125D468CB071B4804667E97FE7EDDA8D52EAE63FDBCFBE6002383BF90B0"
+  },
+  "marker": "D:\\project\\RISCV-63300\\CY63300_AUTO_TEST\\markers\\V75_SYSCTRL_DELAY_01.attempted.json",
+  "write_allowlist": [
+    [
+      "0x4002180C",
+      "0x00000020"
+    ]
+  ],
+  "write_budget": 1,
+  "started_local": "2026-11-05T11:14:10.578481+08:00",
+  "retry_policy": "none"
+}

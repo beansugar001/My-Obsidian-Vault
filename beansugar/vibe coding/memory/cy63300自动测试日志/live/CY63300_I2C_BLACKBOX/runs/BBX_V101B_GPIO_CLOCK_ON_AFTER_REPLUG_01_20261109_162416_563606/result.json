@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V101B_GPIO_CLOCK_ON_AFTER_REPLUG_01",
+  "tcl_tag": "V92I",
+  "return_code": 0,
+  "complete": true,
+  "target_write_evidence": [
+    "V92I_TARGET_MMIO_WRITE_ATTEMPT=1 address=0x4002180C value=0x00000021"
+  ],
+  "result_lines": [
+    [
+      "",
+      "PASS_GPIO_I2C_CLOCK_ON",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "log_sha256": "93674BD4BE3FA2587BF8FD29AD570D24D640ED13CB25E5777C5372B31FE2420A",
+  "finished_local": "2026-11-09T16:24:18.198144+08:00"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V86K_OLED_DISPLAY_OFF_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 3,
+  "stop_sent": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "D273CAB1293919187DC769B75280741D4BE64AC90F1D5F2847B28BD51E49ED2A",
+    "openocd.combined.log": "D1C30671F162C8E391424B134C4768BB3781DAB5992439753629CADF9CA43349"
+  },
+  "finished_local": "2026-11-05T19:15:50.095707+08:00"
+}

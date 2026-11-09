@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V78B_V44_ORDER_DIV0_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PASS_DIV0_21_VISIBLE",
+  "target_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "25B1C233843A497067C12A339FA0B340A3CF311B1DB45E5264FDDD00CCDED8C0",
+    "openocd.combined.log": "974E9D884F76653DE5E24AB591506E46BE201DF22BD8889E7A39893E25A4C8FA"
+  },
+  "finished_local": "2026-11-05T12:27:24.904617+08:00"
+}

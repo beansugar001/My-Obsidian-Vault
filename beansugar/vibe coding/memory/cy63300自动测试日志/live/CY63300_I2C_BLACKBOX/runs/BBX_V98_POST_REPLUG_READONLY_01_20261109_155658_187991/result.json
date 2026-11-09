@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V98_POST_REPLUG_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "CLOCK_OFF_CLASSIFIED",
+  "target_mmio_writes": 0,
+  "flash_nvr_writes": 0,
+  "log_sha256": "463E1B82CB0BFC6DBB10CB4DED5EAEECA196874EF86599A9D0980DF61E633087",
+  "finished_local": "2026-11-09T15:56:58.938949+08:00"
+}

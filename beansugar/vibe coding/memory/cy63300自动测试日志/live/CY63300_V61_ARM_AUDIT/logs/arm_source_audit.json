@@ -1,0 +1,230 @@
+{
+  "scope": "file-only; no target I/O",
+  "files": {
+    "common_i2c_c": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_common_chip\\DRIVER_LIB\\src\\cj32l01xx_i2c.c",
+      "sha256": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379",
+      "expected": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379"
+    },
+    "common_i2c_h": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_common_chip\\DRIVER_LIB\\inc\\cj32l01xx_i2c.h",
+      "sha256": "ce1c031545d7b5f3fcefe7e996e065b488d51d8ff21ff0e15289bc478e644ef7",
+      "expected": "ce1c031545d7b5f3fcefe7e996e065b488d51d8ff21ff0e15289bc478e644ef7"
+    },
+    "common_rcc_c": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_common_chip\\DRIVER_LIB\\src\\cj32l01xx_rcc.c",
+      "sha256": "f2c5827700b70b2bcc2a54fcda4fc05b4a5f0d9ef5c0f9b5d52b9edcb91ba4c8",
+      "expected": "f2c5827700b70b2bcc2a54fcda4fc05b4a5f0d9ef5c0f9b5d52b9edcb91ba4c8"
+    },
+    "common_rcc_h": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_common_chip\\DRIVER_LIB\\inc\\cj32l01xx_rcc.h",
+      "sha256": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da",
+      "expected": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da"
+    },
+    "common_device_h": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_common_chip\\DEVICE\\cj32l01xx.h",
+      "sha256": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94",
+      "expected": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94"
+    },
+    "sample_i2c_c": {
+      "path": "D:\\project\\63300\\CY63300_测试样例\\Device_lib\\src\\cj32l01xx_i2c.c",
+      "sha256": "cc40138708b32c56f161005912ad198d7a3c567255c3fc61fb215ec845ffa803",
+      "expected": "cc40138708b32c56f161005912ad198d7a3c567255c3fc61fb215ec845ffa803"
+    },
+    "sample_master_c": {
+      "path": "D:\\project\\63300\\CY63300_测试样例\\IIC_Master.c",
+      "sha256": "50704b5ebf0d9573f8eed23566ae5235b500efb195c0c19d72e7813f165bd4e7",
+      "expected": "50704b5ebf0d9573f8eed23566ae5235b500efb195c0c19d72e7813f165bd4e7"
+    },
+    "master_i2c_c": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_master\\DRIVER_LIB\\src\\cj32l01xx_i2c.c",
+      "sha256": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379"
+    },
+    "secu_i2c_c": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_secu_chip\\DRIVER_LIB\\src\\cj32l01xx_i2c.c",
+      "sha256": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379"
+    },
+    "master_rcc_h": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_master\\DRIVER_LIB\\inc\\cj32l01xx_rcc.h",
+      "sha256": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da"
+    },
+    "secu_device_h": {
+      "path": "D:\\project\\63300\\63300材料\\cod\\CY63300_SecureFw_cs_secu_chip\\DEVICE\\cj32l01xx.h",
+      "sha256": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94"
+    }
+  },
+  "checks": {
+    "sha256:common_i2c_c": "PASS",
+    "sha256:common_i2c_h": "PASS",
+    "sha256:common_rcc_c": "PASS",
+    "sha256:common_rcc_h": "PASS",
+    "sha256:common_device_h": "PASS",
+    "sha256:sample_i2c_c": "PASS",
+    "sha256:sample_master_c": "PASS",
+    "duplicate:master_i2c_c": "PASS",
+    "duplicate:secu_i2c_c": "PASS",
+    "duplicate:master_rcc_h": "PASS",
+    "duplicate:secu_device_h": "PASS",
+    "ARM clock enum bit5": "PASS",
+    "conflicting device macro bit2": "PASS",
+    "ARM reset enum bit2": "PASS",
+    "divider API subtracts one": "PASS",
+    "I2C clock enabled inside master init": "PASS",
+    "both FIFOs enabled before MODE": "PASS",
+    "generic FS uses 10-bit selector": "PASS",
+    "generic FS address comment conflict present": "PASS",
+    "sample main excluded": "PASS",
+    "master test excluded from default build": "PASS",
+    "slave source included in default build": "PASS",
+    "zip contains common I2C driver": "PASS",
+    "zip contains sample master source": "PASS",
+    "zip common driver matches extracted source": "PASS",
+    "zip master sample matches extracted source": "PASS",
+    "RISC-V I2C clock bit5 documented": "PASS",
+    "RISC-V I2C reset bit5 documented": "PASS",
+    "RISC-V I2C excerpt available": "PASS"
+  },
+  "project_members": {
+    "main.c": "0",
+    "IIC_Slave.c": "1",
+    "IIC_Master.c": "0"
+  },
+  "zip": {
+    "path": "D:\\project\\63300\\63300测试与材料.zip",
+    "sha256": "b3c7603f15d82a6a2385210359da08008e469e7b3c38021ad7fc0c4f4b76650f"
+  },
+  "zip_source_entries": [
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_common_chip/DEVICE/cj32l01xx.h",
+      "bytes": 54628,
+      "sha256": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_common_chip/DEVICE/system_cj32l01xx.h",
+      "bytes": 1191,
+      "sha256": "b45e3727b4b7e333334dd2dce2a5eed9e9db55645402c73d430653aa32bb1283"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_common_chip/DRIVER_LIB/inc/cj32l01xx_i2c.h",
+      "bytes": 5423,
+      "sha256": "ce1c031545d7b5f3fcefe7e996e065b488d51d8ff21ff0e15289bc478e644ef7"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_common_chip/DRIVER_LIB/inc/cj32l01xx_rcc.h",
+      "bytes": 3579,
+      "sha256": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_common_chip/DRIVER_LIB/src/cj32l01xx_i2c.c",
+      "bytes": 15421,
+      "sha256": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_common_chip/DRIVER_LIB/src/cj32l01xx_rcc.c",
+      "bytes": 4438,
+      "sha256": "f2c5827700b70b2bcc2a54fcda4fc05b4a5f0d9ef5c0f9b5d52b9edcb91ba4c8"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_master/DEVICE/cj32l01xx.h",
+      "bytes": 54628,
+      "sha256": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_master/DEVICE/system_cj32l01xx.h",
+      "bytes": 1191,
+      "sha256": "b45e3727b4b7e333334dd2dce2a5eed9e9db55645402c73d430653aa32bb1283"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_master/DRIVER_LIB/inc/cj32l01xx_i2c.h",
+      "bytes": 5423,
+      "sha256": "ce1c031545d7b5f3fcefe7e996e065b488d51d8ff21ff0e15289bc478e644ef7"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_master/DRIVER_LIB/inc/cj32l01xx_rcc.h",
+      "bytes": 3579,
+      "sha256": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_master/DRIVER_LIB/src/cj32l01xx_i2c.c",
+      "bytes": 15421,
+      "sha256": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_master/DRIVER_LIB/src/cj32l01xx_rcc.c",
+      "bytes": 4438,
+      "sha256": "f2c5827700b70b2bcc2a54fcda4fc05b4a5f0d9ef5c0f9b5d52b9edcb91ba4c8"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_secu_chip/DEVICE/cj32l01xx.h",
+      "bytes": 54628,
+      "sha256": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_secu_chip/DEVICE/system_cj32l01xx.h",
+      "bytes": 1191,
+      "sha256": "b45e3727b4b7e333334dd2dce2a5eed9e9db55645402c73d430653aa32bb1283"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_secu_chip/DRIVER_LIB/inc/cj32l01xx_i2c.h",
+      "bytes": 5423,
+      "sha256": "ce1c031545d7b5f3fcefe7e996e065b488d51d8ff21ff0e15289bc478e644ef7"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_secu_chip/DRIVER_LIB/inc/cj32l01xx_rcc.h",
+      "bytes": 3579,
+      "sha256": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_secu_chip/DRIVER_LIB/src/cj32l01xx_i2c.c",
+      "bytes": 15421,
+      "sha256": "0cb18540cfd2009a65137f86a2c06f94a26b5be759287f8a91345223a086c379"
+    },
+    {
+      "entry": "63300▓─┴╧/cod/CY63300_SecureFw_cs_secu_chip/DRIVER_LIB/src/cj32l01xx_rcc.c",
+      "bytes": 4438,
+      "sha256": "f2c5827700b70b2bcc2a54fcda4fc05b4a5f0d9ef5c0f9b5d52b9edcb91ba4c8"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/Device/cj32l01xx.h",
+      "bytes": 54628,
+      "sha256": "d2a6da86393371b75a8001d77d5b3895abc6602bf2366d05579dd88433193e94"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/Device/system_cj32l01xx.h",
+      "bytes": 1191,
+      "sha256": "b45e3727b4b7e333334dd2dce2a5eed9e9db55645402c73d430653aa32bb1283"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/Device_lib/inc/cj32l01xx_i2c.h",
+      "bytes": 5423,
+      "sha256": "ce1c031545d7b5f3fcefe7e996e065b488d51d8ff21ff0e15289bc478e644ef7"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/Device_lib/inc/cj32l01xx_rcc.h",
+      "bytes": 3579,
+      "sha256": "9275e8be8cdecde365e1cc7f3ba7408aa82672e19ec011dcb43667c767c344da"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/Device_lib/src/cj32l01xx_i2c.c",
+      "bytes": 15437,
+      "sha256": "cc40138708b32c56f161005912ad198d7a3c567255c3fc61fb215ec845ffa803"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/Device_lib/src/cj32l01xx_rcc.c",
+      "bytes": 4438,
+      "sha256": "f2c5827700b70b2bcc2a54fcda4fc05b4a5f0d9ef5c0f9b5d52b9edcb91ba4c8"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/IIC_Master.c",
+      "bytes": 12136,
+      "sha256": "50704b5ebf0d9573f8eed23566ae5235b500efb195c0c19d72e7813f165bd4e7"
+    },
+    {
+      "entry": "CY63300_▓Γ╩╘╤∙└²/IIC_Slave.c",
+      "bytes": 7408,
+      "sha256": "faf139bcf3130a2a11f7ad6aa97cb852d6a46a41b1431c1eca767eec8d695469"
+    }
+  ],
+  "result": "PASS",
+  "failures": []
+}

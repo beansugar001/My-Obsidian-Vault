@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V88A_POST_REPLUG_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "INCOMPLETE_OR_UNKNOWN",
+  "target_mmio_writes": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "CB84864522373C72E5BAF609FB2759A4115D64EC9EF3E7F02EEFCA29665830CF",
+    "openocd.combined.log": "B31A5E47ADE546E6A05DA0F42A5845B2E181F560144954BA6FB9DEA41398A4C6"
+  },
+  "finished_local": "2026-11-05T20:28:42.306752+08:00"
+}

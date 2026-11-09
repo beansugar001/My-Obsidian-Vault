@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V100A_CLOCK_ON_AFTER_REPLUG_01",
+  "tcl_tag": "V92G",
+  "return_code": 3,
+  "complete": true,
+  "target_write_evidence": [],
+  "result_lines": [
+    [
+      "FAIL_OR_UNKNOWN",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      "",
+      ""
+    ]
+  ],
+  "log_sha256": "046A6E43900FDB276296357DEE9539B8F49DE125CA57BAA9B6E43B0C8AB67BBF",
+  "finished_local": "2026-11-09T16:19:05.033576+08:00"
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V86H_POST_REPLUG_CLOCKS_ON_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_CLOCKS_ON_I2C_RESET_IDLE",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "41C2B94F9154C2AB66113BFF8475EB2BCD7F75A3A14C6EA322D2419BEBA1F55E",
+    "openocd.combined.log": "2DFBDCD4EFF0A58061E8C06F32DEBBFA5C0A60F0E22AF4BE87F5A4DBCEA568FC"
+  },
+  "finished_local": "2026-11-05T19:12:57.440990+08:00"
+}

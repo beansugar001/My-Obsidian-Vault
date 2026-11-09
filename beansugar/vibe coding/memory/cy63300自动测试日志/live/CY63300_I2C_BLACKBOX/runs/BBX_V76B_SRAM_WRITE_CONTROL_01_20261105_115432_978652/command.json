@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V76B_SRAM_WRITE_CONTROL_01",
+  "command_argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_sram_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76b_sram.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76b_sram.tcl": "C7A16B5B57680C3DE1EC22BA5FA77F48F3A69B1F070EA8F3BF40D6837A685D9F",
+    "D:\\project\\RISCV-63300\\test\\i2c_diag\\i2c_diag.map": "96B37DC2089EC8B41C2D12861A36768DACF8A2D3A83EB01BD33FA3554745AC78",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v76b_sram_once.py": "3A7E8E471D583FCB95F991F9812B8CBBE1EC2412624F5E5EB215C19E29DF27CC"
+  },
+  "host_processes": [],
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V76B_SRAM_WRITE_CONTROL_01.attempted.json",
+  "timeout_s": 180,
+  "retry": "none",
+  "started_local": "2026-11-05T11:54:32.978652+08:00"
+}

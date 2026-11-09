@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V104B_GPIO_IDR_SNAPSHOT_HALT_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v104b_authorized 1; source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v104b_gpio_idr_snapshot_halt_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T18:40:06.183262+08:00",
+  "host": {
+    "processes": [],
+    "ports": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v104b_gpio_idr_snapshot_halt_once.tcl": "6E11467CE34CC4F6C6E0985376C3F4C275E0D2D45F785E23DF9FC4DB66DDFAD6",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_v104b_gpio_idr_snapshot_halt_once.py": "5D9C3CD4058A216DFF56A7866D28CF5BF885EADFAD83D19999E2BD3DFB7E8266"
+  }
+}

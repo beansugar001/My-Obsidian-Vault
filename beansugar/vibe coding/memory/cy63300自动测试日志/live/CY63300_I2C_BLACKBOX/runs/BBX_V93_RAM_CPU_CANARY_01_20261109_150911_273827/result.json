@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V93_RAM_CPU_CANARY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "INCOMPLETE_OR_UNKNOWN",
+  "resume_count": 0,
+  "mmio_write_count": 0,
+  "flash_nvr_write_count": 0,
+  "sram_restore": false,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "FCC0697B0BBA800BB08801570B06F6DB98FCB646D4EE836C03D6668ACC619A56",
+    "openocd.combined.log": "DD59041264E40F0CFB930881C8D3F69B4960FF798BE8629A560B0F72F7D382D0"
+  },
+  "finished_local": "2026-11-09T15:09:11.737655+08:00"
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V92C_CLOCK_WRITE_DELAYED_VERIFY_01",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V92C_CLOCK_WRITE_DELAYED_VERIFY_01.attempted.json",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs\\BBX_V92C_CLOCK_WRITE_DELAYED_VERIFY_01_20261109_143257_483396",
+  "host_processes": [],
+  "host_ports": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v92c_clock_write_delay_once.tcl": "65181FA68B711E0ECF87EBC6BA544A7924470CCBA3AC98BC40E3E667A56DC73B",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v92c_clock_verify_readonly.tcl": "D8A27BCC0DD6534F3809CDFE24CA19C64A53595BE9898E3418658F13EFBEF12D",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v92c_clock_write_delay_once.py": "9048DF00D2384D6638B77CCF9AD80351C3CC2ADCC57C311D35FF6421B8F88F4E"
+  },
+  "target_write_budget": 1,
+  "no_reset_resume_retry_restore": true
+}

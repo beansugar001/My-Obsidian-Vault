@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V80_GPIO_PAD_READ_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "8D214780477A27D80DC05B93703B3E7983EB251A57574210ABE25FB0B00D999F",
+    "openocd.combined.log": "8E32A31161E66FDEBD5A0D34C157EEE981C0C6836BA8F2F5B787E8865CB2228A"
+  },
+  "finished_local": "2026-11-05T12:36:13.333632+08:00"
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V82_CLOCK_TREE_READ_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_READ_ONLY_CLOCK_SNAPSHOT",
+  "target_write_count": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "C59537F422EC346E516868C3D20DBD8021D23E9DFFDA1DA198D560184BB4EDFA",
+    "openocd.combined.log": "58E2ED5FF9A2F73242AE5FB1BC617E8237E19010D21A6D53BF85119738A1C2C0"
+  },
+  "finished_local": "2026-11-05T12:51:36.462966+08:00"
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V78C_DIV0_RESTORE_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PASS_DIV0_RESTORED_20",
+  "target_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "20C583B5F2E0A1151D0E300AEE8B5ECCD5F34B9A1A4B2CFBACA3A0A364711C34",
+    "openocd.combined.log": "354FE918D5BC109E8F90AD1BD0C6DB45F89603727091C5AFEF3382A0706175D8"
+  },
+  "finished_local": "2026-11-05T12:30:19.704852+08:00"
+}

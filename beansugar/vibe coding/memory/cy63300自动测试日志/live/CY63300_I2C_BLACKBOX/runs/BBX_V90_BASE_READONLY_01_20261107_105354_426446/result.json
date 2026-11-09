@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V90_BASE_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_READ_ONLY_BASELINE_CLOCK_OFF",
+  "target_mmio_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "506C92C78D7A4DEBF7787368A791B270BF3916237DC05321BB1F999F02C4533E",
+    "openocd.combined.log": "B5D88C87BA31CD30FB542425776B8FB05110D0D45511AD2C36CC4E19225B0CDF"
+  },
+  "finished_local": "2026-11-07T10:53:56.824201+08:00"
+}

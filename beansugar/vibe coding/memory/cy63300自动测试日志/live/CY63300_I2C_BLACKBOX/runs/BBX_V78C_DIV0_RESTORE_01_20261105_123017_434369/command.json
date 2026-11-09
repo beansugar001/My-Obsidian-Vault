@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V78C_DIV0_RESTORE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_v78c_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v78c_v44_restore_divider.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v78c_v44_restore_divider.tcl": "EE6E75676FF768BF3BDB0E26E29FED1D56A0BC10F04367E5F9D0545A1DC075D4",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v78c_restore_once.py": "4D84354CB8E4521E8C0B058FE3365202892360C958CA12D8B50FED83F6A4FC8A"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "timeout_s": 150,
+  "started_local": "2026-11-05T12:30:17.434369+08:00",
+  "retry": "none"
+}

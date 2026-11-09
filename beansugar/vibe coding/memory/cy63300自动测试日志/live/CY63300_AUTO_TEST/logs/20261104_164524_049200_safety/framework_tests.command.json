@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "D:\\python\\python.exe",
+    "-B",
+    "-m",
+    "unittest",
+    "discover",
+    "-s",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\mocks",
+    "-v"
+  ],
+  "cwd": "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST",
+  "time": "2026-11-04T16:45:24+08:00"
+}

@@ -1,0 +1,15 @@
+VCD info: dumpfile out/v52_original.vcd opened for output.
+CASE 1 conflict=0 payload=a1b2c3d4 req_edges=1 granted_edges=1 ram_write_edges=1 RAM=a1b2c3d4 response_status=00 early_response=0
+CASE 1 PASS
+CASE 2 conflict=0 payload=00000000 req_edges=1 granted_edges=1 ram_write_edges=1 RAM=00000000 response_status=00 early_response=0
+CASE 2 PASS
+CASE 3 conflict=1 payload=00000000 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 3 PASS
+CASE 4 conflict=2 payload=00000000 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 4 PASS
+CASE 5 conflict=1 payload=22334455 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 5 PASS
+CASE 6 conflict=3 payload=00000000 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 6 PASS
+V52_ORIGINAL_LOST_WRITE_REPRODUCED: conflict writes lost; DMI still returns SUCCESS
+.\tb\tb_v52_compare.sv:233: $finish called at 2630000 (1ps)

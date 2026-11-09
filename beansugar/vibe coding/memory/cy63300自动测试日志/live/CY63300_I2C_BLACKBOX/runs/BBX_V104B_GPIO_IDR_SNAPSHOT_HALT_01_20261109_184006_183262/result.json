@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V104B_GPIO_IDR_SNAPSHOT_HALT_01",
+  "return_code": 0,
+  "status": "INCOMPLETE_OR_UNKNOWN",
+  "halt_requests": null,
+  "final_sbcs": null,
+  "target_mmio_write_count": null,
+  "complete": true,
+  "log_sha256": "0AAB81A7BA80804D36329D9C638771D8AC21C99D4C654AF79F9C2815371F9C97",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs\\BBX_V104B_GPIO_IDR_SNAPSHOT_HALT_01_20261109_184006_183262"
+}

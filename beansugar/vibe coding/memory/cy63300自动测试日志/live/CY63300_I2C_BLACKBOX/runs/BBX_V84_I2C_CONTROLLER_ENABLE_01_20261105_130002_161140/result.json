@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V84_I2C_CONTROLLER_ENABLE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "0120F4AC5C167778179B834DA6A46EE64F0BEC92A409DB8FDFDA85149345B2B1",
+    "openocd.combined.log": "976C6B613DA57DF4F1862169B7C221551419D507BDA4DA217D966954B08C566D"
+  },
+  "finished_local": "2026-11-05T13:00:04.619052+08:00"
+}

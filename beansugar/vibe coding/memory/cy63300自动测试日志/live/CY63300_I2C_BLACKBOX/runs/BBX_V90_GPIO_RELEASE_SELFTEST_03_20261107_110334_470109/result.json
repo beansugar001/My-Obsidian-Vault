@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_RELEASE_SELFTEST_03",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_GPIO_OD_RELEASE_AND_LOW_SELFTEST_NO_I2C_FRAME",
+  "target_mmio_write_count": 4,
+  "combined_sha256": "FF8D3CA0997CE58F01CFB99B8AA92042040B279B16152035AD608F4382F83EEB",
+  "finished_local": "2026-11-07T11:03:38.117427+08:00"
+}

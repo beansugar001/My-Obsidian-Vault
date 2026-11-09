@@ -1,0 +1,35 @@
+test_complete_result_saved (test_v60.FullRunner) ... ok
+test_nonzero_partial_evidence_preserved (test_v60.FullRunner) ... ok
+test_all_ones_misa (test_v60.Parsing) ... ok
+test_duplicate_sample (test_v60.Parsing) ... ok
+test_full_18_samples (test_v60.Parsing) ... ok
+test_misa_unstable (test_v60.Parsing) ... ok
+test_missing_dm_after (test_v60.Parsing) ... ok
+test_missing_id (test_v60.Parsing) ... ok
+test_missing_misa (test_v60.Parsing) ... ok
+test_missing_sample (test_v60.Parsing) ... ok
+test_other_probe (test_v60.Parsing) ... ok
+test_other_tap_other_id (test_v60.Parsing) ... ok
+test_other_tap_same_id (test_v60.Parsing) ... ok
+test_partial_evidence (test_v60.Parsing) ... ok
+test_same_tap_duplicate_not_deduped (test_v60.Parsing) ... ok
+test_substring_not_success (test_v60.Parsing) ... ok
+test_valid (test_v60.Parsing) ... ok
+test_warning (test_v60.Parsing) ... ok
+test_wrong_id (test_v60.Parsing) ... ok
+test_wrong_name (test_v60.Parsing) ... ok
+test_wrong_value (test_v60.Parsing) ... ok
+test_zero_misa (test_v60.Parsing) ... ok
+test_failure_cannot_retry (test_v60.Reservation) ... ok
+test_abstract_error_before_command (test_v60.TclExecution) ... ok
+test_actual_duplicate_stops_before_halt (test_v60.TclExecution) ... ok
+test_autoexec_blocks_abstract_and_mmio (test_v60.TclExecution) ... ok
+test_busy_stops_before_writes (test_v60.TclExecution) ... ok
+test_misa_invalid_before_mmio (test_v60.TclExecution) ... ok
+test_reset_stops_before_i2c (test_v60.TclExecution) ... ok
+test_success_no_target_writes (test_v60.TclExecution) ... ok
+
+----------------------------------------------------------------------
+Ran 30 tests in 0.078s
+
+OK

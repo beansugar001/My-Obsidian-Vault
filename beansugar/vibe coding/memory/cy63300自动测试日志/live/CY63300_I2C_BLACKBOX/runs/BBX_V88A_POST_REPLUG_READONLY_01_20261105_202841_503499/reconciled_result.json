@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V88A_POST_REPLUG_READONLY_01",
+  "openocd_return_code": 0,
+  "complete_marker": true,
+  "raw_log_status": "BLOCKED_I2C_CLOCK_OFF",
+  "original_wrapper_status": "INCOMPLETE_OR_UNKNOWN",
+  "wrapper_issue": "The first generated runner still matched the V87D result prefix instead of V88A; status reconciled from the preserved V88A_RESULT line. No hardware rerun was performed.",
+  "target_mmio_writes": 0,
+  "probe_serial": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "idcode": "0x1E200A6F",
+  "cpu_state_initial": "running",
+  "halt_request": "one halt 2000",
+  "cpu_state_after_halt": "halted",
+  "dmstatus": "0x00430382",
+  "sbcs": "0x20040404",
+  "peri_clken": "0x00000000",
+  "peri_rst": "0x00000000",
+  "i2c_internal_registers": "skipped because I2C clock was off",
+  "combined_log_sha256": "B31A5E47ADE546E6A05DA0F42A5845B2E181F560144954BA6FB9DEA41398A4C6"
+}

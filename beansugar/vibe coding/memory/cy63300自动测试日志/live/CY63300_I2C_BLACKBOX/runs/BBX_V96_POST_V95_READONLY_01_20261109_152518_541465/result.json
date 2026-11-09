@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V96_POST_V95_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_READONLY_SNAPSHOT",
+  "target_mmio_writes": 0,
+  "flash_nvr_writes": 0,
+  "log_sha256": "39E38BFBE5076C03EDACE11DB843D149CAFB4233028AC3A3540CBF2F87E733EF",
+  "finished_local": "2026-11-09T15:25:19.566388+08:00"
+}

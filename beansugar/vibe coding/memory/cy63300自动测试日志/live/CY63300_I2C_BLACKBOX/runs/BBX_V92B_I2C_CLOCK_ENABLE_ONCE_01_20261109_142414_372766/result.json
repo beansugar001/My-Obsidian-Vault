@@ -1,0 +1,26 @@
+{
+  "stage": "BBX_V92B_I2C_CLOCK_ENABLE_ONCE_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "write_attempts": [
+    [
+      "1",
+      "0x4002180C",
+      "0x00000020"
+    ]
+  ],
+  "target_sbddata_write_requests": [
+    "0x00000020"
+  ],
+  "target_mmio_write_count": 1,
+  "halt_request_count": 1,
+  "idcode_ok": true,
+  "expected_probe_serial_found": true,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "C9991CBB2996A9DAB362BCB79BF90F7634AEE0AFF4363519B8A82D33AB576440",
+    "openocd.combined.log": "A35A79899490CE8713090397C14848A81DE333050A39C113E7F1F6BDF93E0C98"
+  },
+  "finished_local": "2026-11-09T14:24:16.207081+08:00"
+}

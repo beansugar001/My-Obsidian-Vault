@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_VALID_SENTINEL_SELFTEST_02",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_VALID_SENTINEL_ODR_TRANSITIONS_NO_I2C_FRAME",
+  "target_mmio_write_count": 5,
+  "combined_sha256": "803D6BADC95E6D40A722A1075EAB61916887E027E5F96A0BAB0BD04D2D4EDDA1",
+  "finished_local": "2026-11-07T11:29:30.116603+08:00"
+}

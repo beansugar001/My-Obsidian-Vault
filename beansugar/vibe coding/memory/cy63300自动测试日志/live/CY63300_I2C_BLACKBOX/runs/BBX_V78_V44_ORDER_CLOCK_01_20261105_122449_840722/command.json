@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V78_V44_ORDER_CLOCK_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::bbx_v78_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v78_v44_order.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v78_v44_order.tcl": "67E9832A889F604B4B43C44B0F6FE505ED24E199E3E1C8401EEE66F614E43ED0",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v78_v44_order_once.py": "A4D1648EF5538F17F63B94184661AEC3DC76C0D24A77525229F7BB9FDA46BCE5"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "timeout_s": 120,
+  "started_local": "2026-11-05T12:24:49.840722+08:00",
+  "retry": "none"
+}

@@ -1,0 +1,14 @@
+﻿HOST_READY_CHECK=READ_ONLY_HOST_ONLY
+TIMESTAMP_LOCAL=2026-11-04 20:30:14 +08:00
+COMPUTER=BEANSUGAR
+POWERSHELL=5.1.22621.4391
+DEBUG_PROCESS name=jtagserver pid=5632 path=<unavailable-or-access-denied>
+SERVICE name=JTAGServer display=Altera JTAG Server status=Running starttype=Automatic
+GET_NET_TCP_CONNECTION=UNAVAILABLE 拒绝访问 
+LISTENER local=0.0.0.0:1309 pid=5632 source=netstat
+HOST_READY_STATUS=BLOCKED_CONFLICT
+TARGET_CONNECTIONS=0
+OPENOCD_LAUNCHES=0
+HARDWARE_MARKERS_READ_OR_WRITTEN=0
+SERVICES_STOPPED=0
+NOTE=Candidate status is not hardware authorization or a JTAG electrical test.

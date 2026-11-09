@@ -1,0 +1,15 @@
+{
+  "stage": "V75_SYSCTRL_DELAY_02",
+  "openocd_return_code": 0,
+  "status": "FAIL_OR_UNKNOWN",
+  "complete_marker_seen": false,
+  "target_write_attempts": [],
+  "target_write_attempt_count": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "E5C39F4CD300F9E966977639720106A30CF4781112B3D942306866303A314601",
+    "openocd.combined.log": "CBDB88A74F32470260D3C9F2659ED97E209230733127019FF2D0207B2668A037"
+  },
+  "finished_local": "2026-11-05T11:24:50.156658+08:00",
+  "interpretation": "A readback pass means the value became visible to the SBA read path; it is not an internal bus-handshake trace."
+}

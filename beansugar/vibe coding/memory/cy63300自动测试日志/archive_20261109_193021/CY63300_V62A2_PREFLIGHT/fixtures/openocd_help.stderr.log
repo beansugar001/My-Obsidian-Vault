@@ -1,0 +1,14 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Open On-Chip Debugger
+Licensed under GNU GPL v2
+--help       | -h	display this help
+--version    | -v	display OpenOCD version
+--file       | -f	use configuration file <name>
+--search     | -s	dir to search for config files and scripts
+--debug      | -d	set debug level to 3
+             | -d<n>	set debug level to <level>
+--log_output | -l	redirect log output to file <name>
+--command    | -c	run <command>

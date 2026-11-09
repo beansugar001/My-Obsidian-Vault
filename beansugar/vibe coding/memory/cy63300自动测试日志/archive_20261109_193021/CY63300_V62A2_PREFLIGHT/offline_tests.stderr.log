@@ -1,0 +1,29 @@
+test_a2_stage_uses_new_global_marker_and_log_root (test_v62_preflight_capture.CaptureTests) ... ok
+test_actual_source_and_fixture_identity_is_pinned (test_v62_preflight_capture.CaptureTests) ... ok
+test_actual_tcl_fixture_mismatch_is_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_debug_port_conflict_is_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_future_argv_uses_raw_stream_capture_not_openocd_logger (test_v62_preflight_capture.CaptureTests) ... ok
+test_global_stage_marker_cannot_be_reused (test_v62_preflight_capture.CaptureTests) ... ok
+test_insufficient_clock_register_samples_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_jtagserver_process_and_service_are_conflicts (test_v62_preflight_capture.CaptureTests) ... ok
+test_launcher_failure_preserves_both_raw_streams (test_v62_preflight_capture.CaptureTests) ... ok
+test_logger_error_with_zero_exit_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_missing_dmstatus_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_missing_idcode_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_missing_log_file_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_missing_sbcs_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_mutex_gates_before_openocd_and_consumes_marker_on_conflict (test_v62_preflight_capture.CaptureTests) ... ok
+test_mutex_parsers_detect_listener (test_v62_preflight_capture.CaptureTests) ... ok
+test_nonzero_exit_rejected_even_with_valid_sample (test_v62_preflight_capture.CaptureTests) ... ok
+test_pinned_file_hash_change_is_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_preflight_tcl_not_executed_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_process_commandline_and_service_path_families_are_conflicts (test_v62_preflight_capture.CaptureTests) ... ok
+test_process_conflict_is_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+test_real_v61_reference_capture_passes (test_v62_preflight_capture.CaptureTests) ... ok
+test_tcl_preflight_contains_no_target_mmio_write_or_reset (test_v62_preflight_capture.CaptureTests) ... ok
+test_version_banner_only_rejected (test_v62_preflight_capture.CaptureTests) ... ok
+
+----------------------------------------------------------------------
+Ran 24 tests in 0.046s
+
+OK

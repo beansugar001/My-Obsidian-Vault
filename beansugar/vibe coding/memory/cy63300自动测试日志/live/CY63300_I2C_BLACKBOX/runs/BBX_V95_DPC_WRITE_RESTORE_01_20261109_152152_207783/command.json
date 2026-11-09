@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V95_DPC_WRITE_RESTORE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v95_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V95_DPC_WRITE_RESTORE/v95_dpc_write_restore.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V95_DPC_WRITE_RESTORE\\v95_dpc_write_restore.tcl": "C38B6F5AAEF9EB25D2A791865AEB230A963A147BE5CEA393648F3B67C2860EAD",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V95_DPC_WRITE_RESTORE\\run_v95_dpc_write_restore_once.py": "F7B83CAA2585307033FFD9B0D555FEBB5A343982549B8C88D554AE3835AEC219"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "started_local": "2026-11-09T15:21:52.207783+08:00",
+  "retry": "none",
+  "target_mmio_writes": 0
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_ADDRESS_FAIL_SNAPSHOT_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_READ_ONLY_CONTROLLER_GPIO_SNAPSHOT",
+  "target_mmio_write_count": 0,
+  "combined_sha256": "0F0B8861DE7E7BD99EE483B7B5E6B0BFED8CCA76500FF70202EBC7E9F87F8C40",
+  "finished_local": "2026-11-07T11:08:17.276544+08:00"
+}

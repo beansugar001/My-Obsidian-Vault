@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V97B_OLED_CONTROL_STOP_PROBE_02",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 2,
+  "frame_complete": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "460283F4FB52F5D2E645FDA17D3827CDF4AA35B206A27ACF502CCDC5CEC1A249",
+    "openocd.combined.log": "1BB5B6BCE03443ABFCC4C902B8E4142EC976515510AB25E21228D1272C6A5671"
+  },
+  "finished_local": "2026-11-09T15:31:04.078381+08:00"
+}

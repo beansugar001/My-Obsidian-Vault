@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_DIR_SCL_RECOVERY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_DIR_TOGGLED_SCL_AND_STOP_IDLE",
+  "target_mmio_write_count": 8,
+  "combined_sha256": "FF1CFF06B94EAF478FE8D9A36189D2C975E796CC3BEE8DAB3EF8C62998F849CA",
+  "finished_local": "2026-11-07T11:35:06.506954+08:00"
+}

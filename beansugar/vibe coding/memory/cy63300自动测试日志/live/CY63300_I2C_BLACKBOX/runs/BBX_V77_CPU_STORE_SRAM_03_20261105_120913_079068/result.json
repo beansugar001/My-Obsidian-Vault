@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V77_CPU_STORE_SRAM_03",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "CPU_STORE_FAIL_OR_UNKNOWN_SRAM_RESTORED",
+  "cpu_store_attempts": 1,
+  "cpu_restore_attempts": 1,
+  "target_mmio_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "35B77895842907576DEA9077CC259C883443025CA91DE0F2B66A2A17DCB3C9FD",
+    "openocd.combined.log": "1F4B2046E23BD09526B073310992826045BBBD49C71F9D5F37CF0640C89E7C28"
+  },
+  "finished_local": "2026-11-05T12:09:14.944254+08:00"
+}

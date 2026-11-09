@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V85B_OLED_POSTFAIL_RO_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_mmio_writes": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "419E50CFF5D359953A2EE537E1DA496CD25D949205051FC3D8E65EDCB1CA9FB3",
+    "openocd.combined.log": "BBCB58271F1331670742D7B11A3F53CF415D959CFB082217057DE33C1BC36B69"
+  },
+  "finished_local": "2026-11-05T15:37:24.112968+08:00"
+}

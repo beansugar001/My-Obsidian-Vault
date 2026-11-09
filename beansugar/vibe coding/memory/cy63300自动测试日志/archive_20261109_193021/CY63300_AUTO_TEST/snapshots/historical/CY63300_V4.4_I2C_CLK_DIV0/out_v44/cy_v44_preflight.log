@@ -1,0 +1,41 @@
+adapter speed: 100 kHz
+
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80480a
+Info : Listening on port 3333 for gdb connections
+preflight
+===== V44_PHASE=preflight =====
+DMSTATUS=0x00430382
+SBCS_INITIAL=0x20040404
+SBCS_MODE=0x20140404
+SBCS_AFTER_READ=0x20140404
+SBCS_MODE=0x20040404
+SBCS_MODE=0x20140404
+SBCS_AFTER_READ=0x20140404
+SBCS_MODE=0x20040404
+SBCS_MODE=0x20140404
+SBCS_AFTER_READ=0x20140404
+SBCS_MODE=0x20040404
+SBCS_MODE=0x20140404
+SBCS_AFTER_READ=0x20140404
+SBCS_MODE=0x20040404
+BEFORE_CLK1=0x00000000
+BEFORE_CLK2=0x00000000
+BEFORE_PERI_RST=0x00000000
+BEFORE_MODULE=0x00000002
+V44_preflight_VERIFIED
+SBCS_FINAL=0x20040404
+V44_STAGE_OK=preflight writes=0
+shutdown command invoked

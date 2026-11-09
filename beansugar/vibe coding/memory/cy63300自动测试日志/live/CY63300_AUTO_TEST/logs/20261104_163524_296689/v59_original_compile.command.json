@@ -1,0 +1,22 @@
+{
+  "argv": [
+    "D:\\project\\tools\\iverilog-msys2-v12\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\project\\tools\\iverilog-msys2-v12\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-IC:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\core",
+    "-IC:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\perips",
+    "-s",
+    "tb_v52_compare",
+    "-o",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\logs\\20261104_163524_296689\\v59_original.vvp",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\tb_v59_compare.sv",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\debug\\jtag_dm.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\core\\rib.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\perips\\ram.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\utils\\full_handshake_rx.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\rtl_tests\\original\\rtl\\utils\\full_handshake_tx.v"
+  ],
+  "cwd": "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST",
+  "time": "2026-11-04T16:35:29+08:00"
+}

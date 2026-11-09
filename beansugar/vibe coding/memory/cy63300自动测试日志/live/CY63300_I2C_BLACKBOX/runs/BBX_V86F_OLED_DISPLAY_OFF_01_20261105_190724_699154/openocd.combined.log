@@ -1,0 +1,56 @@
+
+--- STDERR ---
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+1
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Error: JTAG scan chain interrogation failed: all zeroes
+Error: Check JTAG interface, timings, target power, etc.
+Error: Trying to use configured scan chain anyway...
+Error: riscv.cpu: IR capture error; saw 0x00 not 0x01
+Info : cmsis-dap JTAG TLR_RESET
+Warn : Bypassing JTAG setup events due to errors
+Error: dtmcontrol is 0. Check JTAG connectivity/board power.
+Info : gdb port disabled
+V86F_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG scan chain interrogation failed: all zeroes
+Check JTAG interface, timings, target power, etc.
+Trying to use configured scan chain anyway...
+riscv.cpu: IR capture error; saw 0x00 not 0x01
+cmsis-dap JTAG TLR_RESET
+Bypassing JTAG setup events due to errors
+dtmcontrol is 0. Check JTAG connectivity/board power.
+gdb port disabled
+
+V86F_INIT_END
+V86F_ERROR=V86F_JTAG_INIT_ERROR
+Error: dmi_read is not implemented for this target.
+V86F_FINAL_SBCS rc=-4 value=dmi_read is not implemented for this target.
+
+Error: dmi_read is not implemented for this target.
+V86F_FINAL_DMSTATUS rc=-4 value=dmi_read is not implemented for this target.
+
+V86F_RESULT=FAIL_OR_UNKNOWN TARGET_WRITE_COUNT=0 STOP_SENT=0
+V86F_COMPLETE
+shutdown command invoked

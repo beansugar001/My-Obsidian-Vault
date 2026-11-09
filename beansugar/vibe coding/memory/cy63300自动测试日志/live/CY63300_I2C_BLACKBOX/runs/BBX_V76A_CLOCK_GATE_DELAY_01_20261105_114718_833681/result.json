@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_V76A_CLOCK_GATE_DELAY_01",
+  "openocd_return_code": 0,
+  "complete": false,
+  "status": "FAIL_OR_UNKNOWN",
+  "writes": [
+    [
+      "1",
+      "0x4002180C",
+      "0x00000020"
+    ]
+  ],
+  "write_count": 1,
+  "halt_request_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "7F5E860A8D0CF6E7E30DCC1ED54A0CAF2B517FE964758B09D4A831C6A8CA3C00",
+    "openocd.combined.log": "8949A89E717446CD89EF04AEDFEB2FBEB60B8AD5F787D3634E384A175DCB96BB"
+  },
+  "finished_local": "2026-11-05T11:47:20.188033+08:00"
+}

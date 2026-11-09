@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V86I_POST_REPLUG_PADS_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_PAD8_PAD9_RELEASED_AF3_IDLE",
+  "target_write_count": 5,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "48C6BBBC3E7CCC660AB5C4076222B37F74F1925841CA53D600865B50BF4A188D",
+    "openocd.combined.log": "31A103F14EF78200C496085DD335CC00A1F2D0D2C5248C242BD9347434EA20DD"
+  },
+  "finished_local": "2026-11-05T19:13:16.900823+08:00"
+}

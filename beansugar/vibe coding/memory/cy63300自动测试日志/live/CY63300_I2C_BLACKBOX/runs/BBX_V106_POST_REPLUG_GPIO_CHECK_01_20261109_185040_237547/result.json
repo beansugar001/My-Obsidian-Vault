@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V106_POST_REPLUG_GPIO_CHECK_01",
+  "return_code": 0,
+  "status": "PASS_CLOCKS_ONLY_GPIO_CLOCK_OFF",
+  "halt_requests": 1,
+  "final_sbcs": "537134084",
+  "target_mmio_write_count": 0,
+  "complete": true,
+  "log_sha256": "C6C7A3BB19C6BD3C3C054916C2155154600C72865DDD1DEEA3AAEF962971C797",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs\\BBX_V106_POST_REPLUG_GPIO_CHECK_01_20261109_185040_237547"
+}

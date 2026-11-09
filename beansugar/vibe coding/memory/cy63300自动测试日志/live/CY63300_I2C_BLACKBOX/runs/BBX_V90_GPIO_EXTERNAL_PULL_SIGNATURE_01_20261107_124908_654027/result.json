@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_EXTERNAL_PULL_SIGNATURE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_mmio_write_count": 1,
+  "combined_sha256": "4CD5FEEA6B50A4285CCAD85D0B98E479A49811E98A549F15FAF48E98388AA478",
+  "finished_local": "2026-11-07T12:49:11.032914+08:00"
+}

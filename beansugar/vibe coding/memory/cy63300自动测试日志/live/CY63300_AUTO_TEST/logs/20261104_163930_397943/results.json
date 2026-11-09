@@ -1,0 +1,30 @@
+{
+  "time": "2026-11-04T16:39:30+08:00",
+  "mode": "DRY_RUN",
+  "status": "PASS",
+  "target_mmio_writes": 0,
+  "reason": "No hardware or subprocess invoked",
+  "write_plan": {
+    "stage": "CLK_DIV0_20_TO_21",
+    "status": "BLOCKED",
+    "address": "0x40002810",
+    "before": "0x00000020",
+    "value": "0x00000021",
+    "target_write_budget": 1,
+    "required_preflight": "NOT_RUN",
+    "automatic_retry": false,
+    "automatic_restore": false,
+    "authority": "Separate explicit user authorization for this exact stage required",
+    "transport": "Not implemented for live writes in this release",
+    "recovery": {
+      "stage": "RESTORE_CLK_DIV0_21_TO_20",
+      "address": "0x40002810",
+      "before": "0x00000021",
+      "value": "0x00000020",
+      "target_write_budget": 1,
+      "separate_authorization": true,
+      "skip_when_readback_is_20": true,
+      "on_unknown_or_failed_restore": "STOP; no automatic reset or power cycle"
+    }
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "label": "write_session",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v92d_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v92d_clock_write_delay_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T14:34:25.656549+08:00",
+  "tcl_sha256": "D14B1879151D4CE6ABF2C98B04AD12873913D0291CF399F3FF2E6847C85D640A",
+  "expected_probe_serial": "07000001006700343500000a4e57354aa5a5a5a597969908"
+}

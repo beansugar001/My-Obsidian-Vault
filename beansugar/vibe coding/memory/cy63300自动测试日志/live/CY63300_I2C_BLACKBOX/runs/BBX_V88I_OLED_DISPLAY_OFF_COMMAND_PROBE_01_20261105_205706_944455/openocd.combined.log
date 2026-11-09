@@ -1,0 +1,10 @@
+
+--- STDERR ---
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+1
+C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v88i_oled_command_probe.tcl:84: Error: wrong # args: should be "proc name arglist ?statics? body"
+at file "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v88i_oled_command_probe.tcl", line 84
+Error: Target has not been initialized

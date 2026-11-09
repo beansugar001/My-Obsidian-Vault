@@ -1,0 +1,8 @@
+{
+  "time": "2026-11-04T16:39:43+08:00",
+  "mode": "READ_ONLY",
+  "status": "FAIL",
+  "target_mmio_writes": 0,
+  "reason": "TAP ID missing/mismatch/multiple",
+  "mmio_status": "NOT_TESTED"
+}

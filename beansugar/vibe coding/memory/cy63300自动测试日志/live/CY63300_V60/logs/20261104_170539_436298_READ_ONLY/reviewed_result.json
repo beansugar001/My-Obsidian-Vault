@@ -1,0 +1,96 @@
+{
+  "stage": "V60_READONLY_01",
+  "time": "2026-11-04T17:09:08+08:00",
+  "overall": "FAIL",
+  "phases": {
+    "previous_input_review": "PASS",
+    "duplicate_tap_guard": "PASS",
+    "static_audit": "PASS",
+    "offline_regression": "PASS",
+    "reference_misa_alias_simulation": "PASS",
+    "hardware_identity": "PASS",
+    "dmstatus": "PASS",
+    "initial_sbcs": "PASS",
+    "misa_three_read_consistency": "PASS",
+    "x1_three_read_consistency": "PASS",
+    "architectural_misa_authenticity": "BLOCKED",
+    "peri_clken_baseline": "FAIL",
+    "six_register_triple_sampling": "BLOCKED",
+    "write_experiment": "BLOCKED",
+    "restore_experiment": "BLOCKED",
+    "real_i2c_communication": "NOT_TESTED"
+  },
+  "offline": {
+    "tests": 30,
+    "reference_alias_cases": 5,
+    "run": "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\logs\\20261104_170629_034490_OFFLINE"
+  },
+  "observations": {
+    "idcode": "0x1E200A6F",
+    "tap_count": 1,
+    "adapter_khz": 100,
+    "serial": "07000001006700343500000a4e57354aa5a5a5a597969908",
+    "dmstatus_before": "0x00430382",
+    "sbcs_before": "0x20040404",
+    "cached_misa": "0x4C80680A",
+    "misa_samples": [
+      "0x4C80680A",
+      "0x4C80680A",
+      "0x4C80680A"
+    ],
+    "x1_samples": [
+      "0x4C80680A",
+      "0x4C80680A",
+      "0x4C80680A"
+    ],
+    "abstractcs": "0x01000003",
+    "abstractauto": "0x00000000",
+    "peri_clken": {
+      "address": "0x4002180C",
+      "expected": "0x00000020",
+      "actual": [
+        "0x00000000"
+      ],
+      "completed_samples": 1
+    },
+    "final_observed_sbcs": "0x20040404",
+    "cpu": "Halted by explicit halt; not resumed",
+    "peri_rst": "NOT_TESTED",
+    "module_ctrl": "NOT_TESTED",
+    "fifo_status": "NOT_TESTED",
+    "div0": "NOT_TESTED",
+    "div1": "NOT_TESTED"
+  },
+  "hardware": {
+    "run": "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\logs\\20261104_170539_436298_READ_ONLY",
+    "openocd_exit": 1,
+    "connections": 1,
+    "retried": false,
+    "target_mmio_writes": 0,
+    "stop_reason": "First PERI_CLKEN sample returned0, expected0x20. Tcl stopped before sample2 and before all I2C MMIO.",
+    "raw_wrapper_result": "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\logs\\20261104_170539_436298_READ_ONLY\\results.json",
+    "wrapper_secondary_error": "TypeError: dict() got multiple values for keyword argument 'marker'",
+    "wrapper_fix": "Removed duplicate keyword field during outcome saving; full runner success/failure regression added. No hardware rerun."
+  },
+  "markers": {
+    "old_marker_integrity": "PASS",
+    "old_hashes": {
+      "C:\\Users\\24796\\Documents\\组\\CY63300_AUTO_TEST\\state\\hardware_readonly.attempted.json": "c03f658533d16233439e8eec6d366e478dadbbe23d3e7e71038ac39fec8a1760",
+      "D:\\project\\RISCV-63300\\CY63300_AUTO_TEST\\state\\hardware_readonly.attempted.json": "c03f658533d16233439e8eec6d366e478dadbbe23d3e7e71038ac39fec8a1760",
+      "D:\\project\\RISCV-63300\\恢复jtag后\\CY63300_V5.6_ARM\\V56_FifoOn_ATTEMPTED.marker": "0305932b95735dddfe56ebf65ab1491ee6f13136c5a0e51a8bd7c25ebbec7f3d",
+      "D:\\project\\RISCV-63300\\恢复jtag后\\CY63300_V5.6B_MODULE_CTRL\\V56B_Attempt0E_ATTEMPTED.marker": "b0c5c8fed0c81d7fdc13e6db7e325c0f4bacf0b55783952aca5f23af8ea73218",
+      "D:\\project\\RISCV-63300\\恢复jtag后\\CY63300_V5.6C_RX_FIFO\\V56C_Attempt0A_ATTEMPTED.marker": "89f70f05b7f0a9f7b9ea309019a04b061e9fb3485ef31cfec767ab2b27ffb943",
+      "D:\\project\\RISCV-63300\\恢复jtag后\\CY63300_V5.6D_TX_FIFO\\V56D_Attempt06_ATTEMPTED.marker": "43f0fa18749f04efdb2e44802f99c237a7b81778249a5e1d8d4680ce40b1d377",
+      "D:\\project\\RISCV-63300\\恢复jtag后\\CY63300_V5.7_SBA\\V57_ChangeDiv_ATTEMPTED.marker": "459eeb76aed5143ba3303ead18e9976e44e8eb45d615669c7841da963d2f7cc7"
+    },
+    "new_marker": "D:\\project\\RISCV-63300\\CY63300_AUTO_TEST\\state\\V60_READONLY_01.attempted.json",
+    "new_marker_sha256": "9c8c412c8e6a6e047e3a07f69c5a161af9cd9662b0a83398c2057812f26e8abd",
+    "new_marker_immutable": true
+  },
+  "risk": "Single SBA return of0 is an observed result, not independent proof of physical clock gating. No clock enable write authorized.",
+  "next_action": "Review power/reset history and SBA read reliability; design a separately approved diagnostic stage. No automatic retry.",
+  "target_mmio_writes": 0,
+  "software_reset": false,
+  "flash_operations": false,
+  "new_firmware_executed": false
+}

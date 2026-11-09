@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_EXTERNAL_PULL_RESTORE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_DIR_RESTORED_OPEN_DRAIN_RELEASED",
+  "target_mmio_write_count": 1,
+  "combined_sha256": "BCB479D6EB03DCE086ED1E566D464B2F0A73D1144EA3C1D43F18C455BBAB6DF0",
+  "finished_local": "2026-11-07T12:52:41.774825+08:00"
+}

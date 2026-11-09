@@ -1,0 +1,20 @@
+{
+  "time": "2026-11-04T17:06:29+08:00",
+  "argv": [
+    "D:\\project\\tools\\iverilog-msys2-v12\\ucrt64\\bin\\iverilog.exe",
+    "-B",
+    "D:\\project\\tools\\iverilog-msys2-v12\\ucrt64\\lib\\ivl",
+    "-g2012",
+    "-IC:\\Users\\24796\\Documents\\组\\CY63300_V60\\snapshots\\reference_rtl\\core",
+    "-s",
+    "tb_misa_alias",
+    "-o",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\logs\\20261104_170629_034490_OFFLINE\\misa_alias.vvp",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\rtl_tests\\tb_misa_alias.sv",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\snapshots\\reference_rtl\\debug\\jtag_dm.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\snapshots\\reference_rtl\\core\\regs.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\snapshots\\reference_rtl\\utils\\full_handshake_rx.v",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\snapshots\\reference_rtl\\utils\\full_handshake_tx.v"
+  ],
+  "cwd": "C:\\Users\\24796\\Documents\\组\\CY63300_V60\\logs\\20261104_170629_034490_OFFLINE"
+}

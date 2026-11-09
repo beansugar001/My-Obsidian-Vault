@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_POST_ACK05_SNAPSHOT_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_READ_ONLY_CONTROLLER_GPIO_SNAPSHOT",
+  "target_mmio_write_count": 0,
+  "combined_sha256": "D85CFB44964FE9BBFF52E70F87306C2B3D4F8811826F3D6DB84BDC87EB595F9A",
+  "finished_local": "2026-11-07T11:32:28.206325+08:00"
+}

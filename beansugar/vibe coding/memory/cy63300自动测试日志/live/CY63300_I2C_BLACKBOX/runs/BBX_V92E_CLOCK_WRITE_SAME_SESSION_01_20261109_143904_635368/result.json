@@ -1,0 +1,26 @@
+{
+  "returncode": 0,
+  "complete": true,
+  "write_count": 1,
+  "writes": [
+    [
+      "0x4002180C",
+      "0x00000020"
+    ]
+  ],
+  "status": "FAIL_CLOCK_STILL_OFF_SAME_SESSION",
+  "idcode_ok": true,
+  "serial_ok": true,
+  "evidence": [
+    "V92E_PRECONDITION RST=00000000,00000000,00000000 CLKEN=00000000,00000000,00000000",
+    "V92E_POSTWRITE CLKEN=0x00000000 RESET=0x00000000 SBCS=0x20040404",
+    "V92E_STATUS=FAIL_CLOCK_STILL_OFF_SAME_SESSION"
+  ],
+  "sha256": {
+    "stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr.log": "F62D4C456E29858C4BE8E3F21016C98E4253A037A26D5F6C2AB9AA9406E3A5BF",
+    "combined.log": "BB34BC9B212DB55CE6D9D6AE78BB5640350472952F6877D347B667A6094C3D32"
+  },
+  "finished_local": "2026-11-09T14:39:06.512981+08:00",
+  "parser_correction": "CRLF-safe line parsing from immutable raw combined.log; log bytes unchanged"
+}

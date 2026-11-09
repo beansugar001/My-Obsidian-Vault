@@ -1,0 +1,30 @@
+{
+  "stage": "BBX_V92D_CLOCK_WRITE_DELAYED_VERIFY_01",
+  "write_rc": 0,
+  "verify_rc": 0,
+  "write_attempts": [
+    [
+      "1",
+      "0x4002180C",
+      "0x00000020"
+    ]
+  ],
+  "target_mmio_write_count": 1,
+  "write_session_status": "WRITE_SESSION_COMPLETE_DELAYED",
+  "write_session_complete": true,
+  "verify_session_complete": true,
+  "idcode_ok": true,
+  "serial_ok": true,
+  "verification_excerpt": [
+    "V92D_VERIFY_RESULT status=FAIL_OR_UNKNOWN CLKEN=UNKNOWN RST=UNKNOWN SBCS=UNKNOWN"
+  ],
+  "sha256": {
+    "write_session.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "write_session.stderr.log": "62ACF2A9AD48E1152A73B3BBE22D3BA54116C8C33DD595664C73DD1AC9A36B6A",
+    "write_session.combined.log": "F7BF99233128118B6F4A0C209D4DECC9EEE52986BD9115DA3BDF3489E03F5095",
+    "verify_session.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "verify_session.stderr.log": "5C89DA6FFC487192BC835423883317C2DC3F6E81E39E40BC7222BF1A64DB1D82",
+    "verify_session.combined.log": "883B1C46654519AD4471AC1C33BE7DC1E53AA05E8B7A9B89D0ED766176933E19"
+  },
+  "finished_local": "2026-11-09T14:34:27.670789+08:00"
+}

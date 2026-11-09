@@ -1,0 +1,23 @@
+{
+  "stage": "BBX_V94_POST_RESUME_READONLY_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v94_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V94_POST_RESUME_READONLY/v94_post_resume_readonly.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V94_POST_RESUME_READONLY\\v94_post_resume_readonly.tcl": "CDE7062B33442E3CA685C230B8D047AFBBA5DAEC1EEE9EA4C90D7D9AF395EA5C",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V94_POST_RESUME_READONLY\\run_v94_post_resume_readonly_once.py": "0DBBEF88B69D039097AEE1F232E91FDF30751B9043FB97DC422CA46AEFE7B31C"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "started_local": "2026-11-09T15:18:44.451291+08:00",
+  "retry": "none"
+}

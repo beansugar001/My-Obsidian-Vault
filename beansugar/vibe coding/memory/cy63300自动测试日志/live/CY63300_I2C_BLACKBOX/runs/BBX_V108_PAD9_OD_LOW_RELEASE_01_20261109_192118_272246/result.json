@@ -1,0 +1,12 @@
+{
+  "stage": "BBX_V108_PAD9_OD_LOW_RELEASE_01",
+  "return_code": 1,
+  "status": "INCOMPLETE_OR_UNKNOWN",
+  "halt_requests": null,
+  "target_mmio_write_count": null,
+  "final_sbcs_rc": null,
+  "final_sbcs": null,
+  "complete": false,
+  "log_sha256": "F3E307E90F5C3334FEF105F51EB7CD150799F890FCF3938DFF42B4074E9D9781",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs\\BBX_V108_PAD9_OD_LOW_RELEASE_01_20261109_192118_272246"
+}

@@ -1,0 +1,25 @@
+VCD info: dumpfile out/v59_original.vcd opened for output.
+CASE 1 conflict=0 payload=a1b2c3d4 req_edges=1 granted_edges=1 ram_write_edges=1 RAM=a1b2c3d4 response_status=00 early_response=0
+CASE 1 PASS
+CASE 2 conflict=0 payload=00000000 req_edges=1 granted_edges=1 ram_write_edges=1 RAM=00000000 response_status=00 early_response=0
+CASE 2 PASS
+CASE 3 conflict=1 payload=00000000 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 3 PASS
+CASE 4 conflict=2 payload=00000000 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 4 PASS
+CASE 5 conflict=1 payload=22334455 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 5 PASS
+CASE 6 conflict=3 payload=00000000 req_edges=1 granted_edges=0 ram_write_edges=0 RAM=11223344 response_status=00 early_response=1
+CASE 6 PASS
+V52_ORIGINAL_LOST_WRITE_REPRODUCED: conflict writes lost; DMI still returns SUCCESS
+V59_CASE id=101 name=TIMING STATUS=PASS commits=1 status=00 delay=0 contention=0
+V59_CASE id=102 name=TIMING STATUS=PASS commits=1 status=00 delay=50 contention=0
+V59_CASE id=103 name=TIMING STATUS=FAIL commits=0 status=00 delay=0 contention=1 EXPECTED_REFERENCE_DEFECT=1
+V59_CASE id=104 name=TIMING STATUS=FAIL commits=0 status=00 delay=50 contention=1 EXPECTED_REFERENCE_DEFECT=1
+V59_CASE id=105 name=TIMING STATUS=FAIL commits=0 status=00 delay=0 contention=3 EXPECTED_REFERENCE_DEFECT=1
+V59_CASE id=106 name=TARGET_SUPPRESSED STATUS=FAIL commits=0 status=00 reset_model=0 EXPECTED_SCOPE_LIMIT=1
+V59_CASE id=107 name=TARGET_SUPPRESSED STATUS=FAIL commits=0 status=00 reset_model=1 EXPECTED_SCOPE_LIMIT=1
+V59_CASE id=108 name=INVALID_TARGET STATUS=FAIL commits=0 status=00 EXPECTED_REFERENCE_DEFECT=1
+V59_CASE id=109 name=OVERLAP STATUS=FAIL commits=0 replies=2 RAM=11223344
+V59_DIAGNOSTIC_COMPLETE_WITH_REPORTED_INVARIANTS
+C:\Users\24796\Documents\组\CY63300_AUTO_TEST\rtl_tests\tb_v59_compare.sv:234: $finish called at 9070000 (1ps)

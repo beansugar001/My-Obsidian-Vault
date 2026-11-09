@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V80E_GPIO_PULLUPS_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_write_count": 1,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F10AB8048300BFECCBAAF2BDAC4DF127299BBF9AD6B8893613B254CCBA70BEE7",
+    "openocd.combined.log": "31F61610CC57477CE3CDBB27B78DF8D50A68D8D359D34807ABCF5DA750518FCD"
+  },
+  "finished_local": "2026-11-05T12:43:35.003907+08:00"
+}

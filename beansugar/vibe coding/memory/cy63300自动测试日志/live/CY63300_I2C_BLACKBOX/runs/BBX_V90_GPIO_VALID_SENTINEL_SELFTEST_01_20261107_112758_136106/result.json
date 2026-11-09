@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V90_GPIO_VALID_SENTINEL_SELFTEST_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_mmio_write_count": 0,
+  "combined_sha256": "2C11AC8E590340E249EB65B3581629B98BD62DBA9FEFEA08546697ADB2AEA58B",
+  "finished_local": "2026-11-07T11:28:00.183144+08:00"
+}

@@ -1,0 +1,30 @@
+{
+  "stage": "BBX_V93_RAM_CPU_CANARY_02",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v93_ram_canary_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V93_RAM_CANARY/v93_ram_canary.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T15:10:59.582419+08:00",
+  "hashes": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V93_RAM_CANARY\\v93_ram_canary.tcl": "6D4B8A13CF9D0A7D932BBDEF7A87550259369839CAD2B9C7818DC064D5374820",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V93_RAM_CANARY\\ram_canary.bin": "A315986C21016D6C9D27636F8EC890D5360DED93167C53D0A1B364BCEA494E6B",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V93_RAM_CANARY\\ram_canary.elf": "8AEA986B44983F0CCC0AB988432265A9182FCC976DA1376FED87C22CF91FE18A",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V93_RAM_CANARY\\run_v93_ram_canary_once.py": "CC005BC392302BFBE1792F538291FDC38A842AC4E144D67D5411C55247E7723B",
+    "D:\\Temp\\cy63300_v93_ram_canary.bin": "A315986C21016D6C9D27636F8EC890D5360DED93167C53D0A1B364BCEA494E6B"
+  },
+  "host_processes": [],
+  "host_ports": [],
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V93_RAM_CPU_CANARY_02.attempted.json",
+  "timeout_seconds": 120,
+  "retry": "none",
+  "target_mmio_writes": 0,
+  "flash_nvr_writes": 0
+}

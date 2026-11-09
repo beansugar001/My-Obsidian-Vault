@@ -1,0 +1,186 @@
+{
+  "time": "2026-11-04T16:35:24+08:00",
+  "mode": "OFFLINE",
+  "status": "PASS",
+  "target_mmio_writes": 0,
+  "reason": "Offline campaign executed; invariant FAIL entries retained separately",
+  "audit": {
+    "status": "PASS",
+    "reason": "Historical sources/logs found and timing expanded; causality remains unproven",
+    "inventory_files": 583,
+    "snapshot_files": 71,
+    "historical_tool_hashes": "NOT_TESTED",
+    "current_hashes": {
+      "mode_default": "DRY_RUN",
+      "openocd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+      "config": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\tinyriscv_10k_clean.cfg",
+      "openocd_sha256": "eece42de2378e4a7d2d0d71d1178d8b35e4c67839fe2c4d5ea964c2561127e27",
+      "config_sha256": "c8045cbfbe283d4c5ec0523be03396f79cf90aff42e1f0fe6ec42ef2a0ccc545",
+      "adapter_khz": 100,
+      "expected_tap": "0x1E200A6F",
+      "expected_dmstatus": "0x00430382",
+      "live_mmio_write_enabled": false,
+      "samples": 3,
+      "reviewed_registers": {
+        "0x4002180C": {
+          "name": "PERI_CLKEN",
+          "expected": "0x00000020",
+          "read_review": "Digital design PDF physical pages 22-23, ordinary RW"
+        },
+        "0x40021810": {
+          "name": "PERI_RST",
+          "expected": "0x00000000",
+          "read_review": "Digital design PDF physical pages 23-24, ordinary RW"
+        },
+        "0x40002800": {
+          "name": "MODULE_CTRL",
+          "expected": "0x00000002",
+          "read_review": "PDF physical page 117, ordinary RW/RO, no documented read-clear"
+        },
+        "0x4000280C": {
+          "name": "FIFO_STA",
+          "expected": "0x00000005",
+          "read_review": "PDF physical page 118, RO status, excludes FIFO data port"
+        },
+        "0x40002810": {
+          "name": "CLK_DIV0",
+          "expected": "0x00000020",
+          "read_review": "PDF physical page 118, ordinary RW"
+        },
+        "0x40002814": {
+          "name": "CLK_DIV1",
+          "expected": "0x00000030",
+          "read_review": "PDF physical pages 118-119, ordinary RW"
+        }
+      }
+    },
+    "live_target_state": "NOT_TESTED"
+  },
+  "simulations": {
+    "original": {
+      "execution": "PASS",
+      "baseline_expected_cases": 6,
+      "cases": [
+        {
+          "id": 101,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=0 contention=0"
+        },
+        {
+          "id": 102,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=50 contention=0"
+        },
+        {
+          "id": 103,
+          "name": "TIMING",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 delay=0 contention=1 EXPECTED_REFERENCE_DEFECT=1"
+        },
+        {
+          "id": 104,
+          "name": "TIMING",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 delay=50 contention=1 EXPECTED_REFERENCE_DEFECT=1"
+        },
+        {
+          "id": 105,
+          "name": "TIMING",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 delay=0 contention=3 EXPECTED_REFERENCE_DEFECT=1"
+        },
+        {
+          "id": 106,
+          "name": "TARGET_SUPPRESSED",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 reset_model=0 EXPECTED_SCOPE_LIMIT=1"
+        },
+        {
+          "id": 107,
+          "name": "TARGET_SUPPRESSED",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 reset_model=1 EXPECTED_SCOPE_LIMIT=1"
+        },
+        {
+          "id": 108,
+          "name": "INVALID_TARGET",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 EXPECTED_REFERENCE_DEFECT=1"
+        },
+        {
+          "id": 109,
+          "name": "OVERLAP",
+          "status": "FAIL",
+          "detail": "commits=0 replies=2 RAM=11223344"
+        }
+      ],
+      "invariant_pass": 2,
+      "invariant_fail": 7
+    },
+    "fixed": {
+      "execution": "PASS",
+      "baseline_expected_cases": 6,
+      "cases": [
+        {
+          "id": 101,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=0 contention=0"
+        },
+        {
+          "id": 102,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=50 contention=0"
+        },
+        {
+          "id": 103,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=0 contention=1"
+        },
+        {
+          "id": 104,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=50 contention=1"
+        },
+        {
+          "id": 105,
+          "name": "TIMING",
+          "status": "PASS",
+          "detail": "commits=1 status=00 delay=0 contention=3"
+        },
+        {
+          "id": 106,
+          "name": "TARGET_SUPPRESSED",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 reset_model=0 EXPECTED_SCOPE_LIMIT=1"
+        },
+        {
+          "id": 107,
+          "name": "TARGET_SUPPRESSED",
+          "status": "FAIL",
+          "detail": "commits=0 status=00 reset_model=1 EXPECTED_SCOPE_LIMIT=1"
+        },
+        {
+          "id": 108,
+          "name": "INVALID_TARGET",
+          "status": "PASS",
+          "detail": "commits=0 status=10"
+        },
+        {
+          "id": 109,
+          "name": "OVERLAP",
+          "status": "FAIL",
+          "detail": "commits=2 replies=1 RAM=9876fedc"
+        }
+      ],
+      "invariant_pass": 6,
+      "invariant_fail": 3
+    }
+  },
+  "framework_tests": "PASS"
+}

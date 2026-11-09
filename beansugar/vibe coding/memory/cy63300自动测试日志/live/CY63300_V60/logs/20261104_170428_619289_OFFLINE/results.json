@@ -1,0 +1,10 @@
+{
+  "stage": "V60_READONLY_01",
+  "mode": "OFFLINE",
+  "time": "2026-11-04T17:04:28+08:00",
+  "target_mmio_writes": 0,
+  "status": "PASS",
+  "reason": "Static review and offline regression passed; original reference CSR alias reproduced",
+  "unit_tests": 27,
+  "alias_cases": 5
+}

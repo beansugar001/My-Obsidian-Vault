@@ -1,0 +1,24 @@
+{
+  "stage": "V75_HALT_READONLY_01",
+  "command_argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_V75_TIMING_TEST/v75_100k_no_servers.cfg",
+    "-c",
+    "set ::v75_halt_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_V75_TIMING_TEST/v75_halt_readonly_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "files_sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_V75_TIMING_TEST\\v75_100k_no_servers.cfg": "8BAC5CB2DFBAFDFAC757E62F7B84F65F4E4655C1C3E5A37D05AEB90AED6BF0BB",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_V75_TIMING_TEST\\v75_halt_readonly_once.tcl": "789130356870FAE70F3291772B2AAF7C47F154DE68D9DF62DEC9AFB7522F57EC",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_V75_TIMING_TEST\\run_v75_halt_readonly_once.py": "1D8B9B82B22C83AFBFFCD378732E79C1A6283EBB8EEC07D3D52EF53B36411780"
+  },
+  "marker": "D:\\project\\RISCV-63300\\CY63300_AUTO_TEST\\markers\\V75_HALT_READONLY_01.attempted.json",
+  "halt_budget": 1,
+  "target_mmio_write_budget": 0,
+  "started_local": "2026-11-05T11:20:44.409112+08:00",
+  "retry_policy": "none"
+}

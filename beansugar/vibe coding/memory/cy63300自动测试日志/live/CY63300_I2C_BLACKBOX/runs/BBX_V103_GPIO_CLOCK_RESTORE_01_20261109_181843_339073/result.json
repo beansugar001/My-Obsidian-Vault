@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V103_GPIO_CLOCK_RESTORE_01",
+  "return_code": 0,
+  "status": "FAIL_OR_UNKNOWN",
+  "complete": true,
+  "target_mmio_write_count": 1,
+  "log_sha256": "EE1C7DC2627603574B67A86807DBF94363D3057CAF06A9D5CA209571B829BE95",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs\\BBX_V103_GPIO_CLOCK_RESTORE_01_20261109_181843_339073"
+}

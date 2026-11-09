@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V88E_GPIO_CLOCK_AFTER_I2C_CLOCK_01",
+  "openocd_return_code": 0,
+  "complete": true,
+  "status": "PASS_V44_ORDER_CLOCK_VISIBLE",
+  "target_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F8248347FF2063B19CC84B31B804AC89EA0182C3BAC7EFFBE49FDDFDCB1D07FF",
+    "openocd.combined.log": "F4C6FC10F514EF5036B388CD27A601871FB2F33D684B910ACB629D4E2CC6471D"
+  },
+  "finished_local": "2026-11-05T20:43:49.270051+08:00"
+}
