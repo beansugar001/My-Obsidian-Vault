@@ -211,6 +211,8 @@
   },
   "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V111_NEXT_I2C_TEST_PLAN/V111_NEXT_I2C_TEST_PLAN.md",
+    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V111_NEXT_I2C_TEST_PLAN",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V110_RTL_I2C_FIFO_FLOW_SIMULATION/out/v31.vcd",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V110_RTL_I2C_FIFO_FLOW_SIMULATION/simulation.log",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V110_RTL_I2C_FIFO_FLOW_SIMULATION/compile.log",
@@ -229,8 +231,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/migration_manifest_20261109_193021.json",
     "beansugar/vibe coding/memory/cy63300自动测试日志/archive_20261109_193021/CY63300_V75_TIMING_TEST/tcl_syntax_check.log",
     "beansugar/vibe coding/memory/cy63300自动测试日志/archive_20261109_193021/CY63300_V75_TIMING_TEST/tcl_syntax_check_final.log",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/live/CY63300_V75_TIMING_TEST/runs/V75_SYSCTRL_DELAY_02_20261105_112449_703021/result.json",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/live/CY63300_V75_TIMING_TEST/runs/V75_SYSCTRL_DELAY_02_20261105_112449_703021/openocd.stdout.log",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_20261109_193021/CY63300_V75_TIMING_TEST/CY63300_V75_STAGE02_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_20261109_193021/CY63300_V75_TIMING_TEST/CY63300_V75_HALT_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_20261109_193021/CY63300_V75_TIMING_TEST/CY63300_V75_EXECUTION_RESULT.md",
