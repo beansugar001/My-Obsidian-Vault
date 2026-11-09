@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/memory/CY63300芯片测试报告组/15-CY63300常用命令行与注释_20261009.md",
+                "file": "beansugar/vibe coding/rules/superpowers.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "15-CY63300常用命令行与注释_20261009"
+              "title": "superpowers"
             }
           }
         ]
@@ -211,6 +211,8 @@
   },
   "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/prompt/论文阅读.md",
+    "beansugar/vibe coding/memory/CY63300芯片测试报告组/15-CY63300常用命令行与注释_20261009.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/CY63300_JTAG_故障定位与纯软件审查交接报告_20261013.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.svg",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/22-CY63300原样品故障技术沟通报告_20261015.md",
@@ -221,7 +223,6 @@
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/17-CY63300当前进度与问题_硬件软件分项_20261012.md.bak_20261013_164924",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/18-网页交接核对与有效回环确认_20261013.md",
     "beansugar/vibe coding/memory/2026-07-29 VerilogLAVD学习状态与进组技术栈.md",
-    "beansugar/vibe coding/memory/CY63300芯片测试报告组/15-CY63300常用命令行与注释_20261009.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/17-CY63300当前进度与问题_硬件软件分项_20261012.md.bak_20261012_145802",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/17-CY63300当前进度与问题_硬件软件分项_20261012.md.bak_20261012_144343",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/14-CY63300仪器测试详细清单_20261009.md.bak_20261012_144343",
