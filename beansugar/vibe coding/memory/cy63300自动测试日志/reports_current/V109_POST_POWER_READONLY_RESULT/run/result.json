@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V109_POST_REPOWER_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_READ_ONLY_POST_POWER_SNAPSHOT",
+  "halt_requests": 1,
+  "target_mmio_write_count": 0,
+  "gpio_snapshot": "SKIPPED_GPIO_CLOCK_OFF_OR_RESET_ASSERTED",
+  "i2c_snapshot": "SKIPPED_CLOCK_OFF_OR_RESET_ASSERTED",
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "31A9EF0E6FD7E98CFF247B18E653214231FC1813B9872A025D941DF4AC3C7E17",
+    "openocd.combined.log": "7A78F7703008D94A15629E63F9BDB02F1A8FE9D485F0F2A1A977E5C714C87887"
+  },
+  "finished_local": "2026-11-09T20:33:18.060562+08:00"
+}

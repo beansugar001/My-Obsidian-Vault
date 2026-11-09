@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V109_POST_REPOWER_READONLY_01",
+  "created_local": "2026-11-09T20:33:16.809894+08:00",
+  "target_mmio_write_budget": 0,
+  "halt_request_budget": 1,
+  "purpose": "post-power-cycle read-only state snapshot",
+  "retry": "none"
+}

@@ -1,0 +1,27 @@
+{
+  "stage": "BBX_V109A_GPIO_CLOCK_ENABLE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/v109a_gpio_clock_enable.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T20:43:24.986014+08:00",
+  "timeout_s": 120,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "known_nonconflicting_quartus_jtagserver": {
+    "service": "Altera JTAG Server",
+    "pid": 16884,
+    "listener": "0.0.0.0:1309"
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\v109a_gpio_clock_enable.tcl": "163B9EB7591ACAD4CCA6B89EA16F125351A8E48ADEC8FC522D3DE2B26104E0D3",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\run_v109a_gpio_clock_enable.py": "081423878406EBD68A1BDAC84B013FE0647CECA523F6FB6017C1F8BE2991ECD5"
+  }
+}

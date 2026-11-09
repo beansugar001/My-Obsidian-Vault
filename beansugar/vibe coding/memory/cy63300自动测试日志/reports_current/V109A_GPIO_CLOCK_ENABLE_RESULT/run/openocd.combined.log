@@ -1,0 +1,47 @@
+
+--- STDERR ---
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4cc0680a
+Info : gdb port disabled
+V109A_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4cc0680a
+gdb port disabled
+
+V109A_INIT_END
+V109A_CPU_STATE=running
+V109A_ERROR=V109A_CPU_NOT_ALREADY_HALTED; no halt request in this stage
+V109A_SBCS label=FINAL value=0x20040404
+V109A_FINAL_SBCS rc=0 value=537134084
+V109A_FINAL_DMSTATUS rc=0 value=4394114
+V109A_RESULT=FAIL_OR_UNKNOWN TARGET_MMIO_WRITE_COUNT=0 GPIO=NOT_REACHED
+V109A_COMPLETE
+shutdown command invoked

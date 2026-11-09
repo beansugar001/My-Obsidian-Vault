@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V109A2_GPIO_CLOCK_ENABLE_02",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_GPIO_CLOCK_ON_SNAPSHOT",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "gpio_snapshot": "READ_CLOCK_ON",
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "E6128116F8F2F6E14046EC277AC9E6A4DDCF4C172490661330F3ABF27C59870D",
+    "openocd.combined.log": "08A626F88E71E6851A4CE486A4B3110CF0D80333D5DCD4B2487BD1D2F55610D4"
+  },
+  "finished_local": "2026-11-09T20:50:33.224832+08:00"
+}
