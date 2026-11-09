@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_V109I_NATIVE_MWW_RESET_RELEASE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v109i_native_reset_release_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-09T21:46:57.907668+08:00",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\v109i_native_reset_release_once.tcl": "A68F293DE19C72A8B0BD7B53471E423D1052D189C720AB2AEBBF7630082277D3",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_v109i_native_reset_release_once.py": "4CC970AED5AB59CE2B56EC9FD68B8002B7C6128DFBA5A792494BF38F12916CC1"
+  },
+  "retry": "none"
+}

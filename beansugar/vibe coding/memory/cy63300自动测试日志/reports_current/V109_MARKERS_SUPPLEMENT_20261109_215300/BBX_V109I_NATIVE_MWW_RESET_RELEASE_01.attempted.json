@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V109I_NATIVE_MWW_RESET_RELEASE_01",
+  "created_local": "2026-11-09T21:46:57.907668+08:00",
+  "allowlist": {
+    "0x40021810": [
+      "0x00000000"
+    ]
+  },
+  "target_mmio_write_budget": 1,
+  "restore_or_retry": false
+}

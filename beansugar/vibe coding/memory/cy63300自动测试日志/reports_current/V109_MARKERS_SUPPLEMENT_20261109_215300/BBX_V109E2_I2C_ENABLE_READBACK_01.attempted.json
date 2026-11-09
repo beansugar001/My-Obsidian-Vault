@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V109E2_I2C_ENABLE_READBACK_01",
+  "created_local": "2026-11-09T21:21:06.773983+08:00",
+  "target_mmio_write_budget": 0,
+  "operations": "read-only target accesses; DMI configuration only for SBA reads",
+  "halt_request_budget": 1,
+  "retry": "none"
+}

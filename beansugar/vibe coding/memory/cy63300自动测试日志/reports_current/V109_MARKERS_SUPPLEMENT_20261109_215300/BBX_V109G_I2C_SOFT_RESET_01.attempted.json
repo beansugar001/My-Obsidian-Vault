@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V109G_I2C_SOFT_RESET_01",
+  "target_write_budget": 2,
+  "allowlist": [
+    [
+      "0x40021810",
+      "0x00000020",
+      "I2C_SOFT_RESET_ASSERT"
+    ],
+    [
+      "0x40021810",
+      "0x00000000",
+      "I2C_SOFT_RESET_RELEASE"
+    ]
+  ],
+  "halt_budget": 1,
+  "retry": "none"
+}

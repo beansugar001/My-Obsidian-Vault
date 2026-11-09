@@ -1,0 +1,463 @@
+
+PDF physical page 22
+DESKTOP-0N2VR55
+2025-12-29 14:39:00 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 21 / 146 页 
+… 
+1: 2 div 
+0: 1 div 
+[1:0] pclk_div RW  2'b0 
+3: 8 div 
+2: 4 div 
+1: 2 div 
+0: 1 div 
+0x004 SYSCTL_CR1 [31:2]  Reserved RO  30'b0 
+ 
+[1:0] clk_lpuart_sel RW  2’b0 
+3: apb clock 
+2: apb clock 
+0: OSC32K 
+0x008 OSC_CR [31:3]  Reserved RO  29'b0   
+[2:0] osc_trim_sel RW  3’b0 
+4 :60M 
+3 48M 
+2 32M 
+1: 24M 
+0: 16M 
+0x00C PERI_CLKEN 
+[31:2
+9] 
+reserved RO  3’b0  
+[28] cj_efuse_hclken RW 1’b0 
+1: cj_efuse clk enable 
+0: cj_efuse clk disable 
+[27] cj_dec_hclken 
+ 
+RW 
+1’b0 
+1: cj_dec clk enable 
+0: cj_dec clk disable 
+[26] cj_enc_hclken RW  1’B0 
+1: cj_enc clk enable 
+0: cj_enc clk disable 
+[25] puf _hclken RW  1’b0 
+1: puf clk enable 
+0: puf clk disable 
+[24] ske _hclken RW  1’b0 
+1: ske clk enable 
+0: ske clk disable 
+[23] pke _hclken RW  1’b0 
+1: pke clk enable 
+0: pke clk disable 
+[22] hash _hclken RW  1’b0 
+1: hash clk enable 
+0: hash clk disable 
+[21] trng _hclken RW  1’b0 
+1: trng clk enable 
+0: trng clk disable 
+[20] crc_hclken RW  1‘b0 
+1: crc clock enable 
+0: crc clock disable 
+[19] flsc_hclken RW  1‘b0 
+1: flash ctrl clock enable 
+0: flash ctrl clock disable 
+[18] reserved RO  1’b0  
+
+PDF physical page 23
+DESKTOP-0N2VR55
+2025-12-29 14:39:00 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 22 / 146 页 
+[17] reserved RO  1’b0  
+[16] dma_hclken RW  1‘b0 
+1: dma clock enable 
+0: dma clock disable 
+[15] reserved RO  1’b0  
+[14] 
+iwdg_osc32k_cl
+ken 
+RW 1’b0 
+1:iwdg 32k clock enable 
+0:iwdg 32k clock disable 
+[13] 
+rtc_osc32k_clke
+n 
+RW 1‘b0 
+1: rtc 32k clock enable 
+0: rtc 32k clock disable 
+[12] clk_random_pcl
+ken 
+RW 1‘b0’ 1: Clk_random clock enable 
+0: Clk_random clock disable 
+[11] fvt_pclken RW  1‘b0’ 
+1: fvt clock enable 
+0: fvt clock disable 
+[10] onewire_pclken RW 1‘b0’ 
+1: onewire clock enable 
+0: onewire clock disable 
+[9] lpuart_pclken RW  1‘b0’ 
+1: lpuart clock enable 
+0: lpuart clock disable 
+[8] uart_pclken RW  1‘b0’ 
+1: uart clock enable 
+0: uart clock disable 
+[7] spi1_pclken RW  1‘b0’ 
+1: spi1 clock enable 
+0: spi1 clock disable 
+[6] spi0_pclken RW  1‘b0’ 1: spi0 clock enable 
+0: spi0 clock disable 
+[5] I2c_pclken RW  1‘b0 
+1: i2c clock enable 
+0: i2c clock disable 
+[4] reserved RO 1’b0  
+[3] wwdg_pclken RW  1‘b0 
+1: wdg1 clock enable 
+0: wdg1 clock disable 
+[2] iwdg_pclken RW  1‘b0 
+1: wdg0 clock enable 
+0: wdg0 clock disable 
+[1] rtc_pclk_en RW  1’b0 
+1: rtc clock enable 
+0: rtc clock disable 
+[0] gpio_pclken RW  1‘b0 
+1: gpio clock enable 
+0: gpio clock disable 
+0x10 PERI_RST 
+[31:2
+9] 
+reserved RO  3’b0  
+[28] cj_efuse_sofrst RW 1’b0 
+1: cj_efuse soft rst enable 
+0: cj_efuse soft rst disable 
+[27] cj_dec_sofrst 
+ 
+RW 
+1’b0 
+1: cj_dec soft rst enable 
+0: cj_dec soft rst disable 
+
+PDF physical page 24
+DESKTOP-0N2VR55
+2025-12-29 14:39:00 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 23 / 146 页 
+[26] cj_enc_sofrst RW  1’B0 
+1: cj_enc soft rst enable 
+0: cj_enc soft rst disable 
+[25] puf _sofrst RW  1’b0 
+1: puf soft rst enable 
+0: puf soft rst disable 
+[24] ske _sofrst RW  1’b0 
+1: ske soft rst enable 
+0: ske soft rst disable 
+[23] pke _sofrst RW  1’b0 
+1: pke soft rst enable 
+0: pke soft rst disable 
+[22] hash _sofrst RW  1’b0 
+1: hash soft rst enable 
+0: hash soft rst disable 
+[21] trng _sofrst RW  1’b0 1: trng soft rst enable 
+0: trng soft rst disable 
+[20] crc_sofrst RW  1‘b0 
+1: crc soft rst enable 
+0: crc soft rst disable 
+[19] flsc_sofrst RW  1‘b0 
+1: flash ctrl soft rst enable 
+0: flash ctrl soft rst disable 
+[18] reserved RO  1’b0  
+[17] reserved RO  1’b0  
+[16] dma_sofrst RW  1‘b0 
+1: dma soft rst enable 
+0: dma soft rst disable 
+[15:1
+3] 
+reserved RO  3’b0  
+[12] 
+clk_random_sof
+rst 
+RW 1‘b0’ 
+1: clk_random soft rst enable 
+0: clk_random soft rst disable 
+[11] fvt_sofrst RW  1‘b0’ 1: fvt soft rst enable 
+0: fvt soft rst disable 
+[10] onewire_sofrst RW  1‘b0’ 
+1: onewire soft rst enable 
+0: onewire soft rst disable 
+[9] lpuart_sofrst RW  1‘b0’ 
+1: lpuart soft rst enable 
+0: lpuart soft rst disable 
+[8] uart_sofrst RW  1‘b0’ 
+1: uart soft rst enable 
+0: uart soft rst disable 
+[7] spi1_sofrst RW  1‘b0’ 
+1: spi1 soft rst enable 
+0: spi1 soft rst disable 
+[6] spi0_sofrst RW  1‘b0’ 
+1: spi0 soft rst enable 
+0: spi0 soft rst disable 
+[5] I2c_sofrst RW  1‘b0 
+1: i2c soft rst enable 
+0: i2c soft rst disable 
+[4] reserved RO 1’b0 1: timer soft rst enable 
+
+PDF physical page 117
+DESKTOP-0N2VR55
+2025-12-29 14:39:22 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 116 / 146 页 
+interrupt flag） 
+当计数器值达到 0x40 时此位由硬件置 1。
+它必须有软件通过写入 0 来清零。写入 1 不起
+作用。如果不使能中断，此位也会被置 1。 
+                                                                                                                              
+ 
+4.19 I2C 
+4.19.1 MODULE_CTRL 
+Offset:0x0 
+All of sub modules (TX FIFO, RX FIFO, I2C) are controlled by this register. 
+Field Name Default Access Description 
+31: 4  0x0 RO Reserved. 
+3 RX_FIFO_EN 0x0 R/W RX FIFO enable controller. 
+0x0: disable RX FIFO. 
+0x1: enable RX FIFO. 
+2 TX_FIFO_EN 0x0 R/W TX FIFO enable controller. 
+0x0: disable TX FIFO. 
+0x1: enable TX FIFO. 
+1 RESERVED 0x1 RO  
+0 I2C_EN 0x0 R/W 0x0: disable I2C module. 
+0x1: enable I2C module. 
+ 
+4.19.2 TX_FIFO 
+Offset:0x8 
+The TX data is stored in this FIFO, then the I2C will read from this FIFO, and send the data. 
+Field Name Default Access Description 
+31: 16  0x0 RO Reserved. 
+9 RESTART  WO Restart control in master mode 
+8 R/W_CONTROL  WO R/W bit control in master mode 
+1-R;0-W 
+7: 0 TX_DATA  WO Transmitting data 
+ 
+4.19.3 RX_FIFO 
+Offset:0x8 
+If I2C received the data, the I2C will store the data into RX FIFO. 
+Field Name Default Access Description 
+
+PDF physical page 118
+DESKTOP-0N2VR55
+2025-12-29 14:39:22 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 117 / 146 页 
+31: 16  0x0 RO Reserved. 
+7: 0 RX_DATA  RO Received data 
+ 
+4.19.4 FIFO_STA 
+Offset:0xc 
+This register lists the FULL or EMTPY data counter status for TX and RX FIFO. 
+Field Name Default Access Description 
+31: 20  0x0 RO Reserved. 
+19: 16 RX_NUM 0x0 RO The counter indicates how many data word is stored 
+in the RX FIFO. 
+15: 12  0x0 RO Reserved. 
+11: 8 TX_NUM 0x0 RO The counter indicates how many data words is stored 
+in the TX FIFO. 
+7: 4  0x0 RO Reserved. 
+3 RX_FULL 0x0 RO 0x0: the TX FIFO is not full. 
+0x1: the RX FIFO is full. 
+2 RX_EMPTY 0x1 RO 0x0: the RX FIFO is not empty. 
+0x1: the RX FIFO is empty 
+1 TX_FULL 0x0 RO 0x0: the TX FIFO is not full 
+0x1: TX FIFO is full 
+0 TX_EMPTY 0x1 RO 0x0: the TX FIFO is not empty. 
+0x1: the TX FIFO is empty 
+ 
+4.19.5 CLK_DIV0 
+Offset:0x10 
+The clock divider register. in I2C mode, the register sets the SCL clock high-period count. 
+Field Name Default Access Description 
+31: 24  0x0 RO Reserved. 
+23: 0 CLK_DIV0 0x20 R/W System clock divided register. 
+I2C: the register sets SCL clock high-period count.  
+FSCL = FPCLK/(CLK_DIV0+CLK_DIV1+2) 
+ 
+4.19.6 CLK_DIV1 
+Offset:0x14 
+the register set the I2C SCL clock low-period count. 
+Field Name Default Access Description 
+31: 24  0x0 RO Reserved. 
+
+PDF physical page 119
+DESKTOP-0N2VR55
+2025-12-29 14:39:22 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 118 / 146 页 
+23: 0 CLK_DIV1 0x30 R/W I2C: sets SCL clock low-period counter. 
+ 
+4.19.7 I2C_MODE 
+Offset:0x20 
+The I2C can work in only one mode of two (master or slave) mode. 
+Field Name Default Access Description 
+31: 1  0x0 RO Reserved. 
+0 MS_MODE 0x1 R/W 0x0: I 2CS mode. 
+0x1: I2CM mode. 
+ 
+4.19.8 I2C_ADDR 
+Offset:0x24 
+Both I2CM and I2CS use this register as I2CS address. 
+Field Name Default Access Description 
+31: 10  0x0 RO Reserved. 
+9: 0 I2C_ADDR 0x133 R/W The 10-bit I 2C slave address. 
+Note: when in 7-bit address mode, bit6:bit3 == 4’b1111 or 4’b0000 is for future use. If user configure, it can trigger a AERR 
+interrupt. 
+ 
+4.19.9 I2CM_CTRL 
+Offset:0x28 
+The I2CM will implement I2C protocol in I2CM mode by configure this control register. 
+Field Name Default Access Description 
+31: 5  0 RO Reserved. 
+4 GCALL 0x0 R/W 0x0: the first address is not general call address 
+0x1: the first address is general call address 
+If user want to use the general call address, he has to 
+clear the control bit of ADDR_MODE. 
+3 SBYTE 0x0 R/W 0x0: do not generate START byte. 
+0x1: generate START byte. 
+2 HS_MODE 0x0 R/W High speed mode. 
+1 STOP 0x0 R/W 0: if TX FIFO is empty, the I 2CM holds SCL low. 
+1: if TX FIFO is empty, the I2CM terminates transfer, 
+then generating STOP condition. 
+0 ADDR_MODE 0x0 R/W 0: 7-bit address mode. 
+1: 10-bit address mode. 
+
+PDF physical page 120
+DESKTOP-0N2VR55
+2025-12-29 14:39:22 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 119 / 146 页 
+If both of GCALL and ADDR_MODE is set by “1”, 
+I2CM only work in 10-bit I2C address mode. 
+ 
+4.19.10 I2CM_CODE 
+Offset:0x2c 
+The I2C master code is used in high-speed mode. 
+Field Name Default Access Description 
+31: 3  0x0 RO Reserved. 
+2: 0 MCODE 0x1 R/W I 2CM code. 
+ 
+4.19.11 I2CS_CTRL 
+Offset:0x30 
+Many special I2C protocol can be configured by this control register. 
+Field Name Default Access Description 
+31: 1  0x0 RO Reserved. 
+0 GCALL_MODE 0x0 R/W 0x0: receive general call data. 
+0x1: don’t receive the data of general call. 
+ 
+4.19.12 I2C_FM_DIV 
+Offset:0x34 
+The I2C fast mode divisor. this divisor is used in I2C master code and START byte transfer. 
+Field Name Default Access Description 
+31: 8  0x0 RO Reserved. 
+7: 0 I2C_FM_DIV 0x5 R/W The I 2C fast mode divisor. 
+ 
+4.19.13 I2C_HOLD 
+Offset:0x38 
+This register controls the amount of hold time on the SDA signal after a negative of SCL in both master and slave mode. 
+Field Name Default Access Description 
+31: 8  0x0 RO Reserved. 
+7: 0 I2C_HOLD 0x5 R/W The I 2C hold time register. The hold time after SCL 
+fall edge, used in both I2CM and I2CS. 
+TI2C_HOLD = (I2C_HOLD+1)*TPCLK 
+TPCLK: the PCLK period. 
+ 
+4.19.14 I2C_STA 
+
+PDF physical page 121
+DESKTOP-0N2VR55
+2025-12-29 14:39:22 shawlo&刘天翔
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷内部文件
+杭州旗捷科技股份有限公司 
+Hangzhou Chipjet Technology Co.,Ltd 
+HZQJ-YF-PC-002-04-01  版本：A0 
+文件只限在杭州旗捷科技股份有限公司内部使用，未经公司许可不得擅自出版、复印。 
+第 120 / 146 页 
+Offset:0x3c 
+I2CM and I2CS state of working can be found in this state register. 
+Field Name Default Access Description 
+31: 9  0x0 RO Reserved. 
+8 I2CS_WORK 0x0 RO 1’b0: I 2C slave is idle. 
+1’b1: I2C slave is active. 
+7: 2  0x0 RO Reserved. 
+1 I2CM_DATA 0x0 RO If this bit equal 1’b1 that indicates I2C master is 
+transmitting or receiving data. 
+0 I2CM_WORK 0x0 RO 1’b0: I 2C master is idle. 
+1’b1: I2C master is active. 
+ 
+4.19.15 INTR_CTRL 
+Offset:0x4c 
+This register controls the threshold value for the transmit and receive FIFO memory. 
+Field Name Default Access Description 
+31: 17  0x0 RO Reserved. 
+16 TH_MODE 0x0 R/W 0x1: not less than threshold. 
+0x0: not larger than threshold. 
+15: 10  0x0 RO Reserved. 
+9: 8 RX_FIFO_TH 0x1 R/W RX FIFO threshold level control bits. If the received 
+data in RX FIFO equal the threshold value, an interrupt 
+will be generated. 
+0x1: 4-bye data 
+0x2: 8-byte data 
+0x3: 12-byte data 
+7: 2  0x0 RO Reserved. 
+1: 0 TX_FIFO_TH 0x1 R/W TX FIFO threshold control bits. 
+0x1: 4-byte 
+0x2: 8-byte 
+0x3: 12-byte 
+ 
+4.19.16 INTR_EN 
+Offset:0x50 
+the interrupt can be enable by set the control bit. 
+Field Name Default Access Description 
+31: 19  0x0 RO Reserved. 
+18  0x0 RO Reserved 

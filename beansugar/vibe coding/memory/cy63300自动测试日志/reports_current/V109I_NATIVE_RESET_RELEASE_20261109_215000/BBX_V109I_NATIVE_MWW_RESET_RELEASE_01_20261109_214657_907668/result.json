@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V109I_NATIVE_MWW_RESET_RELEASE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_RESET_STILL_ASSERTED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "38D59D77F6DFDC05893B77E7781F4DB51651C7F9301CB86AAB9AA05104DB3C16",
+    "openocd.combined.log": "161AB87B009DB75AD5DCA760B123D21EB2E1DBB74D78C49F70F8F3886F840D07"
+  },
+  "finished_local": "2026-11-09T21:46:58.759681+08:00"
+}

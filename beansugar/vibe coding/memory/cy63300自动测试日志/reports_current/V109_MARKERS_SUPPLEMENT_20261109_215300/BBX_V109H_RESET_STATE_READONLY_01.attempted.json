@@ -1,0 +1,7 @@
+{
+  "stage": "BBX_V109H_RESET_STATE_READONLY_01",
+  "created_local": "2026-11-09T21:41:17.349517+08:00",
+  "target_mmio_write_budget": 0,
+  "operation": "PERI_RST independent read x3; SBA setup DMI writes only to SBCS/SBADDRESS0",
+  "retry": "none"
+}
