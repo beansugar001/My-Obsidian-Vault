@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V110B2_PAD8_PAD9_AF3_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_PAD8_PAD9_AF3_RELEASED",
+  "halt_count": 1,
+  "target_mmio_write_count": 4,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "ABA59C7B91DC68D196A2C47F8B05BC8D7CB5CB9FCEB9CDC229FC6AEB202D2FC6",
+    "openocd.combined.log": "6F55A063101D0A7B8A7722D6E2992788895D26BB53FC0FB0EFEF7BF522C30E07"
+  },
+  "finished_local": "2026-11-10T09:55:33.848034+08:00"
+}

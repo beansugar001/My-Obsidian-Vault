@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V118_FLASH_ERASE_PROGRAM_RUN_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v118\\BBX_V118_FLASH_ERASE_PROGRAM_RUN_20261110_01_20261110_142621_043068",
+  "image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+  "image_bytes": 1088,
+  "phases": {
+    "preflight": {
+      "status": "PASS",
+      "snapshot_sha256": "E1F99E6A8F8D6D139DA06D6D288E9E00BBD9E6C7A6185B56B33C3A5CBA39D9E7",
+      "snapshot_bytes": 65536
+    }
+  },
+  "openocd_mmio_writes_before_execute": 8,
+  "flash_erase_triggers": 1,
+  "flash_program_bytes": 0,
+  "firmware_runtime_mmio_writes_expected": true,
+  "nvr_touched": false,
+  "status": "STOPPED_FAILURE",
+  "failure": "Sector 0 did not verify fully erased; programming stopped"
+}

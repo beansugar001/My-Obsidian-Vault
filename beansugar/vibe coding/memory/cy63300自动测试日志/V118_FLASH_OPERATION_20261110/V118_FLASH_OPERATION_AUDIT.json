@@ -1,0 +1,18 @@
+{
+  "stage": "V118_FLASH_OPERATION",
+  "image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+  "image_bytes": 1088,
+  "erase_triggers": [
+    "0x00000000",
+    "0x00000200"
+  ],
+  "full_64k_erase_verified": true,
+  "program_tcl_status": "PASS marker; host parser false-negative on missing standard byte-count output",
+  "independent_readback": "PASS exact match",
+  "resume0": "FAIL PC readback 0x64",
+  "v118_unique_mailbox": "not present",
+  "i2c_progress": "unverified",
+  "nvr_touched": false,
+  "current_conclusion": "flash programmed correctly; CPU execution and OLED/I2C not proven",
+  "no_retry": true
+}

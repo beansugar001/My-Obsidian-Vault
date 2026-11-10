@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V113A0_ARM_ADDR_BEFORE_ENABLE_SINGLE_BYTE_20261110_01",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "outcome": "NOT_STARTED",
+  "halt_count": 1,
+  "target_mmio_write_count": 0,
+  "stop_write_count": 0,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "94CCB11520631DDA7CED68CEE3A868E46211D17A3B21BA248F58426BCCB168DE",
+    "openocd.combined.log": "D5D04362F78037AC56D6A195547F2B928B44E60F7539511174017150BB9B9D1A"
+  },
+  "finished_local": "2026-11-10T10:57:10.026834+08:00"
+}

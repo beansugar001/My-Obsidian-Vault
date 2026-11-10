@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V112A2_GPIO_PULLUP_SIGNATURE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_INTERNAL_PULLUPS_RESTORE_IDLE_HIGH",
+  "target_mmio_write_count": 1,
+  "final_sbcs": "537134084",
+  "openocd_errors": false,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "321EB6A9C323AA25B423B9A38AF0BBBCFBF4202B696470D1B653E42B5638EEA3",
+    "openocd.combined.log": "25BD83B2862536258BF46C0F5FEAC0D936564396C6F3336684E6252921D66C4E"
+  },
+  "finished_local": "2026-11-10T10:33:09.870751+08:00"
+}

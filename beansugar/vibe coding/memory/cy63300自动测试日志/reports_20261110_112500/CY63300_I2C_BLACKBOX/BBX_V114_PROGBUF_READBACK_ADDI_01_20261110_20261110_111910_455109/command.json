@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V114_PROGBUF_READBACK_ADDI_01_20261110",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set ::v114_progbuf_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v114_progbuf_readback_addi_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T11:19:10.455109+08:00",
+  "timeout_s": 120,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "2BEE3AF2F8CBA21FBCCD420476357882EC0AC7718734FACF01CDD06229BF5215",
+    "python": "EC5A9A41DF95DECCF66CA9EBB57805FF70C0D7CA47375053648238BD8AE10643"
+  }
+}

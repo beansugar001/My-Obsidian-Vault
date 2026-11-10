@@ -1,0 +1,12 @@
+{
+  "stage": "BBX_V111A4_I2C_ENABLE_01",
+  "created_local": "2026-11-10T10:11:50.458611+08:00",
+  "target_mmio_write_budget": 2,
+  "only_target_write": {
+    "address": "0x40002800",
+    "value": "0x0000000D"
+  },
+  "halt_request_budget": 1,
+  "retry": "none",
+  "FIFO_payload_written": false
+}

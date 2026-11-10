@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V115C_PAD8_PAD9_SETUP_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v115c_pad8_pad9_arm_pin_setup.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T12:52:23.188160+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "F19E3CABA4659EA7562F7559306380B54EE0BE334426C82AB113FEC19AD0F844",
+    "runner": "39DB6CCE0F8D2475B82343AB3353AB38E4988222E2EAB514F1173A641A533403"
+  }
+}

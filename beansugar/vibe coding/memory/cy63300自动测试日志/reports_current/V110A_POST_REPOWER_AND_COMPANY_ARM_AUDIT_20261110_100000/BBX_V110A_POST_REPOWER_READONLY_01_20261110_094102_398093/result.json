@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V110A_POST_REPOWER_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_RESET_CLEAR_CLOCK_OFF",
+  "halt_count": 1,
+  "target_mmio_write_count": 0,
+  "openocd_errors": false,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "5610F9978F3F7F9AFD01CDA188D979C3759056C30CD7657B36A8EEC3CE3F968B",
+    "openocd.combined.log": "08B758B2A9C392060C82472B1C431541143AD1E66C6E0BA404F4EB9C78C8DBB7"
+  },
+  "finished_local": "2026-11-10T09:41:04.563483+08:00"
+}

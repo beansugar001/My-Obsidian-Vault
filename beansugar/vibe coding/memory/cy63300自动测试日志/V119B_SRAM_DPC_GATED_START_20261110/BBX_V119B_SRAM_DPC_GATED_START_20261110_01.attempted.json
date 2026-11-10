@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V119B_SRAM_DPC_GATED_START_20261110_01",
+  "created_local": "2026-11-10T15:37:14.287525+08:00",
+  "attempted": true,
+  "dpc_write_budget": 1,
+  "no_argument_resume_budget": 1,
+  "halt_request_budget": 2,
+  "sram_load_bytes": 76,
+  "sram_restore_bytes": 76,
+  "cpu_mailbox_writes": 5,
+  "mmio_writes": 0,
+  "flash_nvr_writes": 0,
+  "reset_power_cycle_retry": "forbidden"
+}

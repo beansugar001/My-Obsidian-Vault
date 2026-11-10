@@ -1,0 +1,7 @@
+{
+  "stage": "BBX_V115A_POST_REPLUG_BASELINE_20261110_01",
+  "started_local": "2026-11-10T12:49:07.391514+08:00",
+  "target_mmio_writes": 0,
+  "halt_request_budget": 1,
+  "reset_resume_flash_retry": "forbidden"
+}

@@ -1,0 +1,5 @@
+{
+  "stage": "BBX_V118C_VERIFY_EXECUTE_20261110_01",
+  "authorized_image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+  "scope": "readback 0x0000-0x043F then execute at 0x0000; no flash writes/erase"
+}

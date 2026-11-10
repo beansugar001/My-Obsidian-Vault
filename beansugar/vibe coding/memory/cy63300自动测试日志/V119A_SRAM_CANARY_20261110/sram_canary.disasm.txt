@@ -1,0 +1,26 @@
+
+sram_canary.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .init:
+
+20008000 <_start>:
+20008000:	20020137          	lui	sp,0x20020
+20008004:	2000f2b7          	lui	t0,0x2000f
+20008008:	534d5337          	lui	t1,0x534d5
+2000800c:	23130313          	addi	t1,t1,561 # 534d5231 <__stack_top+0x334b5231>
+20008010:	0062a023          	sw	t1,0(t0) # 2000f000 <_start+0x7000>
+20008014:	119a0337          	lui	t1,0x119a0
+20008018:	01030313          	addi	t1,t1,16 # 119a0010 <_start-0xe667ff0>
+2000801c:	0062a223          	sw	t1,4(t0)
+20008020:	42454337          	lui	t1,0x42454
+20008024:	73130313          	addi	t1,t1,1841 # 42454731 <__stack_top+0x22434731>
+20008028:	0062a423          	sw	t1,8(t0)
+2000802c:	0ff0000f          	fence	iorw,iorw
+20008030:	444f5337          	lui	t1,0x444f5
+20008034:	e4530313          	addi	t1,t1,-443 # 444f4e45 <__stack_top+0x244d4e45>
+20008038:	0062a623          	sw	t1,12(t0)
+2000803c:	00100313          	addi	t1,zero,1
+20008040:	0062a823          	sw	t1,16(t0)
+20008044:	0ff0000f          	fence	iorw,iorw
+20008048:	0000006f          	jal	zero,20008048 <_start+0x48>

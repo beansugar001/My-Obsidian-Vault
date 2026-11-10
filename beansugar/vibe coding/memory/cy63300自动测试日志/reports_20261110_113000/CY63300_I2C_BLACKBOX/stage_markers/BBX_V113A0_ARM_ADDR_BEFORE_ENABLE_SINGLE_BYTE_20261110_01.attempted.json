@@ -1,0 +1,77 @@
+{
+  "stage": "BBX_V113A0_ARM_ADDR_BEFORE_ENABLE_SINGLE_BYTE_20261110_01",
+  "created_local": "2026-11-10T10:57:08.871926+08:00",
+  "target_mmio_write_allowlist": [
+    [
+      "0x4002180C",
+      "0x00000021"
+    ],
+    [
+      "0x40000100",
+      "0x0000000C"
+    ],
+    [
+      "0x40000158",
+      "0x0000000C"
+    ],
+    [
+      "0x40000104",
+      "0x0000000C"
+    ],
+    [
+      "0x4000015C",
+      "0x00000300"
+    ],
+    [
+      "0x40000168",
+      "0x000006C0"
+    ],
+    [
+      "0x40002810",
+      "0x0000000F"
+    ],
+    [
+      "0x40002814",
+      "0x00000023"
+    ],
+    [
+      "0x40002828",
+      "0x00000000"
+    ],
+    [
+      "0x40002838",
+      "0x00000005"
+    ],
+    [
+      "0x40002800",
+      "0x0000000E"
+    ],
+    [
+      "0x40002820",
+      "0x00000001"
+    ],
+    [
+      "0x40002824",
+      "0x0000003C"
+    ],
+    [
+      "0x40002800",
+      "0x0000000F"
+    ],
+    [
+      "0x40002808",
+      "0x00000000"
+    ],
+    [
+      "0x40002828",
+      "0x00000002"
+    ]
+  ],
+  "max_target_mmio_writes": 16,
+  "max_tx_fifo_writes": 1,
+  "max_stop_requests": 1,
+  "halt_request_budget": 1,
+  "retries": 0,
+  "reset_resume_flash_nvr_power_cycle": "forbidden",
+  "notes": "Single address-before-enable ordering trial; marker remains even on failure."
+}

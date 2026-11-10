@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V114C_POST_DPC_I2C_READONLY_01_20261110",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "mmio_read_count": 0,
+  "final_sbcs_rc": 0,
+  "target_mmio_writes": 0,
+  "target_memory_writes": 0,
+  "log_sha256": {
+    "stdout": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr": "0A443E1393FA5285F921CCF77CB9F32C4CDFB8B3AB1A6F5E87D717DE06BA11BF",
+    "combined": "951E32D6F5F35CDDB4D7AFC64322C45A253D49785C3189A8DABCC7B991CAD7DA"
+  },
+  "finished_local": "2026-11-10T11:23:47.110694+08:00"
+}

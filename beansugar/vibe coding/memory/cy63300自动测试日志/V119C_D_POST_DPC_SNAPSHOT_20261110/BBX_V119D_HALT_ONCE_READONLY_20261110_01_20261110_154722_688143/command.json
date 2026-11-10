@@ -1,0 +1,19 @@
+{
+  "stage": "BBX_V119D_HALT_ONCE_READONLY_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/SRAM_CPU_EXEC_PLAN_20261110/V119_SRAM_CANARY/v119d_halt_once_readonly.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T15:47:22.688143+08:00",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "tcl": "C6A55F1D3C858F10410EE1494E620E4F30B1818CB316F25822C0D090F8117428"
+  }
+}

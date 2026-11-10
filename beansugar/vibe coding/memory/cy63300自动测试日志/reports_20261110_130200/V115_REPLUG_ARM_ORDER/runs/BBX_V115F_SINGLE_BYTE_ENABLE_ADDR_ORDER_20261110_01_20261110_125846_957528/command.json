@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V115F_SINGLE_BYTE_ENABLE_ADDR_ORDER_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v115f_single_byte_after_enable_addr.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T12:58:46.957528+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "696671D208086518C742EA074F9AE5B5C3A092F3FA9572CAB20DC9BE0A726FE0",
+    "runner": "D5D563567D108B8C938829BD176F4F27BB3F71BE3BC7AA1950E48D280CA882FF"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "target_mmio_writes_by_openocd": 0,
+  "mailbox_done": true,
+  "erase_used": false,
+  "stage": "BBX_V117C_SRAM_ARM_PACED_OLED_20261110_01",
+  "sram_verify": true,
+  "sha256": {
+    "openocd.combined.log": "F7B1AB0E8681A00B58F13C355F7913BE5DA6EC8D4137135ED26EB1A58A8BA1C1",
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "772E673F06E912207AB0A4F1409BA1834C2141F3A32B9FFA48E94DB7EFEB0B0C"
+  },
+  "status": "SRAM_PROGRAM_EXECUTED",
+  "finished_local": "2026-11-10T13:58:01.3077476+08:00",
+  "marker": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\markers\\BBX_V117C_SRAM_ARM_PACED_OLED_20261110_01.attempted.json",
+  "idcode_ok": true,
+  "probe_ok": true,
+  "return_code": 0,
+  "nvr_touched": false,
+  "run_dir": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\runs_local_v116\\BBX_V117C_SRAM_ARM_PACED_OLED_20261110_01_20261110_135751"
+}

@@ -1,0 +1,19 @@
+{
+  "stage": "BBX_V117C_SRAM_ARM_PACED_OLED_20261110_01",
+  "audited_local": "2026-11-10",
+  "corrected_status": "FAIL_PC_NOT_SET_SRAM_PROGRAM_NOT_EXECUTED",
+  "binary_loaded_and_verified": true,
+  "binary_address": "0x20008000",
+  "binary_bytes": 1208,
+  "resume_command_issued": true,
+  "pc_readback": "0x00000000",
+  "expected_pc": "0x20008000",
+  "unique_v117c_mailbox_marker_present": false,
+  "mailbox_is_stale_v116b": true,
+  "i2c_actions_from_v117c": 0,
+  "target_mmio_writes_by_openocd": 0,
+  "flash_nvr_modified": false,
+  "original_result_json_preserved": true,
+  "reason": "OpenOCD reported Written PC mismatch; original result parser treated generic stale mailbox as V117C completion.",
+  "raw_log_sha256": "F7B1AB0E8681A00B58F13C355F7913BE5DA6EC8D4137135ED26EB1A58A8BA1C1"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V119A_SRAM_CANARY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v119\\BBX_V119A_SRAM_CANARY_20261110_01_20261110_150557_625005",
+  "openocd_exit_code": 0,
+  "timed_out": false,
+  "status": "FAIL_OR_UNKNOWN",
+  "resume_requested_at_most_once": false,
+  "pc_mismatch_seen": false,
+  "canary_verify_pass": false,
+  "unique_mailbox_match": false,
+  "preimage_saved": true,
+  "preimage_restored": false,
+  "target_mmio_writes": 0,
+  "flash_nvr_writes": 0,
+  "nvr_touched": false,
+  "reset_resume_retries": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F4D6A9B5596371EFCCF109CBAC860CB9B68C1F878277864D8F071F5E08615479",
+    "openocd.combined.log": "426F620F21216070B67566B561AFA93B142A4FBFAD0C4A43FC07835A18109752"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V111A4_I2C_ENABLE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_I2C_ENABLED_IDLE_LINES_HIGH",
+  "halt_count": 1,
+  "target_mmio_write_count": 2,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "EE359DBB689259B709D398DA024861935CD296AA06D91087715A0A167ABE1AB7",
+    "openocd.combined.log": "2BFFF65B9CB8935BDA4E6019B74D04A808A1B0B87A8BCDCEE94421626AC13326"
+  },
+  "finished_local": "2026-11-10T10:11:52.991595+08:00"
+}

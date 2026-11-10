@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V115C_PAD8_PAD9_SETUP_20261110_01",
+  "started_local": "2026-11-10T12:52:23.188160+08:00",
+  "target_mmio_write_allowlist": [
+    [
+      "0x40000100",
+      "0xC"
+    ],
+    [
+      "0x40000158",
+      "0xC"
+    ],
+    [
+      "0x40000104",
+      "0xC"
+    ],
+    [
+      "0x40000168",
+      "0x6C0"
+    ]
+  ],
+  "max_target_mmio_writes": 4,
+  "halt_request_budget": 1,
+  "reset_resume_retry": "forbidden"
+}

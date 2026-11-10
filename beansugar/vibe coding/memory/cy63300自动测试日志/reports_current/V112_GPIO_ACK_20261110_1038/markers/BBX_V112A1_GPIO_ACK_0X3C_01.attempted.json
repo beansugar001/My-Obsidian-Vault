@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V112A1_GPIO_ACK_0X3C_01",
+  "created_local": "2026-11-10T10:30:16.332275+08:00",
+  "target_write_budget": "GPIO-only; one 0x3C address frame",
+  "allowed_mmio": {
+    "0x4002180C": [
+      "0x00000001"
+    ],
+    "0x40000100": [
+      "GPIOB ODR masks only"
+    ],
+    "0x40000104": [
+      "GPIOB DIR masks only"
+    ],
+    "0x40000158": [
+      "0x0000000C"
+    ]
+  },
+  "i2c_controller_clock_enable": false,
+  "fifo_or_i2c_enable": false,
+  "frame_count": 1,
+  "address_byte": "0x78",
+  "automatic_retry": false
+}

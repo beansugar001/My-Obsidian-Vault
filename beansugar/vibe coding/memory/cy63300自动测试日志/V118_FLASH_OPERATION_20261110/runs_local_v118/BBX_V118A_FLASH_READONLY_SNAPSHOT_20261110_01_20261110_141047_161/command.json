@@ -1,0 +1,23 @@
+{
+  "stage": "BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "init",
+    "-c",
+    "dump_image C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/runs_local_v118/BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161/main_sector0_64KiB.bin 0x00000000 0x00010000",
+    "-c",
+    "shutdown"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host_processes": [],
+  "listeners": [],
+  "serial_expected": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "config": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "candidate_bin": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D"
+  }
+}

@@ -1,0 +1,9 @@
+{
+  "stage": "BBX_V119D_HALT_ONCE_READONLY_20261110_01",
+  "attempted": true,
+  "halt_budget": 1,
+  "mmio_writes": 0,
+  "reset_resume": 0,
+  "flash_nvr": 0,
+  "created_local": "2026-11-10T15:47:22.688143+08:00"
+}

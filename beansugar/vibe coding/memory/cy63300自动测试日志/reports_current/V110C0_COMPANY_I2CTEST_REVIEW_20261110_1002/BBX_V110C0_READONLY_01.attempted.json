@@ -1,0 +1,7 @@
+{
+  "stage": "BBX_V110C0_READONLY_01",
+  "created_local": "2026-11-10T10:02:22.362889+08:00",
+  "target_mmio_write_budget": 0,
+  "operation": "read-only SYSCTRL and gated I2C snapshot; SBA setup DMI writes only to SBCS/SBADDRESS0",
+  "retry": "none"
+}

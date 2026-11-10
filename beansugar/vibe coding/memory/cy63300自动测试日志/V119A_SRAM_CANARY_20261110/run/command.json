@@ -1,0 +1,31 @@
+{
+  "stage": "BBX_V119A_SRAM_CANARY_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "set ::v119_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/SRAM_CPU_EXEC_PLAN_20261110/V119_SRAM_CANARY/v119_sram_canary_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "image_bytes": 76,
+  "image_sha256": "E53B8FEACE6CBCB573A4DE242F870567ACEEFBED3A202C7A96671DF5282FA971",
+  "tcl_sha256": "727834967C25962A71821B9FA90CD4520D73266F3A45EB942EB83ECE9CB59EB7",
+  "config_sha256": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+  "openocd_sha256": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+  "started_local": "2026-11-10T15:05:57.630948+08:00",
+  "process_snapshot": [
+    "aggregatorhost`namdfendrsr`napplicationframehost`natieclxx`natiesrxx`naudiodg`nawarenessdecision`nbraindecision`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchatgpt`nchsime`nclash-verge`nclash-verge-service`ncloudmusic`ncloudmusic`ncloudmusic`ncloudmusic_reporter`ncmd`ncmd`ncodex`ncodex`ncodex-code-mode-host`ncodex-command-runner-0.166.0-alpha.5.1`ncodex-computer-use-swift`ncodex-windows-sandbox-service`ncollabrativedecision`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`nconhost`ncontrolcentertrayui`ncsrss`ncsrss`nctfmon`ndataexchangehost`ndefenderaiplatformhost`ndefendersessionhelper`ndfsalertdialog`ndllhost`ndllhost`ndwm`nexplorer`nexplorer`nexplorer`nexplorer`nextension-host`nfmservice64`nfnplicensingservice`nfontdrvhost`nfontdrvhost`ngameinputredistservice`ngameinputsvc`ngameinputsvc`ngamingservices`nhiviewengine`nhncloudservice`nhnexscreen`nhnperformancecenter`nhnperfpowernexus`nhnrsmservice`nhntrustcircleservice`nhnupdateservice`nidle`njtagserver`nlcd_service`nlceda-pro`nlceda-pro`nlceda-pro`nlceda-pro`nlceda-pro`nlocationnotificationwindows`nlogi_lamparray_service.amd64`nlsaiso`nlsass`nmbaantivirus`nmbamessagecenter`nmbaprocesswatcher`nmemory compression`nmessagecenterui`nmpdefendercoreservice`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedge`nmsedgewebview2`nmsedgewebview2`nmsedgewebview2`nmsedgewebview2`nmsedgewebview2`nmsedgewebview2`nmsmpeng`nmsofficeplusservice`nnahimicnotifsys`nnahimicservice`nnissrv`nnode`nnode`nnode`nnode_repl`nnode_repl`nnode_repl`nnvdisplay.container`nnvdisplay.container`nofficeclicktorun`nosdservice`npcmanagermainservice`npcmanagertray`npowershell`npromecefpluginhost`npromecefpluginhost`npwsh`npython`nqaxdefender`nqaxengmanager`nqqprotect`nregistry`nrtkauduservice64`nrtkauduservice64`nrtkauduservice64`nrtkuwp`nruntimebroker`nruntimebroker`nruntimebroker`nruntimebroker`nruntimebroker`nruntimebroker`nsearchhost`nsearchindexer`nsearchprotocolhost`nsecure system`nsecurityhealthservice`nservices`nsessionservice`nsgsmartassistant`nsgtool`nsgtool`nshellexperiencehost`nsihost`nsmss`nsogoucloud`nsogoucloud`nsogouimebroker`nspoolsv`nstartmenuexperiencehost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsvchost`nsystem`nsystemsettingsbroker`ntaskhostw`ntaskhostw`ntextinputhost`ntrantoragent`nunsecapp`nunsecapp`nverge-mihomo`nvmcompute`nwidgets`nwininit`nwinlogon`nwmiprvse`nwmiprvse`nwps`nwps`nwpscloudsvr`nwslservice`nwudfhost`nwudfhost`nwudfhost`nwudfhost`nwudfhost`nxboxservice`nzotero`nzotero`nzotero.exe"
+  ],
+  "known_altera_jtagserver_ignored": true,
+  "target_writes_allowed": "SRAM 0x20008000..0x2000804B only, then restore saved bytes",
+  "prohibited": [
+    "target MMIO",
+    "Flash/NVR",
+    "reset",
+    "power-cycle",
+    "retry"
+  ]
+}

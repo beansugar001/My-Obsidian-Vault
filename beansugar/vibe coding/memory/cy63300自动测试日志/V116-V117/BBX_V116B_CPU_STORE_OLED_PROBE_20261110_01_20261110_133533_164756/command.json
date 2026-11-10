@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V116B_CPU_STORE_OLED_PROBE_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T13:35:33.164756+08:00",
+  "serial_expected": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "host_processes": [],
+  "listeners": [],
+  "image": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V116_CPU_STORE\\cpu_i2c_probe.bin",
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "config": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "tcl": "D9D05C90C78FCDE26498EDD981444AA3D9FF6B662A0BF4C8DC10FBA76F0B7E0D",
+    "binary": "656476CF478A300F2B967FCCC7ED92C72D74918B38AF0C86D412DC4817CC5524",
+    "backup": "3B874D3BA46C638FC3094F8E92FB744CA974893873F8885F54E23760F9B6311B",
+    "runner": "06EC56D574CA10CC006C9DA971D2B58093DAEC266EE1DD290CD3416E2E7B46CA"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "stage": "BBX_V118_FLASH_ERASE_PROGRAM_RUN_20261110_01",
+  "started_local": "2026-11-10T14:26:21.044544+08:00",
+  "authorized_scope": {
+    "erase_sector": "0x00000000-0x0000FFFF",
+    "program_range": "0x00000000-0x0000043F",
+    "image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+    "execute_entry": "0x00000000"
+  },
+  "retry": "none",
+  "recovery": "not automatic"
+}

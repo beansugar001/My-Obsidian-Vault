@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V113A5_POST_TX_READONLY_HALT_ONCE_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v113a5_post_tx_readonly_halt_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T11:04:44.093652+08:00",
+  "timeout_s": 180,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "361DB041E437019759470736BF889D9A5C158E6DE3EE2C7A54842753C3A50CE9",
+    "python": "868B164544B28EF3C154BDC73F0D905D0888C7895A37E8C399326BC181185A5C"
+  }
+}

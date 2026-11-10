@@ -1,0 +1,26 @@
+{
+  "stage": "BBX_V118B_CLEAR_REMAINDER_PROGRAM_RUN_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v118\\BBX_V118B_CLEAR_REMAINDER_PROGRAM_RUN_20261110_01_20261110_143214_743832",
+  "image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+  "image_bytes": 1088,
+  "phases": {
+    "preflight": {
+      "status": "PASS",
+      "snapshot_sha256": "9064DCC9B11C1697DE1240A66A10FA8E017EDB510882A3C282F64A5420B73F5C",
+      "snapshot_bytes": 65536
+    },
+    "erase": {
+      "status": "PASS",
+      "trigger_count": 1,
+      "verified_bytes": 65536,
+      "sha256": "71189F7FB6AED638640078FBA3A35FDA6C39C8962E74DCC75935AAC948DA9063"
+    }
+  },
+  "openocd_mmio_writes_before_execute": 8,
+  "flash_erase_triggers": 1,
+  "flash_program_bytes": 0,
+  "firmware_runtime_mmio_writes_expected": true,
+  "nvr_touched": false,
+  "status": "STOPPED_FAILURE",
+  "failure": "OpenOCD did not confirm 1088-byte program verification"
+}

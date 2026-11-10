@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V115F_SINGLE_BYTE_ENABLE_ADDR_ORDER_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_TX_STALLED_NO_DATA_NO_NACK",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "stop_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "16D7BB9DB33B7A92252B2EC3EE24A887832CF2B09A6294231DF8B2ED6400B514",
+    "openocd.combined.log": "EE4FB81B006B999B068F6977F16F83113DFD3D6A9AC22077C440E03D4E2FA609"
+  },
+  "finished_local": "2026-11-10T12:59:12.186387+08:00"
+}

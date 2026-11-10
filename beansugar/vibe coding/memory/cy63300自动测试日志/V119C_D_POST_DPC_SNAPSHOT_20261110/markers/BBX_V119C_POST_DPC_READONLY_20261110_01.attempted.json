@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V119C_POST_DPC_READONLY_20261110_01",
+  "attempted": true,
+  "target_mmio_writes": 0,
+  "halt_resume_reset": 0,
+  "flash_nvr_writes": 0,
+  "created_local": "2026-11-10T15:45:51.195738+08:00"
+}

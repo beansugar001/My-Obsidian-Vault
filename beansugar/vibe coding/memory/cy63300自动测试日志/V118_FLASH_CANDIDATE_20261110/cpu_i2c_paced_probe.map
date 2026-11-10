@@ -1,0 +1,50 @@
+
+Discarded input sections
+
+ .comment       0x0000000000000000       0x34 C:\Users\24796\AppData\Local\Temp\ccLtKxW9.o
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+flash            0x0000000000000000 0x0000000000040000 xr
+ram              0x0000000020000000 0x0000000000020000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.init           0x0000000000000000        0xc
+ *(.init)
+ .init          0x0000000000000000        0xc C:\Users\24796\AppData\Local\Temp\ccgivC35.o
+                0x0000000000000000                _start
+
+.text           0x000000000000000c      0x434
+ *(.text .text.*)
+ .text          0x000000000000000c        0x0 C:\Users\24796\AppData\Local\Temp\ccgivC35.o
+ .text          0x000000000000000c        0x0 C:\Users\24796\AppData\Local\Temp\ccLtKxW9.o
+ .text.startup  0x000000000000000c      0x434 C:\Users\24796\AppData\Local\Temp\ccLtKxW9.o
+                0x000000000000000c                main
+ *(.rodata .rodata.*)
+
+.rela.dyn       0x0000000000000440        0x0
+ .rela.init     0x0000000000000440        0x0 C:\Users\24796\AppData\Local\Temp\ccgivC35.o
+                0x0000000000000440                . = ALIGN (0x4)
+
+.data           0x0000000020000000        0x0 load address 0x0000000000000440
+ *(.data .data.*)
+ .data          0x0000000020000000        0x0 C:\Users\24796\AppData\Local\Temp\ccgivC35.o
+ .data          0x0000000020000000        0x0 C:\Users\24796\AppData\Local\Temp\ccLtKxW9.o
+
+.bss            0x0000000020000000        0x0 load address 0x0000000000000440
+ *(.bss .bss.* COMMON)
+ .bss           0x0000000020000000        0x0 C:\Users\24796\AppData\Local\Temp\ccgivC35.o
+ .bss           0x0000000020000000        0x0 C:\Users\24796\AppData\Local\Temp\ccLtKxW9.o
+                0x0000000020020000                __stack_top = (ORIGIN (ram) + LENGTH (ram))
+
+/DISCARD/
+ *(.comment)
+ *(.eh_frame*)
+ *(.riscv.attributes)
+LOAD C:\Users\24796\AppData\Local\Temp\ccgivC35.o
+LOAD C:\Users\24796\AppData\Local\Temp\ccLtKxW9.o
+OUTPUT(C:\Users\24796\Documents\组\CY63300_I2C_BLACKBOX\V118_FLASH_CANDIDATE\cpu_i2c_paced_probe.elf elf32-littleriscv)

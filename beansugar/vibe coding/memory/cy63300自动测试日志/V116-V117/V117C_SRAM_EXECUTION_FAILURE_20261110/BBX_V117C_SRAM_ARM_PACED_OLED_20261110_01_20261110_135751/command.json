@@ -1,0 +1,25 @@
+{
+  "listeners": [],
+  "image": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V117_ARM_PACED_CPU_STORE\\cpu_i2c_paced_probe.bin",
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "stage": "BBX_V117C_SRAM_ARM_PACED_OLED_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V117_ARM_PACED_CPU_STORE/v117c_sram_paced_execute.tcl"
+  ],
+  "process_conflicts": [],
+  "image_bytes": 1208,
+  "image_address": "0x20008000",
+  "sha256": {
+    "openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cpu_i2c_paced_probe.bin": "A1A4D6029CDE6FA2D51495A5E3227757F44FFC15608A4FBEF94E4873504E7144",
+    "v117c_sram_paced_execute.tcl": "289E8A98C7B0E5193D3BA82D7C5550942EA2164E29D47509D95882E422E746F4",
+    "v117_sram.ld": "C29D00B9DFA91F8E6AB02E8F15A552A6BDE77D859D7F3A9BEB51FDC2C1549E23",
+    "cpu_i2c_paced_probe.c": "B4E745FD6069496DCFCB283ABD9295B8A7154C3C0E60C16793F5BC3254CB9B8A",
+    "v116b_flash_cpu_probe.cfg": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4"
+  },
+  "started_local": "2026-11-10T13:57:51.3109873+08:00"
+}

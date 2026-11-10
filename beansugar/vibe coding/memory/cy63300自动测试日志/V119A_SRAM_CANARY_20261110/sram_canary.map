@@ -1,0 +1,37 @@
+
+Memory Configuration
+
+Name             Origin             Length             Attributes
+canary           0x0000000020008000 0x0000000000007000 xrw
+*default*        0x0000000000000000 0xffffffffffffffff
+
+Linker script and memory map
+
+
+.init           0x0000000020008000       0x4c
+ *(.init)
+ .init          0x0000000020008000       0x4c C:\Users\24796\AppData\Local\Temp\ccSIplOm.o
+                0x0000000020008000                _start
+
+.text           0x000000002000804c        0x0
+ *(.text .text.*)
+ .text          0x000000002000804c        0x0 C:\Users\24796\AppData\Local\Temp\ccSIplOm.o
+
+.rodata
+ *(.rodata .rodata.*)
+
+.data           0x000000002000804c        0x0
+ *(.data .data.*)
+ .data          0x000000002000804c        0x0 C:\Users\24796\AppData\Local\Temp\ccSIplOm.o
+
+.bss            0x000000002000804c        0x0
+ *(.bss .bss.* COMMON)
+ .bss           0x000000002000804c        0x0 C:\Users\24796\AppData\Local\Temp\ccSIplOm.o
+                0x0000000020020000                __stack_top = 0x20020000
+
+/DISCARD/
+ *(.comment)
+ *(.eh_frame*)
+ *(.riscv.attributes)
+LOAD C:\Users\24796\AppData\Local\Temp\ccSIplOm.o
+OUTPUT(sram_canary.elf elf32-littleriscv)

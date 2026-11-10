@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01",
+  "return_code": 0,
+  "serial_seen": true,
+  "idcode_seen": true,
+  "log_has_error": false,
+  "dump_exists": true,
+  "dump_bytes": 65536,
+  "dump_sha256": "E1F99E6A8F8D6D139DA06D6D288E9E00BBD9E6C7A6185B56B33C3A5CBA39D9E7",
+  "expected_bytes": 65536,
+  "v116_prefix_mismatch_bytes": 0,
+  "candidate_bytes": 1088,
+  "candidate_0_to_1_byte_count": 736,
+  "candidate_1_to_0_byte_count": 768,
+  "target_mmio_writes": 0,
+  "flash_writes": 0,
+  "flash_erases": 0,
+  "log_sha256": "A86E474D33D32F0295357B4F600B916246D2B238E5C88187AB12FA96105D6C9B",
+  "run_dir": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\runs_local_v118\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V115E_ENABLE_BEFORE_ADDR_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_ENABLE_BEFORE_ADDR_IDLE_NO_TRANSACTION",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "3429AAEDCA02675411B4810B286410103AC88E189FFE73FF5235302B21B35B9D",
+    "openocd.combined.log": "9A8B190C717F7752817A0A06BC0F0DC5331F38D61FCD27E0315D7EDCF53339EA"
+  },
+  "finished_local": "2026-11-10T12:57:28.212906+08:00"
+}

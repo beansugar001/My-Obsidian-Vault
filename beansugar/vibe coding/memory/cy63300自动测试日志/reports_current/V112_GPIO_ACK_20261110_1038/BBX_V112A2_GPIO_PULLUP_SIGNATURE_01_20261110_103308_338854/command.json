@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_V112A2_GPIO_PULLUP_SIGNATURE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v112a2_gpio_pullup_signature.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T10:33:08.338854+08:00",
+  "host_processes": [],
+  "host_listeners": [],
+  "retry": "none",
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\v112a2_gpio_pullup_signature.tcl": "1D540F81BEBE4BA5D0189B45A61CDE7C2F3BEB493A6066261D03D90ADC01DD01",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_v112a2_gpio_pullup_signature.py": "B5A74D7CC9654CC3C3A11228B4BAA4CC4AEDCA21DFD21A2AD040B241C6E02207"
+  }
+}

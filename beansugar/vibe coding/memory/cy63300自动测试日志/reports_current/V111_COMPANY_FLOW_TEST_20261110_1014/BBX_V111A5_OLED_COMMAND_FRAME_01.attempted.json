@@ -1,0 +1,26 @@
+{
+  "stage": "BBX_V111A5_OLED_COMMAND_FRAME_01",
+  "created_local": "2026-11-10T10:13:51.055269+08:00",
+  "target_mmio_write_budget": 3,
+  "allowlist": [
+    {
+      "address": "0x40002808",
+      "value": "0x00000000",
+      "label": "OLED_COMMAND_CONTROL_BYTE"
+    },
+    {
+      "address": "0x40002808",
+      "value": "0x000000AF",
+      "label": "OLED_DISPLAY_ON_COMMAND"
+    },
+    {
+      "address": "0x40002828",
+      "value": "0x00000002",
+      "label": "MANUAL_STOP_REQUEST"
+    }
+  ],
+  "halt_request_budget": 1,
+  "retry": "none",
+  "interrupt_clear": false,
+  "clock_gate_off_after": false
+}

@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01",
+  "started_local": "2026-11-10T14:10:47.1641065+08:00",
+  "operation": "read-only dump main sector 0, 64 KiB",
+  "target_mmio_writes": 0,
+  "flash_writes": 0,
+  "flash_erases": 0
+}

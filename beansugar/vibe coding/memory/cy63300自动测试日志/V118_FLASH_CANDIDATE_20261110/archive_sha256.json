@@ -1,0 +1,54 @@
+[
+  {
+    "Hash": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\cpu_i2c_paced_probe_flash.bin"
+  },
+  {
+    "Hash": "A15FD835F4D0CE8F3F2E86874C2B9C16E9D20CB84BFE47BD7D0EC9F4C65F811C",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\cpu_i2c_paced_probe.c"
+  },
+  {
+    "Hash": "7AAFFF5A4A9B040A067D2B39AB9D6536DBDBE44CBD7D0D5194DBF50458D668F3",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\cpu_i2c_paced_probe.elf"
+  },
+  {
+    "Hash": "C68F95CB9D96477785889577C2A540804FF513FB1E8B14EF927795A5D30D100D",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\cpu_i2c_paced_probe.map"
+  },
+  {
+    "Hash": "B90830AC890CEBEAA47CEE8E690F5B2A527C0FAB0EB5C9DF5271D0933D17C7E8",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\start.S"
+  },
+  {
+    "Hash": "F1B13FAEE621972E6427B813ACA23CF5203F359559E637FE35EBD5AB2249F32A",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\V118_FLASH_ROUTE_AND_SNAPSHOT.md"
+  },
+  {
+    "Hash": "47E530D2B32FF749568F85D62F87D421EB5F9F6D4534A7AF52F8A053B06041CC",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\v118_flash.ld"
+  },
+  {
+    "Hash": "4214B33FFA1BDAEEAEA2C950C5FD963B633E08EFE8C95FB7F27CBA93C80A99FC",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161\\command.json"
+  },
+  {
+    "Hash": "E1F99E6A8F8D6D139DA06D6D288E9E00BBD9E6C7A6185B56B33C3A5CBA39D9E7",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161\\main_sector0_64KiB.bin"
+  },
+  {
+    "Hash": "A86E474D33D32F0295357B4F600B916246D2B238E5C88187AB12FA96105D6C9B",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161\\openocd.combined.log"
+  },
+  {
+    "Hash": "7BE46DD83FA5CF95E2172CEBA29C1E9E86C9F75D65BC47A67E531BB17FCCD128",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161\\openocd.stderr.log"
+  },
+  {
+    "Hash": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161\\openocd.stdout.log"
+  },
+  {
+    "Hash": "666CC3F112C8CB041EE99B05BA93CB4EB374F1E7A1A13FC448E2AC015BE7DC83",
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V118_FLASH_CANDIDATE_20261110\\BBX_V118A_FLASH_READONLY_SNAPSHOT_20261110_01_20261110_141047_161\\result.json"
+  }
+]

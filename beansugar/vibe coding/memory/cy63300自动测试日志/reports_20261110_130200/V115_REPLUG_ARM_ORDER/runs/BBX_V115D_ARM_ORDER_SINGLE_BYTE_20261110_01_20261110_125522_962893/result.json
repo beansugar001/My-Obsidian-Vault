@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V115D_ARM_ORDER_SINGLE_BYTE_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 8,
+  "stop_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "2F0C3AD479829934672E55E4BA0771E053C7666D1CAB46C674A64BB27F8EEF0B",
+    "openocd.combined.log": "FA8CE7A779B982F664E6D5F93BB6E53A374EB4BCDC9DB8025F60F41774A03724"
+  },
+  "finished_local": "2026-11-10T12:55:26.896304+08:00"
+}

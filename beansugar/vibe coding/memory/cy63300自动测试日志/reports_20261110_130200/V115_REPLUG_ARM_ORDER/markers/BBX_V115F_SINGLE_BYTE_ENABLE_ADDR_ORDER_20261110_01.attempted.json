@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V115F_SINGLE_BYTE_ENABLE_ADDR_ORDER_20261110_01",
+  "started_local": "2026-11-10T12:58:46.957528+08:00",
+  "tx_fifo_allowlist": [
+    [
+      "0x40002808",
+      "0x00000000"
+    ]
+  ],
+  "max_tx_fifo_writes": 1,
+  "max_stop_writes": 1,
+  "max_halt_requests": 1,
+  "reset_resume_flash_retry": "forbidden"
+}

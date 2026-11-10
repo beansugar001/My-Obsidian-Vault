@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V113A2_MODULE_CTRL_0D_SINGLE_BYTE_20261110_01",
+  "created_local": "2026-11-10T11:00:37.494666+08:00",
+  "target_mmio_write_allowlist": [
+    [
+      "0x40002800",
+      "0x0000000D"
+    ],
+    [
+      "0x40002808",
+      "0x00000000"
+    ],
+    [
+      "0x40002828",
+      "0x00000002"
+    ]
+  ],
+  "max_target_mmio_writes": 3,
+  "max_tx_fifo_writes": 1,
+  "max_stop_requests": 1,
+  "halt_request_budget": 1,
+  "retries": 0,
+  "reset_resume_flash_nvr_power_cycle": "forbidden",
+  "notes": "Single address-before-enable ordering trial; marker remains even on failure."
+}

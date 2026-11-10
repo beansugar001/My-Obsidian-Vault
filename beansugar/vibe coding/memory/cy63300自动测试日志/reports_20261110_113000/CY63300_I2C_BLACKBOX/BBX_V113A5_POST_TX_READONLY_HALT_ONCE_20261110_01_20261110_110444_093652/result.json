@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V113A5_POST_TX_READONLY_HALT_ONCE_20261110_01",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "PASS_READONLY_CAPTURE",
+  "target_mmio_write_count": 0,
+  "halt_count": 1,
+  "sbcs_rc": 0,
+  "sbcs": "0x20140404",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "2F385493FEC179545AC5570AA2088382055635DFB384FA3B539A132C6CB17F77",
+    "openocd.combined.log": "617CBE4BE70B8CE06FD81A0F13BB1013477272A5E6ED0C0D3E4D39C25C63D380"
+  },
+  "finished_local": "2026-11-10T11:04:45.891415+08:00"
+}

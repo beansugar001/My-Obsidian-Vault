@@ -1,0 +1,12 @@
+{
+  "stage": "BBX_V110B5_OLED_ONE_BYTE_01",
+  "created_local": "2026-11-10T09:56:18.095641+08:00",
+  "target_mmio_write_budget": 1,
+  "only_target_write": {
+    "address": "0x40002808",
+    "value": "0x00000000"
+  },
+  "halt_request_budget": 1,
+  "retry": "none",
+  "interrupt_clear": false
+}

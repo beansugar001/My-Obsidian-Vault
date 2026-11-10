@@ -1,0 +1,11 @@
+{
+  "stage": "BBX_V110B1_CLOCK_BASELINE_01",
+  "created_local": "2026-11-10T09:55:13.257775+08:00",
+  "target_mmio_write_budget": 1,
+  "only_target_write": {
+    "address": "0x4002180C",
+    "value": "0x00000021"
+  },
+  "halt_request_budget": 1,
+  "retry": "none"
+}

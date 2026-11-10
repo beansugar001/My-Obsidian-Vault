@@ -1,0 +1,354 @@
+
+C:\Users\24796\Documents\?\CY63300_I2C_BLACKBOX\V118_FLASH_CANDIDATE\cpu_i2c_paced_probe.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .init:
+
+00000000 <_start>:
+   0:	20020117          	auipc	x2,0x20020
+   4:	00010113          	addi	x2,x2,0 # 20020000 <__stack_top>
+   8:	2011                	c.jal	c <main>
+   a:	a001                	c.j	a <_start+0xa>
+
+Disassembly of section .text:
+
+0000000c <main>:
+   c:	2000f7b7          	lui	x15,0x2000f
+  10:	11780737          	lui	x14,0x11780
+  14:	0007a023          	sw	x0,0(x15) # 2000f000 <main+0x2000eff4>
+  18:	0705                	c.addi	x14,1
+  1a:	c3d8                	c.sw	x14,4(x15)
+  1c:	1141                	c.addi	x2,-16
+  1e:	0807ae23          	sw	x0,156(x15)
+  22:	0ff0000f          	fence	iorw,iorw
+  26:	400226b7          	lui	x13,0x40022
+  2a:	80c6a703          	lw	x14,-2036(x13) # 4002180c <__stack_top+0x2000180c>
+  2e:	0ff0000f          	fence	iorw,iorw
+  32:	c798                	c.sw	x14,8(x15)
+  34:	02176713          	ori	x14,x14,33
+  38:	80e6a623          	sw	x14,-2036(x13)
+  3c:	0ff0000f          	fence	iorw,iorw
+  40:	80c6a703          	lw	x14,-2036(x13)
+  44:	0ff0000f          	fence	iorw,iorw
+  48:	c7d8                	c.sw	x14,12(x15)
+  4a:	8106a703          	lw	x14,-2032(x13)
+  4e:	0ff0000f          	fence	iorw,iorw
+  52:	cb98                	c.sw	x14,16(x15)
+  54:	02077613          	andi	x12,x14,32
+  58:	ca31                	c.beqz	x12,ac <main+0xa0>
+  5a:	6739                	c.lui	x14,0xe
+  5c:	0705                	c.addi	x14,1
+  5e:	08e7ae23          	sw	x14,156(x15)
+  62:	40003737          	lui	x14,0x40003
+  66:	80c72683          	lw	x13,-2036(x14) # 4000280c <__stack_top+0x1ffe280c>
+  6a:	0ff0000f          	fence	iorw,iorw
+  6e:	2000f7b7          	lui	x15,0x2000f
+  72:	dff4                	c.sw	x13,124(x15)
+  74:	83c72683          	lw	x13,-1988(x14)
+  78:	0ff0000f          	fence	iorw,iorw
+  7c:	08d7a023          	sw	x13,128(x15) # 2000f080 <main+0x2000f074>
+  80:	85872703          	lw	x14,-1960(x14)
+  84:	0ff0000f          	fence	iorw,iorw
+  88:	08e7a223          	sw	x14,132(x15)
+  8c:	11780737          	lui	x14,0x11780
+  90:	0d070713          	addi	x14,x14,208 # 117800d0 <main+0x117800c4>
+  94:	c3d8                	c.sw	x14,4(x15)
+  96:	0ff0000f          	fence	iorw,iorw
+  9a:	4d423737          	lui	x14,0x4d423
+  9e:	13870713          	addi	x14,x14,312 # 4d423138 <__stack_top+0x2d403138>
+  a2:	c398                	c.sw	x14,0(x15)
+  a4:	0ff0000f          	fence	iorw,iorw
+  a8:	0001                	c.addi	x0,0
+  aa:	bffd                	c.j	a8 <main+0x9c>
+  ac:	02076793          	ori	x15,x14,32
+  b0:	80f6a823          	sw	x15,-2032(x13)
+  b4:	0ff0000f          	fence	iorw,iorw
+  b8:	3e700693          	addi	x13,x0,999
+  bc:	c402                	c.swsp	x0,8(x2)
+  be:	47a2                	c.lwsp	x15,8(x2)
+  c0:	08f6f363          	bgeu	x13,x15,146 <main+0x13a>
+  c4:	fdf77713          	andi	x14,x14,-33
+  c8:	400227b7          	lui	x15,0x40022
+  cc:	80e7a823          	sw	x14,-2032(x15) # 40021810 <__stack_top+0x20001810>
+  d0:	0ff0000f          	fence	iorw,iorw
+  d4:	3e700513          	addi	x10,x0,999
+  d8:	c602                	c.swsp	x0,12(x2)
+  da:	47b2                	c.lwsp	x15,12(x2)
+  dc:	06f57a63          	bgeu	x10,x15,150 <main+0x144>
+  e0:	400228b7          	lui	x17,0x40022
+  e4:	8108a783          	lw	x15,-2032(x17) # 40021810 <__stack_top+0x20001810>
+  e8:	0ff0000f          	fence	iorw,iorw
+  ec:	2000f737          	lui	x14,0x2000f
+  f0:	08f72423          	sw	x15,136(x14) # 2000f088 <main+0x2000f07c>
+  f4:	400037b7          	lui	x15,0x40003
+  f8:	8007a803          	lw	x16,-2048(x15) # 40002800 <__stack_top+0x1ffe2800>
+  fc:	0ff0000f          	fence	iorw,iorw
+ 100:	80c7a683          	lw	x13,-2036(x15)
+ 104:	0ff0000f          	fence	iorw,iorw
+ 108:	83c7a583          	lw	x11,-1988(x15)
+ 10c:	0ff0000f          	fence	iorw,iorw
+ 110:	8587a603          	lw	x12,-1960(x15)
+ 114:	0ff0000f          	fence	iorw,iorw
+ 118:	09072623          	sw	x16,140(x14)
+ 11c:	08d72823          	sw	x13,144(x14)
+ 120:	08b72a23          	sw	x11,148(x14)
+ 124:	08c72c23          	sw	x12,152(x14)
+ 128:	08872603          	lw	x12,136(x14)
+ 12c:	8985                	c.andi	x11,1
+ 12e:	82a1                	c.srli	x13,0x8
+ 130:	02067613          	andi	x12,x12,32
+ 134:	8e4d                	c.or	x12,x11
+ 136:	8abd                	c.andi	x13,15
+ 138:	8e55                	c.or	x12,x13
+ 13a:	c205                	c.beqz	x12,15a <main+0x14e>
+ 13c:	67b9                	c.lui	x15,0xe
+ 13e:	0789                	c.addi	x15,2
+ 140:	08f72e23          	sw	x15,156(x14)
+ 144:	bf39                	c.j	62 <main+0x56>
+ 146:	0001                	c.addi	x0,0
+ 148:	47a2                	c.lwsp	x15,8(x2)
+ 14a:	0785                	c.addi	x15,1
+ 14c:	c43e                	c.swsp	x15,8(x2)
+ 14e:	bf85                	c.j	be <main+0xb2>
+ 150:	0001                	c.addi	x0,0
+ 152:	47b2                	c.lwsp	x15,12(x2)
+ 154:	0785                	c.addi	x15,1
+ 156:	c63e                	c.swsp	x15,12(x2)
+ 158:	b749                	c.j	da <main+0xce>
+ 15a:	6685                	c.lui	x13,0x1
+ 15c:	17068693          	addi	x13,x13,368 # 1170 <main+0x1164>
+ 160:	08d72e23          	sw	x13,156(x14)
+ 164:	400006b7          	lui	x13,0x40000
+ 168:	1006a583          	lw	x11,256(x13) # 40000100 <__stack_top+0x1ffe0100>
+ 16c:	0ff0000f          	fence	iorw,iorw
+ 170:	00c5e593          	ori	x11,x11,12
+ 174:	10b6a023          	sw	x11,256(x13)
+ 178:	0ff0000f          	fence	iorw,iorw
+ 17c:	1586a583          	lw	x11,344(x13)
+ 180:	0ff0000f          	fence	iorw,iorw
+ 184:	00c5e593          	ori	x11,x11,12
+ 188:	14b6ac23          	sw	x11,344(x13)
+ 18c:	0ff0000f          	fence	iorw,iorw
+ 190:	1046a583          	lw	x11,260(x13)
+ 194:	0ff0000f          	fence	iorw,iorw
+ 198:	00c5e593          	ori	x11,x11,12
+ 19c:	10b6a223          	sw	x11,260(x13)
+ 1a0:	0ff0000f          	fence	iorw,iorw
+ 1a4:	1686a583          	lw	x11,360(x13)
+ 1a8:	0ff0000f          	fence	iorw,iorw
+ 1ac:	787d                	c.lui	x16,0xfffff
+ 1ae:	03f80813          	addi	x16,x16,63 # fffff03f <__stack_top+0xdffdf03f>
+ 1b2:	0105f5b3          	and	x11,x11,x16
+ 1b6:	6c05e593          	ori	x11,x11,1728
+ 1ba:	16b6a423          	sw	x11,360(x13)
+ 1be:	0ff0000f          	fence	iorw,iorw
+ 1c2:	15c6a583          	lw	x11,348(x13)
+ 1c6:	0ff0000f          	fence	iorw,iorw
+ 1ca:	3005e593          	ori	x11,x11,768
+ 1ce:	14b6ae23          	sw	x11,348(x13)
+ 1d2:	0ff0000f          	fence	iorw,iorw
+ 1d6:	1506a683          	lw	x13,336(x13)
+ 1da:	0ff0000f          	fence	iorw,iorw
+ 1de:	cb54                	c.sw	x13,20(x14)
+ 1e0:	8007a023          	sw	x0,-2048(x15) # d800 <main+0xd7f4>
+ 1e4:	0ff0000f          	fence	iorw,iorw
+ 1e8:	80a7a823          	sw	x10,-2032(x15)
+ 1ec:	0ff0000f          	fence	iorw,iorw
+ 1f0:	80a7aa23          	sw	x10,-2028(x15)
+ 1f4:	0ff0000f          	fence	iorw,iorw
+ 1f8:	8207a423          	sw	x0,-2008(x15)
+ 1fc:	0ff0000f          	fence	iorw,iorw
+ 200:	4695                	c.li	x13,5
+ 202:	82d7ac23          	sw	x13,-1992(x15)
+ 206:	0ff0000f          	fence	iorw,iorw
+ 20a:	46b1                	c.li	x13,12
+ 20c:	80d7a023          	sw	x13,-2048(x15)
+ 210:	0ff0000f          	fence	iorw,iorw
+ 214:	4685                	c.li	x13,1
+ 216:	82d7a023          	sw	x13,-2016(x15)
+ 21a:	0ff0000f          	fence	iorw,iorw
+ 21e:	66cd                	c.lui	x13,0x13
+ 220:	86d7a023          	sw	x13,-1952(x15)
+ 224:	0ff0000f          	fence	iorw,iorw
+ 228:	05000693          	addi	x13,x0,80
+ 22c:	82d7a223          	sw	x13,-2012(x15)
+ 230:	0ff0000f          	fence	iorw,iorw
+ 234:	46b5                	c.li	x13,13
+ 236:	80d7a023          	sw	x13,-2048(x15)
+ 23a:	0ff0000f          	fence	iorw,iorw
+ 23e:	03c00693          	addi	x13,x0,60
+ 242:	82d7a223          	sw	x13,-2012(x15)
+ 246:	0ff0000f          	fence	iorw,iorw
+ 24a:	8007a683          	lw	x13,-2048(x15)
+ 24e:	0ff0000f          	fence	iorw,iorw
+ 252:	cf14                	c.sw	x13,24(x14)
+ 254:	8247a683          	lw	x13,-2012(x15)
+ 258:	0ff0000f          	fence	iorw,iorw
+ 25c:	cf54                	c.sw	x13,28(x14)
+ 25e:	80c7a683          	lw	x13,-2036(x15)
+ 262:	0ff0000f          	fence	iorw,iorw
+ 266:	d314                	c.sw	x13,32(x14)
+ 268:	83c7a683          	lw	x13,-1988(x15)
+ 26c:	0ff0000f          	fence	iorw,iorw
+ 270:	d354                	c.sw	x13,36(x14)
+ 272:	8587a683          	lw	x13,-1960(x15)
+ 276:	0ff0000f          	fence	iorw,iorw
+ 27a:	d714                	c.sw	x13,40(x14)
+ 27c:	8108a683          	lw	x13,-2032(x17)
+ 280:	0ff0000f          	fence	iorw,iorw
+ 284:	d754                	c.sw	x13,44(x14)
+ 286:	4689                	c.li	x13,2
+ 288:	c354                	c.sw	x13,4(x14)
+ 28a:	8007a423          	sw	x0,-2040(x15)
+ 28e:	0ff0000f          	fence	iorw,iorw
+ 292:	002dce37          	lui	x28,0x2dc
+ 296:	4681                	c.li	x13,0
+ 298:	4501                	c.li	x10,0
+ 29a:	4801                	c.li	x16,0
+ 29c:	40003737          	lui	x14,0x40003
+ 2a0:	6f09                	c.lui	x30,0x2
+ 2a2:	6fc1                	c.lui	x31,0x10
+ 2a4:	6c0e0e13          	addi	x28,x28,1728 # 2dc6c0 <main+0x2dc6b4>
+ 2a8:	80c72e83          	lw	x29,-2036(x14) # 4000280c <__stack_top+0x1ffe280c>
+ 2ac:	0ff0000f          	fence	iorw,iorw
+ 2b0:	83c72883          	lw	x17,-1988(x14)
+ 2b4:	0ff0000f          	fence	iorw,iorw
+ 2b8:	85872303          	lw	x6,-1960(x14)
+ 2bc:	0ff0000f          	fence	iorw,iorw
+ 2c0:	0018f793          	andi	x15,x17,1
+ 2c4:	c391                	c.beqz	x15,2c8 <main+0x2bc>
+ 2c6:	863e                	c.mv	x12,x15
+ 2c8:	0028f793          	andi	x15,x17,2
+ 2cc:	c391                	c.beqz	x15,2d0 <main+0x2c4>
+ 2ce:	4505                	c.li	x10,1
+ 2d0:	008ed793          	srli	x15,x29,0x8
+ 2d4:	8bbd                	c.andi	x15,15
+ 2d6:	e391                	c.bnez	x15,2da <main+0x2ce>
+ 2d8:	4685                	c.li	x13,1
+ 2da:	01f375b3          	and	x11,x6,x31
+ 2de:	01e377b3          	and	x15,x6,x30
+ 2e2:	e5a1                	c.bnez	x11,32a <main+0x31e>
+ 2e4:	c399                	c.beqz	x15,2ea <main+0x2de>
+ 2e6:	4785                	c.li	x15,1
+ 2e8:	a039                	c.j	2f6 <main+0x2ea>
+ 2ea:	c111                	c.beqz	x10,2ee <main+0x2e2>
+ 2ec:	e2b9                	c.bnez	x13,332 <main+0x326>
+ 2ee:	0805                	c.addi	x16,1
+ 2f0:	fbc81ce3          	bne	x16,x28,2a8 <main+0x29c>
+ 2f4:	4581                	c.li	x11,0
+ 2f6:	2000f737          	lui	x14,0x2000f
+ 2fa:	db10                	c.sw	x12,48(x14)
+ 2fc:	db48                	c.sw	x10,52(x14)
+ 2fe:	df14                	c.sw	x13,56(x14)
+ 300:	df5c                	c.sw	x15,60(x14)
+ 302:	c32c                	c.sw	x11,64(x14)
+ 304:	05072223          	sw	x16,68(x14) # 2000f044 <main+0x2000f038>
+ 308:	05d72423          	sw	x29,72(x14)
+ 30c:	05172623          	sw	x17,76(x14)
+ 310:	04672823          	sw	x6,80(x14)
+ 314:	460d                	c.li	x12,3
+ 316:	c350                	c.sw	x12,4(x14)
+ 318:	c501                	c.beqz	x10,320 <main+0x314>
+ 31a:	c299                	c.beqz	x13,320 <main+0x314>
+ 31c:	8fcd                	c.or	x15,x11
+ 31e:	cf89                	c.beqz	x15,338 <main+0x32c>
+ 320:	67b9                	c.lui	x15,0xe
+ 322:	2000f737          	lui	x14,0x2000f
+ 326:	078d                	c.addi	x15,3
+ 328:	bd21                	c.j	140 <main+0x134>
+ 32a:	00f037b3          	sltu	x15,x0,x15
+ 32e:	4585                	c.li	x11,1
+ 330:	b7d9                	c.j	2f6 <main+0x2ea>
+ 332:	85be                	c.mv	x11,x15
+ 334:	8536                	c.mv	x10,x13
+ 336:	b7c1                	c.j	2f6 <main+0x2ea>
+ 338:	40003737          	lui	x14,0x40003
+ 33c:	0ae00613          	addi	x12,x0,174
+ 340:	80c72423          	sw	x12,-2040(x14) # 40002808 <__stack_top+0x1ffe2808>
+ 344:	0ff0000f          	fence	iorw,iorw
+ 348:	002dceb7          	lui	x29,0x2dc
+ 34c:	4801                	c.li	x16,0
+ 34e:	4501                	c.li	x10,0
+ 350:	4881                	c.li	x17,0
+ 352:	6f89                	c.lui	x31,0x2
+ 354:	62c1                	c.lui	x5,0x10
+ 356:	6c0e8e93          	addi	x29,x29,1728 # 2dc6c0 <main+0x2dc6b4>
+ 35a:	80c72f03          	lw	x30,-2036(x14)
+ 35e:	0ff0000f          	fence	iorw,iorw
+ 362:	83c72303          	lw	x6,-1988(x14)
+ 366:	0ff0000f          	fence	iorw,iorw
+ 36a:	85872e03          	lw	x28,-1960(x14)
+ 36e:	0ff0000f          	fence	iorw,iorw
+ 372:	00137613          	andi	x12,x6,1
+ 376:	c211                	c.beqz	x12,37a <main+0x36e>
+ 378:	87b2                	c.mv	x15,x12
+ 37a:	00237613          	andi	x12,x6,2
+ 37e:	c211                	c.beqz	x12,382 <main+0x376>
+ 380:	8536                	c.mv	x10,x13
+ 382:	008f5613          	srli	x12,x30,0x8
+ 386:	8a3d                	c.andi	x12,15
+ 388:	e211                	c.bnez	x12,38c <main+0x380>
+ 38a:	8836                	c.mv	x16,x13
+ 38c:	005e75b3          	and	x11,x28,x5
+ 390:	01fe7633          	and	x12,x28,x31
+ 394:	e9d1                	c.bnez	x11,428 <main+0x41c>
+ 396:	c219                	c.beqz	x12,39c <main+0x390>
+ 398:	8636                	c.mv	x12,x13
+ 39a:	a801                	c.j	3aa <main+0x39e>
+ 39c:	c119                	c.beqz	x10,3a2 <main+0x396>
+ 39e:	08081963          	bne	x16,x0,430 <main+0x424>
+ 3a2:	0885                	c.addi	x17,1
+ 3a4:	fbd89be3          	bne	x17,x29,35a <main+0x34e>
+ 3a8:	4581                	c.li	x11,0
+ 3aa:	2000f737          	lui	x14,0x2000f
+ 3ae:	cb7c                	c.sw	x15,84(x14)
+ 3b0:	cf28                	c.sw	x10,88(x14)
+ 3b2:	05072e23          	sw	x16,92(x14) # 2000f05c <main+0x2000f050>
+ 3b6:	d330                	c.sw	x12,96(x14)
+ 3b8:	d36c                	c.sw	x11,100(x14)
+ 3ba:	07172423          	sw	x17,104(x14)
+ 3be:	07e72623          	sw	x30,108(x14)
+ 3c2:	06672823          	sw	x6,112(x14)
+ 3c6:	07c72a23          	sw	x28,116(x14)
+ 3ca:	4791                	c.li	x15,4
+ 3cc:	c35c                	c.sw	x15,4(x14)
+ 3ce:	c525                	c.beqz	x10,436 <main+0x42a>
+ 3d0:	06080363          	beq	x16,x0,436 <main+0x42a>
+ 3d4:	8e4d                	c.or	x12,x11
+ 3d6:	e225                	c.bnez	x12,436 <main+0x42a>
+ 3d8:	400037b7          	lui	x15,0x40003
+ 3dc:	4689                	c.li	x13,2
+ 3de:	82d7a423          	sw	x13,-2008(x15) # 40002828 <__stack_top+0x1ffe2828>
+ 3e2:	0ff0000f          	fence	iorw,iorw
+ 3e6:	4785                	c.li	x15,1
+ 3e8:	df3c                	c.sw	x15,120(x14)
+ 3ea:	002dc7b7          	lui	x15,0x2dc
+ 3ee:	6c078793          	addi	x15,x15,1728 # 2dc6c0 <main+0x2dc6b4>
+ 3f2:	40003737          	lui	x14,0x40003
+ 3f6:	65c9                	c.lui	x11,0x12
+ 3f8:	83c72603          	lw	x12,-1988(x14) # 4000283c <__stack_top+0x1ffe283c>
+ 3fc:	0ff0000f          	fence	iorw,iorw
+ 400:	85872683          	lw	x13,-1960(x14)
+ 404:	0ff0000f          	fence	iorw,iorw
+ 408:	80c72503          	lw	x10,-2036(x14)
+ 40c:	0ff0000f          	fence	iorw,iorw
+ 410:	8a05                	c.andi	x12,1
+ 412:	c609                	c.beqz	x12,41c <main+0x410>
+ 414:	8eed                	c.and	x13,x11
+ 416:	e299                	c.bnez	x13,41c <main+0x410>
+ 418:	17fd                	c.addi	x15,-1
+ 41a:	fff9                	c.bnez	x15,3f8 <main+0x3ec>
+ 41c:	6785                	c.lui	x15,0x1
+ 41e:	2000f737          	lui	x14,0x2000f
+ 422:	17178793          	addi	x15,x15,369 # 1171 <main+0x1165>
+ 426:	bb29                	c.j	140 <main+0x134>
+ 428:	00c03633          	sltu	x12,x0,x12
+ 42c:	85b6                	c.mv	x11,x13
+ 42e:	bfb5                	c.j	3aa <main+0x39e>
+ 430:	85b2                	c.mv	x11,x12
+ 432:	8542                	c.mv	x10,x16
+ 434:	bf9d                	c.j	3aa <main+0x39e>
+ 436:	67b9                	c.lui	x15,0xe
+ 438:	2000f737          	lui	x14,0x2000f
+ 43c:	0791                	c.addi	x15,4
+ 43e:	b309                	c.j	140 <main+0x134>

@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V112A1_GPIO_ACK_0X3C_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "ack": "NOT_SAMPLED",
+  "target_mmio_write_count": 2,
+  "halt_count": 1,
+  "openocd_errors": false,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "3B8BF7546832FB2F63C2A2A20937A0516EA28C8BEAA97F084284121B260A19D2",
+    "openocd.combined.log": "D960843D085E0792F03301F6E1671A8C799886C31E295F2839D7034DA6824955"
+  },
+  "finished_local": "2026-11-10T10:30:18.047920+08:00"
+}

@@ -1,0 +1,28 @@
+{
+  "stage": "BBX_V119B_SRAM_DPC_GATED_START_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v119\\BBX_V119B_SRAM_DPC_GATED_START_20261110_01_20261110_153714_287525",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V119B_SRAM_DPC_GATED_START_20261110_01.attempted.json",
+  "openocd_exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "SRAM_EXECUTION_UNPROVEN",
+  "dpc_write_attempted": true,
+  "dpc_readback": [
+    "V119B_DPC_READBACK rc=0 expected=0x20008000 actual=0x00000064 detail=100\r"
+  ],
+  "dpc_write_started_hart": true,
+  "no_argument_resume_requested": false,
+  "mailbox_match": false,
+  "preimage_saved": true,
+  "preimage_restored": true,
+  "mailbox_saved": true,
+  "mailbox_restored": true,
+  "mmio_writes": 0,
+  "flash_nvr_writes": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "E87FBD45F76326C79261A0408A993A8E01F79B6EE71B44DC8FE9BF3748056669",
+    "openocd.combined.log": "612ECBB375F0CD7E49E575E789BA7032852C8C64607038290B47C0E0191DA8D0"
+  },
+  "finished_local": "2026-11-10T15:37:16.427150+08:00"
+}

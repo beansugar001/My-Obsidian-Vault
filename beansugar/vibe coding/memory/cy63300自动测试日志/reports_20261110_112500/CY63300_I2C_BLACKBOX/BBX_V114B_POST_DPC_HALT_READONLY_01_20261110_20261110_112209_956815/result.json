@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V114B_POST_DPC_HALT_READONLY_01_20261110",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "PASS_HALTED",
+  "halt_count": 1,
+  "target_mmio_writes": 0,
+  "target_memory_writes": 0,
+  "log_sha256": {
+    "stdout": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "stderr": "ACC200E068B2E786C80504AA867C03412ADF42F96F1C3F0C2F33B0D9E2F0A7B7",
+    "combined": "6D1878FB4C3429F9BAF231177EA904FDC2C2E5A9D72D3504978C8A6E4655D548"
+  },
+  "finished_local": "2026-11-10T11:22:10.480342+08:00"
+}

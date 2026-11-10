@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V113A3_SINGLE_BYTE_ADDR_PRECONFIGURED_20261110_01",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "outcome": "TX_TIMEOUT",
+  "halt_count": 1,
+  "target_mmio_write_count": 2,
+  "stop_write_count": 0,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "3FC892D111F59CDB8BA5D1BCC181B5486B0FA393480CD69D5A0915D0D405AA65",
+    "openocd.combined.log": "5DA721B8B1EBE422DB3F753357C4A2C0CD02BCB1CBD0B120E571827CABA726EF"
+  },
+  "finished_local": "2026-11-10T11:02:31.333720+08:00"
+}

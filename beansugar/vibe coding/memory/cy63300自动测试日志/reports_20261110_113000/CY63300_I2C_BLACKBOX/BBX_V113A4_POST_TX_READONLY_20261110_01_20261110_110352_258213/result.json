@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V113A4_POST_TX_READONLY_20261110_01",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "INCOMPLETE_OR_UNKNOWN",
+  "target_mmio_write_count": null,
+  "sbcs_rc": null,
+  "sbcs": null,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "7B2A41025CD4CDE057BFF1DA22E71B75F6227FD0D9DDBCE7E117D7ACAB77A2E0",
+    "openocd.combined.log": "6648F18BAA72348A827EE2163BF1FEECEBE2340031DE4A3660E36AC6558904CE"
+  },
+  "finished_local": "2026-11-10T11:03:52.719775+08:00"
+}

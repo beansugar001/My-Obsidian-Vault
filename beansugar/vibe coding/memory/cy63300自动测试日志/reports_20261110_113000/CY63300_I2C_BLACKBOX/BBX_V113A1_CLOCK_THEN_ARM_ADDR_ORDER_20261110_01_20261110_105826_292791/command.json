@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V113A1_CLOCK_THEN_ARM_ADDR_ORDER_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v113a1_clock_then_arm_address_order.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T10:58:26.292791+08:00",
+  "timeout_s": 240,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "724A9F365B51F9A65588D0D7CD0FE7B7B0037387AEEBB40D4357F649A667BDD1",
+    "python": "E256F1E9B9EBB5784CEA1A0BB17F593CDDA6EABA1881C6386043AF6DD1CBF995"
+  }
+}

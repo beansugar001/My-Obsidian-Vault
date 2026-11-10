@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V118B_CLEAR_REMAINDER_PROGRAM_RUN_20261110_01",
+  "started_local": "2026-11-10T14:32:14.744358+08:00",
+  "authorized_scope": {
+    "erase_remaining_data_block": "0x00000200-0x000003FF",
+    "within_authorized_range": "0x00000000-0x0000FFFF",
+    "program_range": "0x00000000-0x0000043F",
+    "image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+    "execute_entry": "0x00000000"
+  },
+  "retry": "none",
+  "recovery": "not automatic"
+}

@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_V112A4_GPIO_ADDRESS_0X3C_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v112a4_gpio_address_once.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T10:37:36.251590+08:00",
+  "host_processes": [],
+  "host_listeners": [],
+  "retry": "none",
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\v112a4_gpio_address_once.tcl": "6D7B4AD6E18FD20B7E6A2E3085686E3F5113C14C91DEC0FB2F46C60ACCAFCC84",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_v112a4_gpio_address_once.py": "8A8EACB2AE8917BCBBFB33777A61978D04CCD283DF8F453126903DBD65616C6E"
+  }
+}

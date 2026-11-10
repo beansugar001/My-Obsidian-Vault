@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V118D_POST_RESUME_STATUS_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v118\\BBX_V118D_POST_RESUME_STATUS_20261110_01_20261110_143945_502821",
+  "return_code": 0,
+  "error_line": false,
+  "completion_marker": true,
+  "hart_initial": "running",
+  "mailbox_words": 40,
+  "mailbox_magic": "0x00000000",
+  "mailbox_stage": "0x0000600D",
+  "mailbox_result_code": "0x9F241934",
+  "flash_writes": 0,
+  "flash_erases": 0,
+  "nvr_touched": false,
+  "status": "PASS_READONLY"
+}

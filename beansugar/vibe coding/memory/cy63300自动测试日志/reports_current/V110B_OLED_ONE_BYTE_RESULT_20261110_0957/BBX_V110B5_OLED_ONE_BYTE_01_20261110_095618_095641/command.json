@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V110B5_OLED_ONE_BYTE_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/v110b5_oled_one_byte.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T09:56:18.095641+08:00",
+  "timeout_s": 120,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\v110b5_oled_one_byte.tcl": "13C0262CD644A4FF2F0CD6E66DD4F85615169DB7C2EFBC4F5763B8B77F8A784A",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\run_v110b5_oled_one_byte.py": "11C0BEE5726FF6A754459984B26C1817F57F95D0303AD4CCA5B583E136003F36"
+  }
+}

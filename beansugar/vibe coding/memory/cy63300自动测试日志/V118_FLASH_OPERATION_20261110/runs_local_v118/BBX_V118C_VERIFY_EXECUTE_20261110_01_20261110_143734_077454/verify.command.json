@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V118_FLASH_CANDIDATE/v118c_readonly_image_verify.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "tcl_sha256": "1ABE52BC2CEA3471A5306FE7A9E4ECB31D114B536C7515DC2B0859625E5584A6"
+}

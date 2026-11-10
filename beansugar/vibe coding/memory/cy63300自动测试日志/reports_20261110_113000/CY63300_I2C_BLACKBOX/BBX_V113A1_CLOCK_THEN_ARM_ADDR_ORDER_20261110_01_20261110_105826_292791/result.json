@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V113A1_CLOCK_THEN_ARM_ADDR_ORDER_20261110_01",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "outcome": "NOT_STARTED",
+  "halt_count": 1,
+  "target_mmio_write_count": 14,
+  "stop_write_count": 0,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "8F278F7C2C4B0A99C5B12E8692C385584422AC5383FF2B47B9D915DA80C5461C",
+    "openocd.combined.log": "49EAA40E931D41BDAD3972194B4CEA1A5C083F98A746C4476BED7907DBA82D8A"
+  },
+  "finished_local": "2026-11-10T10:58:30.649841+08:00"
+}

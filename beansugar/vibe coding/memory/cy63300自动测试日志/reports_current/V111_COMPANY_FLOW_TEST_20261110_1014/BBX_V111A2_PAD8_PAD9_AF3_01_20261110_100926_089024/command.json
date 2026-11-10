@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V111A2_PAD8_PAD9_AF3_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v111a2_company_gpio_pads.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T10:09:26.089024+08:00",
+  "timeout_s": 120,
+  "retry": "none",
+  "host_processes": [],
+  "host_listeners": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\v111a2_company_gpio_pads.tcl": "32A2AE55BF03CCFDE7CC2EF0014EA1435763E3E7460FC9106B67442DA92A9830",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_v111a2_company_gpio_pads.py": "9ECC612E860D51F2F3F71CE3F95FA2DBE1CF01245B2F2EBE338197CEAE9B4760"
+  }
+}

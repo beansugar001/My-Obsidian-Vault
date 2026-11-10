@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V114_PROGBUF_READBACK_ADDI_01_20261110",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "PROGBUF_WRITE_READBACK_MISMATCH_NO_EXEC",
+  "postexec_count": 0,
+  "halt_count": 1,
+  "target_memory_writes": 0,
+  "target_mmio_writes": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "9B64BE3EEB85A020BAD28FA568718A16F539961999A78B36C365607241F18A33",
+    "openocd.combined.log": "28A3715BF0271A04B991114D36162B4F11DAABA468AE50ECCE2113AE4DA5ECEC"
+  },
+  "finished_local": "2026-11-10T11:19:11.426110+08:00"
+}

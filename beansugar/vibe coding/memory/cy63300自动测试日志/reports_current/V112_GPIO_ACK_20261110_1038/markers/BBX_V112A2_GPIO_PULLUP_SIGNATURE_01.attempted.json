@@ -1,0 +1,12 @@
+{
+  "stage": "BBX_V112A2_GPIO_PULLUP_SIGNATURE_01",
+  "created_local": "2026-11-10T10:33:08.338854+08:00",
+  "target_mmio_write_budget": 1,
+  "only_target_write": {
+    "address": "0x4000015C",
+    "value": "0x00000300"
+  },
+  "i2c_controller_or_fifo_access": false,
+  "frame_count": 0,
+  "retry": "none"
+}

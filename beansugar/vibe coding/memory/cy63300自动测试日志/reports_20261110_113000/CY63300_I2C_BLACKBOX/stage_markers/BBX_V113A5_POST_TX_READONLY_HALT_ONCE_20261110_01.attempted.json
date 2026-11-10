@@ -1,0 +1,7 @@
+{
+  "stage": "BBX_V113A5_POST_TX_READONLY_HALT_ONCE_20261110_01",
+  "created_local": "2026-11-10T11:04:44.093652+08:00",
+  "target_mmio_write_budget": 0,
+  "reset_resume_flash_nvr_power_cycle": "forbidden",
+  "retries": 0
+}

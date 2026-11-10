@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V111A1_CLOCK_BASELINE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_I2C_CLOCK_ON_CONTROLLER_BASELINE",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "94CD5CD29735C5D31D2A31D7AECC13DF11B9F89ACDC3112DA5C8391708B069E2",
+    "openocd.combined.log": "6DE2F5B95AE19CCF65238C86593420DBCBD26E64297F151DD1CB1CAC595334D4"
+  },
+  "finished_local": "2026-11-10T10:08:42.405704+08:00"
+}

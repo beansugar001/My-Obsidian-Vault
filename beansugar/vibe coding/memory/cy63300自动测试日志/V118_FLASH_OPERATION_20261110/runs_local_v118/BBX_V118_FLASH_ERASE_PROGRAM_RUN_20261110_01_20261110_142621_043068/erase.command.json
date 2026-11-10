@@ -1,0 +1,13 @@
+{
+  "phase": "erase",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V118_FLASH_CANDIDATE/v118b_erase_once.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "tcl_sha256": "9A95A86C1F0211FA5582ACC68796FA1DF90E9E13B4E5F500B47F51D163B0F690",
+  "started_local": "2026-11-10T14:28:00.801073+08:00"
+}

@@ -1,0 +1,27 @@
+{
+  "stage": "BBX_V110B2_PAD8_PAD9_AF3_01",
+  "created_local": "2026-11-10T09:55:31.502738+08:00",
+  "target_mmio_write_budget": 4,
+  "allowlist": [
+    {
+      "address": "0x40000100",
+      "value": "0x0000000C"
+    },
+    {
+      "address": "0x40000158",
+      "value": "0x0000000C"
+    },
+    {
+      "address": "0x40000104",
+      "value": "0x0000000C"
+    },
+    {
+      "address": "0x40000168",
+      "value": "0x000006C0"
+    }
+  ],
+  "halt_request_budget": 1,
+  "retry": "none",
+  "controller_enabled": false,
+  "fifo_written": false
+}

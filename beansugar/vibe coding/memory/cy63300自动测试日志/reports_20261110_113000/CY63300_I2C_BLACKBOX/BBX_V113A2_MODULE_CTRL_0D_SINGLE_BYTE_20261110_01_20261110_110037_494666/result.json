@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V113A2_MODULE_CTRL_0D_SINGLE_BYTE_20261110_01",
+  "return_code": 0,
+  "complete_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "outcome": "NOT_STARTED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "stop_write_count": 0,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "A30A4AB0D32852FE8A7CA6157859CECD469A1AD4DBE688DE509AB46290C39AB8",
+    "openocd.combined.log": "27850717BD40957EA27E4F675CC9BDEABC120E105D095AE6AD9B647A2FB4CD38"
+  },
+  "finished_local": "2026-11-10T11:00:39.421406+08:00"
+}

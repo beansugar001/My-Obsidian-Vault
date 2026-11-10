@@ -1,0 +1,7 @@
+{
+  "stage": "BBX_V119A_SRAM_CANARY_20261110_01",
+  "created_local": "2026-11-10T15:05:57.625005+08:00",
+  "image_sha256": "E53B8FEACE6CBCB573A4DE242F870567ACEEFBED3A202C7A96671DF5282FA971",
+  "attempted": true,
+  "note": "Exclusive marker; never reuse or delete."
+}

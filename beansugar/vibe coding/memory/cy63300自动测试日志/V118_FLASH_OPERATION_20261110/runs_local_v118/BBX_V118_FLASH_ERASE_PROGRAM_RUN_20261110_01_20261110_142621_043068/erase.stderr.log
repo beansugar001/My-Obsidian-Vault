@@ -1,0 +1,69 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0xc
+Info : gdb port disabled
+V118_ERASE_INIT_BEGIN
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0xc
+gdb port disabled
+
+V118_ERASE_INIT_END
+V118_ERASE_CPU_INITIAL=running
+V118_ERASE_CPU_FINAL=halted
+V118_DMI DMSTATUS reg=0x11 value=0x00430382
+V118_DMI SBCS reg=0x38 value=0x20040404
+V118_READ PERI_RST addr=0x40021810 value=0x00000000
+V118_READ FLS_CR addr=0x40022000 value=0x00000000
+V118_ERASE_PRECONDITIONS DMSTATUS=0x00430382 SBCS=0x20040404 PERI_RST=0x00000000 FLS_CR=0x00000000
+V118_READ PERI_CLKEN addr=0x4002180C value=0x00000021
+V118_WRITE addr=0x4002180C value=0x00080021 label=FLASH_CLOCK_ENABLE
+
+V118_WRITE addr=0x40022004 value=0x00000001 label=FLASH_READ_TIMING
+
+V118_WRITE addr=0x40022008 value=0x00100150 label=FLASH_COMMON_TIMING
+
+V118_WRITE addr=0x40022018 value=0x00007DFF label=FLASH_SECTOR_ERASE_TIMING
+
+V118_WRITE addr=0x40022020 value=0x0CA00340 label=FLASH_ERASE_RECOVERY_TIMING
+
+V118_WRITE addr=0x40022000 value=0x00000002 label=FLS_CR_SECTOR_ERASE_MODE
+
+V118_READ FLS_CR_ERASE_MODE addr=0x40022000 value=0x00000002
+V118_ERASE_TRIGGER addr=0x00000000 value=0xFFFFFFFF sector=0x00000000-0x0000FFFF count=1
+V118_WRITE addr=0x00000000 value=0xFFFFFFFF label=SINGLE_SECTOR0_ERASE_TRIGGER
+
+V118_WRITE addr=0x40022000 value=0x00000000 label=EXIT_ERASE_MODE
+
+V118_READ FLS_CR_AFTER_ERASE addr=0x40022000 value=0x00000000
+V118_ERASE_TRIGGER_ISSUED
+V118_ERASE=PASS
+V118_ERASE=PASS
+V118_ERASE_COMPLETE
+shutdown command invoked

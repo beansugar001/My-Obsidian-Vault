@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V111A0_READONLY_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_RESET_CLEAR_CLOCK_OFF",
+  "halt_count": 1,
+  "target_mmio_write_count": 0,
+  "openocd_errors": false,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "2882AC1E09B1A59843FD3235AA9E57229FCA1F5829F1B22E811BEAFB23EF1EE4",
+    "openocd.combined.log": "C3370F629DAAE9C4671436F32AFF44AB995A33204910EE09A393356768CF1353"
+  },
+  "finished_local": "2026-11-10T10:07:16.740796+08:00"
+}

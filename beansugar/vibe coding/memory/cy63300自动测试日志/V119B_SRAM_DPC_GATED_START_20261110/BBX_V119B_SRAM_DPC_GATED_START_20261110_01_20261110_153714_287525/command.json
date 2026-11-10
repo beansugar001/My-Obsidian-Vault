@@ -1,0 +1,40 @@
+{
+  "stage": "BBX_V119B_SRAM_DPC_GATED_START_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "set ::v119b_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/SRAM_CPU_EXEC_PLAN_20261110/V119_SRAM_CANARY/v119b_dpc_gated_start.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T15:37:14.287525+08:00",
+  "timeout_s": 120,
+  "probe_serial_expected": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "config": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "tcl": "DCC6ACE6FB5B7CAC2897C9A051DB924D3E707E21D93BB26DCB77777C158B8817",
+    "image": "E53B8FEACE6CBCB573A4DE242F870567ACEEFBED3A202C7A96671DF5282FA971"
+  },
+  "host_processes": [],
+  "host_listeners": [],
+  "allowed_target_effects": [
+    "one DPC CSR write to 0x20008000",
+    "76-byte SRAM canary load and restore",
+    "20-byte mailbox save and restore",
+    "one no-argument resume only if DPC readback matches and hart remains halted",
+    "one failsafe halt if needed"
+  ],
+  "prohibited": [
+    "MMIO",
+    "Flash/NVR",
+    "reset",
+    "power-cycle",
+    "retry",
+    "address-form resume",
+    "DPC restore"
+  ]
+}

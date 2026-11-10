@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_I2C_ARM_ONE_BYTE_RECOVERY_20261110_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_writes": 2,
+  "fifo_data_writes": 0,
+  "reset_pulses": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "FBA54975F19C7BC521A7DC6BBB0EC3238FB3483E3C9EC2BBFFC0901D48910701",
+    "openocd.combined.log": "44DCF784DE3ECE9097A9DFBF0D2E905C69E5962AC5ACBB3528037A62DA0B5383"
+  },
+  "finished_local": "2026-11-10T18:34:00.564446+08:00"
+}

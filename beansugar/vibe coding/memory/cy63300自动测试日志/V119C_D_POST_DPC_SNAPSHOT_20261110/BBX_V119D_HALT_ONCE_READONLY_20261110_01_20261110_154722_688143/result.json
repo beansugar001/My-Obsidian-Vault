@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V119D_HALT_ONCE_READONLY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v119\\BBX_V119D_HALT_ONCE_READONLY_20261110_01_20261110_154722_688143",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V119D_HALT_ONCE_READONLY_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "PASS_READONLY_SNAPSHOT",
+  "mmio_writes": 0,
+  "reset_resume": 0,
+  "flash_nvr": 0,
+  "logs_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "FD784367C741BB3E31FF4747486EBD8945F0761A1F722BFC060AF3AC24046925",
+    "openocd.combined.log": "1C2474422922FD1B77F8274349AA865F836B12BE0672E794B10066380C2A9289"
+  }
+}

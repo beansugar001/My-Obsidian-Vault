@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V111A5_OLED_COMMAND_FRAME_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 2,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "4C7A017577F85DD63A7D55C2CADD69EDD86437DB10FDB9D471A1352E08088BDA",
+    "openocd.combined.log": "D05B44B99B0E52FB99A22E6A288891E6A72D6A8092B0CFC2EC1F767EF53C3DD5"
+  },
+  "finished_local": "2026-11-10T10:14:15.271007+08:00"
+}

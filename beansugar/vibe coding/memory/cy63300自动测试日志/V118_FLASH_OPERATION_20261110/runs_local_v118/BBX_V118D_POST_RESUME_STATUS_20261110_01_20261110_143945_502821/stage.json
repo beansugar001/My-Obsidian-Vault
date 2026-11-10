@@ -1,0 +1,4 @@
+{
+  "stage": "BBX_V118D_POST_RESUME_STATUS_20261110_01",
+  "operation": "read-only hart/mailbox/flash-vector snapshot; at most one halt request; no writes, reset, or resume"
+}

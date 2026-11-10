@@ -1,0 +1,58 @@
+[
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\notes.md",
+    "Hash": "5FBF39A49A76627722E476AD4006A897AF356857F625DCD7E83A6AF785EE797C"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\task_plan.md",
+    "Hash": "9D4065AFA4EB54A5FEDC27C60845835A632162714924C1195B3D976638BF2548"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CPU_EXEC_TEST_PLAN.md",
+    "Hash": "4E9A14E09DD9A29CBB408C9D2AE80485B2A280778CF50A099155FA2481463EE8"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\build_canary.ps1",
+    "Hash": "D6737F60B4E9F3BBE89BCCA5C16A0FA05E0D0DEC2FF08C73FAA1C34B533CC4C4"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\SHA256SUMS.txt",
+    "Hash": "6C9F0B969D43F201CF14000700D2DC42414EE19B36EC0CF51514FBB1AB7CB33E"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.bin",
+    "Hash": "E53B8FEACE6CBCB573A4DE242F870567ACEEFBED3A202C7A96671DF5282FA971"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.disasm.txt",
+    "Hash": "EDBBCD5905B7EF8699FD6B95F2430B0EBFC6CBB93521DFFF0D79BF7BF183A787"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.elf",
+    "Hash": "AC860976FEA9FB49BF43B67E713EF42E953E1D88D9238EEBF6ECC0F06768F0EE"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.ld",
+    "Hash": "98610D664AEB4726497B2A3C6118C558FED983CC5F985149ABDFAC41D6F5E4A4"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.map",
+    "Hash": "E846248EDC2FB5B4E7A7A00EE1ED9471745977E896B79C1265CFA11BFED83567"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.S",
+    "Hash": "504808D7DE3C9314BD5D0763ED2657898ED89B5934DCA51F3C4D06EF2B2D89E1"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.size.txt",
+    "Hash": "BBC76F0E594C9F1D675CDC79E4C26CCEE42923A5B400F21EF0E2FCA6E8B97C46"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\sram_canary.symbols.txt",
+    "Hash": "B2427B6ED978A6D3CCB769026A2BBE8ACA47372484398917DDD2C2DF8B13DB3D"
+  },
+  {
+    "Path": "D:\\Obsidian\\notes\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\V119_SRAM_CANARY_OFFLINE_PREP_20261110\\V119_SRAM_CANARY\\V119_SRAM_CANARY_OFFLINE_PREP.md",
+    "Hash": "8B2CE2048AEB215239B319CF4EBCDCD9596675F5909F9EBE83C5FE03619733E9"
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V117A_POST_V116_READONLY_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V117_ARM_PACED_CPU_STORE/v117a_post_v116_readonly.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "config": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "tcl": "E377457464C3A4EEF3459DF82C466A74F0A4444F1542CCAC062C3791CFD22E5C"
+  },
+  "process_conflicts": [],
+  "started_local": "2026-11-10T13:47:00.2618088+08:00"
+}

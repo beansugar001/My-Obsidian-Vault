@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V119C_POST_DPC_READONLY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v119\\BBX_V119C_POST_DPC_READONLY_20261110_01_20261110_154551_195738",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V119C_POST_DPC_READONLY_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "mmio_writes": 0,
+  "halt_resume_reset": 0,
+  "flash_nvr_writes": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "12A59321BC770C0857BAF9B6287F941E9E7E9B90B8988D30FFFFB79C0D733577",
+    "openocd.combined.log": "F8A57D874CE083343F83A9E549D3BB96B2A6BA5955147A3A22D3B3FC4831D125"
+  }
+}

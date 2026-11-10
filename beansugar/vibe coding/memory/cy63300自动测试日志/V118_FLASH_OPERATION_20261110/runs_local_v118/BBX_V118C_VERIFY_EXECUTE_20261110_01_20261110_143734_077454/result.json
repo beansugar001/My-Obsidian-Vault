@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V118C_VERIFY_EXECUTE_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_v118\\BBX_V118C_VERIFY_EXECUTE_20261110_01_20261110_143734_077454",
+  "image_sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D",
+  "flash_writes": 0,
+  "flash_erases": 0,
+  "nvr_touched": false,
+  "verify": {
+    "status": "PASS",
+    "bytes": 1088,
+    "sha256": "A5BD6B1AC10FF7A7370882BC0AE314624CE2060D70DA821C595C56B92177141D"
+  },
+  "status": "STOPPED_FAILURE",
+  "failure": "execute_OPENOCD_FAIL_OR_INCOMPLETE"
+}

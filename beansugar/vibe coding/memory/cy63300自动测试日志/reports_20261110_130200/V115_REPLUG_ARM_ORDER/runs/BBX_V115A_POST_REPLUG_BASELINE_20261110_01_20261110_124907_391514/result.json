@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V115A_POST_REPLUG_BASELINE_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_CLOCK_OFF_CLASSIFIED_I2C_READS_SKIPPED",
+  "halt_count": 1,
+  "target_mmio_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "7AC4D8852C8363576AF672316C3FE9173306BB9E8F1412D2D91DD515DDC627C9",
+    "openocd.combined.log": "74B302377A80A59F52F0EBBB82B6D4EA03DA3FB136AECC7A50D0013339C396AE"
+  },
+  "finished_local": "2026-11-10T12:49:08.745975+08:00"
+}

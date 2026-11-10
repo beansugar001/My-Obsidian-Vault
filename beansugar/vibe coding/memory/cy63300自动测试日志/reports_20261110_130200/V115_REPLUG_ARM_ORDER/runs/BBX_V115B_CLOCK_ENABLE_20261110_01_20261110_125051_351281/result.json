@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V115B_CLOCK_ENABLE_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_CLOCKS_ENABLED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "1339BD1EB64DB5EAB4945D59B8EEABF219295BB7CF45866F2D44DC5F17E48D52",
+    "openocd.combined.log": "987FE493899EA22C41EB2E0A1016CB465B36F1E8681DB33E9A931D407BF88895"
+  },
+  "finished_local": "2026-11-10T12:50:53.707304+08:00"
+}

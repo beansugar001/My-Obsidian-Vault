@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V114B_POST_DPC_HALT_READONLY_01_20261110",
+  "created_local": "2026-11-10T11:22:09.956815+08:00",
+  "target_mmio_writes": 0,
+  "target_memory_writes": 0,
+  "halt_budget": 1,
+  "reset_resume_retry": false
+}

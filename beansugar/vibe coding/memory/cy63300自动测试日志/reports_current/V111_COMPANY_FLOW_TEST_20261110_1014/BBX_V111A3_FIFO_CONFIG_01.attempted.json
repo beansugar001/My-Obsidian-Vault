@@ -1,0 +1,35 @@
+{
+  "stage": "BBX_V111A3_FIFO_CONFIG_01",
+  "created_local": "2026-11-10T10:11:12.416113+08:00",
+  "target_mmio_write_budget": 6,
+  "allowlist": [
+    {
+      "address": "0x40002810",
+      "value": "0x0000000F"
+    },
+    {
+      "address": "0x40002814",
+      "value": "0x00000023"
+    },
+    {
+      "address": "0x40002828",
+      "value": "0x00000000"
+    },
+    {
+      "address": "0x40002838",
+      "value": "0x00000005"
+    },
+    {
+      "address": "0x40002800",
+      "value": "0x0000000C"
+    },
+    {
+      "address": "0x40002820",
+      "value": "0x00000001"
+    }
+  ],
+  "halt_request_budget": 1,
+  "retry": "none",
+  "I2C_EN_written": false,
+  "FIFO_data_written": false
+}

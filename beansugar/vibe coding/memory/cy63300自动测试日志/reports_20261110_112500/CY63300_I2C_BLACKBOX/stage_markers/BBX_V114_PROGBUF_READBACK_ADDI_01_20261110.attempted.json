@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V114_PROGBUF_READBACK_ADDI_01_20261110",
+  "created_local": "2026-11-10T11:19:10.455109+08:00",
+  "target_memory_writes": 0,
+  "target_mmio_writes": 0,
+  "flash_nvr_writes": 0,
+  "postexec_budget": 1,
+  "halt_request_budget": 1,
+  "reset_resume_retry_power_cycle": "forbidden",
+  "temporary_debug_state": [
+    "x7",
+    "DPC",
+    "PROGBUF0"
+  ]
+}

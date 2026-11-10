@@ -1,0 +1,19 @@
+{
+  "listeners": [],
+  "process_conflicts": [],
+  "started_local": "2026-11-10T13:51:46.7607247+08:00",
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V117_ARM_PACED_CPU_STORE/v117b_post_replug_readonly.tcl"
+  ],
+  "stage": "BBX_V117B_POST_REPLUG_READONLY_20261110_01",
+  "sha256": {
+    "config": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "tcl": "2DB0BAD68805173BF162B8CCEC02D65F8DB6D4EFA9FAFB3163E8F9E0275271E4",
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "stage": "BBX_V115B_CLOCK_ENABLE_20261110_01",
+  "started_local": "2026-11-10T12:50:51.351281+08:00",
+  "target_mmio_write_allowlist": [
+    [
+      "0x4002180C",
+      "0x00000021"
+    ]
+  ],
+  "max_target_mmio_writes": 1,
+  "halt_request_budget": 1,
+  "reset_resume_retry": "forbidden"
+}

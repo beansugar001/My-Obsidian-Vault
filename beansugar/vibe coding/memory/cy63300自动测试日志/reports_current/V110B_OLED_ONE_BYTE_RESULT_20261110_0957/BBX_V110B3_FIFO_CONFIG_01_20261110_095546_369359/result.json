@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V110B3_FIFO_CONFIG_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_CONTROLLER_CONFIG_FIFO_ONLY_I2C_DISABLED",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "810DA3A12DEE360A13130E7E0887226A5604373CCB31303D2F8CC3592E36CFAA",
+    "openocd.combined.log": "DA0E5B1042273F3A9175D4E7DCEC5FBAEE53CE48E2871F7ABDE06F478480721B"
+  },
+  "finished_local": "2026-11-10T09:55:49.104039+08:00"
+}

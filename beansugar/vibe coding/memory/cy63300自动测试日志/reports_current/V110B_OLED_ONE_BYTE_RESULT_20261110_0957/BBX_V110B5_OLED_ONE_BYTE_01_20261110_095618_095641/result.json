@@ -1,0 +1,16 @@
+{
+  "stage": "BBX_V110B5_OLED_ONE_BYTE_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "host_processes": [],
+  "host_listeners": [],
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "0FA677FD8B4FBB14B2517FB046E62980E841CF5D80B58AACAB5511E30C31D43D",
+    "openocd.combined.log": "8445A24A4145101F4BD3C43D12305BA2B42B7726D6214742B2FCCDF394A5BDD3"
+  },
+  "finished_local": "2026-11-10T09:57:34.401769+08:00"
+}

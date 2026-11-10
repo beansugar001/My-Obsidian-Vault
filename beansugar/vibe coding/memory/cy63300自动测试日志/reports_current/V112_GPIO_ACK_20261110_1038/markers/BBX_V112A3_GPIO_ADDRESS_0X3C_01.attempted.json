@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V112A3_GPIO_ADDRESS_0X3C_01",
+  "created_local": "2026-11-10T10:35:17.882984+08:00",
+  "target_write_budget": 37,
+  "allowed_addresses": [
+    "0x40000100 ODR",
+    "0x40000104 DIR",
+    "0x40000158 OSOD"
+  ],
+  "single_frame": "GPIO bit-banged 0x78 (7-bit 0x3C write)",
+  "controller_clock_enabled": false,
+  "i2c_fifo_or_enable": false,
+  "retry": "none"
+}

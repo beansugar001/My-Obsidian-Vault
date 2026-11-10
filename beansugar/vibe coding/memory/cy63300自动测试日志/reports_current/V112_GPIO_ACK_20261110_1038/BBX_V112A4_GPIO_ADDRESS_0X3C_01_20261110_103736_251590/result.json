@@ -1,0 +1,18 @@
+{
+  "stage": "BBX_V112A4_GPIO_ADDRESS_0X3C_01",
+  "return_code": 0,
+  "complete": true,
+  "status": "PASS_ADDRESS_NACK_STOP_IDLE",
+  "ack": "NACK",
+  "target_mmio_write_count": 38,
+  "halt_count": 1,
+  "final_sbcs": "537134084",
+  "final_idr": "44",
+  "openocd_errors": false,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "A105123CC893C8B7C2173E2543CDE7BBC8093116F04721423C893973EE462994",
+    "openocd.combined.log": "6A8C32384F4C21B546EC3385F51B1ACD81FA90AF831877B1F60D64667D8654F2"
+  },
+  "finished_local": "2026-11-10T10:37:47.856441+08:00"
+}

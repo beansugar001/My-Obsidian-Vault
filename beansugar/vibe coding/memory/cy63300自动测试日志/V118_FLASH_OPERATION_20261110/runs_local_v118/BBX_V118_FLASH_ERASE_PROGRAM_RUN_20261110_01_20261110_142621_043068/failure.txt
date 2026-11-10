@@ -1,0 +1,1 @@
+Sector 0 did not verify fully erased; programming stopped

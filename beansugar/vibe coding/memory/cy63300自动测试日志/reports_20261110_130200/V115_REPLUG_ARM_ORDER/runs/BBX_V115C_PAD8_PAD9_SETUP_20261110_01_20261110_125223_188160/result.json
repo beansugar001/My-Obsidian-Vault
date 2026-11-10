@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V115C_PAD8_PAD9_SETUP_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_PAD8_PAD9_RELEASED_AF3",
+  "halt_count": 1,
+  "target_mmio_write_count": 4,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "635F9D92BCD357391012C9A36A3A6C65672648C71D297ABB433FB1A206FEE393",
+    "openocd.combined.log": "8C7F242B5DF6D4C6A17743CF9F3000A738447A2443DFA95E9C17D3FB312B5651"
+  },
+  "finished_local": "2026-11-10T12:52:26.554632+08:00"
+}

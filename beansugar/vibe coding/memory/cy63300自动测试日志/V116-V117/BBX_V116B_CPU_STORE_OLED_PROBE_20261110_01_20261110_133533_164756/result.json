@@ -1,0 +1,19 @@
+{
+  "stage": "BBX_V116B_CPU_STORE_OLED_PROBE_20261110_01",
+  "return_code": 0,
+  "probe_ok": true,
+  "idcode_ok": true,
+  "flash_programmed_and_verified": false,
+  "status": "CPU_STORE_PROBE_EXECUTED",
+  "target_mmio_write_count": 8,
+  "halt_count": 2,
+  "sbcs": "1376256",
+  "mailbox_done": true,
+  "erase_mode_used": false,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "32D13E88EED1CBABA8259599B4CE7012EC0DBEF2B56169F2FC45518DEB5580D8",
+    "openocd.combined.log": "A7FD8265A44982E0E656023123C7CC637AD6ADE19CF3B3158FA3A6EC6FC784C2"
+  },
+  "finished_local": "2026-11-10T13:35:38.628637+08:00"
+}

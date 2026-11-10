@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_OLED_CMD_AE_ACK_PROBE_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_OLED_CMD_AE_ACK_PROBE_20261110_01_20261110_181845_062839",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_OLED_CMD_AE_ACK_PROBE_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "target_mmio_writes": 4,
+  "fifo_data_writes": 2,
+  "reset_resume_flash_nvr": 0,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "388ED78B9FD3762CF869B8572B276C4814C4D95BC7909D5DF2E4B89731FCC0B4",
+    "openocd.combined.log": "5D7ABD9910766831AEEC68D1E0B93308B0F085E2C204AAE0F54657C30DD2188A"
+  }
+}

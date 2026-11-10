@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_I2C_ARM_ONE_BYTE_RECOVERY_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "set ::bbx_v120_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v120_arm_single_byte_recovery.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T18:33:59.394131+08:00",
+  "timeout_s": 180,
+  "retry": "none",
+  "probe_serial": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "host_processes": [],
+  "host_ports": [],
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V116_CPU_STORE\\v116b_flash_cpu_probe.cfg": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v120_arm_single_byte_recovery.tcl": "AC6026E8BABDB24134D1F37CEE271EA8353BCE1A482356D61844F0AC63B30E66",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v120_arm_single_byte_recovery.py": "D9CAC2C969041481AE35BFA7040B4C1DEBAE61C0357E4BB9CA03286DE7C53EC3"
+  }
+}

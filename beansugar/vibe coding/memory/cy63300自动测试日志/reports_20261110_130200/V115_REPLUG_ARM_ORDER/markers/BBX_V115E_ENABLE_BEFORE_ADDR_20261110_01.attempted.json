@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V115E_ENABLE_BEFORE_ADDR_20261110_01",
+  "started_local": "2026-11-10T12:57:24.253484+08:00",
+  "target_mmio_write_allowlist": [
+    [
+      "0x40002824",
+      "0x00000050"
+    ],
+    [
+      "0x40002800",
+      "0x0000000d"
+    ],
+    [
+      "0x40002824",
+      "0x0000003c"
+    ]
+  ],
+  "max_target_mmio_writes": 3,
+  "max_halt_requests": 1,
+  "fifo_writes": 0,
+  "reset_resume_flash_retry": "forbidden"
+}
