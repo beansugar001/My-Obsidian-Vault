@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V126_SBA_PAD_SETUP_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_PAD8_PAD9_RELEASED_AF3",
+  "halt_count": 1,
+  "target_mmio_write_count": 4,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "6B7697FDF8D17DAF8A6B1A3739BB60CFA2F6B3DA7B910E76536CF6A342BA6505",
+    "openocd.combined.log": "4850B509E278E3D5D116838E26E062704AE4CF7B90A30502502F07A18C5E19BD"
+  },
+  "finished_local": "2026-11-10T18:58:44.229759+08:00"
+}

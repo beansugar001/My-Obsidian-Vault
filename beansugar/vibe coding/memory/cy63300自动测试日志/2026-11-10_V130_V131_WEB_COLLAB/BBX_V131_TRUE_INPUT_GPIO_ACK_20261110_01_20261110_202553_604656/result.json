@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V131_TRUE_INPUT_GPIO_ACK_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 4,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "BEC4C83D59B0AA3A7007261AFBDA61D0D4D114F05F41192ED0445489311BD38A",
+    "openocd.combined.log": "2B462A6950033BD219620A27237F353E21F34568C7259EF1B7EF9FD53DD7293C"
+  },
+  "finished_local": "2026-11-10T20:25:55.854542+08:00"
+}

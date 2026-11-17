@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V160_CPU_OLED_REFRESH/flash_v160_address_park.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "V160B_PHASE": "mailbox",
+    "V160B_DUMP": "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V160_CPU_OLED_REFRESH/runs/mailbox_20261111_181718_567873/mailbox_read/readback.bin",
+    "V160B_IMAGE": "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V160_CPU_OLED_REFRESH/refresh.bin"
+  },
+  "host": {
+    "processes": [],
+    "listeners": []
+  }
+}

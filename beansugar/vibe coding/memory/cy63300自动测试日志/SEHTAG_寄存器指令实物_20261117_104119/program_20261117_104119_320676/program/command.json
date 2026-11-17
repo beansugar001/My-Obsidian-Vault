@@ -1,0 +1,19 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/寄存器指令对照/program_20261117_104119_320676/flash_instruction.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "V160B_PHASE": "program",
+    "V160B_DUMP": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/寄存器指令对照/program_20261117_104119_320676/program/readback.bin",
+    "V160B_IMAGE": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/寄存器指令对照/program_20261117_104119_320676/candidate.bin",
+    "V160B_TRIGGER": "0x0",
+    "V160B_SENTINEL_ADDR": "0x0",
+    "V160B_SENTINEL_WORD": "0xffffffff"
+  },
+  "tcl_sha256": "7BD44CDA4048C87108C9727963B7E16F98D62A8A026E5A6423A955C7911041F7"
+}

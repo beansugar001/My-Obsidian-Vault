@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V160B_SECTOR0_PROGRAM_20261111_01.attempted",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V160_CPU_OLED_REFRESH\\runs\\program_20261111_180952_723733",
+  "erase_range": "0x00000000-0x0000FFFF",
+  "candidate_triggers": [
+    0,
+    512,
+    1024,
+    1536,
+    2048
+  ],
+  "program_start": 0,
+  "program_bytes": 2700,
+  "program_sha256": "7592DADC2220141B7A7019FEC0B2C0DB188F8E0DC983EBE7D1BE70209A9480FE"
+}

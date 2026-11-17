@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V128_ENABLE_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v128_enable.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T19:40:48.985225+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "3F3FDBA19403310FD80F3DE518E3EE7BEB7D83ABFEB4C63069B74FC5C7DEABE0",
+    "runner": "B110829D566FB2D785EB3CF8AB2C0AB737CC3A09CD5901EA24EA2316B9F16CD2"
+  }
+}

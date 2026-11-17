@@ -1,0 +1,393 @@
+$date
+	Mon Nov 16 19:17:02 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module bnbcache_compat_tb $end
+$var wire 32 ! stack_ptr_id_o [31:0] $end
+$var wire 1 " lookup_valid_o $end
+$var wire 32 # lookup_ptr_id_o [31:0] $end
+$var wire 32 $ lookup_bound_o [31:0] $end
+$var wire 32 % lookup_base_o [31:0] $end
+$var wire 3 & index_value_o [2:0] $end
+$var wire 1 ' index_valid_o $end
+$var wire 1 ( check_valid_o $end
+$var reg 32 ) check_addr_i [31:0] $end
+$var reg 1 * check_en_i $end
+$var reg 1 + clk $end
+$var reg 5 , index_addr_i [4:0] $end
+$var reg 5 - index_addr_we_i [4:0] $end
+$var reg 3 . index_value_i [2:0] $end
+$var reg 1 / index_we_i $end
+$var reg 3 0 lookup_addr_i [2:0] $end
+$var reg 3 1 lookup_addr_we_i [2:0] $end
+$var reg 32 2 lookup_base_i [31:0] $end
+$var reg 32 3 lookup_bound_i [31:0] $end
+$var reg 32 4 lookup_ptr_id_i [31:0] $end
+$var reg 1 5 lookup_we_i $end
+$var reg 1 6 lookup_write_bound $end
+$var reg 1 7 rst $end
+$var reg 1 8 stack_pop_i $end
+$var reg 32 9 stack_ptr_id_i [31:0] $end
+$var reg 1 : stack_push_i $end
+$scope module uut $end
+$var wire 32 ; alloc_ptr_id_i [31:0] $end
+$var wire 1 < alloc_req_i $end
+$var wire 1 6 bnb_lookup_wt $end
+$var wire 32 = check_addr_i [31:0] $end
+$var wire 1 * check_en_i $end
+$var wire 1 + clk $end
+$var wire 5 > exec_index_addr_i [4:0] $end
+$var wire 5 ? index_addr_i [4:0] $end
+$var wire 5 @ index_addr_we_i [4:0] $end
+$var wire 3 A index_value_i [2:0] $end
+$var wire 1 / index_we_i $end
+$var wire 3 B lookup_addr_i [2:0] $end
+$var wire 3 C lookup_addr_we_i [2:0] $end
+$var wire 32 D lookup_base_i [31:0] $end
+$var wire 32 E lookup_bound_i [31:0] $end
+$var wire 32 F lookup_ptr_id_i [31:0] $end
+$var wire 1 5 lookup_we_i $end
+$var wire 1 G ptr_freed_i $end
+$var wire 16 H ptr_gen_i [15:0] $end
+$var wire 1 I ptr_query_en_i $end
+$var wire 1 7 rst $end
+$var wire 1 8 stack_pop_i $end
+$var wire 32 J stack_ptr_id_i [31:0] $end
+$var wire 1 : stack_push_i $end
+$var reg 3 K alloc_addr_o [2:0] $end
+$var reg 1 L alloc_valid_o $end
+$var reg 32 M bnb_index_valid [31:0] $end
+$var reg 8 N bnb_lookup_freed [7:0] $end
+$var reg 8 O bnb_lookup_valid [7:0] $end
+$var reg 4 P bnb_stack_ptr [3:0] $end
+$var reg 1 ( check_valid_o $end
+$var reg 1 Q exec_index_valid_o $end
+$var reg 3 R exec_index_value_o [2:0] $end
+$var reg 1 ' index_valid_o $end
+$var reg 3 S index_value_o [2:0] $end
+$var reg 32 T lookup_base_o [31:0] $end
+$var reg 32 U lookup_bound_o [31:0] $end
+$var reg 8 V lookup_freed_o [7:0] $end
+$var reg 32 W lookup_ptr_id_o [31:0] $end
+$var reg 1 " lookup_valid_o $end
+$var reg 1 X ptr_freed_o $end
+$var reg 16 Y ptr_gen_o [15:0] $end
+$var reg 1 Z ptr_valid_o $end
+$var reg 3 [ round_robin_counter [2:0] $end
+$var reg 32 \ stack_ptr_id_o [31:0] $end
+$var integer 32 ] i [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx ]
+bx \
+bx [
+0Z
+b0 Y
+0X
+bx W
+bx V
+bx U
+bx T
+b0 S
+b0 R
+0Q
+bx P
+bx O
+bx N
+bx M
+0L
+b0 K
+b0 J
+0I
+b0 H
+0G
+b0 F
+b0 E
+b0 D
+b0 C
+b0 B
+b0 A
+b0 @
+b0 ?
+b0 >
+b0 =
+0<
+b0 ;
+0:
+b0 9
+08
+07
+06
+05
+b0 4
+b0 3
+b0 2
+b0 1
+b0 0
+0/
+b0 .
+b0 -
+b0 ,
+0+
+0*
+b0 )
+x(
+0'
+b0 &
+bx %
+bx $
+bx #
+x"
+bx !
+$end
+#5000
+b0 V
+0"
+b0 #
+b0 W
+b0 $
+b0 U
+b0 %
+b0 T
+b0 !
+b0 \
+b0 N
+b0 [
+b0 M
+b0 O
+b0 P
+1(
+b1000 ]
+1+
+#10000
+0+
+#15000
+b10000 ]
+1+
+#20000
+0+
+17
+#25000
+1+
+#30000
+0+
+b10 .
+b10 A
+b1 -
+b1 @
+1/
+#35000
+b10 M
+1+
+#40000
+1'
+b10 &
+b10 S
+0+
+b1 ,
+b1 ?
+0/
+#45000
+1+
+#50000
+0+
+b1111011 4
+b1111011 F
+b10000000000000000000011111111 3
+b10000000000000000000011111111 E
+b10000000000000000000000000000 2
+b10000000000000000000000000000 D
+b10 1
+b10 C
+15
+#55000
+b100 O
+1+
+#60000
+0+
+16
+#65000
+1+
+#70000
+1"
+b1111011 #
+b1111011 W
+b10000000000000000000011111111 $
+b10000000000000000000011111111 U
+b10000000000000000000000000000 %
+b10000000000000000000000000000 T
+0+
+b10 0
+b10 B
+05
+#75000
+1+
+#80000
+0+
+b10000000000000000000010000000 )
+b10000000000000000000010000000 =
+1*
+#85000
+1+
+#90000
+0+
+b1111111111111111111111111111 )
+b1111111111111111111111111111 =
+#95000
+0(
+1+
+#100000
+0+
+b10000000000000000000100000000 )
+b10000000000000000000100000000 =
+#105000
+0(
+1+
+#110000
+0+
+b111001000 9
+b111001000 J
+1:
+#115000
+b111001000 !
+b111001000 \
+0(
+b1 P
+1+
+#120000
+0+
+0:
+#125000
+0(
+1+
+#130000
+0+
+b1100010101 9
+b1100010101 J
+1:
+#135000
+b1100010101 !
+b1100010101 \
+0(
+b10 P
+1+
+#140000
+0+
+0:
+#145000
+0(
+1+
+#150000
+0+
+18
+#155000
+b111001000 !
+b111001000 \
+0(
+b1 P
+1+
+#160000
+0+
+08
+#165000
+0(
+1+
+#170000
+0'
+b0 &
+b0 S
+0+
+b0 ,
+b0 ?
+#175000
+1(
+1+
+#180000
+0"
+b0 #
+b0 W
+b0 $
+b0 U
+b0 %
+b0 T
+0+
+b1 0
+b1 B
+#185000
+1+
+#190000
+0+
+18
+#195000
+b0 !
+b0 \
+b0 P
+1+
+#200000
+0+
+08
+#205000
+1+
+#210000
+0+
+18
+#215000
+1+
+#220000
+0+
+08
+#225000
+1+
+#230000
+0+
+#235000
+1+
+#240000
+0+
+#245000
+1+
+#250000
+0+
+#255000
+1+
+#260000
+0+
+#265000
+1+
+#270000
+0+
+#275000
+1+
+#280000
+0+
+#285000
+1+
+#290000
+0+
+#295000
+1+
+#300000
+0+
+#305000
+1+
+#310000
+0+
+#315000
+1+
+#320000
+0+
+#325000
+1+
+#330000
+0+

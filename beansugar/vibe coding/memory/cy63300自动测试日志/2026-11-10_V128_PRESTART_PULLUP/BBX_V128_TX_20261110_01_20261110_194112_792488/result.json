@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V128_TX_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_TX_STALLED_NO_DATA_NO_NACK",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "stop_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "95E28EDCE5966CEA434F822F7792805533DB5B23DB8A54E40211BC19C7B22DE2",
+    "openocd.combined.log": "FA2CBC8D609BEF85F58EDC596621EE782F4C3310FF9098B5E06A4DB7BDEF03E4"
+  },
+  "finished_local": "2026-11-10T19:41:38.209962+08:00"
+}

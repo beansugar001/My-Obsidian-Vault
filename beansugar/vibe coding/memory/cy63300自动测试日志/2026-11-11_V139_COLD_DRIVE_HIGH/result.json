@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V139_COLD_DRIVE_HIGH_20261111_01",
+  "status": "TX_STALLED_FIFO_1_WORK_1",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 17,
+  "tx_fifo_attempts": 1,
+  "stop_attempts": 0,
+  "errors": [],
+  "sample_count": 60,
+  "first_sample": "V139_SAMPLE TX i=0 t_ms=1794360835845 fifo=0x00000104 sta=0x00000001 raw=0x00000000",
+  "last_sample": "V139_SAMPLE TX i=59 t_ms=1794360858238 fifo=0x00000104 sta=0x00000001 raw=0x00000000",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "B0DBA1C3C3FB2F9E0EF6C3AD30CBDDD51DB2D5C8F7F5CDD3F8126057C663016F",
+    "openocd.combined.log": "B4FFE49DB544E0EAB5B987F1B42101237E8190832A4E9623D0FEB06FDDB33ACF"
+  },
+  "finished": "2026-11-11T09:34:18.328644+08:00"
+}

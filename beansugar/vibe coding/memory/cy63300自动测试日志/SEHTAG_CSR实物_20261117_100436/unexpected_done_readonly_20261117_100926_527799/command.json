@@ -1,0 +1,15 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/单次触发探针/unexpected_done_readonly_20261117_100926_527799/read_only.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "SEHTAG_BASELINE_SAMPLE_A": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/单次触发探针/unexpected_done_readonly_20261117_100926_527799/mailbox_a.bin",
+    "SEHTAG_BASELINE_SAMPLE_B": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/单次触发探针/unexpected_done_readonly_20261117_100926_527799/mailbox_b.bin",
+    "SEHTAG_STARTUP": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/单次触发探针/unexpected_done_readonly_20261117_100926_527799/startup.bin"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V151_GPIOC_OUTPUT_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V151_GPIOC_OUTPUT_ACK\\cy_runs\\20261111_113347_455638",
+  "started": "2026-11-11T11:33:47.455638+08:00",
+  "max_target_writes": 8,
+  "max_gpio_pulses": 3,
+  "max_fifo_writes": 0,
+  "max_halt": 1,
+  "tcl_sha256": "7C79D5C807212B9C51AAE91A62E012425FA77F0684F32B89581E8509764151D2"
+}

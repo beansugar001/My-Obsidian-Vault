@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V131_OPEN_DRAIN_RELEASE_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v131_release_odr.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T20:26:39.010779+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "3B0473260FA0D3F644ADA67E4836EA8622A6CA4E957B00F066F359A5CA8D6FF4",
+    "runner": "199F282C8D4D26468E94D1711B175DAF3A107E61F0EBC0C3A361D015B1B4062B"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V132_DIR_CROSSCHECK_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v132_dir_crosscheck.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T20:29:44.063554+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "5AAA17E32BDF61045A2018118A36EBB1EC4C6DFD91EA211852963CE60067D92C",
+    "runner": "7C9801FEFB41F6CEE8586E724D382D11AD0812B6142EA51946C32ECA7FD36924"
+  }
+}

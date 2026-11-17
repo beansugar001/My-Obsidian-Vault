@@ -1,0 +1,30 @@
+{
+  "verified": true,
+  "raw_mailbox": "runs\\read_20261111_113356_561068\\capture_mailbox.bin",
+  "events": [
+    {
+      "cycles": 541204782,
+      "pins": "0x200"
+    },
+    {
+      "cycles": 597007986,
+      "pins": "0x300"
+    },
+    {
+      "cycles": 653099958,
+      "pins": "0x100"
+    },
+    {
+      "cycles": 708903258,
+      "pins": "0x300"
+    },
+    {
+      "cycles": 764706690,
+      "pins": "0x100"
+    },
+    {
+      "cycles": 820798374,
+      "pins": "0x300"
+    }
+  ]
+}

@@ -1,0 +1,23 @@
+{
+  "stage": "BBX_V158_HARDWARE_I2C_OLED_HELLO_20261111_01",
+  "status": "HELLO_FRAMES_DRAINED_STOP_IDLE",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 129,
+  "tx_fifo_attempts": 117,
+  "stop_attempts": 6,
+  "errors": [],
+  "sample_count": 123,
+  "first_sample": "V158_SAMPLE TX_0 i=0 t_ms=1794382002480 fifo=0x00000005 sta=0x00000003 raw=0x00000000",
+  "last_sample": "V158_SAMPLE STOP i=0 t_ms=1794382079873 fifo=0x00000005 sta=0x00000000 raw=0x00000000",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "B78EFE9026ED5670BB0BB8508107FF5840A2CBD33A11B59650E5009BD7B716AB",
+    "openocd.combined.log": "7DCB89D97917AB2416D7F242965EF87E22FE90ED866E37376D89961EB054CD54"
+  },
+  "finished": "2026-11-11T15:27:59.954257+08:00",
+  "frames_completed": 6
+}

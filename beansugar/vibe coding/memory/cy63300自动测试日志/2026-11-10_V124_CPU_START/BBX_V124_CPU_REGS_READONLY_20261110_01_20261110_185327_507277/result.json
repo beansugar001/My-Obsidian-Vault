@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V124_CPU_REGS_READONLY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_V124_CPU_REGS_READONLY_20261110_01_20261110_185327_507277",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V124_CPU_REGS_READONLY_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "CLOCK_OFF_NO_I2C_READ",
+  "target_mmio_writes": 0,
+  "reset_resume_flash_nvr": 0,
+  "halt_request_budget": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "52F34C5442CD96164700092DA46913A4FDF9E8851CC28C0D6CFFACF2DBC03F42",
+    "openocd.combined.log": "0CA79E73E2F66F8F24CFC9EB206C1B17CBE8340E6DDE9DB9D2551E366D2F8FB6"
+  }
+}

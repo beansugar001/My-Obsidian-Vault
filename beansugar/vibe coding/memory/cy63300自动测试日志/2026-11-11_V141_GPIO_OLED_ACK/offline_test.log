@@ -1,0 +1,8 @@
+PASS NACK_BOTH: status=BOTH_ADDRESS_NACK, frames=2, target_writes=57
+PASS ACK_FIRST: status=ADDRESS_ACK_OBSERVED, frames=2, target_writes=57
+PASS ACK_SECOND: status=ADDRESS_ACK_OBSERVED, frames=2, target_writes=57
+PASS BUS_LOW: status=FAIL_OR_UNKNOWN, frames=0, target_writes=3
+PASS DIR_FAIL: status=FAIL_OR_UNKNOWN, frames=0, target_writes=6
+PASS ACK_SCL_LOW: status=FAIL_OR_UNKNOWN, frames=0, target_writes=25
+PASS NOT_COLD: status=FAIL_OR_UNKNOWN, frames=0, target_writes=0
+V141_OFFLINE_AUDIT_PASS

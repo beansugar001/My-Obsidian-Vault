@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V126_SBA_ARM_ORDER_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 8,
+  "stop_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "5F66C65604E622E45C2FBCB7ADF4203BF9649E63B65F5D5EEA5D47F641AD47F6",
+    "openocd.combined.log": "8B616E4E50BB449A9B3C79BEFCDF3FC58F9DE4629DFA148DEDCD800E4E51A5CB"
+  },
+  "finished_local": "2026-11-10T18:59:12.412814+08:00"
+}

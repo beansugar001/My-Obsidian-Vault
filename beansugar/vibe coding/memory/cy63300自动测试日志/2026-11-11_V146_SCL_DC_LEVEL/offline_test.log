@@ -1,0 +1,3 @@
+PASS cold writes=2
+PASS gpio_ready writes=0
+PASS i2c_active writes=0

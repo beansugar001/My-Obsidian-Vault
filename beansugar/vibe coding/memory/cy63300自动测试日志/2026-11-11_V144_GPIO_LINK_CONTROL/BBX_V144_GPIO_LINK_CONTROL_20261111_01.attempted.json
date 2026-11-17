@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V144_GPIO_LINK_CONTROL_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V144_GPIO_LINK_CONTROL\\cy_runs\\20261111_102451_958317",
+  "started": "2026-11-11T10:24:51.958317+08:00",
+  "max_target_writes": 10,
+  "max_gpio_pulses": 3,
+  "max_fifo_writes": 0,
+  "max_halt": 1,
+  "tcl_sha256": "061DA2DACA699DA392D4A5D628F2EC153C73765BCA33E5AEE07FAECE61F641F7"
+}

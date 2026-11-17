@@ -1,0 +1,13 @@
+{
+  "snapshot": "runs\\snapshot_20261111_154612_684305\\main_sector0_64KiB.bin",
+  "snapshot_sha256": "21EAD7524AF6034378484B8107082250B0E3C9E13B915407A6A829F0F6BFCBBF",
+  "image_sha256": "A24DA9A83E19366AF803FE4640533895C3344D87370B221F093919EE8FC2E60A",
+  "image_bytes": 2120,
+  "image_start": "0x00000000",
+  "image_last": "0x00000847",
+  "matches_v118_prefix": true,
+  "last_non_ff": "0x0000043F",
+  "zero_to_one_bytes": 683,
+  "target_flash_writes": 0,
+  "target_flash_erases": 0
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V138_PADMUX_READONLY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_V138_PADMUX_READONLY_20261110_01_20261110_205056_604860",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V138_PADMUX_READONLY_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "STOP_I2C_NOT_IDLE_NO_WRITE",
+  "target_mmio_writes": 0,
+  "reset_resume_flash_nvr": 0,
+  "halt_request_budget": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "5C81E4174A22F114512C8CC38E11CAFA75467DE2AC3D351E27E7178694EE1C02",
+    "openocd.combined.log": "2416D5CF54B16048973D6B3599A29916086D8DE8E6DB63714A07B2A9CC72CA97"
+  }
+}

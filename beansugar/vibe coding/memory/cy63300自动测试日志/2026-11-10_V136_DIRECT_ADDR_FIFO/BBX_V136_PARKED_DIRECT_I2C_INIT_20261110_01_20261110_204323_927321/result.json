@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V136_PARKED_DIRECT_I2C_INIT_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_DIRECT_3C_ENABLE_PARKED_FIFO_EMPTY",
+  "halt_count": 1,
+  "target_mmio_write_count": 12,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "B404B06EAAC66AECEF7617044FDBDFADC25BBA29A0AB8122888624866FAAFEF0",
+    "openocd.combined.log": "7BFCC6A703601EF8F6D6BCC03F85EC90CD9444E6D4603FB18E53D2CBEE0A1F62"
+  },
+  "finished_local": "2026-11-10T20:43:30.797444+08:00"
+}

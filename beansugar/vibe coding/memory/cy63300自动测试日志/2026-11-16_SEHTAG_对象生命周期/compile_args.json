@@ -1,0 +1,11 @@
+[
+  "-g2012",
+  "-s",
+  "lifecycle_tb",
+  "-I",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core",
+  "-o",
+  "lifecycle.vvp",
+  "lifecycle_tb.sv",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core/bnbcache.v"
+]

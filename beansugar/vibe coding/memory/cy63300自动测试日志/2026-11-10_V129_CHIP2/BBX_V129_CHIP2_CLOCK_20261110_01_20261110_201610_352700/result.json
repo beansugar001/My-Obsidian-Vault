@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V129_CHIP2_CLOCK_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 0,
+  "target_mmio_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "48F1EDAF65C84D74636F1FAEEEF18B381DE0A589457D9EC73BC5F9FAB5DD7A81",
+    "openocd.combined.log": "5DACE29F0D0F14C024226737C540E89E8227AE11329C501B9677EDA2FD462C8A"
+  },
+  "finished_local": "2026-11-10T20:16:10.573751+08:00"
+}

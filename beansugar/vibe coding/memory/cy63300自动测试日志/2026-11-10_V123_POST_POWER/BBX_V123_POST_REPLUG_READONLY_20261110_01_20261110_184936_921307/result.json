@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V123_POST_REPLUG_READONLY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_V123_POST_REPLUG_READONLY_20261110_01_20261110_184936_921307",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V123_POST_REPLUG_READONLY_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "CLOCK_OFF_NO_I2C_READ",
+  "target_mmio_writes": 0,
+  "reset_resume_flash_nvr": 0,
+  "halt_request_budget": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "357037C740F4296F8EDE16C878074A5B391B29334AA2B01582250B195A5114F9",
+    "openocd.combined.log": "5FE573946716E828E4CC02002915726AAE79867F721BC7988B2E8C3A3C5A22D2"
+  }
+}

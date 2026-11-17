@@ -1,0 +1,13 @@
+{
+  "capture_duration_seconds_at_72MHz": 40.855202,
+  "tx_after_arm_seconds_bounds": [
+    16.122,
+    16.159
+  ],
+  "last_cy_poll_after_tx_seconds": 22.715,
+  "cy_poll_count": 60,
+  "end_crh": "0x44444444",
+  "end_idr": "0x0000FF93",
+  "monitor_edge_count": 0,
+  "monitor_frames": []
+}

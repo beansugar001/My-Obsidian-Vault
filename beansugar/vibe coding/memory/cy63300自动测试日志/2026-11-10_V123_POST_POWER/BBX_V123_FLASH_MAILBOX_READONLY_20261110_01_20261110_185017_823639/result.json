@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V123_FLASH_MAILBOX_READONLY_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_V123_FLASH_MAILBOX_READONLY_20261110_01_20261110_185017_823639",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V123_FLASH_MAILBOX_READONLY_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "CLOCK_OFF_NO_I2C_READ",
+  "target_mmio_writes": 0,
+  "reset_resume_flash_nvr": 0,
+  "halt_request_budget": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "5D9CA17AC56B1D53E2346C12BB4E132586E9B5D44AB45CFE27082E43B196A3A2",
+    "openocd.combined.log": "9B9A71A049ABFD1E9BE9BDD8B48BAD0B5AD8B6CDCD88561D626F405961C14751"
+  }
+}

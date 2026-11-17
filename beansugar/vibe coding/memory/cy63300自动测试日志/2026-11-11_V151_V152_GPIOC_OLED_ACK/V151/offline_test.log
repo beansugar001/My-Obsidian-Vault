@@ -1,0 +1,4 @@
+PASS NORMAL: 7 writes, DIR=0
+PASS NOT_COLD: 0 writes, DIR=0
+PASS BUS_LOW: 0 writes, DIR=0
+PASS DIR_FAIL: 6 writes, DIR=0

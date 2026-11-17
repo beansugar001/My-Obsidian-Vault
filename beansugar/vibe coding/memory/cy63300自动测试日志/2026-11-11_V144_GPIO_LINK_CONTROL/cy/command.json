@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V144_GPIO_LINK_CONTROL_20261111_01",
+  "started": "2026-11-11T10:24:51.958317+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V144_GPIO_LINK_CONTROL/v144_gpio_pulses.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V144_GPIO_LINK_CONTROL\\v144_gpio_pulses.tcl": "061DA2DACA699DA392D4A5D628F2EC153C73765BCA33E5AEE07FAECE61F641F7",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V144_GPIO_LINK_CONTROL\\run_cy63300.py": "6FE8CF51CF384B74105C54939A96E46FFE5B39DDA1273F22F7AEB7A378EFF344"
+  }
+}

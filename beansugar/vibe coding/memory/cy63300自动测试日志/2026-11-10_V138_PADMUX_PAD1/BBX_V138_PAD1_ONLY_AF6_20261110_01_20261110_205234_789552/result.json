@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V138_PAD1_ONLY_AF6_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FIFO_STILL_QUEUED_AFTER_PAD1_AF6",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "638D62DDD8062068FBB3A79220002370C9783AFF484BC0D3CCA614F6D0EFD6BC",
+    "openocd.combined.log": "53F9CEF0DAC6ADAEC187B6B45AA1D84FA9DF89DDAB772529568162CD477EAA3F"
+  },
+  "finished_local": "2026-11-10T20:52:42.099874+08:00"
+}

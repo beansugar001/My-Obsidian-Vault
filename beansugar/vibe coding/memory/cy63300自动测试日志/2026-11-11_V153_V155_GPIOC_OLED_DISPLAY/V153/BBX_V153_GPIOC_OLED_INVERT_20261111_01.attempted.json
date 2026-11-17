@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V153_GPIOC_OLED_INVERT_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V153_GPIOC_OLED_INVERT\\cy_runs\\20261111_114659_445017",
+  "started": "2026-11-11T11:46:59.445017+08:00",
+  "max_target_writes": 90,
+  "max_frames": 1,
+  "max_fifo_writes": 0,
+  "max_halt": 1,
+  "tcl_sha256": "50234ED5E52AADEB36DB58FF8F561A37A298419772D4E80B3A3814DBB8B862D7"
+}

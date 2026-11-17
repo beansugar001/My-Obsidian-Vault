@@ -1,0 +1,3 @@
+VCD info: dumpfile native_legal.vcd opened for output.
+PASS CPU boot -> allocation -> pointer writeback -> one checked-path store/load; value=1234abcd
+native_legal_tb.sv:55: $finish called at 3106000 (1ps)

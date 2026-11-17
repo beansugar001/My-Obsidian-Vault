@@ -1,0 +1,23 @@
+{
+  "stage": "BBX_V152_GPIOC_OLED_ACK_20261111_01",
+  "status": "ADDRESS_ACK",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 26,
+  "frames": [
+    "V152_FRAME_RESULT addr=0x3C byte=0x78 result=ACK idle_idr=0x3 t_ms=1794368361506"
+  ],
+  "errors": [],
+  "sample_count": 3,
+  "first_sample": "V152_ACK_SAMPLE addr=0x3C i=0 dir=0x0 idr=0x1 t_ms=1794368359523",
+  "last_sample": "V152_ACK_SAMPLE addr=0x3C i=2 dir=0x0 idr=0x1 t_ms=1794368359764",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "C474737EEA872A8964C5274003804888729B23C61041BB862EDDF120C67ED540",
+    "openocd.combined.log": "8D4470C31ECA1DFD7D36BAF3986E498B88EC8997294CEF85E9FE6682C551EE30"
+  },
+  "finished": "2026-11-11T11:39:21.796362+08:00"
+}

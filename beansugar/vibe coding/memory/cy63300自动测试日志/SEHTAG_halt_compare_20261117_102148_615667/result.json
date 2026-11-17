@@ -1,0 +1,73 @@
+{
+  "comparison_complete": true,
+  "exit_code": 0,
+  "halt_requests_logged": 1,
+  "samples": {
+    "running": {
+      "dump_count": 8,
+      "dump_stages": {
+        "0x5741601A": 8
+      },
+      "all_dump_words_identical": true,
+      "direct_stages": {
+        "0x5741601A": 8
+      },
+      "first_dump_words": [
+        "0x57414931",
+        "0x00000000",
+        "0x53454152",
+        "0x00000000",
+        "0x5741601A",
+        "0x00000000",
+        "0x00000002",
+        "0x53454152"
+      ],
+      "dump_hashes": {
+        "running_00.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_01.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_02.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_03.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_04.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_05.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_06.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "running_07.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9"
+      }
+    },
+    "halted": {
+      "dump_count": 8,
+      "dump_stages": {
+        "0x5741601A": 8
+      },
+      "all_dump_words_identical": true,
+      "direct_stages": {
+        "0x5741601A": 8
+      },
+      "first_dump_words": [
+        "0x57414931",
+        "0x00000000",
+        "0x53454152",
+        "0x00000000",
+        "0x5741601A",
+        "0x00000000",
+        "0x00000002",
+        "0x53454152"
+      ],
+      "dump_hashes": {
+        "halted_00.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_01.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_02.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_03.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_04.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_05.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_06.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9",
+        "halted_07.bin": "03407956FD977AE5C0A1234445D2536834E194BCB69815F4AB09234C48CBC8F9"
+      }
+    }
+  },
+  "pc_raw": [
+    "pc (/32): 0x2C026DD3\n",
+    "pc (/32): 0x2C026DD3\n",
+    "pc (/32): 0x2C026DD3\n"
+  ],
+  "log_sha256": "02D090993CAF0C2D103289FABE8AA20DC51C5A2D184C429012B228602FF59867"
+}

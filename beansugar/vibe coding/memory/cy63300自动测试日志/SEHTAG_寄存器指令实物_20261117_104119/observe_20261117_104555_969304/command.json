@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/寄存器指令对照/observe_20261117_104555_969304/sample_readonly.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "INSTRUCTION_LOG": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/寄存器指令对照/observe_20261117_104555_969304"
+  },
+  "tcl_sha256": "CB050978F90F6E44223EC2AAC93EB448E9C2624648A2E5A20C98777028C2C3CC"
+}

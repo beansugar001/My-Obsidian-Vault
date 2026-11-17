@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V128_CLOCK_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_CLOCKS_ENABLED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "CBC58DEB36B7B1F025DA071D01C9A06EEA4D1EDC8ABA2B3431F33B79EC3B16F0",
+    "openocd.combined.log": "27EA636FF229FD154E4F9C39C342613ED1C8161537BB0F2B87F9C53807E43DBD"
+  },
+  "finished_local": "2026-11-10T19:39:28.200645+08:00"
+}

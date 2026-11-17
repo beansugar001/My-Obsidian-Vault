@@ -1,0 +1,28 @@
+Component: ARM Compiler 6.7 Tool: armlink [5c9ef700]
+
+==============================================================================
+
+Memory Map of the image
+
+  Image Entry point : 0x2000325d
+
+  Load Region LR_1 (Base: 0x20003000, Size: 0x00000340, Max: 0xffffffff, ABSOLUTE)
+
+    Execution Region ER_RO (Base: 0x20003000, Size: 0x00000340, Max: 0xffffffff, ABSOLUTE)
+
+    Base Addr    Size         Type   Attr      Idx    E Section Name        Object
+
+    0x20003000   0x0000025a   Code   RO            4    .text.probe_address  probe.o
+    0x2000325a   0x00000002   PAD
+    0x2000325c   0x000000e4   Code   RO            2  * .text.probe_main    probe.o
+
+
+    Execution Region ER_RW (Base: 0x20003340, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+
+
+    Execution Region ER_ZI (Base: 0x20003340, Size: 0x00000000, Max: 0xffffffff, ABSOLUTE)
+
+    **** No section assigned to this execution region ****
+

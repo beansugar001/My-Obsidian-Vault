@@ -1,0 +1,27 @@
+VCD info: dumpfile bnbcache_compat.vcd opened for output.
+Test 1: Write to BnBIndex table
+Test 2: Read from BnBIndex table
+  PASS: Index table read correct value
+Test 3: Write to BnBLookUp table
+Test 4: Read from BnBLookUp table
+  PASS: Lookup table read correct values
+Test 5: Valid memory access check
+  PASS: Valid address check passed
+Test 6: Invalid memory access check (below base)
+  PASS: Invalid address check (below base) passed
+Test 7: Invalid memory access check (above bound)
+  PASS: Invalid address check (above bound) passed
+Test 8: Push to BnBStack
+  PASS: Stack push succeeded
+Test 9: Push another value to BnBStack
+  PASS: Second stack push succeeded
+Test 10: Pop from BnBStack
+  PASS: Stack pop succeeded
+Test 11: Reading from ZeroReg
+  PASS: ZeroReg always returns invalid
+Test 12: Reading from invalid lookup entry
+  PASS: Invalid lookup entry returns invalid
+Test 13: Stack underflow check
+  PASS: Stack underflow handled correctly
+All tests completed
+bnbcache_compat_tb.v:265: $finish called at 330000 (1ps)

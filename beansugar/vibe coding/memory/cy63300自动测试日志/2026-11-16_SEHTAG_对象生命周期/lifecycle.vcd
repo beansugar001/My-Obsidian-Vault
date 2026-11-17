@@ -1,0 +1,308 @@
+$date
+	Mon Nov 16 19:28:19 2026
+$end
+$version
+	Icarus Verilog
+$end
+$timescale
+	1ps
+$end
+$scope module lifecycle_tb $end
+$var wire 16 ! generation [15:0] $end
+$var wire 1 " freed $end
+$var wire 1 # decision $end
+$var wire 32 $ bound [31:0] $end
+$var wire 32 % base [31:0] $end
+$var wire 1 & active $end
+$var reg 1 ' check_enable $end
+$var reg 1 ( clk $end
+$var reg 1 ) index_write $end
+$var reg 1 * metadata_write $end
+$var reg 16 + request_generation [15:0] $end
+$var reg 1 , retire $end
+$var reg 1 - rst $end
+$var reg 1 . write_bound $end
+$scope module dut $end
+$var wire 32 / alloc_ptr_id_i [31:0] $end
+$var wire 1 0 alloc_req_i $end
+$var wire 1 . bnb_lookup_wt $end
+$var wire 32 1 check_addr_i [31:0] $end
+$var wire 1 ' check_en_i $end
+$var wire 1 ( clk $end
+$var wire 5 2 exec_index_addr_i [4:0] $end
+$var wire 5 3 index_addr_i [4:0] $end
+$var wire 5 4 index_addr_we_i [4:0] $end
+$var wire 3 5 index_value_i [2:0] $end
+$var wire 1 ) index_we_i $end
+$var wire 3 6 lookup_addr_i [2:0] $end
+$var wire 3 7 lookup_addr_we_i [2:0] $end
+$var wire 32 8 lookup_base_i [31:0] $end
+$var wire 32 9 lookup_bound_i [31:0] $end
+$var wire 32 : lookup_ptr_id_i [31:0] $end
+$var wire 1 * lookup_we_i $end
+$var wire 1 , ptr_freed_i $end
+$var wire 16 ; ptr_gen_i [15:0] $end
+$var wire 1 , ptr_query_en_i $end
+$var wire 1 - rst $end
+$var wire 1 < stack_pop_i $end
+$var wire 32 = stack_ptr_id_i [31:0] $end
+$var wire 1 > stack_push_i $end
+$var reg 3 ? alloc_addr_o [2:0] $end
+$var reg 1 @ alloc_valid_o $end
+$var reg 32 A bnb_index_valid [31:0] $end
+$var reg 8 B bnb_lookup_freed [7:0] $end
+$var reg 8 C bnb_lookup_valid [7:0] $end
+$var reg 4 D bnb_stack_ptr [3:0] $end
+$var reg 1 # check_valid_o $end
+$var reg 1 E exec_index_valid_o $end
+$var reg 3 F exec_index_value_o [2:0] $end
+$var reg 1 G index_valid_o $end
+$var reg 3 H index_value_o [2:0] $end
+$var reg 32 I lookup_base_o [31:0] $end
+$var reg 32 J lookup_bound_o [31:0] $end
+$var reg 8 K lookup_freed_o [7:0] $end
+$var reg 32 L lookup_ptr_id_o [31:0] $end
+$var reg 1 M lookup_valid_o $end
+$var reg 1 " ptr_freed_o $end
+$var reg 16 N ptr_gen_o [15:0] $end
+$var reg 1 & ptr_valid_o $end
+$var reg 3 O round_robin_counter [2:0] $end
+$var reg 32 P stack_ptr_id_o [31:0] $end
+$var integer 32 Q i [31:0] $end
+$upscope $end
+$scope task assert_decision $end
+$var reg 1 R allow $end
+$var reg 16 S gen [15:0] $end
+$upscope $end
+$scope task register_object $end
+$var reg 16 T expected_generation [15:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+$comment Show the parameter values. $end
+$dumpall
+$end
+#0
+$dumpvars
+bx T
+bx S
+xR
+bx Q
+bx P
+bx O
+bx N
+xM
+bx L
+bx K
+bx J
+bx I
+bx H
+xG
+bx F
+xE
+bx D
+bx C
+bx B
+bx A
+0@
+b0 ?
+0>
+b0 =
+0<
+b0 ;
+b111 :
+b100011111 9
+b100000000 8
+b10 7
+b10 6
+b10 5
+b1 4
+b1 3
+b1 2
+b100010000 1
+00
+b0 /
+0.
+0-
+0,
+b0 +
+0*
+0)
+0(
+0'
+x&
+bx %
+bx $
+x#
+x"
+bx !
+$end
+#5000
+0E
+b0 F
+0G
+b0 H
+b0 K
+b0 !
+b0 N
+0"
+0&
+0M
+b0 L
+b0 $
+b0 J
+b0 %
+b0 I
+b0 P
+b0 B
+b0 O
+b0 A
+b0 C
+b0 D
+1#
+b1000 Q
+1(
+#10000
+0(
+#15000
+b10000 Q
+1(
+#20000
+0(
+#25000
+b1000 Q
+1(
+#30000
+1)
+1-
+0(
+#35000
+1E
+b10 F
+1G
+b10 H
+b10 A
+1(
+#40000
+b1 T
+0)
+0(
+#45000
+1(
+#50000
+1*
+0(
+#55000
+1M
+b111 L
+b100000000 %
+b100000000 I
+b1 !
+b1 N
+1&
+b100 C
+1(
+#60000
+1.
+0(
+#65000
+b100011111 $
+b100011111 J
+1(
+#70000
+0*
+0(
+#71000
+1R
+b1 S
+#75000
+1(
+#80000
+1'
+b1 +
+b1 ;
+0(
+#85000
+1(
+#90000
+0'
+0(
+#95000
+1(
+#100000
+1,
+0(
+#105000
+1"
+b100 K
+b1 !
+b1 N
+0&
+b100 B
+1(
+#110000
+0,
+0(
+#111000
+0R
+#115000
+1(
+#120000
+1'
+0(
+#125000
+0#
+1(
+#130000
+b10 T
+0'
+0(
+#135000
+1#
+1(
+#140000
+0.
+1*
+0(
+#145000
+1&
+b0 K
+b10 !
+b10 N
+0"
+b0 B
+1(
+#150000
+1.
+0(
+#155000
+1(
+#160000
+0*
+0(
+#165000
+1(
+#170000
+1'
+0(
+#175000
+0#
+1(
+#180000
+1R
+b10 S
+0'
+0(
+#185000
+1#
+1(
+#190000
+1'
+b10 +
+b10 ;
+0(
+#195000
+1(
+#200000
+0'
+0(

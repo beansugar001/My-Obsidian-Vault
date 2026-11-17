@@ -1,0 +1,12 @@
+{
+  "phase": "erase",
+  "valid": false,
+  "rc": 0,
+  "errors": [
+    "V159B_ERROR=FLASH_CLOCK_NOT_ENABLED"
+  ],
+  "erase_triggers": [],
+  "programming": [],
+  "sha256_log": "5EBD63B4CBD43ED41333015DCB8A857C25963528CE1A8E4461ADDBC250BFAFF0",
+  "sha256_dump": null
+}

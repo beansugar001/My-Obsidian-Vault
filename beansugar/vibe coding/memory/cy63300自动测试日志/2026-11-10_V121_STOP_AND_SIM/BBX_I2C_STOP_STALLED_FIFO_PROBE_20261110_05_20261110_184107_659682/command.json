@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_I2C_STOP_STALLED_FIFO_PROBE_20261110_05",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "set ::bbx_v121e_authorized 1",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v121e_stop_stalled_fifo.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "start": "2026-11-10T18:41:07.659682+08:00",
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\V116_CPU_STORE\\v116b_flash_cpu_probe.cfg": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v121e_stop_stalled_fifo.tcl": "DB485F53DF555E7CBAF109FE97F89CBDD4A52A20404BAEE8CCAD7B3F56EF0B2A",
+    "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\run_bbx_v121e_stop_stalled_fifo_once.py": "0CD5EAF2F31F17B43683753280F473C96533F49B4E65082484D3C1C0C4977021"
+  },
+  "retry": "none"
+}

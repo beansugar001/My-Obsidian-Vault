@@ -1,0 +1,2 @@
+PASS out-of-scope erase addresses blocked before target access
+PASS all five in-scope blocks become blank in the readback model

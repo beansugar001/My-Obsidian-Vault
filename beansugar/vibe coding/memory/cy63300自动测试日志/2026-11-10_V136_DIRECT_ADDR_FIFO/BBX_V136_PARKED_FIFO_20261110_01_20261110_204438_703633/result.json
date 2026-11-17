@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V136_PARKED_FIFO_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_TX_STALLED_NO_DATA_NO_NACK",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "stop_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "788B1F0F55CD0E381662294F7345F48583164C7A9C958F844B9293C22EC3BB1C",
+    "openocd.combined.log": "D931332C9A9B804564A5A177C7B9BC3B847DE1E1682A75843D4393E95C7A2C8D"
+  },
+  "finished_local": "2026-11-10T20:45:04.226563+08:00"
+}

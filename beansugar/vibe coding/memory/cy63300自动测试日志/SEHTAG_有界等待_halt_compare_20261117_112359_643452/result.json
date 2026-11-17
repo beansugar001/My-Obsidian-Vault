@@ -1,0 +1,121 @@
+{
+  "comparison_complete": true,
+  "exit_code": 0,
+  "halt_requests_logged": 1,
+  "samples": {
+    "running": {
+      "dump_count": 8,
+      "block_counts": [
+        24,
+        75,
+        126,
+        178,
+        224,
+        275,
+        323,
+        379
+      ],
+      "single_word_counts": [
+        46,
+        96,
+        148,
+        198,
+        243,
+        297,
+        349,
+        400
+      ],
+      "chronological_counts": [
+        24,
+        46,
+        75,
+        96,
+        126,
+        148,
+        178,
+        198,
+        224,
+        243,
+        275,
+        297,
+        323,
+        349,
+        379,
+        400
+      ],
+      "halt_state_samples": 9,
+      "other_words_unique": 1,
+      "firmware_markers_valid_in_all_dumps": true,
+      "dump_sha256": {
+        "running_00.bin": "F058791047036311EA9F4C998B0210596FC4B1A0D0867776A9E2D7B0D2B1D949",
+        "running_01.bin": "33B93C41233026E1DE9C2DBA9A0B323828EEDB59022F7AEBFAE1EFD5938FA28A",
+        "running_02.bin": "FD14A25EDAF11724612CF0216E565E8E9944C441189781C8DFE84DBE25C818A8",
+        "running_03.bin": "97AE0BF9F7986DDE9C7363F4C3341AE7B909E275EE5CF2B827080FBEC2C9B329",
+        "running_04.bin": "256D0DFD30704D4F3D0D20D68BF2CA420A62F289034D7975BBD8A1BAA313FA56",
+        "running_05.bin": "86C8752A6AA726DB303EB07711485432E46BE863B8EFD09DBACE372530ACD43E",
+        "running_06.bin": "775A9199063208FECF5470A9E080CC69D02E7BF8A86D1902CE472A96B061EFC0",
+        "running_07.bin": "81FF92C7687D77CCE907BC2F35C5FE99D5146726C2FA47BE4A57CF432FFCB472"
+      }
+    },
+    "halted": {
+      "dump_count": 8,
+      "block_counts": [
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433
+      ],
+      "single_word_counts": [
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433
+      ],
+      "chronological_counts": [
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433,
+        433
+      ],
+      "halt_state_samples": 9,
+      "other_words_unique": 1,
+      "firmware_markers_valid_in_all_dumps": true,
+      "dump_sha256": {
+        "halted_00.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_01.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_02.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_03.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_04.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_05.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_06.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99",
+        "halted_07.bin": "BB83479F9914C26E449ADC82058230DB1A60A6DFF1A0BB76027F51DCE3B7AC99"
+      }
+    }
+  },
+  "pc_raw": [
+    "pc (/32): 0x2C006DD3\n",
+    "pc (/32): 0x2C006DD3\n",
+    "pc (/32): 0x2C006DD3\n"
+  ],
+  "log_sha256": "353799F044D626D8970B7B940E1764C3A73F3351A3B4600ED249E095162099D3"
+}

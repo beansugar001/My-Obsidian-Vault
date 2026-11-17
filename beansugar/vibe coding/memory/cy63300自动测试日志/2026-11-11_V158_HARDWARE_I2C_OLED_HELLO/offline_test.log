@@ -1,0 +1,8 @@
+PASS controller NONE: 129 writes
+PASS controller NACK: 3 writes
+PASS controller STALL: 3 writes
+PASS capture NACK=False STOP=True: 2492 edges
+PASS capture NACK=True STOP=True: 2494 edges
+PASS capture NACK=False STOP=False: 2491 edges
+V158_OFFLINE_AUDIT_PASS
+V158_SRAM_IMAGE_AUDIT_PASS

@@ -1,0 +1,27 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	80302473          	csrr	s0,0x803
+   4:	00000013          	nop
+   8:	00000013          	nop
+   c:	02041a63          	bnez	s0,40 <fail>
+  10:	8030d073          	csrwi	0x803,1
+  14:	00000013          	nop
+  18:	00000013          	nop
+  1c:	803024f3          	csrr	s1,0x803
+  20:	00000013          	nop
+  24:	00000013          	nop
+  28:	00100293          	li	t0,1
+  2c:	00000013          	nop
+  30:	00000013          	nop
+  34:	00549663          	bne	s1,t0,40 <fail>
+  38:	06000d13          	li	s10,96
+  3c:	0000006f          	j	3c <_start+0x3c>
+
+00000040 <fail>:
+  40:	03f00d13          	li	s10,63
+  44:	0000006f          	j	44 <fail+0x4>

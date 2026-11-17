@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V157_HARDWARE_I2C_OLED_DISPLAY_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V157_HARDWARE_I2C_OLED_DISPLAY\\cy_runs\\20261111_150714_163595",
+  "started": "2026-11-11T15:07:14.163595+08:00",
+  "max_init_writes": 1,
+  "max_fifo_writes": 6,
+  "max_conditional_stop": 1,
+  "max_halt": 1,
+  "tcl_sha256": "C29986974B657A397C65DFCC7AC38EBAF8F682BC12C3FDC094875A3361F170F0"
+}

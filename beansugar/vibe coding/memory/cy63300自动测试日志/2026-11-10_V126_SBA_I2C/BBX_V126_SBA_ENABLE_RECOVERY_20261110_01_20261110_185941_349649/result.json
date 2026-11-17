@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V126_SBA_ENABLE_RECOVERY_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_ENABLE_BEFORE_ADDR_IDLE_NO_TRANSACTION",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "88D5DC71328CF72BCDC6EF604BF5E703FA2DDD1977A117EA15984DEF4DB1FB35",
+    "openocd.combined.log": "FE849CFED893841EEEAEB348AC8EA8F2718A4318AE03A9FD98A902829B1DB10E"
+  },
+  "finished_local": "2026-11-10T18:59:45.308997+08:00"
+}

@@ -1,0 +1,6 @@
+VCD info: dumpfile lifecycle.vcd opened for output.
+PASS registered object accepted active=1 freed=0 object_gen=1 request_gen=1 decision=1
+PASS retired object rejected active=0 freed=1 object_gen=1 request_gen=1 decision=0
+PASS previous generation rejected after registration active=1 freed=0 object_gen=2 request_gen=1 decision=0
+PASS current generation accepted after registration active=1 freed=0 object_gen=2 request_gen=2 decision=1
+lifecycle_tb.sv:88: $finish called at 200000 (1ps)

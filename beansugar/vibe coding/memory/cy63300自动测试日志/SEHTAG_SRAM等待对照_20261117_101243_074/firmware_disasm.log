@@ -1,0 +1,62 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	2000f437          	lui	s0,0x2000f
+   4:	53454a37          	lui	s4,0x53454
+   8:	152a0a13          	addi	s4,s4,338 # 53454152 <__global_pointer$+0x534528a6>
+   c:	00042023          	sw	zero,0(s0) # 2000f000 <__global_pointer$+0x2000d754>
+  10:	00042a23          	sw	zero,20(s0)
+  14:	00042823          	sw	zero,16(s0)
+  18:	574152b7          	lui	t0,0x57415
+  1c:	93128293          	addi	t0,t0,-1743 # 57414931 <__global_pointer$+0x57413085>
+  20:	00000013          	nop
+  24:	00542023          	sw	t0,0(s0)
+
+00000028 <first_load>:
+  28:	01442283          	lw	t0,20(s0)
+  2c:	00000013          	nop
+  30:	00000013          	nop
+  34:	01429a63          	bne	t0,s4,48 <first_wait>
+  38:	00542223          	sw	t0,4(s0)
+  3c:	01442423          	sw	s4,8(s0)
+  40:	00100993          	li	s3,1
+  44:	0300006f          	j	74 <publish_exit>
+
+00000048 <first_wait>:
+  48:	00542223          	sw	t0,4(s0)
+  4c:	01442423          	sw	s4,8(s0)
+  50:	57410337          	lui	t1,0x57410
+  54:	00130313          	addi	t1,t1,1 # 57410001 <__global_pointer$+0x5740e755>
+  58:	00000013          	nop
+  5c:	00642823          	sw	t1,16(s0)
+
+00000060 <wait_repeat>:
+  60:	01442283          	lw	t0,20(s0)
+  64:	00000013          	nop
+  68:	00000013          	nop
+  6c:	ff429ae3          	bne	t0,s4,60 <wait_repeat>
+  70:	00200993          	li	s3,2
+
+00000074 <publish_exit>:
+  74:	0142c933          	xor	s2,t0,s4
+  78:	00542623          	sw	t0,12(s0)
+  7c:	01342c23          	sw	s3,24(s0)
+  80:	01242e23          	sw	s2,28(s0)
+  84:	00042a23          	sw	zero,20(s0)
+  88:	57420337          	lui	t1,0x57420
+  8c:	a1130313          	addi	t1,t1,-1519 # 5741fa11 <__global_pointer$+0x5741e165>
+  90:	00091663          	bnez	s2,9c <write_status>
+  94:	57416337          	lui	t1,0x57416
+  98:	00d30313          	addi	t1,t1,13 # 5741600d <__global_pointer$+0x57414761>
+
+0000009c <write_status>:
+  9c:	00000013          	nop
+  a0:	00000013          	nop
+  a4:	00642823          	sw	t1,16(s0)
+
+000000a8 <done>:
+  a8:	0000006f          	j	a8 <done>

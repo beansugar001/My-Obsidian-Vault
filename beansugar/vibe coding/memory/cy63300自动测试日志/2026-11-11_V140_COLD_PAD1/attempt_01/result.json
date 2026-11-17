@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V140_COLD_PAD1_AF6_20261111_01",
+  "status": "FAIL_OR_UNKNOWN",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 0,
+  "tx_fifo_attempts": 0,
+  "stop_attempts": 0,
+  "errors": [
+    "MISMATCH:CLKEN_COLD_0 expected=0x00000000 actual=0x00000021"
+  ],
+  "sample_count": 0,
+  "first_sample": null,
+  "last_sample": null,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "5B17596186490175E99CF0247C9BE78DCFFB7163015EEAE080126F1F49AA96EB",
+    "openocd.combined.log": "758548553DD6060FBC3E3B3694A89EF8D8F76E9EB6103CF1A214840183C9BF39"
+  },
+  "finished": "2026-11-11T09:38:18.670823+08:00"
+}

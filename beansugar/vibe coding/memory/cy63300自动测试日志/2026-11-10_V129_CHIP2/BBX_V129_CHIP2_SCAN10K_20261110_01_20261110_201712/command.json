@@ -1,0 +1,20 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-c",
+    "gdb_port disabled",
+    "-c",
+    "telnet_port disabled",
+    "-c",
+    "tcl_port disabled",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/cy63300_jtag_scan_only.cfg",
+    "-c",
+    "scan_chain",
+    "-c",
+    "shutdown"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "cfg_sha256": "A0B0F25E1E13420D7886487C2A856CA2637085EC31CC1B38F0E0D93CA3C53BE5",
+  "openocd_sha256": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27"
+}

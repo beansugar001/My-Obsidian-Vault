@@ -1,0 +1,17 @@
+{
+  "status": "PASS",
+  "checks": {
+    "exit_zero": true,
+    "no_reported_error": true,
+    "unique_expected_probe": true,
+    "unique_expected_tap": true,
+    "complete_sentinel": true,
+    "expected_size": true,
+    "matches_independent_historical_readback_byte_for_byte": true
+  },
+  "sha256": "0808DA861C1BBD7B03BB88A3ECB625798B0A0797F114788529498EEC5428CA9C",
+  "historical_readback": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V160_CPU_OLED_REFRESH\\runs\\program_20261111_180952_723733\\independent_readback\\readback.bin",
+  "cpu_state_at_start": "running",
+  "original_script_status": "FAIL",
+  "original_script_check_mismatch": "No lowercase 'dumped 65536 bytes' line; the Tcl completion sentinel followed dump_image and the entire file independently matches a previous readback."
+}

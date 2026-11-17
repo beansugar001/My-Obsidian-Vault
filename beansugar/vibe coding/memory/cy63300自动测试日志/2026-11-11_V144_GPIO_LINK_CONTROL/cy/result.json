@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_V144_GPIO_LINK_CONTROL_20261111_01",
+  "status": "GPIO_PULSES_ISSUED",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 9,
+  "gpio_pulse_low_count": 3,
+  "errors": [],
+  "sample_count": 6,
+  "first_sample": "V144_PULSE_LOW SCL_1 t_ms=1794363895519",
+  "last_sample": "V144_PULSE_RELEASE SDA_2 t_ms=1794363899560",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "3D4EB781E6384A4EB46FF32208F74343EF7F6534B3757B96D0104DE860057A0C",
+    "openocd.combined.log": "4D7DCD3967AC6B3D671718B8BA164D7ED2520E166A2B52BD1C31687A63DB50BC"
+  },
+  "finished": "2026-11-11T10:25:00.157260+08:00"
+}

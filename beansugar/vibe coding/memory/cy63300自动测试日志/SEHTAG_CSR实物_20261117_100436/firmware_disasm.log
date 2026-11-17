@@ -1,0 +1,77 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	2000f437          	lui	s0,0x2000f
+   4:	53454a37          	lui	s4,0x53454
+   8:	152a0a13          	addi	s4,s4,338 # 53454152 <trigger_code>
+   c:	00042023          	sw	zero,0(s0) # 2000f000 <mailbox_base>
+  10:	00042a23          	sw	zero,20(s0)
+  14:	00042823          	sw	zero,16(s0)
+  18:	534552b7          	lui	t0,0x53455
+  1c:	83328293          	addi	t0,t0,-1997 # 53454833 <trigger_code+0x6e1>
+  20:	00000013          	nop
+  24:	00542023          	sw	t0,0(s0)
+
+00000028 <wait_for_trigger>:
+  28:	01442283          	lw	t0,20(s0)
+  2c:	00000013          	nop
+  30:	00000013          	nop
+  34:	ff429ae3          	bne	t0,s4,28 <wait_for_trigger>
+  38:	00042a23          	sw	zero,20(s0)
+  3c:	534502b7          	lui	t0,0x53450
+  40:	00128293          	addi	t0,t0,1 # 53450001 <mailbox_base+0x33441001>
+  44:	00000013          	nop
+  48:	00542823          	sw	t0,16(s0)
+  4c:	00000297          	auipc	t0,0x0
+  50:	09428293          	addi	t0,t0,148 # e0 <trap_entry>
+  54:	00000013          	nop
+  58:	00000013          	nop
+  5c:	30529073          	csrw	mtvec,t0
+  60:	00000013          	nop
+  64:	00000013          	nop
+  68:	803024f3          	csrr	s1,0x803
+  6c:	00000013          	nop
+  70:	00000013          	nop
+  74:	06049a63          	bnez	s1,e8 <unexpected_state>
+  78:	8030d073          	csrwi	0x803,1
+  7c:	00000013          	nop
+  80:	00000013          	nop
+  84:	80302973          	csrr	s2,0x803
+  88:	00000013          	nop
+  8c:	00000013          	nop
+  90:	80349073          	csrw	0x803,s1
+  94:	00000013          	nop
+  98:	00000013          	nop
+  9c:	803029f3          	csrr	s3,0x803
+  a0:	00000013          	nop
+  a4:	00000013          	nop
+  a8:	04099063          	bnez	s3,e8 <unexpected_state>
+  ac:	00942223          	sw	s1,4(s0)
+  b0:	01242423          	sw	s2,8(s0)
+  b4:	01342623          	sw	s3,12(s0)
+  b8:	00100313          	li	t1,1
+  bc:	534602b7          	lui	t0,0x53460
+  c0:	a1128293          	addi	t0,t0,-1519 # 5345fa11 <trigger_code+0xb8bf>
+  c4:	00691663          	bne	s2,t1,d0 <publish>
+  c8:	534562b7          	lui	t0,0x53456
+  cc:	00d28293          	addi	t0,t0,13 # 5345600d <trigger_code+0x1ebb>
+
+000000d0 <publish>:
+  d0:	00000013          	nop
+  d4:	00000013          	nop
+  d8:	00542823          	sw	t0,16(s0)
+
+000000dc <done>:
+  dc:	0000006f          	j	dc <done>
+
+000000e0 <trap_entry>:
+  e0:	03f00d13          	li	s10,63
+  e4:	ff9ff06f          	j	dc <done>
+
+000000e8 <unexpected_state>:
+  e8:	03e00d13          	li	s10,62
+  ec:	ff1ff06f          	j	dc <done>

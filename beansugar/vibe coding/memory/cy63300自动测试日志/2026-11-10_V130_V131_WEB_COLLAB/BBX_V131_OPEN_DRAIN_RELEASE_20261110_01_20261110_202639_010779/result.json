@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V131_OPEN_DRAIN_RELEASE_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "ODR_RELEASE_VERIFIED_PHYSICAL_LEVEL_UNMEASURED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "728099429317EAB6FD4EF9DCBCB2C58EDCF642B20ED4BDAAD2550A32FFF71DBD",
+    "openocd.combined.log": "51C2F8411347FF4CC911CE1A327130024AE2D19BB5F6F3B8402A8EC0BF85E692"
+  },
+  "finished_local": "2026-11-10T20:26:40.465095+08:00"
+}

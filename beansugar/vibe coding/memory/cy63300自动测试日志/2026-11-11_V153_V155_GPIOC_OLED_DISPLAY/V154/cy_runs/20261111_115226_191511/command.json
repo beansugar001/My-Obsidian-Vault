@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V154_GPIOC_OLED_DISPLAY_ON_20261111_01",
+  "started": "2026-11-11T11:52:26.191511+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V154_GPIOC_OLED_DISPLAY_ON/v154_gpioc_display_on.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V154_GPIOC_OLED_DISPLAY_ON\\v154_gpioc_display_on.tcl": "B7410B0C464CD66F6756A97B268F4F5E0A147318F6DB2DA0649F9DCB10B9EE15",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V154_GPIOC_OLED_DISPLAY_ON\\run_cy63300.py": "933C52F9E6F5C92D7AE0D5C777F21B9EC22FB57DB8478365770D4AF3ACC3DB60"
+  }
+}

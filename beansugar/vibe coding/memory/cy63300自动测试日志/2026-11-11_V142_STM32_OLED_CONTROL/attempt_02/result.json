@@ -1,0 +1,43 @@
+{
+  "stage": "V142_STM32_ACK_SRAM_02",
+  "returncode": 0,
+  "process_error": null,
+  "flash_equal": true,
+  "flash_matches_project": true,
+  "flash_sha256": "1902C216B72468BD155FE2D5E5CF9C2B37CE104245A95A2EF2084911CC141CEB",
+  "restored_running": true,
+  "log_sha256": "FB93364179C19EA3F5D64B98364B9BD502B8290394B275DC808DF078423E841B",
+  "mailbox": {
+    "rcc_cfgr": "0x001D040A",
+    "half_period_cycles": 720,
+    "samples": [
+      {
+        "address": "0x3C",
+        "address_byte": "0x78",
+        "ack": true,
+        "ack_input_samples": [
+          256,
+          256,
+          256
+        ],
+        "before": 768,
+        "after": 768,
+        "elapsed_cycles": 16614
+      },
+      {
+        "address": "0x3D",
+        "address_byte": "0x7A",
+        "ack": false,
+        "ack_input_samples": [
+          768,
+          768,
+          768
+        ],
+        "before": 768,
+        "after": 768,
+        "elapsed_cycles": 16618
+      }
+    ]
+  },
+  "success": true
+}

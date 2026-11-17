@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V157_HARDWARE_I2C_OLED_DISPLAY_20261111_01",
+  "status": "DISPLAY_FRAME_DRAINED_STOP_IDLE",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 8,
+  "tx_fifo_attempts": 6,
+  "stop_attempts": 1,
+  "errors": [],
+  "sample_count": 7,
+  "first_sample": "V157_SAMPLE TX_0 i=0 t_ms=1794380838063 fifo=0x00000005 sta=0x00000003 raw=0x00000000",
+  "last_sample": "V157_SAMPLE STOP i=0 t_ms=1794380841663 fifo=0x00000005 sta=0x00000000 raw=0x00000000",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "944DAF42DB18A94042AD1644D4131A9D0C37A5BBC1EA5752F181BFD391093637",
+    "openocd.combined.log": "49B2C6188FC624DDC9F71FDF098FDD506F7E8830CE6664E457CE2B377E42A2E4"
+  },
+  "finished": "2026-11-11T15:07:21.723409+08:00"
+}

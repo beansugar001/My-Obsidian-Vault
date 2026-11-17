@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V134_DIR_ADDRESS_AB_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "A_FAILED_B_SUCCEEDED_PARK_CORRELATION",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "230FAC3750DBCBFFFC6F5AA406670A03CC421A55F82BFA75BDCF2264855C4566",
+    "openocd.combined.log": "068C3F5E1B025109F26B35A9E61A7D9B6B1A59113F9471EBEC09358A7EDC0D8C"
+  },
+  "finished_local": "2026-11-10T20:36:43.254960+08:00"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V153_GPIOC_OLED_INVERT_20261111_01",
+  "started": "2026-11-11T11:46:59.445017+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V153_GPIOC_OLED_INVERT/v153_gpioc_invert.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V153_GPIOC_OLED_INVERT\\v153_gpioc_invert.tcl": "50234ED5E52AADEB36DB58FF8F561A37A298419772D4E80B3A3814DBB8B862D7",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V153_GPIOC_OLED_INVERT\\run_cy63300.py": "6BDEAADD21A8CEC114DE30139D90EA032694F32023E79CEC8CBC795D37B518C8"
+  }
+}

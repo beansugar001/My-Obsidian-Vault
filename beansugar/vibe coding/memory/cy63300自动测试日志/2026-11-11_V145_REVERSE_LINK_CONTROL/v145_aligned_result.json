@@ -1,0 +1,80 @@
+{
+  "cy_total_samples": 107,
+  "phases": [
+    {
+      "phase": "idle",
+      "duration_ms": 6000.0,
+      "stm32_samples": [
+        "0x300",
+        "0x300"
+      ],
+      "cy63300_sample_count": 22,
+      "cy63300_idr": [
+        "0x0000002C"
+      ],
+      "cy63300_masked": [
+        "0xC"
+      ]
+    },
+    {
+      "phase": "scl_low",
+      "duration_ms": 4000.0,
+      "stm32_samples": [
+        "0x200",
+        "0x200"
+      ],
+      "cy63300_sample_count": 17,
+      "cy63300_idr": [
+        "0x0000002C"
+      ],
+      "cy63300_masked": [
+        "0xC"
+      ]
+    },
+    {
+      "phase": "released",
+      "duration_ms": 4000.0,
+      "stm32_samples": [
+        "0x300",
+        "0x300"
+      ],
+      "cy63300_sample_count": 17,
+      "cy63300_idr": [
+        "0x0000002C"
+      ],
+      "cy63300_masked": [
+        "0xC"
+      ]
+    },
+    {
+      "phase": "sda_low",
+      "duration_ms": 4000.0,
+      "stm32_samples": [
+        "0x100",
+        "0x100"
+      ],
+      "cy63300_sample_count": 17,
+      "cy63300_idr": [
+        "0x0000002C"
+      ],
+      "cy63300_masked": [
+        "0xC"
+      ]
+    },
+    {
+      "phase": "final_idle",
+      "duration_ms": 4000.0,
+      "stm32_samples": [
+        "0x300",
+        "0x300"
+      ],
+      "cy63300_sample_count": 17,
+      "cy63300_idr": [
+        "0x0000002C"
+      ],
+      "cy63300_masked": [
+        "0xC"
+      ]
+    }
+  ]
+}

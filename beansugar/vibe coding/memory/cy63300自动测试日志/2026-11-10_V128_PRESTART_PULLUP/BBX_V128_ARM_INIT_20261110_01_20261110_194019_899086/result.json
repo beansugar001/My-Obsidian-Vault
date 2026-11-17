@@ -1,0 +1,15 @@
+{
+  "stage": "BBX_V128_ARM_INIT_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FAIL_OR_UNKNOWN",
+  "halt_count": 1,
+  "target_mmio_write_count": 8,
+  "stop_write_count": 0,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "A59772C134D9CC767D664C1DF5E0261BF21E6850BA9C367B25BF9309A4E9C79C",
+    "openocd.combined.log": "AC3630F41A4F46A117E28A02AE7841B3FCE7BFBBF3044EBF7BEA65EF43BE01A2"
+  },
+  "finished_local": "2026-11-10T19:40:23.947637+08:00"
+}

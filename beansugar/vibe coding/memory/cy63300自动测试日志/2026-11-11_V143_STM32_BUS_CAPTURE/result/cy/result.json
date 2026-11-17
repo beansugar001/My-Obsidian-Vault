@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V143_CY63300_FIRST_FRAME_20261111_01",
+  "status": "TX_STALLED_FIFO_1_WORK_1",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 18,
+  "tx_fifo_attempts": 1,
+  "stop_attempts": 0,
+  "errors": [],
+  "sample_count": 60,
+  "first_sample": "V140_SAMPLE TX i=0 t_ms=1794363629640 fifo=0x00000104 sta=0x00000001 raw=0x00000000",
+  "last_sample": "V140_SAMPLE TX i=59 t_ms=1794363651957 fifo=0x00000104 sta=0x00000001 raw=0x00000000",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "38BBB5D893BC494386245C41D363D38B592200256630B2B13F890D23D754F926",
+    "openocd.combined.log": "80A3B9AD8FC4FE9831042A6CB323F2231E5B5EF2E3970AC77CD088E7E559534B"
+  },
+  "finished": "2026-11-11T10:20:52.037150+08:00"
+}

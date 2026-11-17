@@ -1,0 +1,4 @@
+ONE_BYTE starts=0 fifo=1 state=0 scl=1 sda=1
+TWO_BYTES starts=1 stops=1 acks=2 fifo=0 payload=a5
+PASS_MODEL_DIFFERENTIAL_ONLY
+tb_v122.v:23: $finish called at 23420000 (1ps)

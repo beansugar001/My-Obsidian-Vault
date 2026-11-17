@@ -1,0 +1,3 @@
+VCD info: dumpfile ex_policy.vcd opened for output.
+FATAL: ex_policy_tb.sv:53: Valid load failed
+       Time: 1000  Scope: ex_policy_tb

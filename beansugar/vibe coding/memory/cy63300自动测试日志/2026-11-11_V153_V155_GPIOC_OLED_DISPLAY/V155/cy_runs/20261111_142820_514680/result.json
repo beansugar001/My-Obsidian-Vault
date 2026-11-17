@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V155_GPIOC_OLED_RAM_DISPLAY_20261111_01",
+  "status": "RAM_DISPLAY_ALL_ACK",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 70,
+  "frames": [
+    "V155_BYTE_RESULT index=0 byte=0x78 result=ACK",
+    "V155_BYTE_RESULT index=1 byte=0x00 result=ACK",
+    "V155_BYTE_RESULT index=2 byte=0xA4 result=ACK"
+  ],
+  "errors": [],
+  "sample_count": 9,
+  "first_sample": "V155_ACK_SAMPLE byte=0x78 index=0 i=0 dir=0x0 idr=0x1 t_ms=1794378512779",
+  "last_sample": "V155_ACK_SAMPLE byte=0xA4 index=2 i=2 dir=0x0 idr=0x1 t_ms=1794378531441",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "E005663ACBAE35DFE0AB3FAA8C56FDBBB30D571C789357094C335D94902E3F90",
+    "openocd.combined.log": "E63E574B567CAD7FEA01AEE18404B909F31E75786A7F5FA555E091E2515A8043"
+  },
+  "finished": "2026-11-11T14:28:53.483991+08:00"
+}

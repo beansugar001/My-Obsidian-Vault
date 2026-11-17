@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V133_DIR_ADDRESS_PARK_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "DIR_CLEAR_AFTER_ADDRESS_PARK_CONFIRMED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "6430946993C0D497C4DF393E077D7D8F22D50F0B550D458F57BE2D98A588403E",
+    "openocd.combined.log": "5AB653F8C1581809995A3893D65FFCBB44A127EC7C3F05808AFD8D9E80C0068E"
+  },
+  "finished_local": "2026-11-10T20:33:08.264757+08:00"
+}

@@ -1,0 +1,64 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	2000f437          	lui	s0,0x2000f
+   4:	534544b7          	lui	s1,0x53454
+   8:	13579a37          	lui	s4,0x13579
+   c:	4c5752b7          	lui	t0,0x4c575
+  10:	02000b13          	li	s6,32
+  14:	02042623          	sw	zero,44(s0) # 2000f02c <__global_pointer$+0x2000d6f4>
+  18:	00542023          	sw	t0,0(s0)
+  1c:	00942e23          	sw	s1,28(s0)
+  20:	03442023          	sw	s4,32(s0)
+  24:	03642223          	sw	s6,36(s0)
+  28:	03442823          	sw	s4,48(s0)
+  2c:	00440913          	addi	s2,s0,4
+  30:	00000a93          	li	s5,0
+  34:	00000b93          	li	s7,0
+  38:	0b8009ef          	jal	s3,f0 <wait_iteration>
+  3c:	03442823          	sw	s4,48(s0)
+  40:	01040913          	addi	s2,s0,16
+  44:	00000a93          	li	s5,0
+  48:	00700b93          	li	s7,7
+  4c:	00000013          	nop
+  50:	03742423          	sw	s7,40(s0)
+  54:	09c009ef          	jal	s3,f0 <wait_iteration>
+  58:	4c5762b7          	lui	t0,0x4c576
+  5c:	00000013          	nop
+  60:	02542623          	sw	t0,44(s0)
+
+00000064 <done>:
+  64:	0000006f          	j	64 <done>
+	...
+
+000000f0 <wait_iteration>:
+  f0:	001a8a93          	addi	s5,s5,1
+  f4:	03042283          	lw	t0,48(s0)
+  f8:	00000013          	nop
+  fc:	00000013          	nop
+
+00000100 <shared_branch>:
+ 100:	00929663          	bne	t0,s1,10c <no_match>
+ 104:	4d415337          	lui	t1,0x4d415
+ 108:	01c0006f          	j	124 <record>
+
+0000010c <no_match>:
+ 10c:	016afa63          	bgeu	s5,s6,120 <limit_reached>
+ 110:	ff7a90e3          	bne	s5,s7,f0 <wait_iteration>
+ 114:	02942823          	sw	s1,48(s0)
+ 118:	00000013          	nop
+ 11c:	fd5ff06f          	j	f0 <wait_iteration>
+
+00000120 <limit_reached>:
+ 120:	4c494337          	lui	t1,0x4c494
+
+00000124 <record>:
+ 124:	00000013          	nop
+ 128:	01592023          	sw	s5,0(s2)
+ 12c:	00592223          	sw	t0,4(s2)
+ 130:	00692423          	sw	t1,8(s2)
+ 134:	00098067          	jr	s3

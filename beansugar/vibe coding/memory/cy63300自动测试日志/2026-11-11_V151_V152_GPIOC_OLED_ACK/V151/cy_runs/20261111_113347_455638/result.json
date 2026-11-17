@@ -1,0 +1,21 @@
+{
+  "stage": "BBX_V151_GPIOC_OUTPUT_20261111_01",
+  "status": "GPIO_PULSES_ISSUED",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 7,
+  "gpio_pulse_low_count": 3,
+  "errors": [],
+  "sample_count": 6,
+  "first_sample": "V151_PULSE_LOW SCL_1 t_ms=1794368030206",
+  "last_sample": "V151_PULSE_RELEASE SDA_2 t_ms=1794368034204",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "83D3AC4C42623F7AFCE9A8DB0EF8F6EF61EAE94DAAB525192CDD6EF3C07EEFA1",
+    "openocd.combined.log": "AD0F79082D871E0349702020425D642BA474BAE4BD111C4372EF3C69B7EDA2FF"
+  },
+  "finished": "2026-11-11T11:33:54.801456+08:00"
+}

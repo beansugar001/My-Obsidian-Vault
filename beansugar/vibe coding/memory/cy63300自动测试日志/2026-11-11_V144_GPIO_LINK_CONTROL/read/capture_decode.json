@@ -1,0 +1,10 @@
+{
+  "capture_state": 2,
+  "edge_count": 0,
+  "overflow": false,
+  "clock_cfgr": "0x001D040A",
+  "counter_at_arm": 137967686,
+  "initial_levels": "0x300",
+  "final_levels": "0x300",
+  "frames": []
+}

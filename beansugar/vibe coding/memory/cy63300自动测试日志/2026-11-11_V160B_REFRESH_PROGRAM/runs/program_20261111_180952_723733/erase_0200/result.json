@@ -1,0 +1,12 @@
+{
+  "phase": "erase",
+  "valid": true,
+  "rc": 0,
+  "errors": [],
+  "erase_triggers": [
+    "V160B_ERASE_TRIGGER=0x00000200"
+  ],
+  "programming": [],
+  "sha256_log": "545FD8761E348AFDEC2B4BDE58F029C4B2F67E016C656249C2E70DD5F0E5298B",
+  "sha256_dump": "341E72202957ADEBF0465E0FF5359FBC397C55254F6D5760ED1CACAD2E7A0CE0"
+}

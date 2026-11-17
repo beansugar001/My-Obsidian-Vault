@@ -1,0 +1,25 @@
+{
+  "stage": "BBX_V153_GPIOC_OLED_INVERT_20261111_01",
+  "status": "INVERT_ALL_ACK",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 68,
+  "frames": [
+    "V153_BYTE_RESULT index=0 byte=0x78 result=ACK",
+    "V153_BYTE_RESULT index=1 byte=0x00 result=ACK",
+    "V153_BYTE_RESULT index=2 byte=0xA7 result=ACK"
+  ],
+  "errors": [],
+  "sample_count": 9,
+  "first_sample": "V153_ACK_SAMPLE byte=0x78 index=0 i=0 dir=0x0 idr=0x1 t_ms=1794368830580",
+  "last_sample": "V153_ACK_SAMPLE byte=0xA7 index=2 i=2 dir=0x0 idr=0x1 t_ms=1794368848559",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "6BD45C42CFB26593E1B4A0CA33F431F47B5DF3C37EA6D5A312DD02FA3CF1F07B",
+    "openocd.combined.log": "1CD59097396E03FCF3DA80847A552A32579E5478B09A898EA41863A981050C22"
+  },
+  "finished": "2026-11-11T11:47:30.600683+08:00"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V135_PARKED_GPIO_ACK_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "GPIO_FRAME_NACK_INPUT_HIGH_STOP_INPUT_IDLE",
+  "halt_count": 1,
+  "target_mmio_write_count": 33,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "EFBF043AF7BBE23B7845424BF9E07B5BF6F8BDADECFE00A8C4EEBA839003AE29",
+    "openocd.combined.log": "E9BE242F34C495BEA8605FB8610703E90B8C413223A274A48D5E81B15BAD7611"
+  },
+  "finished_local": "2026-11-10T20:40:28.255885+08:00"
+}

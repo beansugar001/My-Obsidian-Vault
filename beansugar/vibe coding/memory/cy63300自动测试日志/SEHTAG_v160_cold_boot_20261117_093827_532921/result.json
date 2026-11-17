@@ -1,0 +1,51 @@
+{
+  "read_ok": true,
+  "exit_code": 0,
+  "samples_equal": true,
+  "v160_cpu_mailbox": true,
+  "samples": [
+    {
+      "magic": "0x4D423160",
+      "stage": "0x16000005",
+      "result": "0x00000000",
+      "addr": "0x00000000",
+      "expected": "0x00000000",
+      "value": "0x00000000",
+      "fifo": "0x00000005",
+      "status": "0x00000000",
+      "raw": "0x00000000",
+      "frame": "0x0000001E",
+      "byte": "0x00000003",
+      "tx_writes": "0x000001D5",
+      "stops": "0x0000001F",
+      "done": "0x00000000",
+      "frames_done": "0x0000001F",
+      "refresh_target": "0x00000006",
+      "last_count": "0x00000005"
+    },
+    {
+      "magic": "0x4D423160",
+      "stage": "0x16000005",
+      "result": "0x00000000",
+      "addr": "0x00000000",
+      "expected": "0x00000000",
+      "value": "0x00000000",
+      "fifo": "0x00000005",
+      "status": "0x00000000",
+      "raw": "0x00000000",
+      "frame": "0x0000001E",
+      "byte": "0x00000003",
+      "tx_writes": "0x000001D5",
+      "stops": "0x0000001F",
+      "done": "0x00000000",
+      "frames_done": "0x0000001F",
+      "refresh_target": "0x00000006",
+      "last_count": "0x00000005"
+    }
+  ],
+  "sha256": {
+    "mailbox_a.bin": "8A6BD6981BA1E4DEE61CCC66D1254FC6F3C902AF19B273D665AA0245E977D8FE",
+    "mailbox_b.bin": "8A6BD6981BA1E4DEE61CCC66D1254FC6F3C902AF19B273D665AA0245E977D8FE",
+    "openocd.log": "CA1B4AF21DDCF6FACFA716D3448AC11AE1DD79004C1E78D3B58ABCDE36E8F998"
+  }
+}

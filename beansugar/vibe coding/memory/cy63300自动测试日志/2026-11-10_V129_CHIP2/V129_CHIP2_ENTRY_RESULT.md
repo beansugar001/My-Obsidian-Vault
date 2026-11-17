@@ -1,0 +1,12 @@
+# V129 芯片2 I²C 全流程入口结果
+
+用户更换芯片2，并报告其主 Flash 已全部擦除。本轮未重新擦写，也未验证其 Flash/NVR内容。使用原蓝板/调试环境，探针序列号07000001006700343500000a4e57354aa5a5a5a597969908。
+
+100kHz原配置入口：DAPLink正常枚举，但扫描链全零、IR capture=0、dtmcontrol=0，IDCODE未读出；target MMIO写0，halt0，不能继续时钟配置。新独立10kHz TAP-only扫描仍全零，IDCODE=0x00000000（期望0x1e200a6f）。两次退出码0不代表连接成功；按原始日志判失败。未执行SRAM/Flash/NVR、I2C FIFO/EN写入、CPU resume、软件复位或断电。
+
+100kHz运行目录 runs_local_v109/BBX_V129_CHIP2_CLOCK_20261110_01_20261110_201610_352700，combined SHA256 5DACE29F0D0F14C024226737C540E89E8227AE11329C501B9677EDA2FD462C8A。
+10kHz运行目录 runs_local_i2c_next/BBX_V129_CHIP2_SCAN10K_20261110_01_20261110_201712，combined SHA256 1B04FABFACF6BD4AAF15F4FED7EA5999333B1E6131D4750D1983E2BC3AEFF771。所有历史marker保留。
+
+目前仅能判定 CHIP2_DEBUG_LINK_BLOCKED；I2C测试未开始，无法与芯片1的FIFO停滞作差分。JTAG全零可能涉及插接/供电/模式/芯片配置，不能单凭全零断言TDO坏、NVR锁定或芯片损坏。Flash空白不自动等于JTAG可用，也不能未经核验写NVR来修复。
+
+下一步由用户断开目标板与DAPLink供电后，确认绿色载板方向和排针入座、H8/H10仍与芯片1成功时相同，再上电；或按用户原计划换回芯片1做同底板/探针基准对照。若芯片1能连接而芯片2不能，重点缩小到芯片2载板接触、芯片启动/调试配置；若两者都不连接则先查共用线束/底板/供电。不得把当前结果描述成芯片2 I2C失败。

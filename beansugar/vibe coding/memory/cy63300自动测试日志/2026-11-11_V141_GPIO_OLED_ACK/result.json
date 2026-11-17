@@ -1,0 +1,24 @@
+{
+  "stage": "BBX_V141_GPIO_OLED_ACK_20261111_01",
+  "status": "BOTH_ADDRESS_NACK",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 57,
+  "frames": [
+    "V141_FRAME_RESULT addr=0x3C byte=0x78 result=NACK idle_idr=0x2C t_ms=1794361525602",
+    "V141_FRAME_RESULT addr=0x3D byte=0x7A result=NACK idle_idr=0x2C t_ms=1794361537620"
+  ],
+  "errors": [],
+  "sample_count": 6,
+  "first_sample": "V141_ACK_SAMPLE addr=0x3C i=0 dir=0x0 idr=0x2C t_ms=1794361523613",
+  "last_sample": "V141_ACK_SAMPLE addr=0x3D i=2 dir=0x0 idr=0x2C t_ms=1794361535874",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "A0D7437A5D63184EB6497439316C0C41DA2E0CC441A65D8E795C9845734111CD",
+    "openocd.combined.log": "B28B08AAB7C7D7E7EAA344B9039FF853149D3C93DC7120FE364B988E9CF35450"
+  },
+  "finished": "2026-11-11T09:45:37.802150+08:00"
+}

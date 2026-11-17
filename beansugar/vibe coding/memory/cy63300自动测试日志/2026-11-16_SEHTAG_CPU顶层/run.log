@@ -1,0 +1,4 @@
+VCD info: dumpfile top_decision.vcd opened for output.
+PASS settled allow reaches CPU bus and model accepts one write
+PASS settled deny suppresses CPU bus request and write; model unchanged; mcause=0x5
+top_decision_tb.sv:67: $finish called at 56000 (1ps)

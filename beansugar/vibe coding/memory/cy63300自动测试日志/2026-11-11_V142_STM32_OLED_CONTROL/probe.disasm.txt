@@ -1,0 +1,412 @@
+
+========================================================================
+
+** ELF Header Information
+
+    File Name: probe.axf
+
+    Machine class: ELFCLASS32 (32-bit)
+    Data encoding: ELFDATA2LSB (Little endian)
+    Header version: EV_CURRENT (Current version)
+    Operating System ABI: none
+    ABI Version: 0
+    File Type: ET_EXEC (Executable) (2)
+    Machine: EM_ARM (ARM)
+
+    Image Entry point: 0x2000325d
+    Flags: EF_ARM_HASENTRY + EF_ARM_ABI_FLOAT_SOFT (0x05000202)
+
+    ARM ELF revision: 5 (ABI version 2)
+
+    Conforms to Soft float procedure-call standard
+
+    Built with
+    Component: ARM Compiler 6.7 Tool: armlink [5c9ef700]
+
+    Header size: 52 bytes (0x34)
+    Program header entry size: 32 bytes (0x20)
+    Section header entry size: 40 bytes (0x28)
+
+    Program header entries: 1
+    Section header entries: 7
+
+    Program header offset: 1512 (0x000005e8)
+    Section header offset: 1544 (0x00000608)
+
+    Section header string table index: 6
+
+========================================================================
+
+** Program header #0 (PT_LOAD) [PF_X + PF_R + PF_ARM_ENTRY]
+    Size : 832 bytes
+    Virtual address: 0x20003000 (Alignment 4)
+
+
+========================================================================
+
+** Section #1 'ER_RO' (SHT_PROGBITS) [SHF_ALLOC + SHF_EXECINSTR]
+    Size   : 832 bytes (alignment 4)
+    Address: 0x20003000
+
+    $t.2
+    probe_address
+        0x20003000:    e92d47f0    -..G    PUSH     {r4-r10,lr}
+        0x20003004:    f6404210    @..B    MOVW     r2,#0xc10
+        0x20003008:    6001        .`      STR      r1,[r0,#0]
+        0x2000300a:    2703        .'      MOVS     r7,#3
+        0x2000300c:    f2c40201    ....    MOVT     r2,#0x4001
+        0x20003010:    f8523c08    R..<    LDR      r3,[r2,#-8]
+        0x20003014:    f4037340    ..@s    AND      r3,r3,#0x300
+        0x20003018:    6043        C`      STR      r3,[r0,#4]
+        0x2000301a:    2300        .#      MOVS     r3,#0
+        0x2000301c:    6083        .`      STR      r3,[r0,#8]
+        0x2000301e:    60c3        .`      STR      r3,[r0,#0xc]
+        0x20003020:    6103        .a      STR      r3,[r0,#0x10]
+        0x20003022:    6143        Ca      STR      r3,[r0,#0x14]
+        0x20003024:    6187        .a      STR      r7,[r0,#0x18]
+        0x20003026:    61c3        .a      STR      r3,[r0,#0x1c]
+        0x20003028:    6843        Ch      LDR      r3,[r0,#4]
+        0x2000302a:    f5b37f40    ..@.    CMP      r3,#0x300
+        0x2000302e:    bf18        ..      IT       NE
+        0x20003030:    e8bd87f0    ....    POPNE    {r4-r10,pc}
+        0x20003034:    f2410304    A...    MOV      r3,#0x1004
+        0x20003038:    f04f7700    O..w    MOV      r7,#0x2000000
+        0x2000303c:    f2ce0300    ....    MOVT     r3,#0xe000
+        0x20003040:    f8d3c000    ....    LDR      r12,[r3,#0]
+        0x20003044:    6017        .`      STR      r7,[r2,#0]
+        0x20003046:    681f        .h      LDR      r7,[r3,#0]
+        0x20003048:    681e        .h      LDR      r6,[r3,#0]
+        0x2000304a:    1bf6        ..      SUBS     r6,r6,r7
+        0x2000304c:    0936        6.      LSRS     r6,r6,#4
+        0x2000304e:    2e2c        ,.      CMP      r6,#0x2c
+        0x20003050:    d806        ..      BHI      0x20003060 ; probe_address + 96
+        0x20003052:    bf00        ..      NOP      
+        0x20003054:    bf00        ..      NOP      
+        0x20003056:    681e        .h      LDR      r6,[r3,#0]
+        0x20003058:    1bf6        ..      SUBS     r6,r6,r7
+        0x2000305a:    f5b67f34    ..4.    CMP      r6,#0x2d0
+        0x2000305e:    d3f9        ..      BCC      0x20003054 ; probe_address + 84
+        0x20003060:    ea4f0e41    O.A.    LSL      lr,r1,#1
+        0x20003064:    f641113f    A.?.    MOV      r1,#0x193f
+        0x20003068:    f04f7980    O..y    MOV      r9,#0x1000000
+        0x2000306c:    2580        .%      MOVS     r5,#0x80
+        0x2000306e:    f44f7a80    O..z    MOV      r10,#0x100
+        0x20003072:    f04f0800    O...    MOV      r8,#0
+        0x20003076:    f2c00101    ....    MOVT     r1,#1
+        0x2000307a:    f8c29000    ....    STR      r9,[r2,#0]
+        0x2000307e:    ea150f0e    ....    TST      r5,lr
+        0x20003082:    f04f7400    O..t    MOV      r4,#0x2000000
+        0x20003086:    bf18        ..      IT       NE
+        0x20003088:    f44f7400    O..t    MOVNE    r4,#0x200
+        0x2000308c:    6014        .`      STR      r4,[r2,#0]
+        0x2000308e:    681f        .h      LDR      r7,[r3,#0]
+        0x20003090:    681c        .h      LDR      r4,[r3,#0]
+        0x20003092:    1be4        ..      SUBS     r4,r4,r7
+        0x20003094:    0924        $.      LSRS     r4,r4,#4
+        0x20003096:    2c2c        ,,      CMP      r4,#0x2c
+        0x20003098:    d806        ..      BHI      0x200030a8 ; probe_address + 168
+        0x2000309a:    bf00        ..      NOP      
+        0x2000309c:    bf00        ..      NOP      
+        0x2000309e:    681c        .h      LDR      r4,[r3,#0]
+        0x200030a0:    1be4        ..      SUBS     r4,r4,r7
+        0x200030a2:    f5b47f34    ..4.    CMP      r4,#0x2d0
+        0x200030a6:    d3f9        ..      BCC      0x2000309c ; probe_address + 156
+        0x200030a8:    f8c2a000    ....    STR      r10,[r2,#0]
+        0x200030ac:    681c        .h      LDR      r4,[r3,#0]
+        0x200030ae:    bf00        ..      NOP      
+        0x200030b0:    f8526c08    R..l    LDR      r6,[r2,#-8]
+        0x200030b4:    681f        .h      LDR      r7,[r3,#0]
+        0x200030b6:    f4167f80    ....    TST      r6,#0x100
+        0x200030ba:    d103        ..      BNE      0x200030c4 ; probe_address + 196
+        0x200030bc:    1b3e        >.      SUBS     r6,r7,r4
+        0x200030be:    428e        .B      CMP      r6,r1
+        0x200030c0:    d9f6        ..      BLS      0x200030b0 ; probe_address + 176
+        0x200030c2:    e098        ..      B        0x200031f6 ; probe_address + 502
+        0x200030c4:    681c        .h      LDR      r4,[r3,#0]
+        0x200030c6:    1be4        ..      SUBS     r4,r4,r7
+        0x200030c8:    0924        $.      LSRS     r4,r4,#4
+        0x200030ca:    2c2c        ,,      CMP      r4,#0x2c
+        0x200030cc:    d806        ..      BHI      0x200030dc ; probe_address + 220
+        0x200030ce:    bf00        ..      NOP      
+        0x200030d0:    bf00        ..      NOP      
+        0x200030d2:    681c        .h      LDR      r4,[r3,#0]
+        0x200030d4:    1be4        ..      SUBS     r4,r4,r7
+        0x200030d6:    f5b47f34    ..4.    CMP      r4,#0x2d0
+        0x200030da:    d3f9        ..      BCC      0x200030d0 ; probe_address + 208
+        0x200030dc:    086c        l.      LSRS     r4,r5,#1
+        0x200030de:    ebb80f55    ..U.    CMP      r8,r5,LSR #1
+        0x200030e2:    f8c29000    ....    STR      r9,[r2,#0]
+        0x200030e6:    4625        %F      MOV      r5,r4
+        0x200030e8:    d1c9        ..      BNE      0x2000307e ; probe_address + 126
+        0x200030ea:    f44f7700    O..w    MOV      r7,#0x200
+        0x200030ee:    6017        .`      STR      r7,[r2,#0]
+        0x200030f0:    681f        .h      LDR      r7,[r3,#0]
+        0x200030f2:    681e        .h      LDR      r6,[r3,#0]
+        0x200030f4:    1bf6        ..      SUBS     r6,r6,r7
+        0x200030f6:    0936        6.      LSRS     r6,r6,#4
+        0x200030f8:    2e2c        ,.      CMP      r6,#0x2c
+        0x200030fa:    d805        ..      BHI      0x20003108 ; probe_address + 264
+        0x200030fc:    bf00        ..      NOP      
+        0x200030fe:    681e        .h      LDR      r6,[r3,#0]
+        0x20003100:    1bf6        ..      SUBS     r6,r6,r7
+        0x20003102:    f5b67f34    ..4.    CMP      r6,#0x2d0
+        0x20003106:    d3f9        ..      BCC      0x200030fc ; probe_address + 252
+        0x20003108:    f44f7780    O..w    MOV      r7,#0x100
+        0x2000310c:    6017        .`      STR      r7,[r2,#0]
+        0x2000310e:    681e        .h      LDR      r6,[r3,#0]
+        0x20003110:    f8525c08    R..\    LDR      r5,[r2,#-8]
+        0x20003114:    681f        .h      LDR      r7,[r3,#0]
+        0x20003116:    f4157f80    ....    TST      r5,#0x100
+        0x2000311a:    d103        ..      BNE      0x20003124 ; probe_address + 292
+        0x2000311c:    1bbf        ..      SUBS     r7,r7,r6
+        0x2000311e:    428f        .B      CMP      r7,r1
+        0x20003120:    d9f6        ..      BLS      0x20003110 ; probe_address + 272
+        0x20003122:    e068        h.      B        0x200031f6 ; probe_address + 502
+        0x20003124:    681e        .h      LDR      r6,[r3,#0]
+        0x20003126:    1bf6        ..      SUBS     r6,r6,r7
+        0x20003128:    2eef        ..      CMP      r6,#0xef
+        0x2000312a:    d804        ..      BHI      0x20003136 ; probe_address + 310
+        0x2000312c:    bf00        ..      NOP      
+        0x2000312e:    681e        .h      LDR      r6,[r3,#0]
+        0x20003130:    1bf6        ..      SUBS     r6,r6,r7
+        0x20003132:    2ef0        ..      CMP      r6,#0xf0
+        0x20003134:    d3fa        ..      BCC      0x2000312c ; probe_address + 300
+        0x20003136:    f8527c08    R..|    LDR      r7,[r2,#-8]
+        0x2000313a:    f4077640    ..@v    AND      r6,r7,#0x300
+        0x2000313e:    6086        .`      STR      r6,[r0,#8]
+        0x20003140:    681d        .h      LDR      r5,[r3,#0]
+        0x20003142:    681e        .h      LDR      r6,[r3,#0]
+        0x20003144:    1b74        t.      SUBS     r4,r6,r5
+        0x20003146:    f3c72600    ...&    UBFX     r6,r7,#8,#1
+        0x2000314a:    f3c72e40    ..@.    UBFX     lr,r7,#9,#1
+        0x2000314e:    2cef        .,      CMP      r4,#0xef
+        0x20003150:    d805        ..      BHI      0x2000315e ; probe_address + 350
+        0x20003152:    bf00        ..      NOP      
+        0x20003154:    bf00        ..      NOP      
+        0x20003156:    681c        .h      LDR      r4,[r3,#0]
+        0x20003158:    1b64        d.      SUBS     r4,r4,r5
+        0x2000315a:    2cf0        .,      CMP      r4,#0xf0
+        0x2000315c:    d3fa        ..      BCC      0x20003154 ; probe_address + 340
+        0x2000315e:    f8524c08    R..L    LDR      r4,[r2,#-8]
+        0x20003162:    f4047540    ..@u    AND      r5,r4,#0x300
+        0x20003166:    60c5        .`      STR      r5,[r0,#0xc]
+        0x20003168:    f3c42500    ...%    UBFX     r5,r4,#8,#1
+        0x2000316c:    4435        5D      ADD      r5,r5,r6
+        0x2000316e:    f3c42640    ..@&    UBFX     r6,r4,#9,#1
+        0x20003172:    681c        .h      LDR      r4,[r3,#0]
+        0x20003174:    681f        .h      LDR      r7,[r3,#0]
+        0x20003176:    1b3f        ?.      SUBS     r7,r7,r4
+        0x20003178:    2fef        ./      CMP      r7,#0xef
+        0x2000317a:    d804        ..      BHI      0x20003186 ; probe_address + 390
+        0x2000317c:    bf00        ..      NOP      
+        0x2000317e:    681f        .h      LDR      r7,[r3,#0]
+        0x20003180:    1b3f        ?.      SUBS     r7,r7,r4
+        0x20003182:    2ff0        ./      CMP      r7,#0xf0
+        0x20003184:    d3fa        ..      BCC      0x2000317c ; probe_address + 380
+        0x20003186:    f8527c08    R..|    LDR      r7,[r2,#-8]
+        0x2000318a:    f4077440    ..@t    AND      r4,r7,#0x300
+        0x2000318e:    6104        .a      STR      r4,[r0,#0x10]
+        0x20003190:    f3c72440    ..@$    UBFX     r4,r7,#9,#1
+        0x20003194:    f3c72700    ...'    UBFX     r7,r7,#8,#1
+        0x20003198:    443d        =D      ADD      r5,r5,r7
+        0x2000319a:    2d03        .-      CMP      r5,#3
+        0x2000319c:    d108        ..      BNE      0x200031b0 ; probe_address + 432
+        0x2000319e:    eb06070e    ....    ADD      r7,r6,lr
+        0x200031a2:    19e6        ..      ADDS     r6,r4,r7
+        0x200031a4:    d006        ..      BEQ      0x200031b4 ; probe_address + 436
+        0x200031a6:    2705        .'      MOVS     r7,#5
+        0x200031a8:    2e03        ..      CMP      r6,#3
+        0x200031aa:    bf08        ..      IT       EQ
+        0x200031ac:    2702        .'      MOVEQ    r7,#2
+        0x200031ae:    e002        ..      B        0x200031b6 ; probe_address + 438
+        0x200031b0:    2704        .'      MOVS     r7,#4
+        0x200031b2:    e000        ..      B        0x200031b6 ; probe_address + 438
+        0x200031b4:    2701        .'      MOVS     r7,#1
+        0x200031b6:    6187        .a      STR      r7,[r0,#0x18]
+        0x200031b8:    f04f7780    O..w    MOV      r7,#0x1000000
+        0x200031bc:    6017        .`      STR      r7,[r2,#0]
+        0x200031be:    f04f7700    O..w    MOV      r7,#0x2000000
+        0x200031c2:    6017        .`      STR      r7,[r2,#0]
+        0x200031c4:    681f        .h      LDR      r7,[r3,#0]
+        0x200031c6:    681e        .h      LDR      r6,[r3,#0]
+        0x200031c8:    1bf6        ..      SUBS     r6,r6,r7
+        0x200031ca:    0936        6.      LSRS     r6,r6,#4
+        0x200031cc:    2e2c        ,.      CMP      r6,#0x2c
+        0x200031ce:    d805        ..      BHI      0x200031dc ; probe_address + 476
+        0x200031d0:    bf00        ..      NOP      
+        0x200031d2:    681e        .h      LDR      r6,[r3,#0]
+        0x200031d4:    1bf6        ..      SUBS     r6,r6,r7
+        0x200031d6:    f5b67f34    ..4.    CMP      r6,#0x2d0
+        0x200031da:    d3f9        ..      BCC      0x200031d0 ; probe_address + 464
+        0x200031dc:    f44f7780    O..w    MOV      r7,#0x100
+        0x200031e0:    6017        .`      STR      r7,[r2,#0]
+        0x200031e2:    681e        .h      LDR      r6,[r3,#0]
+        0x200031e4:    f8525c08    R..\    LDR      r5,[r2,#-8]
+        0x200031e8:    681f        .h      LDR      r7,[r3,#0]
+        0x200031ea:    f4157f80    ....    TST      r5,#0x100
+        0x200031ee:    d109        ..      BNE      0x20003204 ; probe_address + 516
+        0x200031f0:    1bbf        ..      SUBS     r7,r7,r6
+        0x200031f2:    428f        .B      CMP      r7,r1
+        0x200031f4:    d9f6        ..      BLS      0x200031e4 ; probe_address + 484
+        0x200031f6:    f44f7140    O.@q    MOV      r1,#0x300
+        0x200031fa:    6011        .`      STR      r1,[r2,#0]
+        0x200031fc:    2104        .!      MOVS     r1,#4
+        0x200031fe:    6181        .a      STR      r1,[r0,#0x18]
+        0x20003200:    e8bd87f0    ....    POP      {r4-r10,pc}
+        0x20003204:    6819        .h      LDR      r1,[r3,#0]
+        0x20003206:    1bc9        ..      SUBS     r1,r1,r7
+        0x20003208:    0909        ..      LSRS     r1,r1,#4
+        0x2000320a:    292c        ,)      CMP      r1,#0x2c
+        0x2000320c:    d805        ..      BHI      0x2000321a ; probe_address + 538
+        0x2000320e:    bf00        ..      NOP      
+        0x20003210:    6819        .h      LDR      r1,[r3,#0]
+        0x20003212:    1bc9        ..      SUBS     r1,r1,r7
+        0x20003214:    f5b17f34    ..4.    CMP      r1,#0x2d0
+        0x20003218:    d3f9        ..      BCC      0x2000320e ; probe_address + 526
+        0x2000321a:    f44f7100    O..q    MOV      r1,#0x200
+        0x2000321e:    6011        .`      STR      r1,[r2,#0]
+        0x20003220:    6819        .h      LDR      r1,[r3,#0]
+        0x20003222:    681f        .h      LDR      r7,[r3,#0]
+        0x20003224:    1a7f        ..      SUBS     r7,r7,r1
+        0x20003226:    093f        ?.      LSRS     r7,r7,#4
+        0x20003228:    2f2c        ,/      CMP      r7,#0x2c
+        0x2000322a:    d805        ..      BHI      0x20003238 ; probe_address + 568
+        0x2000322c:    bf00        ..      NOP      
+        0x2000322e:    681f        .h      LDR      r7,[r3,#0]
+        0x20003230:    1a7f        ..      SUBS     r7,r7,r1
+        0x20003232:    f5b77f34    ..4.    CMP      r7,#0x2d0
+        0x20003236:    d3f9        ..      BCC      0x2000322c ; probe_address + 556
+        0x20003238:    f8521c08    R...    LDR      r1,[r2,#-8]
+        0x2000323c:    f4017140    ..@q    AND      r1,r1,#0x300
+        0x20003240:    6141        Aa      STR      r1,[r0,#0x14]
+        0x20003242:    6819        .h      LDR      r1,[r3,#0]
+        0x20003244:    eba1010c    ....    SUB      r1,r1,r12
+        0x20003248:    61c1        .a      STR      r1,[r0,#0x1c]
+        0x2000324a:    6941        Ai      LDR      r1,[r0,#0x14]
+        0x2000324c:    f5b17f40    ..@.    CMP      r1,#0x300
+        0x20003250:    bf1c        ..      ITT      NE
+        0x20003252:    2106        .!      MOVNE    r1,#6
+        0x20003254:    6181        .a      STRNE    r1,[r0,#0x18]
+        0x20003256:    e8bd87f0    ....    POP      {r4-r10,pc}
+        0x2000325a:    0000        ..      MOVS     r0,r0
+    probe_main
+        0x2000325c:    b510        ..      PUSH     {r4,lr}
+        0x2000325e:    f2442400    D..$    MOVW     r4,#0x4200
+        0x20003262:    f6404104    @..A    MOV      r1,#0xc04
+        0x20003266:    2200        ."      MOVS     r2,#0
+        0x20003268:    2001        .       MOVS     r0,#1
+        0x2000326a:    f2c20400    ....    MOVT     r4,#0x2000
+        0x2000326e:    f2c40101    ....    MOVT     r1,#0x4001
+        0x20003272:    6022        "`      STR      r2,[r4,#0]
+        0x20003274:    6060        ``      STR      r0,[r4,#4]
+        0x20003276:    f44f3082    O..0    MOV      r0,#0x10400
+        0x2000327a:    5808        .X      LDR      r0,[r1,r0]
+        0x2000327c:    60a0        .`      STR      r0,[r4,#8]
+        0x2000327e:    f44f7034    O.4p    MOV      r0,#0x2d0
+        0x20003282:    60e0        .`      STR      r0,[r4,#0xc]
+        0x20003284:    f64e50fc    N..P    MOV      r0,#0xedfc
+        0x20003288:    f2ce0000    ....    MOVT     r0,#0xe000
+        0x2000328c:    6803        .h      LDR      r3,[r0,#0]
+        0x2000328e:    f0437380    C..s    ORR      r3,r3,#0x1000000
+        0x20003292:    6003        .`      STR      r3,[r0,#0]
+        0x20003294:    f2410004    A...    MOV      r0,#0x1004
+        0x20003298:    f2ce0000    ....    MOVT     r0,#0xe000
+        0x2000329c:    6002        .`      STR      r2,[r0,#0]
+        0x2000329e:    f8502c04    P..,    LDR      r2,[r0,#-4]
+        0x200032a2:    f0420201    B...    ORR      r2,r2,#1
+        0x200032a6:    f8402c04    @..,    STR      r2,[r0,#-4]
+        0x200032aa:    bf00        ..      NOP      
+        0x200032ac:    bf00        ..      NOP      
+        0x200032ae:    bf00        ..      NOP      
+        0x200032b0:    bf00        ..      NOP      
+        0x200032b2:    bf00        ..      NOP      
+        0x200032b4:    bf00        ..      NOP      
+        0x200032b6:    bf00        ..      NOP      
+        0x200032b8:    bf00        ..      NOP      
+        0x200032ba:    bf00        ..      NOP      
+        0x200032bc:    bf00        ..      NOP      
+        0x200032be:    bf00        ..      NOP      
+        0x200032c0:    bf00        ..      NOP      
+        0x200032c2:    bf00        ..      NOP      
+        0x200032c4:    bf00        ..      NOP      
+        0x200032c6:    bf00        ..      NOP      
+        0x200032c8:    bf00        ..      NOP      
+        0x200032ca:    6802        .h      LDR      r2,[r0,#0]
+        0x200032cc:    b36a        j.      CBZ      r2,0x2000332a ; probe_main + 206
+        0x200032ce:    f2410218    A...    MOV      r2,#0x1018
+        0x200032d2:    f2c40202    ....    MOVT     r2,#0x4002
+        0x200032d6:    6813        .h      LDR      r3,[r2,#0]
+        0x200032d8:    f0430308    C...    ORR      r3,r3,#8
+        0x200032dc:    6013        .`      STR      r3,[r2,#0]
+        0x200032de:    2377        w#      MOVS     r3,#0x77
+        0x200032e0:    6812        .h      LDR      r2,[r2,#0]
+        0x200032e2:    f44f7240    O.@r    MOV      r2,#0x300
+        0x200032e6:    60ca        .`      STR      r2,[r1,#0xc]
+        0x200032e8:    680a        .h      LDR      r2,[r1,#0]
+        0x200032ea:    f3630207    c...    BFI      r2,r3,#0,#8
+        0x200032ee:    600a        .`      STR      r2,[r1,#0]
+        0x200032f0:    6801        .h      LDR      r1,[r0,#0]
+        0x200032f2:    6802        .h      LDR      r2,[r0,#0]
+        0x200032f4:    1a52        R.      SUBS     r2,r2,r1
+        0x200032f6:    0992        ..      LSRS     r2,r2,#6
+        0x200032f8:    2a2c        ,*      CMP      r2,#0x2c
+        0x200032fa:    d805        ..      BHI      0x20003308 ; probe_main + 172
+        0x200032fc:    bf00        ..      NOP      
+        0x200032fe:    6802        .h      LDR      r2,[r0,#0]
+        0x20003300:    1a52        R.      SUBS     r2,r2,r1
+        0x20003302:    f5b26f34    ..4o    CMP      r2,#0xb40
+        0x20003306:    d3f9        ..      BCC      0x200032fc ; probe_main + 160
+        0x20003308:    f1040010    ....    ADD      r0,r4,#0x10
+        0x2000330c:    213c        <!      MOVS     r1,#0x3c
+        0x2000330e:    f7fffe77    ..w.    BL       probe_address ; 0x20003000
+        0x20003312:    6a61        aj      LDR      r1,[r4,#0x24]
+        0x20003314:    2002        .       MOVS     r0,#2
+        0x20003316:    f5b17f40    ..@.    CMP      r1,#0x300
+        0x2000331a:    d105        ..      BNE      0x20003328 ; probe_main + 204
+        0x2000331c:    f1040030    ..0.    ADD      r0,r4,#0x30
+        0x20003320:    213d        =!      MOVS     r1,#0x3d
+        0x20003322:    f7fffe6d    ..m.    BL       probe_address ; 0x20003000
+        0x20003326:    2003        .       MOVS     r0,#3
+        0x20003328:    6060        ``      STR      r0,[r4,#4]
+        0x2000332a:    f2433003    C..0    MOV      r0,#0x3303
+        0x2000332e:    f3bf8f4f    ..O.    DSB      
+        0x20003332:    f2c14020    .. @    MOVT     r0,#0x1420
+        0x20003336:    6020         `      STR      r0,[r4,#0]
+        0x20003338:    f3bf8f4f    ..O.    DSB      
+        0x2000333c:    bf00        ..      NOP      
+        0x2000333e:    e7fd        ..      B        0x2000333c ; probe_main + 224
+
+** Section #2 '.symtab' (SHT_SYMTAB)
+    Size   : 96 bytes (alignment 4)
+    String table #3 '.strtab'
+    Last local symbol no. 3
+
+    Symbol table .symtab (5 symbols, 3 local)
+
+      #  Symbol Name                Value      Bind  Sec  Type  Vis  Size
+    ========================================================================
+
+      1  $t.2                       0x20003000   Lc    1   --   De 
+      2  .\probe.c                  0x00000000   Lc  Abs  File  De 
+      3  probe_address              0x20003001   Lc    1  Code  De   0x25a
+      4  BuildAttributes$$THM_ISAv4$P$D$K$B$S$PE$A:L22UL41UL21$X:L11$S22US41US21$IEEE1$IW$USESV6$~STKCKD$USESV7$WCHAR32$ENUMINT$~SHL$OTIME$EBA8$STANDARDLIB$REQ8$PRES8$EABIv2
+                                    0x00000000   Gb  Abs   --   Hi 
+      5  probe_main                 0x2000325d   Gb    1  Code  Hi   0xe4
+
+
+** Section #3 '.strtab' (SHT_STRTAB)
+    Size   : 208 bytes
+
+
+** Section #4 '.note' (SHT_NOTE)
+    Size   : 20 bytes (alignment 4)
+
+
+** Section #5 '.comment' (SHT_PROGBITS)
+    Size   : 244 bytes
+
+
+** Section #6 '.shstrtab' (SHT_STRTAB)
+    Size   : 60 bytes
+
+

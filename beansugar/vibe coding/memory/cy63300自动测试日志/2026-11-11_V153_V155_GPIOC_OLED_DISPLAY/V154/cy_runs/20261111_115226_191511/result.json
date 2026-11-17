@@ -1,0 +1,29 @@
+{
+  "stage": "BBX_V154_GPIOC_OLED_DISPLAY_ON_20261111_01",
+  "status": "DISPLAY_ON_ALL_ACK",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 162,
+  "frames": [
+    "V154_BYTE_RESULT index=0 byte=0x78 result=ACK",
+    "V154_BYTE_RESULT index=1 byte=0x00 result=ACK",
+    "V154_BYTE_RESULT index=2 byte=0xA6 result=ACK",
+    "V154_BYTE_RESULT index=3 byte=0x8D result=ACK",
+    "V154_BYTE_RESULT index=4 byte=0x14 result=ACK",
+    "V154_BYTE_RESULT index=5 byte=0xA5 result=ACK",
+    "V154_BYTE_RESULT index=6 byte=0xAF result=ACK"
+  ],
+  "errors": [],
+  "sample_count": 21,
+  "first_sample": "V154_ACK_SAMPLE byte=0x78 index=0 i=0 dir=0x0 idr=0x1 t_ms=1794369157327",
+  "last_sample": "V154_ACK_SAMPLE byte=0xAF index=6 i=2 dir=0x0 idr=0x1 t_ms=1794369214261",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "D9D37AA4B57D9F73DCB15310618F6214062C4BD3DFB76373732782784AA7B091",
+    "openocd.combined.log": "E1EAC087A91AD14B6995C13248C2BF2FB614EE870B08DA0113268118884B06C5"
+  },
+  "finished": "2026-11-11T11:53:36.308432+08:00"
+}

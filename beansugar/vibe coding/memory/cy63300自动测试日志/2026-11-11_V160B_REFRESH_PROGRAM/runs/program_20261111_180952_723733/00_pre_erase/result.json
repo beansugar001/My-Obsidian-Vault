@@ -1,0 +1,10 @@
+{
+  "phase": "snapshot",
+  "valid": true,
+  "rc": 0,
+  "errors": [],
+  "erase_triggers": [],
+  "programming": [],
+  "sha256_log": "D4E8AEC753B9E7E39966FCC879E2F6363AB83E15ABA819489518D2F97234A9A6",
+  "sha256_dump": "B5DFAD5E728FB320DC5497CE69CB563C20DBAD588364E5D75BC093DF8175F9CB"
+}

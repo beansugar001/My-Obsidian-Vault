@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V140_COLD_PAD1_AF6_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V140_COLD_PAD1\\runs\\20261111_093818_053129",
+  "started": "2026-11-11T09:38:18.053129+08:00",
+  "max_init_writes": 17,
+  "max_fifo_writes": 1,
+  "max_conditional_stop": 1,
+  "max_halt": 1,
+  "tcl_sha256": "6FA0D0CDA85FCB84BEBCD27D4CF7ED3E926461ADA7101F5C1D8858D2BC671FA5"
+}

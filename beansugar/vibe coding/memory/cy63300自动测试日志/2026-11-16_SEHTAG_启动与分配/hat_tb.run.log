@@ -1,0 +1,3 @@
+VCD info: dumpfile hat.vcd opened for output.
+PASS standalone HAT: 32 bytes allocated at 20000000
+hat_tb.sv:28: $finish called at 2856000 (1ps)

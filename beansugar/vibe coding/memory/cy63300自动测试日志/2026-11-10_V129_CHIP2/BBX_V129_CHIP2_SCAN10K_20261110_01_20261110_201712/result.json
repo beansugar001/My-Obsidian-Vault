@@ -1,0 +1,8 @@
+{
+  "stage": "BBX_V129_CHIP2_SCAN10K_20261110_01",
+  "chip": "chip2",
+  "exit_code": 0,
+  "status": "SCAN_FAILED",
+  "target_writes": 0,
+  "sha256": "1B04FABFACF6BD4AAF15F4FED7EA5999333B1E6131D4750D1983E2BC3AEFF771"
+}

@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V137_ARM_DRIVE_HIGH_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FIFO_STILL_QUEUED_AFTER_DRIVE_HIGH",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "86F014C4576BB8DA88C18C584811F17A5CF61715AA73D6607DD047F65A1D6031",
+    "openocd.combined.log": "8DFB9CED842ABC43BD5ACCDDAF50F4D1414710FCD98F3DDAB82D86F34BECB949"
+  },
+  "finished_local": "2026-11-10T20:47:58.335065+08:00"
+}

@@ -1,0 +1,64 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	2000f437          	lui	s0,0x2000f
+   4:	574164b7          	lui	s1,0x57416
+   8:	02042223          	sw	zero,36(s0) # 2000f024 <__global_pointer$+0x2000d760>
+   c:	00942023          	sw	s1,0(s0)
+  10:	00942423          	sw	s1,8(s0)
+  14:	00d48913          	addi	s2,s1,13 # 5741600d <__global_pointer$+0x57414749>
+  18:	00000013          	nop
+  1c:	01242223          	sw	s2,4(s0)
+  20:	00942623          	sw	s1,12(s0)
+  24:	01d48493          	addi	s1,s1,29
+  28:	00000013          	nop
+  2c:	00000013          	nop
+  30:	00942823          	sw	s1,16(s0)
+  34:	135799b7          	lui	s3,0x13579
+  38:	2468aa37          	lui	s4,0x2468a
+  3c:	00000013          	nop
+  40:	01498663          	beq	s3,s4,4c <equal_wrong>
+  44:	11111ab7          	lui	s5,0x11111
+  48:	0080006f          	j	50 <store_equal>
+
+0000004c <equal_wrong>:
+  4c:	eeee1ab7          	lui	s5,0xeeee1
+
+00000050 <store_equal>:
+  50:	00000013          	nop
+  54:	01542a23          	sw	s5,20(s0)
+  58:	01499663          	bne	s3,s4,64 <unequal_ok>
+  5c:	eeee2b37          	lui	s6,0xeeee2
+  60:	0080006f          	j	68 <store_unequal>
+
+00000064 <unequal_ok>:
+  64:	22222b37          	lui	s6,0x22222
+
+00000068 <store_unequal>:
+  68:	00000013          	nop
+  6c:	01642c23          	sw	s6,24(s0)
+  70:	0200006f          	j	90 <matched_sequence>
+	...
+
+00000090 <matched_sequence>:
+  90:	015a9663          	bne	s5,s5,9c <store_matched>
+  94:	57416337          	lui	t1,0x57416
+  98:	00d30313          	addi	t1,t1,13 # 5741600d <__global_pointer$+0x57414749>
+
+0000009c <store_matched>:
+  9c:	00000013          	nop
+  a0:	00000013          	nop
+  a4:	00642e23          	sw	t1,28(s0)
+  a8:	2d5a72b7          	lui	t0,0x2d5a7
+  ac:	00000013          	nop
+  b0:	02542023          	sw	t0,32(s0)
+  b4:	534572b7          	lui	t0,0x53457
+  b8:	00000013          	nop
+  bc:	02542223          	sw	t0,36(s0)
+
+000000c0 <done>:
+  c0:	0000006f          	j	c0 <done>

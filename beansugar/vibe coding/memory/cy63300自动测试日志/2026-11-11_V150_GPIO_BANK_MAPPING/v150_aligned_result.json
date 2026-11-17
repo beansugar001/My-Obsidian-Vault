@@ -1,0 +1,182 @@
+{
+  "samples": 279,
+  "config": {
+    "START": {
+      "A": {
+        "DIR": "0x0",
+        "PUPD": "0x0",
+        "AFR1": "0x0",
+        "AFR2": "0x0"
+      },
+      "B": {
+        "DIR": "0x0",
+        "PUPD": "0x300",
+        "AFR1": "0x0",
+        "AFR2": "0x0"
+      },
+      "C": {
+        "DIR": "0x0",
+        "PUPD": "0x0",
+        "AFR1": "0x0",
+        "AFR2": "0x0"
+      }
+    },
+    "END": {
+      "A": {
+        "DIR": "0x0",
+        "PUPD": "0x0",
+        "AFR1": "0x0",
+        "AFR2": "0x0"
+      },
+      "B": {
+        "DIR": "0x0",
+        "PUPD": "0x300",
+        "AFR1": "0x0",
+        "AFR2": "0x0"
+      },
+      "C": {
+        "DIR": "0x0",
+        "PUPD": "0x0",
+        "AFR1": "0x0",
+        "AFR2": "0x0"
+      }
+    }
+  },
+  "phases": [
+    {
+      "phase": "idle",
+      "stm32_pins": [
+        "0x300",
+        "0x300"
+      ],
+      "banks": {
+        "A": {
+          "count": 9,
+          "idr": [
+            "0x0"
+          ]
+        },
+        "B": {
+          "count": 8,
+          "idr": [
+            "0x2c"
+          ]
+        },
+        "C": {
+          "count": 9,
+          "idr": [
+            "0x3"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "scl_low",
+      "stm32_pins": [
+        "0x200",
+        "0x200"
+      ],
+      "banks": {
+        "A": {
+          "count": 26,
+          "idr": [
+            "0x0"
+          ]
+        },
+        "B": {
+          "count": 25,
+          "idr": [
+            "0x2c"
+          ]
+        },
+        "C": {
+          "count": 26,
+          "idr": [
+            "0x2"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "released",
+      "stm32_pins": [
+        "0x300",
+        "0x300"
+      ],
+      "banks": {
+        "A": {
+          "count": 9,
+          "idr": [
+            "0x0"
+          ]
+        },
+        "B": {
+          "count": 10,
+          "idr": [
+            "0x2c"
+          ]
+        },
+        "C": {
+          "count": 10,
+          "idr": [
+            "0x3"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "sda_low",
+      "stm32_pins": [
+        "0x100",
+        "0x100"
+      ],
+      "banks": {
+        "A": {
+          "count": 26,
+          "idr": [
+            "0x0"
+          ]
+        },
+        "B": {
+          "count": 27,
+          "idr": [
+            "0x2c"
+          ]
+        },
+        "C": {
+          "count": 25,
+          "idr": [
+            "0x1"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "final_idle",
+      "stm32_pins": [
+        "0x300",
+        "0x300"
+      ],
+      "banks": {
+        "A": {
+          "count": 10,
+          "idr": [
+            "0x0"
+          ]
+        },
+        "B": {
+          "count": 10,
+          "idr": [
+            "0x2c"
+          ]
+        },
+        "C": {
+          "count": 9,
+          "idr": [
+            "0x3"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V156_H2_GPIOC_HARDWARE_I2C_20261111_01",
+  "started": "2026-11-11T15:00:33.498931+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V156_H2_HARDWARE_I2C/v156_h2_hardware_i2c.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V156_H2_HARDWARE_I2C\\v156_h2_hardware_i2c.tcl": "66BEE376D4F5B400BB592910066995A617EF1AEE1E9B712A894618698E8772BF",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V156_H2_HARDWARE_I2C\\run_cy63300.py": "4A06897769A63B2DE83CA187EDC7D58348F56AD7831283E042D3B83AB19BEA31"
+  }
+}

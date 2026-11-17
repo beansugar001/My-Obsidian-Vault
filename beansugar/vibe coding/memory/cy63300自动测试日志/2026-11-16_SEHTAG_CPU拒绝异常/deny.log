@@ -1,0 +1,3 @@
+VCD info: dumpfile deny.vcd opened for output.
+PASS deny: writes=0 reads=0 rejects=1 RAM=55667788 cause=00000005 handler=0x600
+guard_trap_tb.sv:64: $finish called at 3176000 (1ps)

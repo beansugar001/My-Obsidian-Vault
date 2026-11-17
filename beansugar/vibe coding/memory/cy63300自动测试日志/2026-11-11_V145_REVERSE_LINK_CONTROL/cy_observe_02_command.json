@@ -1,0 +1,12 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "set v145_phase observe",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V145_REVERSE_LINK_CONTROL/cy_gpio_read.tcl}"
+  ],
+  "cwd": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V145_REVERSE_LINK_CONTROL"
+}

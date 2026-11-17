@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V130_CHIP1_GPIO_INPUT_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "INPUT_PATH_SAMPLING_COMPLETE_REVIEW_VALUES",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "8E534209D9F03768CA399C865578787FE35F7BBD965CE7A58625385AEF4A18E7",
+    "openocd.combined.log": "9E126249818600285793EDB21EE7C3D5277C03F56B415667C83DA02CDB6507FC"
+  },
+  "finished_local": "2026-11-10T20:23:21.521898+08:00"
+}

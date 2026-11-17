@@ -1,0 +1,6 @@
+VCD info: dumpfile ex_policy.vcd opened for output.
+PASS valid load
+PASS rejected read disables request/register write and reports cause 0x5
+PASS rejected write suppresses request/write enable; model word unchanged
+PASS valid store updates model word
+ex_policy_tb.sv:76: $finish called at 16000 (1ps)

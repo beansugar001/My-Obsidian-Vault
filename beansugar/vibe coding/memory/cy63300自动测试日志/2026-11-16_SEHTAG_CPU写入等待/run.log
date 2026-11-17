@@ -1,0 +1,3 @@
+VCD info: dumpfile cpu_wait.vcd opened for output.
+PASS check_wait=3 downstream_wait=3 commits=1 reads=1 RAM=1234abcd mcause=00000000
+guarded_cpu_tb.sv:80: $finish called at 3196000 (1ps)

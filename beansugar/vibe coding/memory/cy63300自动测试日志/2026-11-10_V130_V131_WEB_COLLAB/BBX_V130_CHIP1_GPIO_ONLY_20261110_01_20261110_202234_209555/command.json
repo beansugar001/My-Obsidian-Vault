@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V130_CHIP1_GPIO_ONLY_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v130_gpio_clock_only.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T20:22:34.209555+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "85D00533D2D3A1E9F31BEB2D33BF36D19DE5166DE7AE90DCFA8EECA8266B862B",
+    "runner": "A6153FFF33A8E7123B188C3DEB9072F813427E208A75C17F1D8CE3A09845E914"
+  }
+}

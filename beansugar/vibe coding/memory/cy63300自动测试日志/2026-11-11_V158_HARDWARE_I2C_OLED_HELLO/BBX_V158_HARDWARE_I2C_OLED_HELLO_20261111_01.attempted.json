@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V158_HARDWARE_I2C_OLED_HELLO_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V158_HARDWARE_I2C_OLED_HELLO\\cy_runs\\20261111_152638_230328",
+  "started": "2026-11-11T15:26:38.230328+08:00",
+  "max_mctr_clear": 6,
+  "max_fifo_writes": 117,
+  "max_conditional_stop": 6,
+  "max_halt": 1,
+  "tcl_sha256": "67A64740FF9DC43478C71DAEB1FEA037056EBD2C8A60AFCDCCC143CD4DE3EE32"
+}

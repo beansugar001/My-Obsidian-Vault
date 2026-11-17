@@ -1,0 +1,12 @@
+{
+  "phase": "program",
+  "valid": true,
+  "rc": 0,
+  "errors": [],
+  "erase_triggers": [],
+  "programming": [
+    "V159B_PROGRAM_BEGIN address=0x0 bytes=2120"
+  ],
+  "sha256_log": "A1A16B65DECE1426AD384C243731E31A7E444DB23F96A18CB2E78C1F66BA604B",
+  "sha256_dump": "A24DA9A83E19366AF803FE4640533895C3344D87370B221F093919EE8FC2E60A"
+}

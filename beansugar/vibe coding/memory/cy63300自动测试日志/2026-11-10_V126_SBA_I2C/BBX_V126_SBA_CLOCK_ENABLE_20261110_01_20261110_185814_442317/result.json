@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V126_SBA_CLOCK_ENABLE_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_CLOCKS_ENABLED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "6159E7BE477D2E1FF10AF0EE386052A667E8AE73BDCD24180F4539FAAF6F09B1",
+    "openocd.combined.log": "250B282247F845909829728462ACC53F84D7D2DCE8824B67312C1CA525BA7987"
+  },
+  "finished_local": "2026-11-10T18:58:16.783110+08:00"
+}

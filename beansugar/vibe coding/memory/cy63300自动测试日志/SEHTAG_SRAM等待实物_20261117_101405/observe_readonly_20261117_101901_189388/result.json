@@ -1,0 +1,98 @@
+{
+  "samples": [
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x57410001",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x5741FA11",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x5741FA11",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x5741FA11",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x5741FA11",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x5741FA11",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x5741FA11",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    },
+    {
+      "magic": "0x57414931",
+      "first": "0x00000000",
+      "compare": "0x53454152",
+      "exit": "0x00000000",
+      "stage": "0x57410001",
+      "token": "0x00000000",
+      "route": "0x00000002",
+      "xor": "0x53454152"
+    }
+  ],
+  "all_same": false,
+  "startup_matches_candidate": true,
+  "sha256": {
+    "mailbox_00.bin": "A64C6E13BC8D04FAB7AC678B3F29B27F831FB139E1CE689C6B6A255D3429F32A",
+    "mailbox_01.bin": "06F6CF76FB517522AD548AF9D55BF1D37F587BD30A23378C873E7903D09E4376",
+    "mailbox_02.bin": "06F6CF76FB517522AD548AF9D55BF1D37F587BD30A23378C873E7903D09E4376",
+    "mailbox_03.bin": "06F6CF76FB517522AD548AF9D55BF1D37F587BD30A23378C873E7903D09E4376",
+    "mailbox_04.bin": "06F6CF76FB517522AD548AF9D55BF1D37F587BD30A23378C873E7903D09E4376",
+    "mailbox_05.bin": "06F6CF76FB517522AD548AF9D55BF1D37F587BD30A23378C873E7903D09E4376",
+    "mailbox_06.bin": "06F6CF76FB517522AD548AF9D55BF1D37F587BD30A23378C873E7903D09E4376",
+    "mailbox_07.bin": "A64C6E13BC8D04FAB7AC678B3F29B27F831FB139E1CE689C6B6A255D3429F32A",
+    "startup.bin": "52BC806F7FCF73D13F829349A10C3649EC686710E1B40C3219253E2964E80E14",
+    "openocd.log": "CE6935F4A6D82201029649BFAD55B1A5A2BF89B7A4333D6F7737354A80A552FE"
+  }
+}

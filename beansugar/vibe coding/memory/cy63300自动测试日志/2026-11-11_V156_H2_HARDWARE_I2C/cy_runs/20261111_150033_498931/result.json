@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V156_H2_GPIOC_HARDWARE_I2C_20261111_01",
+  "status": "TX_DRAINED_STOP_IDLE",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 15,
+  "tx_fifo_attempts": 1,
+  "stop_attempts": 1,
+  "errors": [],
+  "sample_count": 2,
+  "first_sample": "V156_SAMPLE TX i=0 t_ms=1794380444334 fifo=0x00000005 sta=0x00000003 raw=0x00000000",
+  "last_sample": "V156_SAMPLE STOP i=0 t_ms=1794380444928 fifo=0x00000005 sta=0x00000000 raw=0x00000000",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "BEBE7FCAC3E923F14DD27FBCEF1C555511DA842D26D11BFEEB85306833CA76F7",
+    "openocd.combined.log": "4092993068946D9AB7E09D903590DD0A8839753195B8FB60F470D3379598B543"
+  },
+  "finished": "2026-11-11T15:00:44.995933+08:00"
+}

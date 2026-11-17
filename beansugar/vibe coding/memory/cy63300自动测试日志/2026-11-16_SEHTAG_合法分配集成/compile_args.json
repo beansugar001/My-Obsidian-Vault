@@ -1,0 +1,14 @@
+[
+  "-g2012",
+  "-s",
+  "security_alloc_integration_tb",
+  "-I",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core",
+  "-o",
+  "simulation.vvp",
+  "security_alloc_integration_tb.sv",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core/mcu_security_system.v",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core/memory_security_instruction_handler.v",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core/mcu_memory_security.v",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/perips/ram.v"
+]

@@ -1,0 +1,8 @@
+VCD info: dumpfile commit.vcd opened for output.
+PASS five pending cycles do not commit
+PASS unrelated decision does not release the request
+PASS matching permit commits exactly once
+PASS deny produces one reject and no write
+PASS downstream backpressure preserves data and prevents duplicate writes
+PASS reset clears a pending request
+checked_commit_tb.sv:97: $finish called at 386000 (1ps)

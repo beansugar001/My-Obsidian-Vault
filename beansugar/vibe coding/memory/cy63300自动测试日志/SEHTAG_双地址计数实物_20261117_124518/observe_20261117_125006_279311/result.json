@@ -1,0 +1,426 @@
+{
+  "startup_matches_image": true,
+  "fixed_controls_pass": true,
+  "fixed_mailbox_differences": [
+    {},
+    {}
+  ],
+  "summaries": {
+    "first": {
+      "count": 12,
+      "first": 8,
+      "last": 8,
+      "unique": 1,
+      "min": 8,
+      "max": 8
+    },
+    "first_copy": {
+      "count": 12,
+      "first": 8,
+      "last": 8,
+      "unique": 1,
+      "min": 8,
+      "max": 8
+    },
+    "second": {
+      "count": 18,
+      "first": 55,
+      "last": 779,
+      "unique": 18,
+      "min": 55,
+      "max": 779
+    },
+    "second_copy": {
+      "count": 18,
+      "first": 63,
+      "last": 785,
+      "unique": 18,
+      "min": 63,
+      "max": 785
+    },
+    "done": {
+      "count": 12,
+      "first": 1381265408,
+      "last": 1381265408,
+      "unique": 1,
+      "min": 1381265408,
+      "max": 1381265408
+    },
+    "scratch": {
+      "count": 12,
+      "first": 1397047296,
+      "last": 1397047296,
+      "unique": 1,
+      "min": 1397047296,
+      "max": 1397047296
+    }
+  },
+  "paired_samples_in_read_order": {
+    "0": [
+      [
+        "second",
+        55
+      ],
+      [
+        "second_copy",
+        63
+      ],
+      [
+        "second",
+        71
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "1": [
+      [
+        "second_copy",
+        115
+      ],
+      [
+        "second",
+        124
+      ],
+      [
+        "second_copy",
+        136
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "2": [
+      [
+        "second",
+        193
+      ],
+      [
+        "second_copy",
+        202
+      ],
+      [
+        "second",
+        212
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "3": [
+      [
+        "second_copy",
+        266
+      ],
+      [
+        "second",
+        273
+      ],
+      [
+        "second_copy",
+        283
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "4": [
+      [
+        "second",
+        330
+      ],
+      [
+        "second_copy",
+        336
+      ],
+      [
+        "second",
+        344
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "5": [
+      [
+        "second_copy",
+        385
+      ],
+      [
+        "second",
+        394
+      ],
+      [
+        "second_copy",
+        400
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "6": [
+      [
+        "second",
+        438
+      ],
+      [
+        "second_copy",
+        444
+      ],
+      [
+        "second",
+        451
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "7": [
+      [
+        "second_copy",
+        503
+      ],
+      [
+        "second",
+        512
+      ],
+      [
+        "second_copy",
+        521
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "8": [
+      [
+        "second",
+        566
+      ],
+      [
+        "second_copy",
+        575
+      ],
+      [
+        "second",
+        587
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "9": [
+      [
+        "second_copy",
+        637
+      ],
+      [
+        "second",
+        646
+      ],
+      [
+        "second_copy",
+        656
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "10": [
+      [
+        "second",
+        707
+      ],
+      [
+        "second_copy",
+        716
+      ],
+      [
+        "second",
+        723
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ],
+    "11": [
+      [
+        "second_copy",
+        771
+      ],
+      [
+        "second",
+        779
+      ],
+      [
+        "second_copy",
+        785
+      ],
+      [
+        "first",
+        8
+      ],
+      [
+        "first_copy",
+        8
+      ],
+      [
+        "done",
+        1381265408
+      ],
+      [
+        "scratch",
+        1397047296
+      ]
+    ]
+  },
+  "sha256": {
+    "mailbox_before.bin": "B35C7BB72C4A388E98FE008B5329044BF49DBAF283DB4060D81DBB5A4F93D2A4",
+    "mailbox_after.bin": "ED9F3532E68879D00BDAB189A19E57262DA0241F23D84686B5F7AB27A19FAB98",
+    "startup.bin": "7E40DA0A3E73E5505784D24F94CAB52A7E46F028CA7646F137371D2346D70441",
+    "openocd.log": "1A646D7A84A34533C53B6FFECA7C1A12269F8968972439FF50A18D0E41521E75"
+  }
+}

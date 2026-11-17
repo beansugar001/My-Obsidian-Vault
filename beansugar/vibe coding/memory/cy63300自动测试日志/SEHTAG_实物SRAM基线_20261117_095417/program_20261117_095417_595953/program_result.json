@@ -1,0 +1,6 @@
+{
+  "status": "PASS_PROGRAMMED_AND_VERIFIED",
+  "image_bytes": 136,
+  "sector_sha256": "a5605f98bf115c70f49e2245079e0c5271cd0d91ce5aca4b78c441ac9adec938",
+  "boot_executed": false
+}

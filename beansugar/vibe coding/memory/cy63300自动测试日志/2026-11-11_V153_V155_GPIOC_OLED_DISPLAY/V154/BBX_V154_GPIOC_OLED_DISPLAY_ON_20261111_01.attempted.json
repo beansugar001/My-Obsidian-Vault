@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V154_GPIOC_OLED_DISPLAY_ON_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V154_GPIOC_OLED_DISPLAY_ON\\cy_runs\\20261111_115226_191511",
+  "started": "2026-11-11T11:52:26.191511+08:00",
+  "max_target_writes": 210,
+  "max_frames": 1,
+  "max_fifo_writes": 0,
+  "max_halt": 1,
+  "tcl_sha256": "B7410B0C464CD66F6756A97B268F4F5E0A147318F6DB2DA0649F9DCB10B9EE15"
+}

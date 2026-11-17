@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V140_COLD_PAD1_AF6_20261111_02",
+  "status": "TX_STALLED_FIFO_1_WORK_1",
+  "return_code": 0,
+  "process_error": null,
+  "complete": true,
+  "counts_verified": true,
+  "logged_halt_attempts": 1,
+  "logged_write_attempts": 18,
+  "tx_fifo_attempts": 1,
+  "stop_attempts": 0,
+  "errors": [],
+  "sample_count": 60,
+  "first_sample": "V140_SAMPLE TX i=0 t_ms=1794361173562 fifo=0x00000104 sta=0x00000001 raw=0x00000000",
+  "last_sample": "V140_SAMPLE TX i=59 t_ms=1794361195859 fifo=0x00000104 sta=0x00000001 raw=0x00000000",
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "A8E5C50D0BACCBA09D6250AF0F30C1650DCDD0CDDBB1ADDD61BAF0D45A7B12D0",
+    "openocd.combined.log": "C2590E713DB2F924C65CCCFE34FCDC2869000DF8471CD812D7273C098BDB1376"
+  },
+  "finished": "2026-11-11T09:39:55.946715+08:00"
+}

@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V158_HARDWARE_I2C_OLED_HELLO_20261111_01",
+  "started": "2026-11-11T15:26:38.230328+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V158_HARDWARE_I2C_OLED_HELLO/v158_hardware_hello.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V158_HARDWARE_I2C_OLED_HELLO\\v158_hardware_hello.tcl": "67A64740FF9DC43478C71DAEB1FEA037056EBD2C8A60AFCDCCC143CD4DE3EE32",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V158_HARDWARE_I2C_OLED_HELLO\\run_cy63300.py": "F2ADA0DD576B006D424C3A7774CE44F4195781F8B265BA5288FD47A60E9E2E2E"
+  }
+}

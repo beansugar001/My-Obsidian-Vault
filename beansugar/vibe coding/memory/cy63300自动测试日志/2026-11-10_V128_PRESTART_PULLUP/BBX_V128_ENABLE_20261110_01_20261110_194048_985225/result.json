@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V128_ENABLE_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_ENABLE_BEFORE_ADDR_IDLE_NO_TRANSACTION",
+  "halt_count": 1,
+  "target_mmio_write_count": 3,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "05FA645ACC926ECD9D9652614278FEF05C12FF077A4FBC68F57B31B711916E9C",
+    "openocd.combined.log": "6C44637DEFF423AEED3BDB51D507B3E51B45B0EE33E416B5B122044E1403AD06"
+  },
+  "finished_local": "2026-11-10T19:40:53.054201+08:00"
+}

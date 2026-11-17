@@ -1,0 +1,4 @@
+VCD info: dumpfile rib_ram_decision.vcd opened for output.
+PASS settled allow reaches SRAM through RIB and commits exactly one write
+PASS settled deny suppresses SRAM write enable; SRAM unchanged; mcause=0x5
+rib_ram_decision_tb.sv:88: $finish called at 56000 (1ps)

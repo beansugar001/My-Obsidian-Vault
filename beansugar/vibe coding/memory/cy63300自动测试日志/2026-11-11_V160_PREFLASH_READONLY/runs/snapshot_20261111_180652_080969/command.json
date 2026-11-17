@@ -1,0 +1,21 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V160_CPU_OLED_REFRESH/snapshot.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started": "2026-11-11T18:06:52.080969+08:00",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "snapshot": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V160_CPU_OLED_REFRESH\\runs\\snapshot_20261111_180652_080969\\main_sector0_64KiB.bin",
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V160_CPU_OLED_REFRESH\\snapshot.tcl": "131A0C2054760A8C71FF4311141138AD3D045853DC6B9A54F55F37605485A6DC"
+  }
+}

@@ -1,0 +1,3 @@
+VCD info: dumpfile allow.vcd opened for output.
+PASS allow: writes=1 reads=1 RAM=1234abcd cause=00000000
+guard_trap_tb.sv:64: $finish called at 3206000 (1ps)

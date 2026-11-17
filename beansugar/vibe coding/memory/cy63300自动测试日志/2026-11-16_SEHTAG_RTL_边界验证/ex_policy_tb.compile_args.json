@@ -1,0 +1,11 @@
+[
+  "-g2012",
+  "-s",
+  "ex_policy_tb",
+  "-I",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core",
+  "-o",
+  "ex_policy_tb.vvp",
+  "ex_policy_tb.sv",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core/ex.v"
+]

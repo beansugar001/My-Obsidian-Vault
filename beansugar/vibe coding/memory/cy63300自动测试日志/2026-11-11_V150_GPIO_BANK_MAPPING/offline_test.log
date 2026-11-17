@@ -1,0 +1,2 @@
+PASS GPIO state gate clock=0x1, zero MMIO writes
+PASS GPIO state gate clock=0x21, zero MMIO writes

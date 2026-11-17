@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V140_COLD_PAD1_AF6_20261111_01",
+  "started": "2026-11-11T09:38:18.053129+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V140_COLD_PAD1/v140_cold_pad1.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V140_COLD_PAD1\\v140_cold_pad1.tcl": "6FA0D0CDA85FCB84BEBCD27D4CF7ED3E926461ADA7101F5C1D8858D2BC671FA5",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V140_COLD_PAD1\\run_v140.py": "AA2A3D4E29895ED4A8FBBE42F9621FC8C47F88D75CC6FF5C06A1218DF0F6376A"
+  }
+}

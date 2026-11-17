@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V127_PULLUP_STALLED_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "FIFO_STILL_QUEUED_AFTER_PULLUP",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "31DF7CC4A0DFA6DD63438982091330583544356A93A5B495D7633C9E291601A9",
+    "openocd.combined.log": "D97E03C1046E2EEEAF4AA40FE1F47B2308EB24BBB77219B8604EC9F7B3D5D6C0"
+  },
+  "finished_local": "2026-11-10T19:37:30.403933+08:00"
+}

@@ -1,0 +1,3 @@
+PASS CLKEN=0x1, target writes=0
+PASS CLKEN=0x21, target writes=0
+PASS CLKEN=0x0, target writes=0

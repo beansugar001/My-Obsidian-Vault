@@ -1,0 +1,22 @@
+{
+  "stage": "BBX_V155_GPIOC_OLED_RAM_DISPLAY_20261111_01",
+  "started": "2026-11-11T14:28:20.514680+08:00",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V155_GPIOC_OLED_RAM_DISPLAY/v155_gpioc_ram_display.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "host": {
+    "processes": [],
+    "listeners": []
+  },
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V155_GPIOC_OLED_RAM_DISPLAY\\v155_gpioc_ram_display.tcl": "6A5E80EF00B6467DAD0E8CCA1A1E5DB58120970E2BAA6429E17DB0880B74DCD9",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V155_GPIOC_OLED_RAM_DISPLAY\\run_cy63300.py": "C812D35DC2E70FBEC9A40FA9337DE7B335ADC9F4BFB745A2353004C1E13DB82C"
+  }
+}

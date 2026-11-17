@@ -1,0 +1,16 @@
+{
+  "v159_verified_sector_sha256": "B5DFAD5E728FB320DC5497CE69CB563C20DBAD588364E5D75BC093DF8175F9CB",
+  "image_bytes": 2700,
+  "image_sha256": "7592DADC2220141B7A7019FEC0B2C0DB188F8E0DC983EBE7D1BE70209A9480FE",
+  "last_address": "0x00000A8B",
+  "bytes_requiring_zero_to_one": 1060,
+  "affected_512_byte_blocks": [
+    "0x0000",
+    "0x0200",
+    "0x0400",
+    "0x0600",
+    "0x0800"
+  ],
+  "approved_scope_needed": "0x00000000\u20130x0000FFFF sector 0",
+  "live_flash_check": "pending"
+}

@@ -1,0 +1,4 @@
+VCD info: dumpfile csr_enable.vcd opened for output.
+PASS reset: CSR=0x00000000 enable=0
+PASS enabled: CSR=0x00000001 enable=1
+csr_enable_tb.sv:32: $finish called at 26000 (1ps)

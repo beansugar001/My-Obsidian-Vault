@@ -1,0 +1,190 @@
+{
+  "total_readings": 180,
+  "phases": [
+    {
+      "phase": "idle",
+      "stm32_actual": [
+        "0x300",
+        "0x300"
+      ],
+      "duration_ms": 6000.000333333333,
+      "methods": {
+        "direct": {
+          "count": 8,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "parked": {
+          "count": 8,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "native": {
+          "count": 9,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "scl_low",
+      "stm32_actual": [
+        "0x200",
+        "0x200"
+      ],
+      "duration_ms": 10000.000291666667,
+      "methods": {
+        "direct": {
+          "count": 16,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "parked": {
+          "count": 18,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "native": {
+          "count": 17,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "released",
+      "stm32_actual": [
+        "0x300",
+        "0x300"
+      ],
+      "duration_ms": 4000.0002777777777,
+      "methods": {
+        "direct": {
+          "count": 6,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "parked": {
+          "count": 6,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "native": {
+          "count": 6,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "sda_low",
+      "stm32_actual": [
+        "0x100",
+        "0x100"
+      ],
+      "duration_ms": 10000.000291666667,
+      "methods": {
+        "direct": {
+          "count": 16,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "parked": {
+          "count": 17,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "native": {
+          "count": 17,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        }
+      }
+    },
+    {
+      "phase": "final_idle",
+      "stm32_actual": [
+        "0x300",
+        "0x300"
+      ],
+      "duration_ms": 4000.0002777777777,
+      "methods": {
+        "direct": {
+          "count": 6,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "parked": {
+          "count": 6,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        },
+        "native": {
+          "count": 6,
+          "idr": [
+            "0x2c"
+          ],
+          "mask": [
+            "0xc"
+          ]
+        }
+      }
+    }
+  ]
+}

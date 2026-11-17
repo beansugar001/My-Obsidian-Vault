@@ -1,0 +1,4 @@
+PASS NORMAL: 9 writes, final GPIO direction input
+PASS NOT_COLD: 0 writes, final GPIO direction input
+PASS BUS_LOW: 3 writes, final GPIO direction input
+PASS DIR_FAIL: 8 writes, final GPIO direction input

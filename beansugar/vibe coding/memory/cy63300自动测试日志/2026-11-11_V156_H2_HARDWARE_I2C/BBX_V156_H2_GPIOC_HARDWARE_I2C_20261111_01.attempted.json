@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V156_H2_GPIOC_HARDWARE_I2C_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V156_H2_HARDWARE_I2C\\cy_runs\\20261111_150033_498931",
+  "started": "2026-11-11T15:00:33.498931+08:00",
+  "max_init_writes": 13,
+  "max_fifo_writes": 1,
+  "max_conditional_stop": 1,
+  "max_halt": 1,
+  "tcl_sha256": "66BEE376D4F5B400BB592910066995A617EF1AEE1E9B712A894618698E8772BF"
+}

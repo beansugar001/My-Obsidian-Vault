@@ -1,0 +1,11 @@
+{
+  "tcl_sha256": "C54F3D42CDB8DC009082A4EB68F43D4300F7A88CCAADBFF43C47E7314597BB5C",
+  "exe": "D:/project/tools/tinyriscv-master/tools/openocd/openocd.exe",
+  "args": [
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V160_CPU_OLED_REFRESH/refresh_stall_readonly.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd"
+}

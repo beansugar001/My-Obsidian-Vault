@@ -1,0 +1,5 @@
+VCD info: dumpfile security_alloc_integration.vcd opened for output.
+PASS handler -> HAT -> response: addr=20000000 tag=1
+PASS live object metadata: freed=0 generation=0001
+PASS testbench in-object access: addr=20000000 word=1234abcd
+security_alloc_integration_tb.sv:74: $finish called at 2911000 (1ps)

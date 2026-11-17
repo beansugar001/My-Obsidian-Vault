@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V125_DPC_SENTINEL_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_V125_DPC_SENTINEL_20261110_01_20261110_185606_145188",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V125_DPC_SENTINEL_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "CLOCK_OFF_NO_I2C_READ",
+  "target_mmio_writes": 0,
+  "reset_resume_flash_nvr": 0,
+  "halt_request_budget": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "A13214F86F2E383A39E5A04A90CBD6E2DC5FA320F3590510F14EA337B1A7C126",
+    "openocd.combined.log": "197BAD2F5A65AA3453A63DA821AEF40BFC10C98EC9098DBDFDB03C1ECD655AA7"
+  }
+}

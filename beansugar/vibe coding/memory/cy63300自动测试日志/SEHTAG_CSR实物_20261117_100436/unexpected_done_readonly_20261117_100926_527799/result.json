@@ -1,0 +1,28 @@
+{
+  "mailbox_words": [
+    [
+      "0x53454833",
+      "0x00000000",
+      "0x00000001",
+      "0x00000000",
+      "0x5345600D",
+      "0x00000000"
+    ],
+    [
+      "0x53454833",
+      "0x00000000",
+      "0x00000001",
+      "0x00000000",
+      "0x5345600D",
+      "0x00000000"
+    ]
+  ],
+  "mailbox_samples_equal": true,
+  "startup_matches_probe": true,
+  "sha256": {
+    "mailbox_a.bin": "07DA36F5894E0A48561AF11EAE9D37881343CA3020F510C4C8C4529F24E74466",
+    "mailbox_b.bin": "07DA36F5894E0A48561AF11EAE9D37881343CA3020F510C4C8C4529F24E74466",
+    "startup.bin": "744B59D77584A40ABC34C02C659F4F1C29FCBDBFDAAF6CD4A3E51EB5BA6DA6B7",
+    "openocd.log": "CFB10CAD4367F10DDF5BC786B7AEC76E4D78C53CA7166CD762674E1CD58FF28A"
+  }
+}

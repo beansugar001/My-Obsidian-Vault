@@ -1,0 +1,20 @@
+{
+  "stage": "BBX_V137_ARM_DRIVE_HIGH_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/03_experiments/v137_arm_drive_high.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T20:47:51.239523+08:00",
+  "host_processes": [],
+  "listeners": [],
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "tcl": "EFDD455ED3CAB180877F88FF9EAE5DC9BC52ACC6DF06D3356A02D72085C35D2F",
+    "runner": "07FEFF82CB3A0F3B4FC651D1894EEFEF4AB82A9C3A8860B9E0A00728065B236B"
+  }
+}

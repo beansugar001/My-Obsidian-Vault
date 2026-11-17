@@ -1,0 +1,11 @@
+PASS NOT_COLD: status=FAIL_OR_UNKNOWN target_writes=0
+PASS HALT_FAIL: status=FAIL_OR_UNKNOWN target_writes=0
+PASS PULL_LOW: status=FAIL_OR_UNKNOWN target_writes=2
+PASS DRIVE_MISMATCH: status=FAIL_OR_UNKNOWN target_writes=5
+PASS STALL: status=TX_STALLED_FIFO_1_WORK_1 target_writes=17
+PASS LOST_FIFO_WRITE: status=TX_PROGRESS_UNKNOWN target_writes=17
+PASS NACK: status=FAIL_OR_UNKNOWN target_writes=17
+PASS SBA_ERROR: status=FAIL_OR_UNKNOWN target_writes=17
+PASS DRAIN: status=TX_DRAINED_STOP_IDLE target_writes=18
+PASS FAST_STOP: status=TX_EMPTY_AND_IDLE target_writes=17
+V139_OFFLINE_AUDIT_PASS

@@ -1,0 +1,19 @@
+{
+  "stage": "BBX_V123_POST_REPLUG_READONLY_20261110_01",
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/V116_CPU_STORE/v116b_flash_cpu_probe.cfg",
+    "-c",
+    "source C:/Users/24796/Documents/\u7ec4/CY63300_I2C_BLACKBOX/I2C_NEXT_PHASE_20261110_01/readonly_snapshot.tcl"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "started_local": "2026-11-10T18:49:36.921307+08:00",
+  "probe_serial_required": "07000001006700343500000a4e57354aa5a5a5a597969908",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V123_POST_REPLUG_READONLY_20261110_01.attempted.json",
+  "sha256": {
+    "openocd": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "cfg": "1275374EA7E2E976B7E0F86D48EE2E9389C344B4A8C36D38F215D5E1D36656B4",
+    "tcl": "58B4307EAF2E60B7C1449CFDB71880C9A73DE471EBCA330F1B4A23F9E484C742"
+  }
+}

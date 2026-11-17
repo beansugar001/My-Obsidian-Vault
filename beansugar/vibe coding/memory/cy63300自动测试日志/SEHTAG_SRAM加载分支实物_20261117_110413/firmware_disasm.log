@@ -1,0 +1,65 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	2000f437          	lui	s0,0x2000f
+   4:	534544b7          	lui	s1,0x53454
+   8:	13579a37          	lui	s4,0x13579
+   c:	4c425ab7          	lui	s5,0x4c425
+  10:	02042223          	sw	zero,36(s0) # 2000f024 <__global_pointer$+0x2000d704>
+  14:	03442823          	sw	s4,48(s0)
+  18:	01542023          	sw	s5,0(s0)
+  1c:	00942e23          	sw	s1,28(s0)
+  20:	03442023          	sw	s4,32(s0)
+  24:	00440913          	addi	s2,s0,4
+  28:	098009ef          	jal	s3,c0 <register_case>
+  2c:	00c40913          	addi	s2,s0,12
+  30:	0c4009ef          	jal	s3,f4 <short_load_case>
+  34:	01440913          	addi	s2,s0,20
+  38:	098009ef          	jal	s3,d0 <paced_load_case>
+  3c:	4c4262b7          	lui	t0,0x4c426
+  40:	00000013          	nop
+  44:	02542223          	sw	t0,36(s0)
+
+00000048 <done>:
+  48:	0000006f          	j	48 <done>
+	...
+
+000000c0 <register_case>:
+  c0:	000a02b3          	add	t0,s4,zero
+  c4:	0340006f          	j	f8 <join_branch>
+	...
+
+000000d0 <paced_load_case>:
+  d0:	03042283          	lw	t0,48(s0)
+  d4:	00000013          	nop
+  d8:	00000013          	nop
+  dc:	00000013          	nop
+  e0:	00000013          	nop
+  e4:	00000013          	nop
+  e8:	0100006f          	j	f8 <join_branch>
+	...
+
+000000f4 <short_load_case>:
+  f4:	03042283          	lw	t0,48(s0)
+
+000000f8 <join_branch>:
+  f8:	00000013          	nop
+  fc:	00000013          	nop
+
+00000100 <shared_branch>:
+ 100:	00929663          	bne	t0,s1,10c <taken>
+ 104:	4e4f0337          	lui	t1,0x4e4f0
+ 108:	0080006f          	j	110 <record>
+
+0000010c <taken>:
+ 10c:	54414337          	lui	t1,0x54414
+
+00000110 <record>:
+ 110:	00000013          	nop
+ 114:	00592023          	sw	t0,0(s2)
+ 118:	00692223          	sw	t1,4(s2)
+ 11c:	00098067          	jr	s3

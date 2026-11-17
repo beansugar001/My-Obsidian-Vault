@@ -1,0 +1,10 @@
+{
+  "stage": "BBX_V139_COLD_DRIVE_HIGH_20261111_01",
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V139_COLD_START_PLAN\\runs\\20261111_093344_208520",
+  "started": "2026-11-11T09:33:44.208520+08:00",
+  "max_init_writes": 16,
+  "max_fifo_writes": 1,
+  "max_conditional_stop": 1,
+  "max_halt": 1,
+  "tcl_sha256": "2A1042B18446ABA63A05DF12AA691152931B4E617F08258E7A48C10C912BE9EA"
+}

@@ -1,0 +1,17 @@
+{
+  "stage": "BBX_V127_RECONNECT_STALL_SNAPSHOT_20261110_01",
+  "run_dir": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\runs_local_i2c_next\\BBX_V127_RECONNECT_STALL_SNAPSHOT_20261110_01_20261110_193616_143657",
+  "marker": "C:\\Users\\24796\\Documents\\\u7ec4\\CY63300_I2C_BLACKBOX\\markers\\BBX_V127_RECONNECT_STALL_SNAPSHOT_20261110_01.attempted.json",
+  "exit_code": 0,
+  "timed_out": false,
+  "complete": true,
+  "status": "STOP_I2C_NOT_IDLE_NO_WRITE",
+  "target_mmio_writes": 0,
+  "reset_resume_flash_nvr": 0,
+  "halt_request_budget": 1,
+  "sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "42F07B5727977DBC35F2448981A81176AC70AF38E4573477E78B98DF00C27D67",
+    "openocd.combined.log": "0CC73B6BAB4A02253CD0CDEA3397BCE421F723F4FB1E54B27EB0CA9924300E73"
+  }
+}

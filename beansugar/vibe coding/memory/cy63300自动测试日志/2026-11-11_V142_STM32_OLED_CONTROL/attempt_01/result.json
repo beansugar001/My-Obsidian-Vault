@@ -1,0 +1,12 @@
+{
+  "stage": "V142_STM32_ACK_SRAM_01",
+  "returncode": 0,
+  "process_error": null,
+  "flash_equal": false,
+  "flash_matches_project": false,
+  "flash_sha256": null,
+  "restored_running": false,
+  "log_sha256": "B83EFC885880FE1167F293EDFD41CC6A8EF06878A70C7573F06A5CD222DBEAF4",
+  "mailbox_error": "[Errno 2] No such file or directory: 'C:\\\\Users\\\\24796\\\\Documents\\\\\u7ec4\\\\CY63300_I2C_BLACKBOX\\\\V142_STM32_OLED_CONTROL\\\\runs\\\\20261111_095603_025416\\\\ack_mailbox.bin'",
+  "success": false
+}

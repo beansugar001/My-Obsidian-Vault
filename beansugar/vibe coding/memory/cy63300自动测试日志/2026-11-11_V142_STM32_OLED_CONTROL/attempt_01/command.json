@@ -1,0 +1,32 @@
+{
+  "argv": [
+    "D:\\project\\tools\\xpack-openocd-0.12.0-7\\bin\\openocd.exe",
+    "-s",
+    "D:/project/tools/xpack-openocd-0.12.0-7/openocd/scripts",
+    "-c",
+    "gdb port disabled",
+    "-c",
+    "telnet port disabled",
+    "-c",
+    "tcl port disabled",
+    "-f",
+    "interface/stlink.cfg",
+    "-c",
+    "transport select swd",
+    "-f",
+    "target/stm32f1x.cfg",
+    "-c",
+    "stm32f1x.cpu configure -event examine-end {}",
+    "-c",
+    "stm32f1x.cpu configure -work-area-size 0",
+    "-f",
+    "stm32_ack_probe.tcl"
+  ],
+  "cwd": "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\V142_STM32_OLED_CONTROL\\runs\\20261111_095603_025416",
+  "started": "2026-11-11T09:56:03.025416+08:00",
+  "sha256": {
+    "stm32_ack_probe.tcl": "03FBF29DB5135A5574864BCD2BDCCDD7465FBB08F65C3DEDED38218548F9AB57",
+    "probe.bin": "D3832A236D07054CB2951DD29A647A5713E069942C2AD52C1A4A3A64C0E69708",
+    "original_project.bin": "13618CEB6DD21E1C1293B8101638D3664704357482407509F6FDB7106E3363B4"
+  }
+}

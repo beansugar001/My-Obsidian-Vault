@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V130_CHIP1_GPIO_ONLY_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_CLOCKS_ENABLED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "544E2DC50D15F8B519EDAA2E7F1E906D5820B97A186A429BB09A228E2BBB1081",
+    "openocd.combined.log": "E01B5D85B4B2A4DA13F2A896966EFDA50F9C11D7E113934F7C47D154070D4A34"
+  },
+  "finished_local": "2026-11-10T20:22:36.561883+08:00"
+}

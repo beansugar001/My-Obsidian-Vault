@@ -1,0 +1,10 @@
+{
+  "phase": "mailbox",
+  "valid": true,
+  "rc": 0,
+  "errors": [],
+  "erase_triggers": [],
+  "programming": [],
+  "sha256_log": "143D1C95D1123758EB259507CF45CEA3CBB88117924D78A2D9B838514B69E1E3",
+  "sha256_dump": "2BD0B6FBC389A3BAF0510E5BD9E1E1219F9F4100E41F81B96E4615141586EC8D"
+}

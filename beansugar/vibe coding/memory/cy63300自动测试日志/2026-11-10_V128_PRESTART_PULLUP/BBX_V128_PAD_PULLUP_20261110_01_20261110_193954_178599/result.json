@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V128_PAD_PULLUP_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "PASS_PAD8_PAD9_RELEASED_AF3",
+  "halt_count": 1,
+  "target_mmio_write_count": 5,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "42F79E1C6D127F6F552DF87C770B68ED854CA7626F665192058D83301853B832",
+    "openocd.combined.log": "C9E2F605095156738EC855A6714F895220B7D922AFB6527E35CF4BDF57B8DD5E"
+  },
+  "finished_local": "2026-11-10T19:39:57.997063+08:00"
+}

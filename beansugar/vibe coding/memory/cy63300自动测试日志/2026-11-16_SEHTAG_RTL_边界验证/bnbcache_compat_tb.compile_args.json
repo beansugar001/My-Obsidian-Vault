@@ -1,0 +1,11 @@
+[
+  "-g2012",
+  "-s",
+  "bnbcache_compat_tb",
+  "-I",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core",
+  "-o",
+  "bnbcache_compat_tb.vvp",
+  "bnbcache_compat_tb.v",
+  "D:/project/RISCV-63300/三方测试/Repo_Fanglongrui/rtl/core/bnbcache.v"
+]

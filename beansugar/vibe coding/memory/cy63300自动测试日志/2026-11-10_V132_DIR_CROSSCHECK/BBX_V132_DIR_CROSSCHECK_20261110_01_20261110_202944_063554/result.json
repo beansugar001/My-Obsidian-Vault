@@ -1,0 +1,14 @@
+{
+  "stage": "BBX_V132_DIR_CROSSCHECK_20261110_01",
+  "return_code": 0,
+  "completion_marker": true,
+  "status": "DIR_CLEAR_NOT_CONFIRMED",
+  "halt_count": 1,
+  "target_mmio_write_count": 1,
+  "log_sha256": {
+    "openocd.stdout.log": "E3B0C44298FC1C149AFBF4C8996FB92427AE41E4649B934CA495991B7852B855",
+    "openocd.stderr.log": "F9F0FE5FC0C54DD1B5E19529DC18A75B68576F30A4564B75D47369D421C5BCCE",
+    "openocd.combined.log": "7C2F6BC0D5B71830DA315089902B6CD32FA5DBA4A7743DD498729B24B068EB09"
+  },
+  "finished_local": "2026-11-10T20:29:46.435208+08:00"
+}
