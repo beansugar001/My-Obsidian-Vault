@@ -1,0 +1,68 @@
+{
+  "complete": false,
+  "scan_matched": false,
+  "exit_code": 0,
+  "summary": {
+    "quiet": {
+      "original_deltas": [
+        13
+      ],
+      "copy_deltas": [
+        14
+      ],
+      "dmi_scans": [
+        0
+      ],
+      "average_original_delta": 13
+    },
+    "dmi": {
+      "original_deltas": [
+        70
+      ],
+      "copy_deltas": [
+        71
+      ],
+      "dmi_scans": [
+        108
+      ],
+      "average_original_delta": 70
+    }
+  },
+  "windows": [
+    {
+      "index": 0,
+      "mode": "quiet",
+      "duration_ms": 2100,
+      "dmi_commands": 0,
+      "dmi_scans": 0,
+      "scan_reads": 0,
+      "scan_writes": 0,
+      "scan_nops": 0,
+      "overruns": 0,
+      "original_before": 3605,
+      "original_after": 3618,
+      "copy_before": 3612,
+      "copy_after": 3626,
+      "original_delta": 13,
+      "copy_delta": 14
+    },
+    {
+      "index": 1,
+      "mode": "dmi",
+      "duration_ms": 2100,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 54,
+      "scan_writes": 0,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 3634,
+      "original_after": 3704,
+      "copy_before": 3640,
+      "copy_after": 3711,
+      "original_delta": 70,
+      "copy_delta": 71
+    }
+  ],
+  "log_sha256": "ECCA3EDDF6C8DB09F711675961EDC33D0697158AD636550BB10BDD0B2C58AF09"
+}

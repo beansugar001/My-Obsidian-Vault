@@ -1,0 +1,217 @@
+{
+  "complete": true,
+  "scan_matched": true,
+  "exit_code": null,
+  "summary": {
+    "quiet": {
+      "original_deltas": [
+        13,
+        13,
+        10
+      ],
+      "copy_deltas": [
+        15,
+        12,
+        11
+      ],
+      "dmi_scans": [
+        0,
+        0,
+        0
+      ],
+      "average_original_delta": 12
+    },
+    "dmi": {
+      "original_deltas": [
+        59,
+        59,
+        75
+      ],
+      "copy_deltas": [
+        60,
+        59,
+        78
+      ],
+      "dmi_scans": [
+        108,
+        108,
+        108
+      ],
+      "average_original_delta": 64.33333333333333
+    },
+    "sba": {
+      "original_deltas": [
+        82,
+        82,
+        80
+      ],
+      "copy_deltas": [
+        79,
+        77,
+        81
+      ],
+      "dmi_scans": [
+        108,
+        108,
+        108
+      ],
+      "average_original_delta": 81.33333333333333
+    }
+  },
+  "windows": [
+    {
+      "index": 0,
+      "mode": "quiet",
+      "duration_ms": 2100,
+      "dmi_commands": 0,
+      "dmi_scans": 0,
+      "scan_reads": 0,
+      "scan_writes": 0,
+      "scan_nops": 0,
+      "overruns": 0,
+      "original_before": 2925,
+      "original_after": 2938,
+      "copy_before": 2930,
+      "copy_after": 2945,
+      "original_delta": 13,
+      "copy_delta": 15
+    },
+    {
+      "index": 1,
+      "mode": "dmi",
+      "duration_ms": 2100,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 54,
+      "scan_writes": 0,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 2954,
+      "original_after": 3013,
+      "copy_before": 2962,
+      "copy_after": 3022,
+      "original_delta": 59,
+      "copy_delta": 60
+    },
+    {
+      "index": 2,
+      "mode": "sba",
+      "duration_ms": 2100,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 36,
+      "scan_writes": 18,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 3026,
+      "original_after": 3108,
+      "copy_before": 3035,
+      "copy_after": 3114,
+      "original_delta": 82,
+      "copy_delta": 79
+    },
+    {
+      "index": 3,
+      "mode": "dmi",
+      "duration_ms": 2106,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 54,
+      "scan_writes": 0,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 3122,
+      "original_after": 3181,
+      "copy_before": 3127,
+      "copy_after": 3186,
+      "original_delta": 59,
+      "copy_delta": 59
+    },
+    {
+      "index": 4,
+      "mode": "sba",
+      "duration_ms": 2100,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 36,
+      "scan_writes": 18,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 3193,
+      "original_after": 3275,
+      "copy_before": 3200,
+      "copy_after": 3277,
+      "original_delta": 82,
+      "copy_delta": 77
+    },
+    {
+      "index": 5,
+      "mode": "quiet",
+      "duration_ms": 2100,
+      "dmi_commands": 0,
+      "dmi_scans": 0,
+      "scan_reads": 0,
+      "scan_writes": 0,
+      "scan_nops": 0,
+      "overruns": 0,
+      "original_before": 3282,
+      "original_after": 3295,
+      "copy_before": 3288,
+      "copy_after": 3300,
+      "original_delta": 13,
+      "copy_delta": 12
+    },
+    {
+      "index": 6,
+      "mode": "sba",
+      "duration_ms": 2100,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 36,
+      "scan_writes": 18,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 3305,
+      "original_after": 3385,
+      "copy_before": 3310,
+      "copy_after": 3391,
+      "original_delta": 80,
+      "copy_delta": 81
+    },
+    {
+      "index": 7,
+      "mode": "quiet",
+      "duration_ms": 2103,
+      "dmi_commands": 0,
+      "dmi_scans": 0,
+      "scan_reads": 0,
+      "scan_writes": 0,
+      "scan_nops": 0,
+      "overruns": 0,
+      "original_before": 3397,
+      "original_after": 3407,
+      "copy_before": 3404,
+      "copy_after": 3415,
+      "original_delta": 10,
+      "copy_delta": 11
+    },
+    {
+      "index": 8,
+      "mode": "dmi",
+      "duration_ms": 2104,
+      "dmi_commands": 54,
+      "dmi_scans": 108,
+      "scan_reads": 54,
+      "scan_writes": 0,
+      "scan_nops": 54,
+      "overruns": 0,
+      "original_before": 3422,
+      "original_after": 3497,
+      "copy_before": 3427,
+      "copy_after": 3505,
+      "original_delta": 75,
+      "copy_delta": 78
+    }
+  ],
+  "log_sha256": "62DADC3CDBFFF0A93321051765A59A22C738115995DE2820C19E80FDFE000841"
+}

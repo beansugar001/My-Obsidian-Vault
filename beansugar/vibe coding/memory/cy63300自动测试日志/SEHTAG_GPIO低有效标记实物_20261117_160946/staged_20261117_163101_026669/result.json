@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "stages": [
+    "User : 54 368 command.c:770 jim_echo(): STEP_INIT_COMPLETE",
+    "User : 3569 52434 command.c:770 jim_echo(): STEP_SESSION_END"
+  ],
+  "log_sha256": "00F4A4B0AF51B266C45629315BDCE0F9CB68F44574274725A382237D716BE253"
+}

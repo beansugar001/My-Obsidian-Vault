@@ -1,0 +1,92 @@
+﻿[
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "29FC1C210676EA1A3CAB348D2CCFDCDB2FFDA329BAC2910F2D0CE2836B44AC21",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\clint.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "95304ADA40B5AF6072D3F80B2D6F59467981AF63CC08B50FB4868C01DFB3A58B",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\csr_reg.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "B251436E1370DB58640EC7F1364C488D95DB3405C5A6D0CABE90F6AADEA071CA",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\ctrl.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "BEC91DC8796EF2D7475FB813A426B6C71EFE3C2CAEB8FDC9905A1A9101994266",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\defines.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "975D1462994529A6CE8B430208E1615E1C00AC147EE2C8BEEFE7E86C9BD1760C",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\div.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "5F1590F10EED88B47AD398BE8893D8405264F759007C6F3EE5D6564B9E6772B6",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\ex.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "0DFB4FA2D37431C51E559E67FEFD667104966263C878459B95F6FBC27DF93DAD",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\id.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "5BB75BF363C1D78B818E237D9F50BF3C3CB8FDB85B5CB9EF2D3527D7077874F1",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\id_ex.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "B78F7E8F3998136C03A40265C354CECE3426CBFFDB01B0FDEFF2EA8BACFDA273",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\if_id.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "E4A511D4CCF0D257F256E6CE103544F8DC1AB2F57362CAEA7798C2644F6E2970",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\pc_reg.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "AD210D93ACAB9BD4D7EB15EDB1D5B3DE2440A49B53843EFA795096BD1F892574",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\regs.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "DB73B3A7DE7A624C19D95BEA21A3CB2D4F1DD659F6D4CD8840DD57DEE52558DD",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\rib.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "CA9E8E0EA27F82A7A4026C5660596AFA2A5B6ADE28B1F347A82CD374AE37FF44",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\core\\tinyriscv.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "C5716DA0D8F2C696BAC3E0926775211A6E9FB58763728BF2CB7007117D47460C",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\utils\\full_handshake_rx.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "824B60787E0E7C418A148945C1A493B7CDE47AD1CEDC217B4EFE5839775DE3AB",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\utils\\full_handshake_tx.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "954B75877B5C6D807F213D3DD2A46586D21663C419E59D72C123FB18E8384249",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\utils\\gen_buf.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "45AD966DA07620AF28376469B7F5D41C6BC07637575DD2DE2F7E0394767D3763",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\utils\\gen_dff.v"
+    },
+    {
+        "Algorithm":  "SHA256",
+        "Hash":  "F918FD2BF8BD700DC001894951048CFC2D1D2549B5B010D0AD953229E4A3F543",
+        "Path":  "D:\\project\\tools\\tinyriscv-master\\rtl\\debug\\jtag_dm.v"
+    }
+]

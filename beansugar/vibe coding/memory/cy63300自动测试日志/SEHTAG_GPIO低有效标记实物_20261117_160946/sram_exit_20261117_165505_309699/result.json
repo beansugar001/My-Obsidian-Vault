@@ -1,0 +1,8 @@
+{
+  "exit_code": 0,
+  "sram_read": [
+    "0x00000008"
+  ],
+  "shutdown": true,
+  "log_sha256": "1E202B3170BF793153CC461E37EE9375A32F0591DD569B529C2C3878F54EF5F6"
+}

@@ -1,0 +1,2 @@
+PASS replay=0 done_low=1 repeat_low=0 saw_both_released_high=1 post_done_records=0
+gpio_marker_tb.sv:106: $finish called at 4040000 (1ps)

@@ -1,0 +1,125 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	1740006f          	j	174 <init_gpio>
+
+00000004 <startup_body>:
+   4:	534544b7          	lui	s1,0x53454
+   8:	13579a37          	lui	s4,0x13579
+   c:	525442b7          	lui	t0,0x52544
+  10:	02000b13          	li	s6,32
+  14:	00700b93          	li	s7,7
+  18:	00042e23          	sw	zero,28(s0)
+  1c:	02042023          	sw	zero,32(s0)
+  20:	02042223          	sw	zero,36(s0)
+  24:	02042423          	sw	zero,40(s0)
+  28:	02042623          	sw	zero,44(s0)
+  2c:	00542023          	sw	t0,0(s0)
+  30:	03442823          	sw	s4,48(s0)
+  34:	00440913          	addi	s2,s0,4
+  38:	01c40c93          	addi	s9,s0,28
+  3c:	00000a93          	li	s5,0
+  40:	00000c13          	li	s8,0
+  44:	0ac009ef          	jal	s3,f0 <wait_iteration>
+
+00000048 <after_direct>:
+  48:	525462b7          	lui	t0,0x52546
+  4c:	00000013          	nop
+  50:	02542023          	sw	t0,32(s0)
+  54:	03442823          	sw	s4,48(s0)
+  58:	01040913          	addi	s2,s0,16
+  5c:	02440c93          	addi	s9,s0,36
+  60:	00000a93          	li	s5,0
+  64:	00100c13          	li	s8,1
+  68:	088009ef          	jal	s3,f0 <wait_iteration>
+
+0000006c <after_indirect>:
+  6c:	525462b7          	lui	t0,0x52546
+  70:	00000013          	nop
+  74:	02542423          	sw	t0,40(s0)
+  78:	525472b7          	lui	t0,0x52547
+  7c:	00000013          	nop
+  80:	02542623          	sw	t0,44(s0)
+
+00000084 <done>:
+  84:	1440006f          	j	1c8 <mark_done>
+	...
+
+000000f0 <wait_iteration>:
+  f0:	001a8a93          	addi	s5,s5,1
+  f4:	03042283          	lw	t0,48(s0)
+  f8:	00000013          	nop
+  fc:	00000013          	nop
+ 100:	00929663          	bne	t0,s1,10c <no_match>
+ 104:	4d415337          	lui	t1,0x4d415
+ 108:	01c0006f          	j	124 <record>
+
+0000010c <no_match>:
+ 10c:	016afa63          	bgeu	s5,s6,120 <limit_reached>
+ 110:	ff7a90e3          	bne	s5,s7,f0 <wait_iteration>
+ 114:	02942823          	sw	s1,48(s0)
+ 118:	00000013          	nop
+ 11c:	fd5ff06f          	j	f0 <wait_iteration>
+
+00000120 <limit_reached>:
+ 120:	4c494337          	lui	t1,0x4c494
+
+00000124 <record>:
+ 124:	11592023          	sw	s5,256(s2)
+ 128:	01592023          	sw	s5,0(s2)
+ 12c:	00592223          	sw	t0,4(s2)
+ 130:	00692423          	sw	t1,8(s2)
+ 134:	525453b7          	lui	t2,0x52545
+ 138:	0a40006f          	j	1dc <mark_record>
+
+0000013c <record_tail>:
+ 13c:	007ca023          	sw	t2,0(s9)
+ 140:	020c1863          	bnez	s8,170 <indirect_return>
+ 144:	f05ff06f          	j	48 <after_direct>
+	...
+
+00000170 <indirect_return>:
+ 170:	efdff06f          	j	6c <after_indirect>
+
+00000174 <init_gpio>:
+ 174:	2000f437          	lui	s0,0x2000f
+ 178:	40000d37          	lui	s10,0x40000
+ 17c:	200d0d13          	addi	s10,s10,512 # 40000200 <__global_pointer$+0x3fffe810>
+ 180:	40022537          	lui	a0,0x40022
+ 184:	80c52583          	lw	a1,-2036(a0) # 4002180c <__global_pointer$+0x4001fe1c>
+ 188:	0015e593          	ori	a1,a1,1
+ 18c:	80b52623          	sw	a1,-2036(a0)
+ 190:	068d2583          	lw	a1,104(s10)
+ 194:	fc05f593          	andi	a1,a1,-64
+ 198:	06bd2423          	sw	a1,104(s10)
+ 19c:	058d2583          	lw	a1,88(s10)
+ 1a0:	f3c5f593          	andi	a1,a1,-196
+ 1a4:	04bd2c23          	sw	a1,88(s10)
+ 1a8:	000d2583          	lw	a1,0(s10)
+ 1ac:	ffc5f593          	andi	a1,a1,-4
+ 1b0:	00bd2023          	sw	a1,0(s10)
+ 1b4:	004d2583          	lw	a1,4(s10)
+ 1b8:	0035e593          	ori	a1,a1,3
+ 1bc:	00bd2223          	sw	a1,4(s10)
+ 1c0:	00000d93          	li	s11,0
+ 1c4:	e41ff06f          	j	4 <startup_body>
+
+000001c8 <mark_done>:
+ 1c8:	00100d93          	li	s11,1
+ 1cc:	000d2583          	lw	a1,0(s10)
+ 1d0:	0015e593          	ori	a1,a1,1
+ 1d4:	00bd2023          	sw	a1,0(s10)
+
+000001d8 <terminal>:
+ 1d8:	0000006f          	j	1d8 <terminal>
+
+000001dc <mark_record>:
+ 1dc:	f60d80e3          	beqz	s11,13c <record_tail>
+ 1e0:	000d2583          	lw	a1,0(s10)
+ 1e4:	0025e593          	ori	a1,a1,2
+ 1e8:	00bd2023          	sw	a1,0(s10)
+ 1ec:	f51ff06f          	j	13c <record_tail>

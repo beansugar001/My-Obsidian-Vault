@@ -1,0 +1,49 @@
+{
+  "complete": true,
+  "exit_code": 0,
+  "reads_and_ms": [
+    [
+      "334",
+      "10020"
+    ]
+  ],
+  "samples": {
+    "INITIAL": {
+      "odr": "00000000",
+      "dir": "00000003",
+      "magic": "52544000",
+      "first_count": "00000008",
+      "second_count": "00000008",
+      "second_copy": "00000008",
+      "done": "52547000"
+    },
+    "BEFORE_ACTIVE": {
+      "odr": "00000000",
+      "dir": "00000003",
+      "magic": "52544000",
+      "first_count": "00000008",
+      "second_count": "00000008",
+      "second_copy": "00000008",
+      "done": "52547000"
+    },
+    "AFTER_ACTIVE": {
+      "odr": "00000000",
+      "dir": "00000003",
+      "magic": "52544000",
+      "first_count": "00000008",
+      "second_count": "00000008",
+      "second_copy": "00000008",
+      "done": "52547000"
+    },
+    "FINAL": {
+      "odr": "00000000",
+      "dir": "00000003",
+      "magic": "52544000",
+      "first_count": "00000008",
+      "second_count": "00000008",
+      "second_copy": "00000008",
+      "done": "52547000"
+    }
+  },
+  "log_sha256": "46583EF81E5968D3E12AE278BDAC0D5680248D3056CB90AA42E9E05C584917F2"
+}

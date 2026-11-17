@@ -1,0 +1,43 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	40000437          	lui	s0,0x40000
+   4:	20040413          	addi	s0,s0,512 # 40000200 <__global_pointer$+0x3fffe978>
+   8:	40022537          	lui	a0,0x40022
+   c:	80c52583          	lw	a1,-2036(a0) # 4002180c <__global_pointer$+0x4001ff84>
+  10:	0015e593          	ori	a1,a1,1
+  14:	00000013          	nop
+  18:	80b52623          	sw	a1,-2036(a0)
+  1c:	00000013          	nop
+  20:	00000013          	nop
+  24:	00442583          	lw	a1,4(s0)
+  28:	ffc5f593          	andi	a1,a1,-4
+  2c:	00b42223          	sw	a1,4(s0)
+  30:	06842583          	lw	a1,104(s0)
+  34:	fc05f593          	andi	a1,a1,-64
+  38:	06b42423          	sw	a1,104(s0)
+  3c:	06c42583          	lw	a1,108(s0)
+  40:	ff05f593          	andi	a1,a1,-16
+  44:	06b42623          	sw	a1,108(s0)
+  48:	00042583          	lw	a1,0(s0)
+  4c:	ffc5f593          	andi	a1,a1,-4
+  50:	00b42023          	sw	a1,0(s0)
+  54:	05842583          	lw	a1,88(s0)
+  58:	f3c5f593          	andi	a1,a1,-196
+  5c:	0035e593          	ori	a1,a1,3
+  60:	04b42c23          	sw	a1,88(s0)
+  64:	05c42583          	lw	a1,92(s0)
+  68:	f3c5f593          	andi	a1,a1,-196
+  6c:	0805e593          	ori	a1,a1,128
+  70:	04b42e23          	sw	a1,92(s0)
+  74:	00442583          	lw	a1,4(s0)
+  78:	0015e593          	ori	a1,a1,1
+  7c:	00000013          	nop
+  80:	00b42223          	sw	a1,4(s0)
+
+00000084 <terminal>:
+  84:	0000006f          	j	84 <terminal>

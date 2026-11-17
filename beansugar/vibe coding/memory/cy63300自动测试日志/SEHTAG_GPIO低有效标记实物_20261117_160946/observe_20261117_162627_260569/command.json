@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/GPIO低有效标记/observe_20261117_162627_260569/run.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "tcl_sha256": "874984F9A99D4D8C1989A0459E7AE51E70EC29B9AA07D234C381A59F3BB2233D"
+}

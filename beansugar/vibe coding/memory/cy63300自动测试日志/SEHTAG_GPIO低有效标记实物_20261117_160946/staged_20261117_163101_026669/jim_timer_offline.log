@@ -1,0 +1,18 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+User : 13 0 options.c:60 configuration_output_handler(): debug_level: 3
+User : 14 0 options.c:60 configuration_output_handler(): 
+Debug: 15 0 options.c:184 add_default_dirs(): bindir=C:/msys64/work/build_openocd_for_windows/riscv-openocd-0.10.0/build/bin
+Debug: 16 0 options.c:185 add_default_dirs(): pkgdatadir=C:/msys64/work/build_openocd_for_windows/riscv-openocd-0.10.0/build/share/openocd
+Debug: 17 0 options.c:186 add_default_dirs(): exepath=D:/project/tools/tinyriscv-master/tools/openocd
+Debug: 18 0 options.c:187 add_default_dirs(): bin2data=../share/openocd
+Debug: 19 0 configuration.c:42 add_script_search_dir(): adding C:\Users\24796\AppData\Roaming/OpenOCD
+Debug: 20 0 configuration.c:42 add_script_search_dir(): adding D:/project/tools/tinyriscv-master/tools/openocd/../share/openocd/site
+Debug: 21 0 configuration.c:42 add_script_search_dir(): adding D:/project/tools/tinyriscv-master/tools/openocd/../share/openocd/scripts
+OFFLINE_TIMER_BEFORE
+OFFLINE_TIMER_MS=112
+OFFLINE_TIMER_PASS
+Debug: 22 116 command.c:143 script_debug(): command - shutdown shutdown
+User : 24 116 server.c:749 handle_shutdown_command(): shutdown command invoked

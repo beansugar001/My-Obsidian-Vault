@@ -1,0 +1,14 @@
+{
+  "exit_code": 0,
+  "sram_read": [
+    "0x00000008"
+  ],
+  "shutdown": true,
+  "log_sha256": "8CB469D67698A7116C9A924468B12C0761B71BB2F3E3492F748AD28B7AE81BE9",
+  "sbcs": {
+    "BEFORE": "0x20040404",
+    "AFTER_READ": "0x00150000",
+    "RESTORED": "0x00040000"
+  },
+  "sbcs_restore_complete": true
+}

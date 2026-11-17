@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/GPIO独立观测/program_20261117_153513_199667/flash_gpio_marker.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "V160B_PHASE": "snapshot",
+    "V160B_DUMP": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/GPIO独立观测/program_20261117_153513_199667/pre_erase/readback.bin",
+    "V160B_IMAGE": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/GPIO独立观测/program_20261117_153513_199667/candidate.bin",
+    "V160B_TRIGGER": "0x0"
+  },
+  "tcl_sha256": "8E381166D0367248BB8A68CA21D3E25AC2D9CD18A519AB935200336BEDFDAC07"
+}

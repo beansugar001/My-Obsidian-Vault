@@ -1,0 +1,449 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80688a
+Info : gdb port disabled
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4c80688a
+gdb port disabled
+
+CPU_STATE=running
+Debug: 54 518 command.c:143 script_debug(): command - mdw mdw 0x2000F010
+Debug: 56 518 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 57 522 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 58 522 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 59 525 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 60 528 riscv-013.c:378 scan(): 40b 3i w 2000f010 @39 -> + 00000000 @00
+Debug: 61 530 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 62 533 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 63 534 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 64 537 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 65 540 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 66 542 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e15 @00
+Debug: 67 542 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000e15
+Debug: 68 542 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 69 548 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 70 548 command.c:143 script_debug(): command - mdw mdw 0x2000F110
+Debug: 72 549 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 73 553 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 74 553 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 75 556 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 76 558 riscv-013.c:378 scan(): 40b 3i w 2000f110 @39 -> + 00000000 @00
+Debug: 77 561 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 78 561 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 79 561 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 80 568 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 81 568 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 82 568 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e1c @00
+Debug: 83 568 riscv-013.c:1848 log_memory_access(): M[0x2000f110] reads 0x00000e1c
+Debug: 84 577 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 85 580 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 86 580 command.c:143 script_debug(): command - echo echo MATCHED_BEGIN 0 quiet
+User : 88 580 command.c:770 jim_echo(): MATCHED_BEGIN 0 quiet
+Debug: 89 580 command.c:143 script_debug(): command - sleep sleep 350 busy
+Debug: 91 936 command.c:143 script_debug(): command - sleep sleep 344 busy
+Debug: 93 1283 command.c:143 script_debug(): command - sleep sleep 347 busy
+Debug: 96 1630 command.c:143 script_debug(): command - sleep sleep 350 busy
+Debug: 98 1980 command.c:143 script_debug(): command - sleep sleep 350 busy
+Debug: 101 2330 command.c:143 script_debug(): command - sleep sleep 350 busy
+Debug: 103 2680 command.c:143 script_debug(): command - echo echo MATCHED_END 0 quiet
+User : 106 2680 command.c:770 jim_echo(): MATCHED_END 0 quiet
+Debug: 107 2680 command.c:143 script_debug(): command - mdw mdw 0x2000F010
+Debug: 109 2681 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 110 2684 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 111 2684 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 112 2687 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 113 2690 riscv-013.c:378 scan(): 40b 3i w 2000f010 @39 -> + 00000000 @00
+Debug: 114 2693 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 115 2695 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 116 2695 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 117 2695 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 118 2701 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 119 2701 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e22 @00
+Debug: 120 2701 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000e22
+Debug: 121 2707 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 122 2707 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 123 2707 command.c:143 script_debug(): command - mdw mdw 0x2000F110
+Debug: 125 2707 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 126 2715 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 127 2715 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 128 2718 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 129 2721 riscv-013.c:378 scan(): 40b 3i w 2000f110 @39 -> + 00000000 @00
+Debug: 130 2723 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 131 2726 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 132 2727 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 133 2729 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 134 2732 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 135 2735 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e2a @00
+Debug: 136 2735 riscv-013.c:1848 log_memory_access(): M[0x2000f110] reads 0x00000e2a
+Debug: 137 2735 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 138 2742 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 139 2742 command.c:143 script_debug(): command - echo echo MATCHED_WINDOW 0 quiet 2100 0 0 3605 3618 3612 3626
+User : 141 2742 command.c:770 jim_echo(): MATCHED_WINDOW 0 quiet 2100 0 0 3605 3618 3612 3626
+Debug: 142 2743 command.c:143 script_debug(): command - mdw mdw 0x2000F010
+Debug: 144 2743 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 145 2746 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 146 2746 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 147 2749 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 148 2752 riscv-013.c:378 scan(): 40b 3i w 2000f010 @39 -> + 00000000 @00
+Debug: 149 2755 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 150 2758 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 151 2758 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 152 2760 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 153 2763 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 154 2763 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e32 @00
+Debug: 155 2763 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000e32
+Debug: 156 2770 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 157 2770 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 158 2770 command.c:143 script_debug(): command - mdw mdw 0x2000F110
+Debug: 160 2770 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 161 2777 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 162 2777 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 163 2780 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 164 2783 riscv-013.c:378 scan(): 40b 3i w 2000f110 @39 -> + 00000000 @00
+Debug: 165 2786 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 166 2789 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 167 2789 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 168 2791 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 169 2792 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 170 2797 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e38 @00
+Debug: 171 2797 riscv-013.c:1848 log_memory_access(): M[0x2000f110] reads 0x00000e38
+Debug: 172 2797 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 173 2797 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 174 2804 command.c:143 script_debug(): command - echo echo MATCHED_BEGIN 1 dmi
+User : 176 2804 command.c:770 jim_echo(): MATCHED_BEGIN 1 dmi
+Debug: 177 2804 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 179 2804 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 180 2804 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 181 2811 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 183 2814 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 184 2817 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 185 2817 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 187 2819 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 188 2823 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 189 2823 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 191 2826 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 192 2829 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 193 2829 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 195 2831 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 196 2834 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 197 2835 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 199 2837 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 200 2839 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 201 2839 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 203 2839 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 204 2846 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 205 2847 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 207 2850 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 208 2853 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 209 2853 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 211 2856 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 212 2860 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 213 2860 command.c:143 script_debug(): command - sleep sleep 294 busy
+Debug: 215 3154 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 217 3157 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 218 3159 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 219 3159 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 221 3159 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 222 3165 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 223 3165 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 225 3165 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 226 3165 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 227 3165 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 229 3175 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 230 3178 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 231 3178 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 233 3181 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 234 3184 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 235 3184 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 238 3187 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 239 3190 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 240 3190 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 242 3193 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 243 3193 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 244 3193 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 246 3193 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 247 3200 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 248 3200 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 250 3200 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 251 3207 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 252 3207 command.c:143 script_debug(): command - sleep sleep 297 busy
+Debug: 254 3506 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 256 3506 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 257 3506 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 258 3506 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 260 3515 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 261 3517 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 262 3517 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 264 3521 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 265 3524 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 266 3524 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 268 3527 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 269 3527 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 270 3527 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 272 3532 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 273 3535 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 274 3536 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 276 3538 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 277 3541 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 278 3542 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 280 3545 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 281 3548 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 282 3549 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 284 3552 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 285 3556 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 286 3556 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 288 3559 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 289 3562 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 290 3562 command.c:143 script_debug(): command - sleep sleep 292 busy
+Debug: 292 3854 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 295 3857 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 296 3860 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 297 3860 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 299 3860 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 300 3860 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 301 3860 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 303 3867 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 304 3872 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 305 3872 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 307 3875 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 308 3878 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 309 3878 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 311 3882 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 312 3885 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 313 3885 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 315 3888 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 316 3891 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 317 3891 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 319 3895 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 320 3898 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 321 3898 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 323 3900 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 324 3904 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 325 3904 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 327 3904 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 328 3910 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 329 3910 command.c:143 script_debug(): command - sleep sleep 294 busy
+Debug: 331 4205 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 333 4208 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 334 4208 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 335 4208 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 337 4214 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 338 4217 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 339 4217 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 341 4220 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 342 4223 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 343 4223 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 345 4226 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 346 4228 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 347 4228 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 349 4228 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 350 4235 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 351 4235 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 353 4235 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 354 4235 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 355 4235 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 357 4244 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 358 4247 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 359 4247 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 361 4250 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 362 4253 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 363 4253 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 365 4256 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 366 4259 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 367 4259 command.c:143 script_debug(): command - sleep sleep 295 busy
+Debug: 369 4554 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 372 4556 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 373 4559 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 374 4560 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 376 4561 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 377 4561 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 378 4561 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 380 4568 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 381 4568 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 382 4568 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 384 4568 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 385 4578 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 386 4578 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 388 4581 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 389 4584 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 390 4584 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 392 4587 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 393 4589 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 394 4589 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 396 4589 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 397 4596 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 398 4596 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 400 4596 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 401 4602 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 402 4602 command.c:143 script_debug(): command - riscv riscv dmi_read 0x11
+Debug: 404 4603 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 405 4603 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 406 4603 command.c:143 script_debug(): command - sleep sleep 301 busy
+Debug: 408 4904 command.c:143 script_debug(): command - echo echo MATCHED_END 1 dmi
+User : 410 4904 command.c:770 jim_echo(): MATCHED_END 1 dmi
+Debug: 411 4904 command.c:143 script_debug(): command - mdw mdw 0x2000F010
+Debug: 413 4904 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 414 4908 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 415 4908 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 416 4911 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 417 4914 riscv-013.c:378 scan(): 40b 3i w 2000f010 @39 -> + 00000000 @00
+Debug: 418 4917 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 419 4920 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 420 4920 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 421 4922 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 422 4922 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 423 4922 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e78 @00
+Debug: 424 4929 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000e78
+Debug: 425 4929 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 426 4929 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 427 4929 command.c:143 script_debug(): command - mdw mdw 0x2000F110
+Debug: 429 4929 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 430 4936 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 431 4936 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 432 4936 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 433 4944 riscv-013.c:378 scan(): 40b 3i w 2000f110 @39 -> + 00000000 @00
+Debug: 434 4948 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 435 4951 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 436 4951 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 437 4954 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 438 4957 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 439 4957 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e7f @00
+Debug: 440 4957 riscv-013.c:1848 log_memory_access(): M[0x2000f110] reads 0x00000e7f
+Debug: 441 4957 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 442 4964 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 443 4964 command.c:143 script_debug(): command - echo echo MATCHED_WINDOW 1 dmi 2100 54 0 3634 3704 3640 3711
+User : 445 4964 command.c:770 jim_echo(): MATCHED_WINDOW 1 dmi 2100 54 0 3634 3704 3640 3711
+Debug: 446 4964 command.c:143 script_debug(): command - mdw mdw 0x2000F010
+Debug: 448 4964 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 449 4964 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 450 4964 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 451 4971 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 452 4971 riscv-013.c:378 scan(): 40b 3i w 2000f010 @39 -> + 00000000 @00
+Debug: 453 4979 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 454 4982 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 455 4982 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 456 4985 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 457 4987 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 458 4990 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e86 @00
+Debug: 459 4991 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000e86
+Debug: 460 4992 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 461 4992 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 462 4992 command.c:143 script_debug(): command - mdw mdw 0x2000F110
+Debug: 464 4992 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 465 5001 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 466 5001 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 467 5005 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 468 5007 riscv-013.c:378 scan(): 40b 3i w 2000f110 @39 -> + 00000000 @00
+Debug: 469 5011 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 470 5014 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 471 5014 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 472 5017 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 473 5019 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 474 5022 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e8d @00
+Debug: 475 5022 riscv-013.c:1848 log_memory_access(): M[0x2000f110] reads 0x00000e8d
+Debug: 476 5025 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 477 5027 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 478 5027 command.c:143 script_debug(): command - echo echo MATCHED_BEGIN 2 cfg
+User : 480 5027 command.c:770 jim_echo(): MATCHED_BEGIN 2 cfg
+Debug: 481 5027 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 483 5027 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 484 5034 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 485 5034 command.c:143 script_debug(): command - riscv riscv dmi_write 0x38 0x00040000
+Debug: 487 5034 riscv-013.c:378 scan(): 40b 3i w 00040000 @38 -> + 00000000 @00
+Debug: 488 5034 riscv-013.c:389 scan():  sbaccess=2 -> 
+Debug: 489 5041 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 490 5042 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 492 5045 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 493 5048 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 494 5048 command.c:143 script_debug(): command - riscv riscv dmi_write 0x39 0x2000F004
+Debug: 496 5051 riscv-013.c:378 scan(): 40b 3i w 2000f004 @39 -> + 00000000 @00
+Debug: 497 5054 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 498 5054 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 501 5057 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 502 5060 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 503 5060 command.c:143 script_debug(): command - riscv riscv dmi_read 0x3C
+Debug: 505 5063 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 506 5066 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e94 @00
+Debug: 507 5066 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 509 5070 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 510 5073 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 511 5073 command.c:143 script_debug(): command - riscv riscv dmi_write 0x38 0x00040000
+Debug: 513 5077 riscv-013.c:378 scan(): 40b 3i w 00040000 @38 -> + 00000000 @00
+Debug: 514 5077 riscv-013.c:389 scan():  sbaccess=2 -> 
+Debug: 515 5080 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 516 5080 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 518 5083 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 519 5086 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 520 5086 command.c:143 script_debug(): command - echo echo CONTROL_SBDATA 2 0 00000E94
+User : 522 5087 command.c:770 jim_echo(): CONTROL_SBDATA 2 0 00000E94
+Debug: 523 5087 command.c:143 script_debug(): command - sleep sleep 290 busy
+Debug: 525 5381 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 527 5381 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 528 5381 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 529 5381 command.c:143 script_debug(): command - riscv riscv dmi_write 0x38 0x00040000
+Debug: 531 5391 riscv-013.c:378 scan(): 40b 3i w 00040000 @38 -> + 00000000 @00
+Debug: 532 5391 riscv-013.c:389 scan():  sbaccess=2 -> 
+Debug: 533 5394 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 534 5394 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 536 5395 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 537 5395 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 538 5395 command.c:143 script_debug(): command - riscv riscv dmi_write 0x39 0x2000F02C
+Debug: 540 5403 riscv-013.c:378 scan(): 40b 3i w 2000f02c @39 -> + 00000000 @00
+Debug: 541 5406 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 542 5406 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 544 5409 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 545 5412 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 546 5412 command.c:143 script_debug(): command - riscv riscv dmi_read 0x3C
+Debug: 548 5415 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 549 5418 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000e9f @00
+Debug: 550 5418 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 552 5420 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 553 5424 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 554 5424 command.c:143 script_debug(): command - riscv riscv dmi_write 0x38 0x00040000
+Debug: 556 5427 riscv-013.c:378 scan(): 40b 3i w 00040000 @38 -> + 00000000 @00
+Debug: 557 5427 riscv-013.c:389 scan():  sbaccess=2 -> 
+Debug: 558 5431 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 559 5431 command.c:143 script_debug(): command - riscv riscv dmi_read 0x38
+Debug: 561 5434 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 562 5436 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00040000 @00
+Debug: 563 5437 command.c:143 script_debug(): command - echo echo CONTROL_SBDATA 2 1 00000E9F
+User : 565 5437 command.c:770 jim_echo(): CONTROL_SBDATA 2 1 00000E9F
+Debug: 566 5437 command.c:143 script_debug(): command - echo echo MATCHED_ERROR=CONTROL_DATA_CHANGED_WITH_TRIGGER_OFF
+User : 568 5437 command.c:770 jim_echo(): MATCHED_ERROR=CONTROL_DATA_CHANGED_WITH_TRIGGER_OFF
+Debug: 569 5437 command.c:143 script_debug(): command - shutdown shutdown
+User : 571 5437 server.c:749 handle_shutdown_command(): shutdown command invoked
+Debug: 572 5437 riscv.c:292 riscv_deinit_target(): riscv_deinit_target()
+Debug: 573 5437 riscv-013.c:378 scan(): 40b 3i w 40000005 @10 -> + 00000000 @00
+Debug: 574 5437 riscv-013.c:389 scan():  resumereq dmactive -> 
+Debug: 575 5444 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 576 5447 riscv-013.c:378 scan(): 40b 3i w 00000000 @10 -> + 00000000 @00
+Debug: 577 5451 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 578 5451 riscv-013.c:1370 deinit_target(): riscv_deinit_target()
+Debug: 579 5452 target.c:1941 target_free_all_working_areas_restore(): freeing all working areas

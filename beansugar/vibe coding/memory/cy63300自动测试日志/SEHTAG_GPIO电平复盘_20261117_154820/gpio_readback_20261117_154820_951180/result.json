@@ -1,0 +1,78 @@
+{
+  "startup_matches": true,
+  "samples": [
+    {
+      "clk": "0x00000001",
+      "rst": "0x00000000",
+      "gpio": {
+        "DIR": "0x00000003",
+        "ODR": "0x00000003",
+        "IDR": "0x00000003",
+        "OSOD": "0x00000000",
+        "PUPD": "0x00000000",
+        "AFR1": "0x00000000",
+        "AFR2": "0x00000000"
+      },
+      "magic": "0x52544000",
+      "first_count": 8,
+      "second_count": 8,
+      "second_copy": 8,
+      "done": "0x52547000"
+    },
+    {
+      "clk": "0x00000001",
+      "rst": "0x00000000",
+      "gpio": {
+        "DIR": "0x00000003",
+        "ODR": "0x00000003",
+        "IDR": "0x00000003",
+        "OSOD": "0x00000000",
+        "PUPD": "0x00000000",
+        "AFR1": "0x00000000",
+        "AFR2": "0x00000000"
+      },
+      "magic": "0x52544000",
+      "first_count": 8,
+      "second_count": 8,
+      "second_copy": 8,
+      "done": "0x52547000"
+    },
+    {
+      "clk": "0x00000001",
+      "rst": "0x00000000",
+      "gpio": {
+        "DIR": "0x00000003",
+        "ODR": "0x00000003",
+        "IDR": "0x00000003",
+        "OSOD": "0x00000000",
+        "PUPD": "0x00000000",
+        "AFR1": "0x00000000",
+        "AFR2": "0x00000000"
+      },
+      "magic": "0x52544000",
+      "first_count": 8,
+      "second_count": 8,
+      "second_copy": 8,
+      "done": "0x52547000"
+    },
+    {
+      "clk": "0x00000001",
+      "rst": "0x00000000",
+      "gpio": {
+        "DIR": "0x00000003",
+        "ODR": "0x00000003",
+        "IDR": "0x00000003",
+        "OSOD": "0x00000000",
+        "PUPD": "0x00000000",
+        "AFR1": "0x00000000",
+        "AFR2": "0x00000000"
+      },
+      "magic": "0x52544000",
+      "first_count": 8,
+      "second_count": 8,
+      "second_copy": 8,
+      "done": "0x52547000"
+    }
+  ],
+  "log_sha256": "7905D8FD8CBD376F9DAF4DD1A3DBE0D80A707A504F3F162DF51B705C81E1A04D"
+}

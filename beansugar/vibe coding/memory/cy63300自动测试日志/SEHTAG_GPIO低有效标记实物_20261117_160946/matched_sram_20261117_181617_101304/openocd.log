@@ -1,0 +1,76 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x4c80688a
+Info : gdb port disabled
+CMSIS-DAP: SWD  Supported
+CMSIS-DAP: JTAG Supported
+CMSIS-DAP: FW Version = 0254
+CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+CMSIS-DAP: Interface Initialised (JTAG)
+SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+CMSIS-DAP: Interface ready
+clock speed 100 kHz
+cmsis-dap JTAG TLR_RESET
+cmsis-dap JTAG TLR_RESET
+JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+datacount=3 progbufsize=1
+Examined RISC-V core; found 1 harts
+ hart 0: XLEN=32, misa=0x4c80688a
+gdb port disabled
+
+CPU_STATE=running
+MATCHED_INIT -385752234
+MATCHED_SLOT_BEGIN -385747225
+MATCHED_SLOT_END -385747225
+MATCHED_SRAM_BEGIN -385742211
+Debug: 47 10384 command.c:143 script_debug(): command - mdw mdw 0x2000F010
+Debug: 48 10384 log.c:406 keep_alive(): keep_alive() was not invoked in the 1000ms timelimit (10384). This may cause trouble with GDB connections.
+Debug: 51 10385 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 52 10387 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 53 10387 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 54 10391 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 55 10394 riscv-013.c:378 scan(): 40b 3i w 2000f010 @39 -> + 00000000 @00
+Debug: 56 10397 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 57 10400 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 58 10400 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 59 10403 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 60 10406 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 61 10409 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000008 @00
+Debug: 62 10409 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000008
+Debug: 63 10412 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 64 10412 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+SRAM_ONLY_READ_COMPLETE 0x00000008
+MATCHED_SRAM_END -385742183
+MATCHED_WAIT_EXIT -385712169
+MATCHED_EXIT -385672814
+Debug: 65 79781 command.c:143 script_debug(): command - shutdown shutdown
+Debug: 66 79781 log.c:406 keep_alive(): keep_alive() was not invoked in the 1000ms timelimit (69397). This may cause trouble with GDB connections.
+Debug: 68 79782 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 69 79782 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 70 79782 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 71 79786 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 72 79788 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 74 79788 server.c:749 handle_shutdown_command(): shutdown command invoked
+Debug: 75 79789 riscv.c:292 riscv_deinit_target(): riscv_deinit_target()
+Debug: 76 79792 riscv-013.c:378 scan(): 40b 3i w 40000005 @10 -> + 00000000 @00
+Debug: 77 79792 riscv-013.c:389 scan():  resumereq dmactive -> 
+Debug: 78 79796 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 79 79799 riscv-013.c:378 scan(): 40b 3i w 00000000 @10 -> + 00000000 @00
+Debug: 80 79802 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 81 79802 riscv-013.c:1370 deinit_target(): riscv_deinit_target()
+Debug: 82 79802 target.c:1941 target_free_all_working_areas_restore(): freeing all working areas

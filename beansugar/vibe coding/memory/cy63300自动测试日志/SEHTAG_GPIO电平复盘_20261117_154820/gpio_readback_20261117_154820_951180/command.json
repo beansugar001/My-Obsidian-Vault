@@ -1,0 +1,14 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/GPIO独立观测/gpio_readback_20261117_154820_951180/inspect.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "GPIO_RUN": "C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/GPIO独立观测/gpio_readback_20261117_154820_951180"
+  },
+  "tcl_sha256": "2E631D6BF8D05ACF460631A7227B4586F91335814844881BB9D39D81458E3438"
+}

@@ -1,0 +1,79 @@
+{
+  "none/overlap": {
+    "runs": 1,
+    "done_cycles": [
+      277
+    ],
+    "fetch_hold_cycles_from_debug": [
+      0
+    ],
+    "fetch_hold_cycles_after_done": [
+      0
+    ],
+    "unexpected_rows": []
+  },
+  "dmstatus/overlap": {
+    "runs": 8,
+    "done_cycles": [
+      286,
+      287,
+      288,
+      289
+    ],
+    "fetch_hold_cycles_from_debug": [
+      13,
+      14,
+      15
+    ],
+    "fetch_hold_cycles_after_done": [
+      0
+    ],
+    "unexpected_rows": []
+  },
+  "dmstatus/after": {
+    "runs": 8,
+    "done_cycles": [
+      277
+    ],
+    "fetch_hold_cycles_from_debug": [
+      16
+    ],
+    "fetch_hold_cycles_after_done": [
+      16
+    ],
+    "unexpected_rows": []
+  },
+  "sba/overlap": {
+    "runs": 8,
+    "done_cycles": [
+      309,
+      310,
+      311,
+      312,
+      313
+    ],
+    "fetch_hold_cycles_from_debug": [
+      59,
+      60,
+      61,
+      62
+    ],
+    "fetch_hold_cycles_after_done": [
+      24
+    ],
+    "unexpected_rows": []
+  },
+  "sba/after": {
+    "runs": 8,
+    "done_cycles": [
+      277
+    ],
+    "fetch_hold_cycles_from_debug": [
+      66
+    ],
+    "fetch_hold_cycles_after_done": [
+      66
+    ],
+    "unexpected_rows": []
+  }
+}

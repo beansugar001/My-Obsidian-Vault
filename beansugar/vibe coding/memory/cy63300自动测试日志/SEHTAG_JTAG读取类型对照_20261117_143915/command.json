@@ -1,0 +1,18 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/SEHTAG_CSR可逆探针/双地址计数对照/access_type_20261117_143915_563083/run.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "sha256": {
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe": "EECE42DE2378E4A7D2D0D71D1178D8B35E4C67839FE2C4D5EA964C2561127E27",
+    "C:\\Users\\24796\\Documents\\组\\CY63300_I2C_BLACKBOX\\03_experiments\\bbx_v76a_100k.cfg": "CB6064F0866A495C067C634FAB91C9A2084AE1805E171C6BCA5758F3A241A4A1",
+    "C:\\Users\\24796\\Documents\\组\\SEHTAG_CSR可逆探针\\v160_cold_boot.tcl": "F71B3FC66D97AC8BB2382EEB862524C77D01BC5FA39D1FB359817AD83265075C",
+    "C:\\Users\\24796\\Documents\\组\\SEHTAG_CSR可逆探针\\双地址计数对照\\cadence_test.tcl": "E8AD1E28F367309714860616C55A576EB1F7E37C0F6CEBD2E8EF04476A272FEB",
+    "C:\\Users\\24796\\Documents\\组\\SEHTAG_CSR可逆探针\\双地址计数对照\\cadence_by_access.tcl": "73CFA3F62909D248812715186DA8E5C1E179412013CF54AC869CD755E3A4603B",
+    "C:\\Users\\24796\\Documents\\组\\SEHTAG_CSR可逆探针\\双地址计数对照\\access_type_20261117_143915_563083\\run.tcl": "E920E9D286BE97A6671D9E104DB9EBA6C688B4EEE94249D8208FA9784A0BFC3E"
+  }
+}

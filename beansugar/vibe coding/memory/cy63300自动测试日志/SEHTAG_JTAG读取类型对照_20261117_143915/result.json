@@ -1,0 +1,285 @@
+{
+  "completed": true,
+  "return_code": 0,
+  "summary": {
+    "quiet": {
+      "original_deltas": [
+        13,
+        12,
+        14,
+        14
+      ],
+      "copy_deltas": [
+        12,
+        13,
+        13,
+        15
+      ],
+      "average_original_delta": 13.25,
+      "max_duration_ms": 1400,
+      "slot_overruns": 0
+    },
+    "count": {
+      "original_deltas": [
+        132,
+        128,
+        137,
+        147
+      ],
+      "copy_deltas": [
+        134,
+        128,
+        136,
+        148
+      ],
+      "average_original_delta": 136,
+      "max_duration_ms": 1401,
+      "slot_overruns": 0
+    },
+    "sram": {
+      "original_deltas": [
+        121,
+        133,
+        145,
+        141
+      ],
+      "copy_deltas": [
+        121,
+        135,
+        146,
+        140
+      ],
+      "average_original_delta": 135,
+      "max_duration_ms": 1400,
+      "slot_overruns": 0
+    },
+    "dmi": {
+      "original_deltas": [
+        33,
+        31,
+        30,
+        29
+      ],
+      "copy_deltas": [
+        33,
+        32,
+        30,
+        27
+      ],
+      "average_original_delta": 30.75,
+      "max_duration_ms": 1400,
+      "slot_overruns": 0
+    }
+  },
+  "windows": [
+    {
+      "index": 0,
+      "duration_ms": 1400,
+      "interior_reads": 0,
+      "slot_overruns": 0,
+      "original_before": 1323,
+      "original_after": 1336,
+      "copy_before": 1329,
+      "copy_after": 1341,
+      "mode": "quiet",
+      "original_delta": 13,
+      "copy_delta": 12
+    },
+    {
+      "index": 1,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 1349,
+      "original_after": 1481,
+      "copy_before": 1354,
+      "copy_after": 1488,
+      "mode": "count",
+      "original_delta": 132,
+      "copy_delta": 134
+    },
+    {
+      "index": 2,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 1494,
+      "original_after": 1527,
+      "copy_before": 1500,
+      "copy_after": 1533,
+      "mode": "dmi",
+      "original_delta": 33,
+      "copy_delta": 33
+    },
+    {
+      "index": 3,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 1540,
+      "original_after": 1661,
+      "copy_before": 1546,
+      "copy_after": 1667,
+      "mode": "sram",
+      "original_delta": 121,
+      "copy_delta": 121
+    },
+    {
+      "index": 4,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 1672,
+      "original_after": 1800,
+      "copy_before": 1678,
+      "copy_after": 1806,
+      "mode": "count",
+      "original_delta": 128,
+      "copy_delta": 128
+    },
+    {
+      "index": 5,
+      "duration_ms": 1400,
+      "interior_reads": 0,
+      "slot_overruns": 0,
+      "original_before": 1813,
+      "original_after": 1825,
+      "copy_before": 1817,
+      "copy_after": 1830,
+      "mode": "quiet",
+      "original_delta": 12,
+      "copy_delta": 13
+    },
+    {
+      "index": 6,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 1836,
+      "original_after": 1969,
+      "copy_before": 1842,
+      "copy_after": 1977,
+      "mode": "sram",
+      "original_delta": 133,
+      "copy_delta": 135
+    },
+    {
+      "index": 7,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 1984,
+      "original_after": 2015,
+      "copy_before": 1990,
+      "copy_after": 2022,
+      "mode": "dmi",
+      "original_delta": 31,
+      "copy_delta": 32
+    },
+    {
+      "index": 8,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 2029,
+      "original_after": 2174,
+      "copy_before": 2034,
+      "copy_after": 2180,
+      "mode": "sram",
+      "original_delta": 145,
+      "copy_delta": 146
+    },
+    {
+      "index": 9,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 2186,
+      "original_after": 2216,
+      "copy_before": 2193,
+      "copy_after": 2223,
+      "mode": "dmi",
+      "original_delta": 30,
+      "copy_delta": 30
+    },
+    {
+      "index": 10,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 2230,
+      "original_after": 2367,
+      "copy_before": 2235,
+      "copy_after": 2371,
+      "mode": "count",
+      "original_delta": 137,
+      "copy_delta": 136
+    },
+    {
+      "index": 11,
+      "duration_ms": 1400,
+      "interior_reads": 0,
+      "slot_overruns": 0,
+      "original_before": 2376,
+      "original_after": 2390,
+      "copy_before": 2384,
+      "copy_after": 2397,
+      "mode": "quiet",
+      "original_delta": 14,
+      "copy_delta": 13
+    },
+    {
+      "index": 12,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 2402,
+      "original_after": 2431,
+      "copy_before": 2409,
+      "copy_after": 2436,
+      "mode": "dmi",
+      "original_delta": 29,
+      "copy_delta": 27
+    },
+    {
+      "index": 13,
+      "duration_ms": 1400,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 2444,
+      "original_after": 2585,
+      "copy_before": 2452,
+      "copy_after": 2592,
+      "mode": "sram",
+      "original_delta": 141,
+      "copy_delta": 140
+    },
+    {
+      "index": 14,
+      "duration_ms": 1400,
+      "interior_reads": 0,
+      "slot_overruns": 0,
+      "original_before": 2599,
+      "original_after": 2613,
+      "copy_before": 2604,
+      "copy_after": 2619,
+      "mode": "quiet",
+      "original_delta": 14,
+      "copy_delta": 15
+    },
+    {
+      "index": 15,
+      "duration_ms": 1401,
+      "interior_reads": 20,
+      "slot_overruns": 0,
+      "original_before": 2628,
+      "original_after": 2775,
+      "copy_before": 2635,
+      "copy_after": 2783,
+      "mode": "count",
+      "original_delta": 147,
+      "copy_delta": 148
+    }
+  ],
+  "log_sha256": "1AF7C3AD0C10B83D3E7591D28DB71F5EB62F8D30181F92D15AA2C23BC1C16353"
+}
