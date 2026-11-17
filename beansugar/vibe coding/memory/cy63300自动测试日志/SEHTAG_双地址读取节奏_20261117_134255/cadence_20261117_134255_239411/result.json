@@ -1,0 +1,79 @@
+{
+  "completed": true,
+  "exit_code": 0,
+  "windows": [
+    {
+      "index": 0,
+      "elapsed_ms": 1200,
+      "interior_reads": 0,
+      "original_before": 148,
+      "original_after": 165,
+      "copy_before": 155,
+      "copy_after": 169,
+      "mode": "quiet",
+      "original_delta": 17,
+      "copy_delta": 14
+    },
+    {
+      "index": 1,
+      "elapsed_ms": 1260,
+      "interior_reads": 42,
+      "original_before": 178,
+      "original_after": 501,
+      "copy_before": 184,
+      "copy_after": 506,
+      "mode": "active",
+      "original_delta": 323,
+      "copy_delta": 322
+    },
+    {
+      "index": 2,
+      "elapsed_ms": 1200,
+      "interior_reads": 40,
+      "original_before": 515,
+      "original_after": 842,
+      "copy_before": 525,
+      "copy_after": 848,
+      "mode": "active",
+      "original_delta": 327,
+      "copy_delta": 323
+    },
+    {
+      "index": 3,
+      "elapsed_ms": 1203,
+      "interior_reads": 0,
+      "original_before": 855,
+      "original_after": 867,
+      "copy_before": 863,
+      "copy_after": 874,
+      "mode": "quiet",
+      "original_delta": 12,
+      "copy_delta": 11
+    },
+    {
+      "index": 4,
+      "elapsed_ms": 1200,
+      "interior_reads": 0,
+      "original_before": 880,
+      "original_after": 895,
+      "copy_before": 888,
+      "copy_after": 903,
+      "mode": "quiet",
+      "original_delta": 15,
+      "copy_delta": 15
+    },
+    {
+      "index": 5,
+      "elapsed_ms": 1204,
+      "interior_reads": 40,
+      "original_before": 909,
+      "original_after": 1215,
+      "copy_before": 916,
+      "copy_after": 1221,
+      "mode": "active",
+      "original_delta": 306,
+      "copy_delta": 305
+    }
+  ],
+  "log_sha256": "42460C45970935B73FFDE8959C88D5425B8382BEF5DF3AD92E7D82BD7A2F2357"
+}
