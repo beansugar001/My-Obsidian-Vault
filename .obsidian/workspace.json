@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V157_HARDWARE_I2C_OLED_DISPLAY/CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT.md",
+                "file": "beansugar/组/每周工作/2026-11-16_本周工作.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT"
+              "title": "2026-11-16_本周工作"
             }
           }
         ]
@@ -209,8 +209,12 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70fe84cdd4b67d56",
+  "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V157_HARDWARE_I2C_OLED_DISPLAY/CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT.md",
+    "beansugar/组/每周工作/2026-11-16_本周工作.md",
+    "beansugar/组/每周工作",
+    "beansugar/组",
     "beansugar/vibe coding/memory/CY63300_LOGO1_SDEBUG接口审核与实物进度_20261118.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/run.tcl",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/result.json",
@@ -229,8 +233,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/run.tcl",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/result.json",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/openocd.log",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/command.json",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/JTAG排查经验.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/05-测试计划与软件工程详解.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/04-I2C排障指南.md",
@@ -246,8 +248,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109A2_GPIO_CLOCK_ENABLE_RESULT/V109A2_GPIO_CLOCK_ENABLE_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109A_GPIO_CLOCK_ENABLE_RESULT/V109A_GPIO_CLOCK_ENABLE_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109_POST_POWER_READONLY_RESULT/V109_POST_POWER_READONLY_RESULT.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V111_NEXT_I2C_TEST_PLAN/V111_NEXT_I2C_TEST_PLAN.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V110_RTL_I2C_FIFO_FLOW_SIMULATION/V110_RTL_I2C_FIFO_FLOW_SIMULATION.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.png",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
     "beansugar/论文笔记/BrainUICL_assets/table4_ablation.png",
