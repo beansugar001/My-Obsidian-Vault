@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/组/每周工作/2026-11-16_本周工作.md",
+                "file": "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG 硬件边界保护验收计划.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-11-16_本周工作"
+              "title": "SEHTAG 硬件边界保护验收计划"
             }
           }
         ]
@@ -194,8 +194,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -211,8 +210,9 @@
   },
   "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
-    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V157_HARDWARE_I2C_OLED_DISPLAY/CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT.md",
     "beansugar/组/每周工作/2026-11-16_本周工作.md",
+    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG 硬件边界保护验收计划.md",
+    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V157_HARDWARE_I2C_OLED_DISPLAY/CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT.md",
     "beansugar/组/每周工作",
     "beansugar/组",
     "beansugar/vibe coding/memory/CY63300_LOGO1_SDEBUG接口审核与实物进度_20261118.md",
@@ -247,7 +247,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109B_I2C_CLOCK_GATE_BASELINE_RESULT/V109B_I2C_CLOCK_GATE_BASELINE_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109A2_GPIO_CLOCK_ENABLE_RESULT/V109A2_GPIO_CLOCK_ENABLE_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109A_GPIO_CLOCK_ENABLE_RESULT/V109A_GPIO_CLOCK_ENABLE_RESULT.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109_POST_POWER_READONLY_RESULT/V109_POST_POWER_READONLY_RESULT.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.png",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
     "beansugar/论文笔记/BrainUICL_assets/table4_ablation.png",
