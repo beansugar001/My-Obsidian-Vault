@@ -1,0 +1,1640 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+User : 13 0 options.c:60 configuration_output_handler(): debug_level: 3
+User : 14 0 options.c:60 configuration_output_handler(): 
+Debug: 15 0 options.c:184 add_default_dirs(): bindir=C:/msys64/work/build_openocd_for_windows/riscv-openocd-0.10.0/build/bin
+Debug: 16 0 options.c:185 add_default_dirs(): pkgdatadir=C:/msys64/work/build_openocd_for_windows/riscv-openocd-0.10.0/build/share/openocd
+Debug: 17 6 options.c:186 add_default_dirs(): exepath=D:/project/tools/tinyriscv-master/tools/openocd
+Debug: 18 6 options.c:187 add_default_dirs(): bin2data=../share/openocd
+Debug: 19 6 configuration.c:42 add_script_search_dir(): adding C:\Users\24796\AppData\Roaming/OpenOCD
+Debug: 20 6 configuration.c:42 add_script_search_dir(): adding D:/project/tools/tinyriscv-master/tools/openocd/../share/openocd/site
+Debug: 21 6 configuration.c:42 add_script_search_dir(): adding D:/project/tools/tinyriscv-master/tools/openocd/../share/openocd/scripts
+Debug: 22 7 configuration.c:97 find_file(): found C:\Users\24796\Documents\组\CY63300_I2C_BLACKBOX\03_experiments\bbx_v76a_100k.cfg
+Debug: 23 7 command.c:143 script_debug(): command - adapter_khz adapter_khz 100
+Debug: 25 7 core.c:1639 jtag_config_khz(): handle jtag khz
+Debug: 26 7 core.c:1602 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 27 7 core.c:1602 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 28 7 command.c:143 script_debug(): command - gdb_port gdb_port disabled
+Debug: 30 7 command.c:143 script_debug(): command - telnet_port telnet_port disabled
+Debug: 32 7 command.c:143 script_debug(): command - tcl_port tcl_port disabled
+Debug: 34 7 command.c:143 script_debug(): command - interface interface cmsis-dap
+Debug: 36 7 command.c:355 register_command_handler(): registering 'cmsis-dap'...
+Debug: 37 7 command.c:355 register_command_handler(): registering 'cmsis-dap'...
+Debug: 38 7 command.c:355 register_command_handler(): registering 'cmsis_dap_vid_pid'...
+Debug: 39 7 command.c:355 register_command_handler(): registering 'cmsis_dap_serial'...
+Debug: 40 7 command.c:143 script_debug(): command - transport transport select jtag
+Debug: 41 7 command.c:355 register_command_handler(): registering 'jtag_flush_queue_sleep'...
+Debug: 42 7 command.c:355 register_command_handler(): registering 'jtag_rclk'...
+Debug: 43 7 command.c:355 register_command_handler(): registering 'jtag_ntrst_delay'...
+Debug: 44 7 command.c:355 register_command_handler(): registering 'jtag_ntrst_assert_width'...
+Debug: 45 7 command.c:355 register_command_handler(): registering 'scan_chain'...
+Debug: 46 7 command.c:355 register_command_handler(): registering 'jtag_reset'...
+Debug: 47 7 command.c:355 register_command_handler(): registering 'runtest'...
+Debug: 48 7 command.c:355 register_command_handler(): registering 'irscan'...
+Debug: 49 7 command.c:355 register_command_handler(): registering 'verify_ircapture'...
+Debug: 50 7 command.c:355 register_command_handler(): registering 'verify_jtag'...
+Debug: 51 7 command.c:355 register_command_handler(): registering 'tms_sequence'...
+Debug: 52 7 command.c:355 register_command_handler(): registering 'wait_srst_deassert'...
+Debug: 53 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 54 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 55 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 56 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 57 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 58 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 59 7 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 60 13 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 61 13 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 62 13 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 63 13 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 64 13 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 65 13 command.c:355 register_command_handler(): registering 'jtag'...
+Debug: 66 13 command.c:355 register_command_handler(): registering 'svf'...
+Debug: 67 13 command.c:355 register_command_handler(): registering 'xsvf'...
+Debug: 68 13 command.c:143 script_debug(): command - jtag jtag newtap riscv cpu -irlen 5 -expected-id 0x1e200a6f
+Debug: 69 14 tcl.c:566 jim_newtap_cmd(): Creating New Tap, Chip: riscv, Tap: cpu, Dotted: riscv.cpu, 4 params
+Debug: 70 14 tcl.c:591 jim_newtap_cmd(): Processing option: -irlen
+Debug: 71 14 tcl.c:591 jim_newtap_cmd(): Processing option: -expected-id
+Debug: 72 14 core.c:1303 jtag_tap_init(): Created Tap: riscv.cpu @ abs position 0, irlen 5, capture: 0x1 mask: 0x3
+Debug: 73 14 command.c:143 script_debug(): command - target target create riscv.cpu riscv -chain-position riscv.cpu
+Debug: 74 14 target.c:1941 target_free_all_working_areas_restore(): freeing all working areas
+Debug: 75 14 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 76 14 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 77 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 78 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 79 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 80 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 81 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 82 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 83 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 84 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 85 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 86 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 87 15 command.c:355 register_command_handler(): registering 'riscv'...
+Debug: 88 15 command.c:355 register_command_handler(): registering 'arm'...
+Debug: 89 15 command.c:355 register_command_handler(): registering 'arm'...
+Debug: 90 15 command.c:355 register_command_handler(): registering 'arm'...
+Debug: 91 15 command.c:355 register_command_handler(): registering 'arm'...
+Debug: 92 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 93 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 94 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 95 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 96 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 97 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 98 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 99 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 100 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 101 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 102 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 103 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 104 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 105 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 106 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 107 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 108 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 109 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 110 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 111 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 112 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 113 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 114 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 115 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 116 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 117 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 118 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 119 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 120 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 121 15 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 122 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 123 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 124 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 125 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 126 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 127 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 128 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 129 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 130 20 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 131 21 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 132 21 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 133 21 command.c:355 register_command_handler(): registering 'riscv.cpu'...
+Debug: 134 21 command.c:143 script_debug(): command - riscv riscv set_reset_timeout_sec 1
+Debug: 136 27 command.c:143 script_debug(): command - init init
+Debug: 138 27 command.c:143 script_debug(): command - target target init
+Debug: 140 27 command.c:143 script_debug(): command - target target names
+Debug: 141 27 command.c:143 script_debug(): command - riscv.cpu riscv.cpu cget -event gdb-flash-erase-start
+Debug: 142 27 command.c:143 script_debug(): command - riscv.cpu riscv.cpu configure -event gdb-flash-erase-start reset init
+Debug: 143 27 command.c:143 script_debug(): command - riscv.cpu riscv.cpu cget -event gdb-flash-write-end
+Debug: 144 27 command.c:143 script_debug(): command - riscv.cpu riscv.cpu configure -event gdb-flash-write-end reset halt
+Debug: 145 27 command.c:143 script_debug(): command - riscv.cpu riscv.cpu cget -event gdb-attach
+Debug: 146 27 command.c:143 script_debug(): command - riscv.cpu riscv.cpu configure -event gdb-attach halt
+Debug: 147 27 target.c:1404 handle_target_init_command(): Initializing targets...
+Debug: 148 27 riscv.c:255 riscv_init_target(): riscv_init_target()
+Debug: 149 27 semihosting_common.c:97 semihosting_common_init():  
+Debug: 150 27 command.c:355 register_command_handler(): registering 'target_request'...
+Debug: 151 27 command.c:355 register_command_handler(): registering 'trace'...
+Debug: 152 27 command.c:355 register_command_handler(): registering 'trace'...
+Debug: 153 27 command.c:355 register_command_handler(): registering 'fast_load_image'...
+Debug: 154 27 command.c:355 register_command_handler(): registering 'fast_load'...
+Debug: 155 27 command.c:355 register_command_handler(): registering 'profile'...
+Debug: 156 27 command.c:355 register_command_handler(): registering 'virt2phys'...
+Debug: 157 27 command.c:355 register_command_handler(): registering 'reg'...
+Debug: 158 27 command.c:355 register_command_handler(): registering 'poll'...
+Debug: 159 27 command.c:355 register_command_handler(): registering 'wait_halt'...
+Debug: 160 34 command.c:355 register_command_handler(): registering 'halt'...
+Debug: 161 34 command.c:355 register_command_handler(): registering 'resume'...
+Debug: 162 34 command.c:355 register_command_handler(): registering 'reset'...
+Debug: 163 34 command.c:355 register_command_handler(): registering 'soft_reset_halt'...
+Debug: 164 34 command.c:355 register_command_handler(): registering 'step'...
+Debug: 165 34 command.c:355 register_command_handler(): registering 'mdd'...
+Debug: 166 34 command.c:355 register_command_handler(): registering 'mdw'...
+Debug: 167 34 command.c:355 register_command_handler(): registering 'mdh'...
+Debug: 168 34 command.c:355 register_command_handler(): registering 'mdb'...
+Debug: 169 34 command.c:355 register_command_handler(): registering 'mwd'...
+Debug: 170 34 command.c:355 register_command_handler(): registering 'mww'...
+Debug: 171 34 command.c:355 register_command_handler(): registering 'mwh'...
+Debug: 172 34 command.c:355 register_command_handler(): registering 'mwb'...
+Debug: 173 34 command.c:355 register_command_handler(): registering 'bp'...
+Debug: 174 34 command.c:355 register_command_handler(): registering 'rbp'...
+Debug: 175 34 command.c:355 register_command_handler(): registering 'wp'...
+Debug: 176 34 command.c:355 register_command_handler(): registering 'rwp'...
+Debug: 177 34 command.c:355 register_command_handler(): registering 'load_image'...
+Debug: 178 34 command.c:355 register_command_handler(): registering 'dump_image'...
+Debug: 179 34 command.c:355 register_command_handler(): registering 'verify_image_checksum'...
+Debug: 180 34 command.c:355 register_command_handler(): registering 'verify_image'...
+Debug: 181 34 command.c:355 register_command_handler(): registering 'test_image'...
+Debug: 182 34 command.c:355 register_command_handler(): registering 'reset_nag'...
+Debug: 183 34 command.c:355 register_command_handler(): registering 'ps'...
+Debug: 184 34 command.c:355 register_command_handler(): registering 'test_mem_access'...
+Info : 185 125 cmsis_dap_usb.c:874 cmsis_dap_get_caps_info(): CMSIS-DAP: SWD  Supported
+Info : 186 125 cmsis_dap_usb.c:876 cmsis_dap_get_caps_info(): CMSIS-DAP: JTAG Supported
+Info : 187 125 cmsis_dap_usb.c:854 cmsis_dap_get_version_info(): CMSIS-DAP: FW Version = 0254
+Info : 188 131 cmsis_dap_usb.c:839 cmsis_dap_get_serial_info(): CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : 189 131 cmsis_dap_usb.c:1007 cmsis_dap_init(): CMSIS-DAP: Interface Initialised (JTAG)
+Debug: 190 131 cmsis_dap_usb.c:1039 cmsis_dap_init(): CMSIS-DAP: Packet Size = 64
+Debug: 191 138 cmsis_dap_usb.c:1052 cmsis_dap_init(): CMSIS-DAP: Packet Count = 4
+Debug: 192 138 cmsis_dap_usb.c:1055 cmsis_dap_init(): Allocating FIFO for 3 pending HID requests
+Info : 193 138 cmsis_dap_usb.c:889 cmsis_dap_get_status(): SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : 194 145 cmsis_dap_usb.c:1108 cmsis_dap_init(): CMSIS-DAP: Interface ready
+Debug: 195 145 core.c:1602 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 196 145 core.c:1606 adapter_khz_to_speed(): have interface set up
+Debug: 197 145 core.c:1602 adapter_khz_to_speed(): convert khz to interface specific speed value
+Debug: 198 145 core.c:1606 adapter_khz_to_speed(): have interface set up
+Info : 199 145 core.c:1384 adapter_init(): clock speed 100 kHz
+Debug: 200 145 openocd.c:158 handle_init_command(): Debug Adapter init complete
+Debug: 201 145 command.c:143 script_debug(): command - transport transport init
+Debug: 203 145 transport.c:239 handle_transport_init(): handle_transport_init
+Debug: 204 152 core.c:729 jtag_add_reset(): SRST line released
+Debug: 205 152 core.c:753 jtag_add_reset(): TRST line released
+Debug: 206 152 core.c:327 jtag_call_event_callbacks(): jtag event: TAP reset
+Debug: 207 152 command.c:143 script_debug(): command - jtag jtag arp_init
+Debug: 208 152 core.c:1397 jtag_init_inner(): Init JTAG chain
+Debug: 209 152 core.c:327 jtag_call_event_callbacks(): jtag event: TAP reset
+Info : 210 152 cmsis_dap_usb.c:1158 cmsis_dap_execute_tlr_reset(): cmsis-dap JTAG TLR_RESET
+Debug: 211 152 core.c:1060 jtag_examine_chain(): DR scan interrogation for IDCODE/BYPASS
+Debug: 212 152 core.c:327 jtag_call_event_callbacks(): jtag event: TAP reset
+Info : 213 173 cmsis_dap_usb.c:1158 cmsis_dap_execute_tlr_reset(): cmsis-dap JTAG TLR_RESET
+Info : 214 173 core.c:959 jtag_examine_chain_display(): JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Debug: 215 173 core.c:1193 jtag_validate_ircapture(): IR capture validation scan
+Debug: 216 173 core.c:1250 jtag_validate_ircapture(): riscv.cpu: IR capture 0x01
+Debug: 217 179 command.c:143 script_debug(): command - dap dap init
+Debug: 219 179 arm_dap.c:105 dap_init_all(): Initializing all DAPs ...
+Debug: 220 179 openocd.c:175 handle_init_command(): Examining targets...
+Debug: 221 179 target.c:1590 target_call_event_callbacks(): target event 17 (examine-start)
+Debug: 222 179 riscv.c:792 riscv_examine(): riscv_examine()
+Debug: 223 180 riscv.c:227 dtmcontrol_scan(): DTMCONTROL: 0x0 -> 0x5061
+Debug: 224 180 riscv.c:802 riscv_examine(): dtmcontrol=0x5061
+Debug: 225 180 riscv.c:804 riscv_examine():   version=0x1
+Debug: 226 180 riscv-013.c:1606 init_target(): init
+Debug: 227 180 riscv-013.c:426 dtmcontrol_scan(): DTMCS: 0x0 -> 0x5061
+Debug: 228 186 riscv-013.c:1382 examine(): dtmcontrol=0x5061
+Debug: 229 186 riscv-013.c:1383 examine():   dmireset=0
+Debug: 230 186 riscv-013.c:1384 examine():   idle=5
+Debug: 231 186 riscv-013.c:1385 examine():   dmistat=0
+Debug: 232 186 riscv-013.c:1386 examine():   abits=6
+Debug: 233 187 riscv-013.c:1387 examine():   version=1
+Debug: 234 187 riscv-013.c:378 scan(): 40b 0i w 00000000 @10 -> + 00000000 @00
+Debug: 235 193 riscv-013.c:378 scan(): 40b 0i - 00000000 @10 -> b 00000000 @00
+Debug: 236 193 riscv-013.c:435 increase_dmi_busy_delay(): dtmcs_idle=5, dmi_busy_delay=1, ac_busy_delay=0
+Debug: 237 194 riscv-013.c:426 dtmcontrol_scan(): DTMCS: 0x10000 -> 0x5461
+Debug: 238 194 riscv-013.c:378 scan(): 40b 1i - 00000000 @10 -> + 00000000 @00
+Debug: 239 201 riscv-013.c:378 scan(): 40b 1i w 00000001 @10 -> + 00000000 @00
+Debug: 240 201 riscv-013.c:389 scan():  dmactive -> 
+Debug: 241 201 riscv-013.c:378 scan(): 40b 1i - 00000000 @10 -> b 00000000 @00
+Debug: 242 201 riscv-013.c:435 increase_dmi_busy_delay(): dtmcs_idle=5, dmi_busy_delay=2, ac_busy_delay=0
+Debug: 243 208 riscv-013.c:426 dtmcontrol_scan(): DTMCS: 0x10000 -> 0x5461
+Debug: 244 208 riscv-013.c:378 scan(): 40b 2i - 00000000 @10 -> + 00000000 @00
+Debug: 245 214 riscv-013.c:378 scan(): 40b 2i w 03ffffc1 @10 -> + 00000000 @00
+Debug: 246 214 riscv-013.c:389 scan():  hartselhi=1023 hartsello=1023 dmactive -> 
+Debug: 247 215 riscv-013.c:378 scan(): 40b 2i - 00000000 @10 -> b 00000000 @00
+Debug: 248 215 riscv-013.c:435 increase_dmi_busy_delay(): dtmcs_idle=5, dmi_busy_delay=3, ac_busy_delay=0
+Debug: 249 215 riscv-013.c:426 dtmcontrol_scan(): DTMCS: 0x10000 -> 0x5461
+Debug: 250 222 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 251 222 riscv-013.c:378 scan(): 40b 3i r 00000000 @10 -> + 00000000 @00
+Debug: 252 228 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 03c10001 @00
+Debug: 253 228 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 254 235 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 255 236 riscv-013.c:1425 examine(): dmstatus:  0x00430c82
+Debug: 256 236 riscv-013.c:1441 examine(): hartsellen=1
+Debug: 257 237 riscv-013.c:378 scan(): 40b 3i r 00000000 @12 -> + 00000000 @00
+Debug: 258 237 riscv-013.c:378 scan(): 40b 3i - 00000000 @12 -> + 00000000 @00
+Debug: 259 243 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 260 243 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 20040404 @00
+Debug: 261 249 riscv-013.c:378 scan(): 40b 3i r 00000000 @16 -> + 00000000 @00
+Debug: 262 249 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 01000003 @00
+Info : 263 249 riscv-013.c:1472 examine(): datacount=3 progbufsize=1
+Debug: 264 256 riscv-013.c:378 scan(): 40b 3i r 00000000 @10 -> + 00000000 @00
+Debug: 265 256 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 03c10001 @00
+Debug: 266 256 riscv-013.c:378 scan(): 40b 3i w 00000001 @10 -> + 00000000 @00
+Debug: 267 256 riscv-013.c:389 scan():  dmactive -> 
+Debug: 268 263 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 269 263 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 270 270 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 271 270 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 272 277 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 273 277 riscv-013.c:2899 riscv013_halt_current_hart(): halting hart 0
+Debug: 274 277 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 275 277 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 276 284 riscv-013.c:378 scan(): 40b 3i r 00000000 @10 -> + 00000000 @00
+Debug: 277 284 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00010001 @00
+Debug: 278 291 riscv-013.c:378 scan(): 40b 3i w 80010001 @10 -> + 00000000 @00
+Debug: 279 291 riscv-013.c:389 scan(): haltreq hartsello=1 dmactive -> 
+Debug: 280 291 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 281 298 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 282 298 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 283 298 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 284 305 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 285 305 riscv-013.c:378 scan(): 40b 3i w 00010001 @10 -> + 00000000 @00
+Debug: 286 305 riscv-013.c:389 scan():  hartsello=1 dmactive -> 
+Debug: 287 312 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 288 312 riscv-013.c:721 execute_abstract_command(): command=0x321008; access register, size=64, postexec=0, transfer=1, write=0, regno=0x1008
+Debug: 289 312 riscv-013.c:378 scan(): 40b 3i w 00321008 @17 -> + 00000000 @00
+Debug: 290 319 riscv-013.c:378 scan(): 40b 3i - 00000000 @17 -> + 00000000 @00
+Debug: 291 319 riscv-013.c:378 scan(): 40b 3i r 00000000 @16 -> + 00000000 @00
+Debug: 292 325 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 01000203 @00
+Debug: 293 325 riscv-013.c:743 execute_abstract_command(): command 0x321008 failed; abstractcs=0x1000203
+Debug: 294 326 riscv-013.c:378 scan(): 40b 3i w 00000200 @16 -> + 00000000 @00
+Debug: 295 326 riscv-013.c:389 scan():  cmderr=2 -> 
+Debug: 296 326 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 00000000 @00
+Debug: 297 326 riscv-013.c:721 execute_abstract_command(): command=0x220301; access register, size=32, postexec=0, transfer=1, write=0, regno=0x301
+Debug: 298 333 riscv-013.c:378 scan(): 40b 3i w 00220301 @17 -> + 00000000 @00
+Debug: 299 337 riscv-013.c:378 scan(): 40b 3i - 00000000 @17 -> + 00000000 @00
+Debug: 300 340 riscv-013.c:378 scan(): 40b 3i r 00000000 @16 -> + 00000000 @00
+Debug: 301 340 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 01000003 @00
+Debug: 302 346 riscv-013.c:378 scan(): 40b 3i r 00000000 @04 -> + 00000000 @00
+Debug: 303 347 riscv-013.c:378 scan(): 40b 3i - 00000000 @04 -> + 000800ac @00
+Debug: 304 347 riscv-013.c:1323 register_read_direct(): {0} reg[0x342] = 0x800ac
+Debug: 305 347 riscv.c:2528 riscv_init_registers(): create register cache for 4162 registers
+Debug: 306 347 riscv-013.c:1536 examine():  hart 0: XLEN=32, misa=0x800ac
+Debug: 307 347 riscv-013.c:3452 riscv013_step_or_resume_current_hart(): resuming hart 0 (for step?=0)
+Debug: 308 353 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 309 354 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 310 354 riscv-013.c:378 scan(): 40b 3i w 40000001 @10 -> + 00000000 @00
+Debug: 311 354 riscv-013.c:389 scan():  resumereq dmactive -> 
+Debug: 312 362 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 313 362 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 314 368 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 315 368 riscv-013.c:378 scan(): 40b 3i w 00000001 @10 -> + 00000000 @00
+Debug: 316 368 riscv-013.c:389 scan():  dmactive -> 
+Debug: 317 374 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 318 374 riscv-013.c:1543 examine(): Enumerated 1 harts
+Info : 319 374 riscv-013.c:1555 examine(): Examined RISC-V core; found 1 harts
+Info : 320 374 riscv-013.c:1559 examine():  hart 0: XLEN=32, misa=0x800ac
+Debug: 321 374 target.c:1590 target_call_event_callbacks(): target event 18 (examine-end)
+Debug: 322 374 command.c:143 script_debug(): command - flash flash init
+Debug: 323 374 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 324 374 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 325 374 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=0
+Debug: 326 374 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 327 381 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 328 381 riscv.c:1158 riscv_poll_hart():   triggered running
+Debug: 330 381 tcl.c:1222 handle_flash_init_command(): Initializing flash devices...
+Debug: 331 381 command.c:143 script_debug(): command - mflash mflash init
+Debug: 332 381 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 333 381 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 334 381 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 335 381 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 336 388 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 338 388 mflash.c:1378 handle_mflash_init_command(): Initializing mflash devices...
+Debug: 339 388 command.c:143 script_debug(): command - nand nand init
+Debug: 340 388 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 341 388 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 342 388 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 343 388 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 344 395 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 346 395 tcl.c:498 handle_nand_init_command(): Initializing NAND devices...
+Debug: 347 395 command.c:143 script_debug(): command - pld pld init
+Debug: 348 395 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 349 395 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 350 395 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 351 395 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 352 402 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 354 402 pld.c:206 handle_pld_init_command(): Initializing PLDs...
+Info : 355 402 gdb_server.c:3432 gdb_target_add_one(): gdb port disabled
+Debug: 356 402 command.c:143 script_debug(): command - echo echo PJ_INIT_OK
+Debug: 357 402 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 358 402 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 359 402 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 360 402 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 361 409 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 363 409 command.c:770 jim_echo(): PJ_INIT_OK
+Debug: 364 409 command.c:143 script_debug(): command - riscv.cpu riscv.cpu curstate
+Debug: 365 409 command.c:143 script_debug(): command - echo echo PJ_STATE0=running
+Debug: 366 409 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 367 409 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 368 409 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 369 409 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 370 416 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 372 416 command.c:770 jim_echo(): PJ_STATE0=running
+Debug: 373 416 command.c:143 script_debug(): command - riscv.cpu riscv.cpu curstate
+Debug: 374 416 command.c:143 script_debug(): command - halt halt 2000
+Debug: 375 416 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 376 416 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 377 416 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 378 416 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 379 423 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 381 423 target.c:3028 handle_halt_command(): -
+Debug: 382 423 riscv.c:1321 riscv_openocd_halt(): [0] halting all harts
+Debug: 383 423 riscv.c:2039 riscv_halt_one_hart(): halting hart 0
+Debug: 384 423 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 385 423 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 386 430 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 387 430 riscv-013.c:2899 riscv013_halt_current_hart(): halting hart 0
+Debug: 388 430 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 389 430 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 390 437 riscv-013.c:378 scan(): 40b 3i r 00000000 @10 -> + 00000000 @00
+Debug: 391 437 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00010001 @00
+Debug: 392 444 riscv-013.c:378 scan(): 40b 3i w 80010001 @10 -> + 00000000 @00
+Debug: 393 444 riscv-013.c:389 scan(): haltreq hartsello=1 dmactive -> 
+Debug: 394 444 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 395 451 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 396 451 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 397 457 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 398 458 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 399 458 riscv-013.c:378 scan(): 40b 3i w 00010001 @10 -> + 00000000 @00
+Debug: 400 458 riscv-013.c:389 scan():  hartsello=1 dmactive -> 
+Debug: 401 465 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 402 465 riscv.c:2168 riscv_invalidate_register_cache(): [0]
+Debug: 403 465 target.c:1590 target_call_event_callbacks(): target event 0 (gdb-halt)
+Debug: 404 465 target.c:1590 target_call_event_callbacks(): target event 1 (halted)
+Debug: 405 465 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 406 465 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 407 465 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 408 465 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 409 472 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 410 472 command.c:143 script_debug(): command - reg reg pc
+Debug: 411 472 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 412 472 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 413 472 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 414 472 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 415 479 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 417 479 target.c:2822 handle_reg_command(): -
+Debug: 418 479 riscv-013.c:2825 riscv013_get_register(): reading register pc on hart 0
+Debug: 419 479 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 420 479 riscv-013.c:721 execute_abstract_command(): command=0x2207b1; access register, size=32, postexec=0, transfer=1, write=0, regno=0x7b1
+Debug: 421 479 riscv-013.c:378 scan(): 40b 3i w 002207b1 @17 -> + 00000000 @00
+Debug: 422 486 riscv-013.c:378 scan(): 40b 3i - 00000000 @17 -> + 00000000 @00
+Debug: 423 486 riscv-013.c:378 scan(): 40b 3i r 00000000 @16 -> + 00000000 @00
+Debug: 424 492 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 01000003 @00
+Debug: 425 492 riscv-013.c:378 scan(): 40b 3i r 00000000 @04 -> + 00000000 @00
+Debug: 426 492 riscv-013.c:378 scan(): 40b 3i - 00000000 @04 -> + 2c062df3 @00
+Debug: 427 492 riscv-013.c:1323 register_read_direct(): {0} reg[0x7f2] = 0x2c062df3
+Debug: 428 492 riscv-013.c:2832 riscv013_get_register(): read PC from DPC: 0x2c062df3
+Debug: 429 492 riscv.c:2251 riscv_get_register_on_hart(): {0} pc: 2c062df3
+Debug: 430 492 riscv.c:2465 register_get(): [0]{0} read 0x2c062df3 from pc (valid=1)
+Debug: 431 499 command.c:143 script_debug(): command - echo echo PJ_PC_BEFORE=pc (/32): 0x2C062DF3
+
+Debug: 432 499 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 433 499 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 434 499 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 435 499 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 436 499 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+User : 438 499 command.c:770 jim_echo(): PJ_PC_BEFORE=pc (/32): 0x2C062DF3
+
+Debug: 439 499 command.c:143 script_debug(): command - mww mww 0x2000F048 0xDEADBEEF
+Debug: 440 499 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 441 499 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 442 506 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 443 506 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 444 506 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 446 506 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 447 513 riscv-013.c:378 scan(): 40b 3i w 00050000 @38 -> + 00000000 @00
+Debug: 448 513 riscv-013.c:389 scan():  sbaccess=2 sbautoincrement -> 
+Debug: 449 513 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 450 520 riscv-013.c:378 scan(): 40b 3i w 2000f048 @39 -> + 00000000 @00
+Debug: 451 520 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 452 527 riscv-013.c:378 scan(): 40b 3i w deadbeef @3c -> + 00000000 @00
+Debug: 453 527 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000000 @00
+Debug: 454 527 riscv-013.c:1848 log_memory_access(): M[0x2000f048] writes 0xdeadbeef
+Debug: 455 527 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 456 534 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00050000 @00
+Debug: 458 534 command.c:143 script_debug(): command - mww mww 0x2000F04C 0xCAFEBABE
+Debug: 459 534 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 460 534 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 461 534 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 462 537 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 463 541 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 465 541 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 466 541 riscv-013.c:378 scan(): 40b 3i w 00050000 @38 -> + 00000000 @00
+Debug: 467 541 riscv-013.c:389 scan():  sbaccess=2 sbautoincrement -> 
+Debug: 468 548 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 469 548 riscv-013.c:378 scan(): 40b 3i w 2000f04c @39 -> + 00000000 @00
+Debug: 470 555 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 471 555 riscv-013.c:378 scan(): 40b 3i w cafebabe @3c -> + 00000000 @00
+Debug: 472 555 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000000 @00
+Debug: 473 561 riscv-013.c:1848 log_memory_access(): M[0x2000f04c] writes 0xcafebabe
+Debug: 474 562 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 475 562 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00050000 @00
+Debug: 476 562 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F048 4
+Debug: 477 562 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 478 562 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 479 562 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 480 569 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 481 569 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 483 569 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f048
+Debug: 484 569 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 485 576 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 486 576 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 487 576 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 488 584 riscv-013.c:378 scan(): 40b 3i w 2000f048 @39 -> + 00000000 @00
+Debug: 489 584 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 490 590 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 491 590 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 492 590 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 493 596 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 494 597 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + deadbeef @00
+Debug: 495 597 riscv-013.c:1848 log_memory_access(): M[0x2000f048] reads 0xdeadbeef
+Debug: 496 597 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 497 604 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 498 604 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F04C 4
+Debug: 499 604 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 500 604 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 501 604 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 502 604 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 503 611 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 505 611 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f04c
+Debug: 506 611 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 507 611 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 508 611 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 509 617 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 510 617 riscv-013.c:378 scan(): 40b 3i w 2000f04c @39 -> + 00000000 @00
+Debug: 511 624 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 512 624 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 513 624 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 514 631 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 515 631 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 516 637 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + cafebabe @00
+Debug: 517 637 riscv-013.c:1848 log_memory_access(): M[0x2000f04c] reads 0xcafebabe
+Debug: 518 639 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 519 639 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 520 639 command.c:143 script_debug(): command - echo echo PJ_POISON=0xDEADBEEF/0xCAFEBABE
+Debug: 521 639 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 522 639 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 523 639 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 524 645 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 525 645 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+User : 527 645 command.c:770 jim_echo(): PJ_POISON=0xDEADBEEF/0xCAFEBABE
+Debug: 528 645 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F038 4
+Debug: 529 645 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 530 645 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 531 645 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 532 652 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 533 652 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 535 652 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f038
+Debug: 536 652 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 537 659 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 538 659 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 539 659 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 540 666 riscv-013.c:378 scan(): 40b 3i w 2000f038 @39 -> + 00000000 @00
+Debug: 541 666 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 542 673 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 543 673 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 544 673 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 545 673 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 546 680 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 547 680 riscv-013.c:1848 log_memory_access(): M[0x2000f038] reads 0x13579bdf
+Debug: 548 680 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 549 687 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 550 687 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F03C 4
+Debug: 551 687 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 552 687 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 553 687 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 554 687 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 555 694 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 557 694 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f03c
+Debug: 558 694 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 559 694 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 560 694 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 561 701 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 562 701 riscv-013.c:378 scan(): 40b 3i w 2000f03c @39 -> + 00000000 @00
+Debug: 563 708 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 564 708 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 565 708 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 566 714 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 567 715 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 568 715 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 569 715 riscv-013.c:1848 log_memory_access(): M[0x2000f03c] reads 0x13579bdf
+Debug: 570 722 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 571 722 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 572 722 command.c:143 script_debug(): command - echo echo PJ_OLD_W14=0x13579BDF W15=0x13579BDF
+Debug: 573 722 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 574 722 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 575 722 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 576 729 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 577 729 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+User : 579 729 command.c:770 jim_echo(): PJ_OLD_W14=0x13579BDF W15=0x13579BDF
+Debug: 580 729 command.c:143 script_debug(): command - reg reg pc 0x0
+Debug: 581 729 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 582 729 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 583 729 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 584 735 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 585 737 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430382 @00
+Debug: 587 737 target.c:2822 handle_reg_command(): -
+Debug: 588 737 riscv.c:2478 register_set(): [0]{0} write 0x0 to pc (valid=1)
+Debug: 589 737 riscv.c:2225 riscv_set_register_on_hart(): {0} pc <- 0
+Debug: 590 737 riscv-013.c:2848 riscv013_set_register(): writing 0x0 to register pc on hart 0
+Debug: 591 737 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 592 737 riscv-013.c:2856 riscv013_set_register(): writing PC to DPC: 0x0
+Debug: 593 737 riscv-013.c:1140 register_write_direct(): {0} reg[0x7f2] <- 0x0
+Debug: 594 742 riscv-013.c:378 scan(): 40b 3i w 00000000 @04 -> + 00000000 @00
+Debug: 595 742 riscv-013.c:378 scan(): 40b 3i - 00000000 @04 -> + 00000000 @00
+Debug: 596 742 riscv-013.c:721 execute_abstract_command(): command=0x2307b1; access register, size=32, postexec=0, transfer=1, write=1, regno=0x7b1
+Debug: 597 749 riscv-013.c:378 scan(): 40b 3i w 002307b1 @17 -> + 00000000 @00
+Debug: 598 749 riscv-013.c:378 scan(): 40b 3i - 00000000 @17 -> + 00000000 @00
+Debug: 599 756 riscv-013.c:378 scan(): 40b 3i r 00000000 @16 -> + 00000000 @00
+Debug: 600 756 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 01000003 @00
+Debug: 601 756 riscv-013.c:721 execute_abstract_command(): command=0x2207b1; access register, size=32, postexec=0, transfer=1, write=0, regno=0x7b1
+Debug: 602 756 riscv-013.c:378 scan(): 40b 3i w 002207b1 @17 -> + 00000000 @00
+Debug: 603 763 riscv-013.c:378 scan(): 40b 3i - 00000000 @17 -> + 00000000 @00
+Debug: 604 763 riscv-013.c:378 scan(): 40b 3i r 00000000 @16 -> + 00000000 @00
+Debug: 605 770 riscv-013.c:378 scan(): 40b 3i - 00000000 @16 -> + 01000003 @00
+Debug: 606 770 riscv-013.c:378 scan(): 40b 3i r 00000000 @04 -> + 00000000 @00
+Debug: 607 777 riscv-013.c:378 scan(): 40b 3i - 00000000 @04 -> + 2c062df3 @00
+Debug: 608 777 riscv-013.c:1323 register_read_direct(): {0} reg[0x7f2] = 0x2c062df3
+Debug: 609 777 riscv-013.c:2860 riscv013_set_register():   actual DPC written: 0x000000002c062df3
+Error: 610 777 riscv-013.c:2862 riscv013_set_register(): Written PC (0x0) does not match read back value (0x2c062df3)
+Debug: 611 777 command.c:143 script_debug(): command - reg reg pc
+Debug: 612 777 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 613 777 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 614 777 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=2
+Debug: 615 777 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 616 784 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 617 784 riscv.c:1158 riscv_poll_hart():   triggered running
+Debug: 619 784 target.c:2822 handle_reg_command(): -
+Debug: 620 784 command.c:143 script_debug(): command - echo echo PJ_PC_AFTER_SET=pc (/32): 0x00000000
+
+Debug: 621 784 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 622 784 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 623 784 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 624 784 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 625 791 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 627 791 command.c:770 jim_echo(): PJ_PC_AFTER_SET=pc (/32): 0x00000000
+
+Debug: 628 791 command.c:143 script_debug(): command - resume resume
+Debug: 629 791 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 630 791 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 631 791 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 632 791 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 633 798 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 635 798 target.c:1590 target_call_event_callbacks(): target event 3 (resume-start)
+Debug: 636 798 riscv.c:872 old_or_new_riscv_resume(): handle_breakpoints=1
+Debug: 637 798 riscv.c:1361 riscv_openocd_resume(): debug_reason=0
+Debug: 638 798 riscv.c:2068 riscv_resume_one_hart(): resuming hart 0
+Debug: 639 798 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 640 798 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 641 805 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 642 805 riscv.c:2072 riscv_resume_one_hart():   hart 0 requested resume, but was already resumed
+Debug: 643 805 riscv.c:2168 riscv_invalidate_register_cache(): [0]
+Debug: 644 805 target.c:1590 target_call_event_callbacks(): target event 2 (resumed)
+Debug: 645 805 target.c:1590 target_call_event_callbacks(): target event 4 (resume-end)
+Debug: 646 805 command.c:143 script_debug(): command - riscv.cpu riscv.cpu curstate
+Debug: 647 805 command.c:143 script_debug(): command - echo echo PJ_STATE1=running
+Debug: 648 805 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 649 805 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 650 805 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 651 805 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 652 812 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 654 812 command.c:770 jim_echo(): PJ_STATE1=running
+Debug: 655 812 command.c:143 script_debug(): command - sleep sleep 1500
+Debug: 656 812 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 657 812 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 658 812 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 659 812 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 660 819 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 662 819 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 663 819 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 664 819 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 665 819 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 666 825 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 667 833 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 668 833 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 669 833 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 670 833 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 671 840 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 672 847 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 673 847 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 674 847 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 675 847 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 676 853 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 677 861 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 678 861 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 679 861 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 680 861 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 681 867 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 682 875 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 683 875 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 684 875 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 685 875 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 686 881 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 687 888 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 688 888 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 689 888 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 690 888 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 691 895 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 692 902 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 693 902 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 694 902 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 695 902 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 696 909 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 697 916 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 698 916 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 699 916 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 700 916 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 701 923 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 702 930 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 703 930 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 704 930 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 705 930 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 706 937 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 707 944 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 708 944 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 709 944 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 710 944 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 711 950 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 712 958 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 713 958 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 714 958 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 715 958 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 716 965 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 717 972 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 718 972 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 719 972 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 720 972 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 721 978 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 722 986 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 723 986 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 724 986 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 725 986 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 726 992 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 727 1000 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 728 1000 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 729 1000 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 730 1000 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 731 1006 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 732 1014 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 733 1014 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 734 1014 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 735 1014 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 736 1020 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 737 1022 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 738 1022 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 739 1022 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 740 1022 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 741 1028 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 742 1034 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 743 1034 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 744 1034 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 745 1037 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 746 1041 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 748 1049 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 749 1049 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 750 1049 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 751 1049 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 752 1055 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 753 1062 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 754 1062 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 755 1062 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 756 1062 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 757 1069 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 758 1076 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 759 1076 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 760 1076 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 761 1076 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 762 1082 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 763 1090 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 764 1090 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 765 1090 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 766 1090 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 767 1096 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 768 1104 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 769 1104 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 770 1104 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 771 1104 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 772 1110 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 773 1118 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 774 1118 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 775 1118 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 776 1118 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 777 1124 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 778 1131 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 779 1131 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 780 1131 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 781 1131 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 782 1138 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 783 1145 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 784 1145 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 785 1145 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 786 1145 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 787 1152 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 788 1159 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 789 1159 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 790 1159 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 791 1159 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 792 1166 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 793 1173 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 794 1173 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 795 1173 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 796 1173 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 797 1180 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 798 1187 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 799 1187 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 800 1187 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 801 1187 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 802 1194 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 803 1201 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 804 1201 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 805 1201 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 806 1201 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 807 1207 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 808 1215 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 809 1215 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 810 1215 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 811 1215 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 812 1221 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 813 1229 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 814 1229 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 815 1229 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 816 1229 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 817 1235 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 818 1243 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 819 1243 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 820 1243 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 821 1243 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 822 1249 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 823 1257 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 824 1257 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 825 1257 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 826 1257 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 827 1263 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 828 1270 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 829 1270 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 830 1270 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 831 1270 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 832 1277 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 833 1284 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 834 1284 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 835 1284 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 836 1284 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 837 1291 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 838 1298 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 839 1298 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 840 1298 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 841 1298 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 842 1305 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 843 1312 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 844 1312 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 845 1312 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 846 1312 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 847 1319 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 848 1326 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 849 1326 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 850 1326 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 851 1326 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 852 1332 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 853 1340 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 854 1340 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 855 1340 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 856 1340 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 857 1346 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 858 1354 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 859 1354 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 860 1354 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 861 1354 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 862 1360 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 863 1368 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 864 1368 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 865 1368 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 866 1368 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 867 1374 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 868 1381 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 869 1381 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 870 1381 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 871 1381 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 872 1388 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 873 1395 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 874 1395 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 875 1395 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 876 1395 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 877 1402 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 878 1409 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 879 1409 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 880 1409 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 881 1409 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 882 1416 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 883 1423 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 884 1423 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 885 1423 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 886 1423 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 887 1423 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 888 1437 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 889 1437 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 890 1437 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 891 1438 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 892 1444 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 893 1451 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 894 1451 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 895 1451 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 896 1451 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 897 1457 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 898 1465 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 899 1465 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 900 1465 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 901 1465 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 902 1471 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 903 1479 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 904 1479 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 905 1479 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 906 1479 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 907 1485 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 908 1493 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 909 1493 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 910 1493 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 911 1493 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 912 1499 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 913 1507 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 914 1507 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 915 1507 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 916 1507 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 917 1513 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 918 1520 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 919 1520 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 920 1520 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 921 1520 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 922 1520 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 923 1534 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 924 1534 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 925 1534 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 926 1538 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 927 1541 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 928 1548 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 929 1548 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 930 1548 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 931 1548 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 932 1555 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 934 1562 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 935 1562 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 936 1562 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 937 1562 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 938 1568 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 939 1576 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 940 1576 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 941 1576 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 942 1576 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 943 1582 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 944 1590 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 945 1590 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 946 1590 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 947 1590 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 948 1596 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 949 1604 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 950 1604 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 951 1604 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 952 1604 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 953 1610 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 954 1618 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 955 1618 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 956 1618 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 957 1618 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 958 1624 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 959 1631 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 960 1631 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 961 1631 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 962 1631 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 963 1638 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 964 1645 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 965 1645 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 966 1645 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 967 1645 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 968 1652 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 969 1659 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 970 1659 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 971 1659 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 972 1659 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 973 1666 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 974 1673 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 975 1673 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 976 1673 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 977 1673 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 978 1680 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 979 1687 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 980 1687 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 981 1687 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 982 1687 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 983 1694 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 984 1701 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 985 1701 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 986 1701 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 987 1701 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 988 1707 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 989 1715 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 990 1715 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 991 1715 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 992 1715 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 993 1722 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 994 1729 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 995 1729 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 996 1729 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 997 1729 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 998 1735 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 999 1743 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1000 1743 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1001 1743 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1002 1743 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1003 1749 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1004 1757 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1005 1757 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1006 1757 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1007 1757 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1008 1763 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1009 1770 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1010 1770 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1011 1770 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1012 1770 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1013 1777 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1014 1784 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1015 1784 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1016 1784 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1017 1784 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1018 1791 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1019 1798 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1020 1798 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1021 1798 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1022 1798 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1023 1805 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1024 1812 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1025 1812 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1026 1812 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1027 1812 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1028 1819 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1029 1826 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1030 1826 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1031 1826 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1032 1826 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1033 1832 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1034 1840 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1035 1840 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1036 1840 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1037 1840 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1038 1846 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1039 1854 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1040 1854 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1041 1854 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1042 1854 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1043 1860 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1044 1868 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1045 1868 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1046 1868 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1047 1868 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1048 1874 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1049 1882 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1050 1882 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1051 1882 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1052 1882 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1053 1888 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1054 1895 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1055 1895 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1056 1895 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1057 1895 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1058 1902 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1059 1909 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1060 1909 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1061 1909 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1062 1909 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1063 1916 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1064 1923 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1065 1923 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1066 1923 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1067 1923 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1068 1930 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1069 1937 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1070 1937 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1071 1937 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1072 1939 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1073 1944 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1074 1951 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1075 1951 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1076 1951 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1077 1951 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1078 1957 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1079 1965 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1080 1965 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1081 1965 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1082 1965 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1083 1972 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1084 1979 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1085 1979 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1086 1979 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1087 1979 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1088 1985 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1089 1994 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1090 1994 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1091 1994 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1092 1994 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1093 2000 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1094 2007 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1095 2007 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1096 2007 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1097 2007 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1098 2013 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1099 2020 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1100 2020 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1101 2020 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1102 2020 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1103 2027 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1104 2035 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1105 2035 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1106 2035 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1107 2035 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1108 2041 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1109 2048 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1110 2048 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1111 2048 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1112 2048 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1113 2055 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1115 2064 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1116 2064 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1117 2064 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1118 2064 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1119 2069 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1120 2076 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1121 2076 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1122 2076 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1123 2076 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1124 2082 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1125 2090 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1126 2090 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1127 2090 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1128 2090 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1129 2096 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1130 2104 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1131 2104 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1132 2104 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1133 2104 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1134 2110 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1135 2118 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1136 2118 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1137 2118 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1138 2118 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1139 2124 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1140 2132 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1141 2132 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1142 2132 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1143 2132 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1144 2138 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1145 2145 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1146 2145 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1147 2146 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1148 2147 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1149 2152 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1150 2159 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1151 2159 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1152 2159 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1153 2159 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1154 2159 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1155 2173 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1156 2173 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1157 2173 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1158 2173 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1159 2173 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1160 2187 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1161 2187 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1162 2187 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1163 2187 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1164 2193 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1165 2201 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1166 2201 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1167 2201 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1168 2201 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1169 2207 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1170 2215 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1171 2215 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1172 2215 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1173 2215 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1174 2221 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1175 2229 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1176 2229 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1177 2229 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1178 2229 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1179 2235 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1180 2243 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1181 2243 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1182 2243 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1183 2243 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1184 2249 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1185 2256 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1186 2256 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1187 2256 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1188 2256 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1189 2263 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1190 2270 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1191 2270 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1192 2270 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1193 2270 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1194 2277 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1195 2284 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1196 2284 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1197 2284 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1198 2284 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1199 2291 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1200 2298 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1201 2298 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1202 2298 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1203 2298 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1204 2298 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1205 2313 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1206 2313 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1207 2313 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1208 2313 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1209 2319 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1210 2326 command.c:143 script_debug(): command - riscv.cpu riscv.cpu curstate
+Debug: 1211 2326 command.c:143 script_debug(): command - echo echo PJ_STATE2=running
+Debug: 1212 2326 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1213 2326 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1214 2326 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1215 2326 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1216 2332 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1218 2332 command.c:770 jim_echo(): PJ_STATE2=running
+Debug: 1219 2332 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F000 4
+Debug: 1220 2332 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1221 2333 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1222 2333 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1223 2333 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1224 2339 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1226 2340 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f000
+Debug: 1227 2340 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1228 2340 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1229 2340 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1230 2346 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1231 2347 riscv-013.c:378 scan(): 40b 3i w 2000f000 @39 -> + 00000000 @00
+Debug: 1232 2347 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1233 2354 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1234 2354 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1235 2354 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1236 2360 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1237 2360 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 4d533134 @00
+Debug: 1238 2360 riscv-013.c:1848 log_memory_access(): M[0x2000f000] reads 0x4d533134
+Debug: 1239 2367 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1240 2367 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1241 2367 command.c:143 script_debug(): command - echo echo PJ_MARKER=0x4D533134
+Debug: 1242 2367 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1243 2367 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1244 2367 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1245 2374 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1246 2374 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1248 2374 command.c:770 jim_echo(): PJ_MARKER=0x4D533134
+Debug: 1249 2374 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F038 4
+Debug: 1250 2374 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1251 2374 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1252 2374 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1253 2381 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1254 2381 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1256 2381 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f038
+Debug: 1257 2381 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1258 2388 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1259 2388 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1260 2388 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1261 2388 riscv-013.c:378 scan(): 40b 3i w 2000f038 @39 -> + 00000000 @00
+Debug: 1262 2395 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1263 2395 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1264 2395 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1265 2402 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1266 2402 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1267 2409 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + deadbeef @00
+Debug: 1268 2409 riscv-013.c:1848 log_memory_access(): M[0x2000f038] reads 0xdeadbeef
+Debug: 1269 2409 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1270 2409 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1271 2416 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F03C 4
+Debug: 1272 2416 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1273 2416 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1274 2416 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1275 2416 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1276 2423 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1278 2423 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f03c
+Debug: 1279 2423 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1280 2423 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1281 2423 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1282 2430 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1283 2430 riscv-013.c:378 scan(): 40b 3i w 2000f03c @39 -> + 00000000 @00
+Debug: 1284 2430 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1285 2439 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1286 2439 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1287 2439 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1288 2444 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1289 2444 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + cafebabe @00
+Debug: 1290 2444 riscv-013.c:1848 log_memory_access(): M[0x2000f03c] reads 0xcafebabe
+Debug: 1291 2451 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1292 2451 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1293 2451 command.c:143 script_debug(): command - echo echo PJ_W14=0xDEADBEEF W15=0xCAFEBABE
+Debug: 1294 2451 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1295 2451 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1296 2451 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1297 2458 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1298 2458 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1300 2458 command.c:770 jim_echo(): PJ_W14=0xDEADBEEF W15=0xCAFEBABE
+Debug: 1301 2458 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F050 4
+Debug: 1302 2458 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1303 2458 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1304 2458 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1305 2465 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1306 2465 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1308 2465 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f050
+Debug: 1309 2465 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1310 2472 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1311 2472 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1312 2472 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1313 2478 riscv-013.c:378 scan(): 40b 3i w 2000f050 @39 -> + 00000000 @00
+Debug: 1314 2479 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1315 2479 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1316 2479 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1317 2485 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1318 2485 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1319 2493 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1320 2493 riscv-013.c:1848 log_memory_access(): M[0x2000f050] reads 0x2468ace0
+Debug: 1321 2493 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1322 2499 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1323 2499 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F054 4
+Debug: 1324 2499 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1325 2499 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1326 2499 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1327 2499 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1328 2506 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1330 2506 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f054
+Debug: 1331 2506 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1332 2506 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1333 2506 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1334 2513 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1335 2513 riscv-013.c:378 scan(): 40b 3i w 2000f054 @39 -> + 00000000 @00
+Debug: 1336 2513 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1337 2520 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1338 2520 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1339 2520 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1340 2527 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1341 2527 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1342 2527 riscv-013.c:1848 log_memory_access(): M[0x2000f054] reads 0x13579bdf
+Debug: 1343 2534 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1344 2534 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1345 2534 command.c:143 script_debug(): command - echo echo PJ_BEFORE=0x2468ACE0/0x13579BDF
+Debug: 1346 2534 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1347 2534 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1348 2534 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1349 2541 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1350 2541 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1352 2541 command.c:770 jim_echo(): PJ_BEFORE=0x2468ACE0/0x13579BDF
+Debug: 1353 2541 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F058 4
+Debug: 1354 2541 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1355 2541 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1356 2541 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1357 2548 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1358 2548 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1360 2548 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f058
+Debug: 1361 2548 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1362 2555 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1363 2555 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1364 2555 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1365 2561 riscv-013.c:378 scan(): 40b 3i w 2000f058 @39 -> + 00000000 @00
+Debug: 1366 2562 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1367 2562 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1368 2562 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1369 2569 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1370 2569 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1371 2576 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1372 2576 riscv-013.c:1848 log_memory_access(): M[0x2000f058] reads 0x2468ace0
+Debug: 1373 2576 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1374 2582 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1375 2583 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/tmp.bin 0x2000F05C 4
+Debug: 1377 2583 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1378 2583 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1379 2583 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1380 2584 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1381 2590 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1383 2590 target.c:2209 target_read_buffer(): reading buffer of 4 byte at 0x2000f05c
+Debug: 1384 2590 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1385 2590 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1386 2590 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1387 2597 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1388 2597 riscv-013.c:378 scan(): 40b 3i w 2000f05c @39 -> + 00000000 @00
+Debug: 1389 2603 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1390 2604 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1391 2604 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1392 2604 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1393 2610 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1394 2610 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1395 2610 riscv-013.c:1848 log_memory_access(): M[0x2000f05c] reads 0x13579bdf
+Debug: 1396 2618 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1397 2618 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1398 2618 command.c:143 script_debug(): command - echo echo PJ_AFTER_OS=0x2468ACE0/0x13579BDF
+Debug: 1399 2618 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1400 2618 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1401 2618 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1402 2624 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1403 2624 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1405 2624 command.c:770 jim_echo(): PJ_AFTER_OS=0x2468ACE0/0x13579BDF
+Debug: 1406 2624 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/dest_a.bin 0x2000F048 8
+Debug: 1407 2624 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1408 2624 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1409 2624 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1410 2631 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1411 2631 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1413 2631 target.c:2209 target_read_buffer(): reading buffer of 8 byte at 0x2000f048
+Debug: 1414 2631 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1415 2639 riscv-013.c:378 scan(): 40b 3i w 00158000 @38 -> + 00000000 @00
+Debug: 1416 2639 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement sbreadondata -> 
+Debug: 1417 2639 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1418 2645 riscv-013.c:378 scan(): 40b 3i w 2000f048 @39 -> + 00000000 @00
+Debug: 1419 2645 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1420 2645 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1421 2652 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1422 2652 riscv-013.c:1848 log_memory_access(): M[0x2000f048] reads 0x2468ace0
+Debug: 1423 2652 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1424 2652 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1425 2659 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1426 2659 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1427 2666 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1428 2666 riscv-013.c:1848 log_memory_access(): M[0x2000f04c] reads 0x13579bdf
+Debug: 1429 2666 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1430 2666 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1431 2673 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/mbox_a.bin 0x2000F000 112
+Debug: 1432 2673 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1433 2673 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1434 2673 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1435 2673 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1436 2680 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1438 2680 target.c:2209 target_read_buffer(): reading buffer of 112 byte at 0x2000f000
+Debug: 1439 2680 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1440 2680 riscv-013.c:378 scan(): 40b 3i w 00158000 @38 -> + 00000000 @00
+Debug: 1441 2680 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement sbreadondata -> 
+Debug: 1442 2687 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1443 2687 riscv-013.c:378 scan(): 40b 3i w 2000f000 @39 -> + 00000000 @00
+Debug: 1444 2693 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1445 2694 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1446 2694 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 4d533134 @00
+Debug: 1447 2694 riscv-013.c:1848 log_memory_access(): M[0x2000f000] reads 0x4d533134
+Debug: 1448 2701 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1449 2701 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000000 @00
+Debug: 1450 2701 riscv-013.c:1848 log_memory_access(): M[0x2000f004] reads 0x00000000
+Debug: 1451 2708 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1452 2708 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1453 2708 riscv-013.c:1848 log_memory_access(): M[0x2000f008] reads 0x13579bdf
+Debug: 1454 2714 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1455 2715 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1456 2715 riscv-013.c:1848 log_memory_access(): M[0x2000f00c] reads 0x2468ace0
+Debug: 1457 2715 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1458 2722 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000001 @00
+Debug: 1459 2722 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000001
+Debug: 1460 2722 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1461 2728 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000001 @00
+Debug: 1462 2728 riscv-013.c:1848 log_memory_access(): M[0x2000f014] reads 0x00000001
+Debug: 1463 2728 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1464 2735 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + efb35497 @00
+Debug: 1465 2735 riscv-013.c:1848 log_memory_access(): M[0x2000f018] reads 0xefb35497
+Debug: 1466 2735 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1467 2739 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1468 2739 riscv-013.c:1848 log_memory_access(): M[0x2000f01c] reads 0x2468ace0
+Debug: 1469 2742 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1470 2742 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + d5bbe7ee @00
+Debug: 1471 2742 riscv-013.c:1848 log_memory_access(): M[0x2000f020] reads 0xd5bbe7ee
+Debug: 1472 2749 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1473 2749 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 67d5c0ec @00
+Debug: 1474 2749 riscv-013.c:1848 log_memory_access(): M[0x2000f024] reads 0x67d5c0ec
+Debug: 1475 2756 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1476 2756 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 16652648 @00
+Debug: 1477 2756 riscv-013.c:1848 log_memory_access(): M[0x2000f028] reads 0x16652648
+Debug: 1478 2756 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1479 2763 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + e22d4625 @00
+Debug: 1480 2763 riscv-013.c:1848 log_memory_access(): M[0x2000f02c] reads 0xe22d4625
+Debug: 1481 2763 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1482 2770 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1483 2770 riscv-013.c:1848 log_memory_access(): M[0x2000f030] reads 0x13579bdf
+Debug: 1484 2770 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1485 2777 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1486 2777 riscv-013.c:1848 log_memory_access(): M[0x2000f034] reads 0x2468ace0
+Debug: 1487 2777 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1488 2777 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + deadbeef @00
+Debug: 1489 2777 riscv-013.c:1848 log_memory_access(): M[0x2000f038] reads 0xdeadbeef
+Debug: 1490 2784 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1491 2784 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + cafebabe @00
+Debug: 1492 2784 riscv-013.c:1848 log_memory_access(): M[0x2000f03c] reads 0xcafebabe
+Debug: 1493 2791 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1494 2791 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1495 2791 riscv-013.c:1848 log_memory_access(): M[0x2000f040] reads 0x13579bdf
+Debug: 1496 2798 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1497 2798 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1498 2798 riscv-013.c:1848 log_memory_access(): M[0x2000f044] reads 0x2468ace0
+Debug: 1499 2798 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1500 2805 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1501 2805 riscv-013.c:1848 log_memory_access(): M[0x2000f048] reads 0x2468ace0
+Debug: 1502 2805 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1503 2812 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1504 2812 riscv-013.c:1848 log_memory_access(): M[0x2000f04c] reads 0x13579bdf
+Debug: 1505 2812 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1506 2819 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1507 2819 riscv-013.c:1848 log_memory_access(): M[0x2000f050] reads 0x2468ace0
+Debug: 1508 2819 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1509 2825 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1510 2825 riscv-013.c:1848 log_memory_access(): M[0x2000f054] reads 0x13579bdf
+Debug: 1511 2826 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1512 2826 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1513 2826 riscv-013.c:1848 log_memory_access(): M[0x2000f058] reads 0x2468ace0
+Debug: 1514 2833 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1515 2833 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1516 2833 riscv-013.c:1848 log_memory_access(): M[0x2000f05c] reads 0x13579bdf
+Debug: 1517 2840 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1518 2840 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 0e7e418a @00
+Debug: 1519 2840 riscv-013.c:1848 log_memory_access(): M[0x2000f060] reads 0x0e7e418a
+Debug: 1520 2846 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1521 2847 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + ba61d08f @00
+Debug: 1522 2847 riscv-013.c:1848 log_memory_access(): M[0x2000f064] reads 0xba61d08f
+Debug: 1523 2847 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1524 2854 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 31630db1 @00
+Debug: 1525 2854 riscv-013.c:1848 log_memory_access(): M[0x2000f068] reads 0x31630db1
+Debug: 1526 2854 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1527 2854 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1528 2860 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1529 2860 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1530 2867 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + dae46c89 @00
+Debug: 1531 2867 riscv-013.c:1848 log_memory_access(): M[0x2000f06c] reads 0xdae46c89
+Debug: 1532 2867 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1533 2867 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1534 2867 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/dest_b.bin 0x2000F048 8
+Debug: 1535 2874 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1536 2874 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1537 2874 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1538 2875 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1539 2875 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1541 2881 target.c:2209 target_read_buffer(): reading buffer of 8 byte at 0x2000f048
+Debug: 1542 2881 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1543 2882 riscv-013.c:378 scan(): 40b 3i w 00158000 @38 -> + 00000000 @00
+Debug: 1544 2882 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement sbreadondata -> 
+Debug: 1545 2882 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1546 2888 riscv-013.c:378 scan(): 40b 3i w 2000f048 @39 -> + 00000000 @00
+Debug: 1547 2888 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1548 2895 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1549 2895 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1550 2895 riscv-013.c:1848 log_memory_access(): M[0x2000f048] reads 0x2468ace0
+Debug: 1551 2902 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1552 2902 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1553 2902 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1554 2902 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1555 2909 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1556 2909 riscv-013.c:1848 log_memory_access(): M[0x2000f04c] reads 0x13579bdf
+Debug: 1557 2913 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1558 2917 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1559 2917 command.c:143 script_debug(): command - dump_image dump_image C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/pc_jump_20261120_165310/mbox_b.bin 0x2000F000 112
+Debug: 1560 2917 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1561 2917 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1562 2917 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1563 2917 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1564 2923 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+Debug: 1566 2923 target.c:2209 target_read_buffer(): reading buffer of 112 byte at 0x2000f000
+Debug: 1567 2923 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1568 2923 riscv-013.c:378 scan(): 40b 3i w 00158000 @38 -> + 00000000 @00
+Debug: 1569 2923 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement sbreadondata -> 
+Debug: 1570 2930 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1571 2930 riscv-013.c:378 scan(): 40b 3i w 2000f000 @39 -> + 00000000 @00
+Debug: 1572 2937 riscv-013.c:378 scan(): 40b 3i - 00000000 @39 -> + 00000000 @00
+Debug: 1573 2940 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1574 2943 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 4d533134 @00
+Debug: 1575 2943 riscv-013.c:1848 log_memory_access(): M[0x2000f000] reads 0x4d533134
+Debug: 1576 2944 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1577 2944 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000000 @00
+Debug: 1578 2944 riscv-013.c:1848 log_memory_access(): M[0x2000f004] reads 0x00000000
+Debug: 1579 2951 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1580 2951 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1581 2951 riscv-013.c:1848 log_memory_access(): M[0x2000f008] reads 0x13579bdf
+Debug: 1582 2958 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1583 2958 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1584 2958 riscv-013.c:1848 log_memory_access(): M[0x2000f00c] reads 0x2468ace0
+Debug: 1585 2964 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1586 2965 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000001 @00
+Debug: 1587 2965 riscv-013.c:1848 log_memory_access(): M[0x2000f010] reads 0x00000001
+Debug: 1588 2965 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1589 2972 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 00000001 @00
+Debug: 1590 2972 riscv-013.c:1848 log_memory_access(): M[0x2000f014] reads 0x00000001
+Debug: 1591 2972 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1592 2979 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + efb35497 @00
+Debug: 1593 2979 riscv-013.c:1848 log_memory_access(): M[0x2000f018] reads 0xefb35497
+Debug: 1594 2979 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1595 2985 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1596 2986 riscv-013.c:1848 log_memory_access(): M[0x2000f01c] reads 0x2468ace0
+Debug: 1597 2986 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1598 2986 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + d5bbe7ee @00
+Debug: 1599 2986 riscv-013.c:1848 log_memory_access(): M[0x2000f020] reads 0xd5bbe7ee
+Debug: 1600 2992 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1601 2992 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 67d5c0ec @00
+Debug: 1602 2992 riscv-013.c:1848 log_memory_access(): M[0x2000f024] reads 0x67d5c0ec
+Debug: 1603 3000 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1604 3000 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 16652648 @00
+Debug: 1605 3000 riscv-013.c:1848 log_memory_access(): M[0x2000f028] reads 0x16652648
+Debug: 1606 3006 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1607 3007 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + e22d4625 @00
+Debug: 1608 3007 riscv-013.c:1848 log_memory_access(): M[0x2000f02c] reads 0xe22d4625
+Debug: 1609 3007 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1610 3013 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1611 3013 riscv-013.c:1848 log_memory_access(): M[0x2000f030] reads 0x13579bdf
+Debug: 1612 3013 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1613 3020 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1614 3020 riscv-013.c:1848 log_memory_access(): M[0x2000f034] reads 0x2468ace0
+Debug: 1615 3020 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1616 3027 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + deadbeef @00
+Debug: 1617 3027 riscv-013.c:1848 log_memory_access(): M[0x2000f038] reads 0xdeadbeef
+Debug: 1618 3027 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1619 3027 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + cafebabe @00
+Debug: 1620 3027 riscv-013.c:1848 log_memory_access(): M[0x2000f03c] reads 0xcafebabe
+Debug: 1621 3035 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1622 3035 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1623 3035 riscv-013.c:1848 log_memory_access(): M[0x2000f040] reads 0x13579bdf
+Debug: 1624 3042 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1625 3042 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1626 3042 riscv-013.c:1848 log_memory_access(): M[0x2000f044] reads 0x2468ace0
+Debug: 1627 3048 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1628 3048 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1629 3048 riscv-013.c:1848 log_memory_access(): M[0x2000f048] reads 0x2468ace0
+Debug: 1630 3048 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1631 3057 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1632 3057 riscv-013.c:1848 log_memory_access(): M[0x2000f04c] reads 0x13579bdf
+Debug: 1633 3057 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1634 3062 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1635 3062 riscv-013.c:1848 log_memory_access(): M[0x2000f050] reads 0x2468ace0
+Debug: 1636 3062 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1637 3069 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1638 3069 riscv-013.c:1848 log_memory_access(): M[0x2000f054] reads 0x13579bdf
+Debug: 1639 3069 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1640 3075 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 2468ace0 @00
+Debug: 1641 3075 riscv-013.c:1848 log_memory_access(): M[0x2000f058] reads 0x2468ace0
+Debug: 1642 3076 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1643 3081 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 13579bdf @00
+Debug: 1644 3081 riscv-013.c:1848 log_memory_access(): M[0x2000f05c] reads 0x13579bdf
+Debug: 1645 3084 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1646 3087 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 0e7e418a @00
+Debug: 1647 3087 riscv-013.c:1848 log_memory_access(): M[0x2000f060] reads 0x0e7e418a
+Debug: 1648 3090 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1649 3093 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + ba61d08f @00
+Debug: 1650 3093 riscv-013.c:1848 log_memory_access(): M[0x2000f064] reads 0xba61d08f
+Debug: 1651 3096 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1652 3097 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + 31630db1 @00
+Debug: 1653 3097 riscv-013.c:1848 log_memory_access(): M[0x2000f068] reads 0x31630db1
+Debug: 1654 3097 riscv-013.c:378 scan(): 40b 3i w 00150000 @38 -> + 00000000 @00
+Debug: 1655 3097 riscv-013.c:389 scan():  sbreadonaddr sbaccess=2 sbautoincrement -> 
+Debug: 1656 3104 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00000000 @00
+Debug: 1657 3104 riscv-013.c:378 scan(): 40b 3i r 00000000 @3c -> + 00000000 @00
+Debug: 1658 3111 riscv-013.c:378 scan(): 40b 3i - 00000000 @3c -> + dae46c89 @00
+Debug: 1659 3111 riscv-013.c:1848 log_memory_access(): M[0x2000f06c] reads 0xdae46c89
+Debug: 1660 3111 riscv-013.c:378 scan(): 40b 3i r 00000000 @38 -> + 00000000 @00
+Debug: 1661 3117 riscv-013.c:378 scan(): 40b 3i - 00000000 @38 -> + 00150000 @00
+Debug: 1662 3117 command.c:143 script_debug(): command - riscv.cpu riscv.cpu curstate
+Debug: 1663 3117 command.c:143 script_debug(): command - echo echo PJ_STATE3=running
+Debug: 1665 3117 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1666 3117 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1667 3117 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1668 3117 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1669 3124 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1671 3124 command.c:770 jim_echo(): PJ_STATE3=running
+Debug: 1672 3124 command.c:143 script_debug(): command - echo echo PJ_DONE
+Debug: 1673 3124 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1674 3124 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1675 3124 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1676 3124 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1677 3131 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1679 3131 command.c:770 jim_echo(): PJ_DONE
+Debug: 1680 3131 command.c:143 script_debug(): command - echo echo PJ_SHUTDOWN_REQUEST
+Debug: 1681 3131 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1682 3131 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1683 3131 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1684 3131 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1685 3138 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1687 3138 command.c:770 jim_echo(): PJ_SHUTDOWN_REQUEST
+Debug: 1688 3138 command.c:143 script_debug(): command - shutdown shutdown
+Debug: 1689 3138 riscv.c:1193 riscv_openocd_poll(): polling all harts
+Debug: 1690 3138 riscv.c:2152 riscv_set_current_hartid(): setting hartid to 0, was 0
+Debug: 1691 3138 riscv.c:1148 riscv_poll_hart(): polling hart 0, target->state=1
+Debug: 1692 3140 riscv-013.c:378 scan(): 40b 3i r 00000000 @11 -> + 00000000 @00
+Debug: 1693 3145 riscv-013.c:378 scan(): 40b 3i - 00000000 @11 -> + 00430c82 @00
+User : 1695 3145 server.c:749 handle_shutdown_command(): shutdown command invoked
+Debug: 1696 3145 riscv.c:292 riscv_deinit_target(): riscv_deinit_target()
+Debug: 1697 3145 riscv-013.c:378 scan(): 40b 3i w 40000005 @10 -> + 00000000 @00
+Debug: 1698 3145 riscv-013.c:389 scan():  resumereq dmactive -> 
+Debug: 1699 3145 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 1700 3152 riscv-013.c:378 scan(): 40b 3i w 00000000 @10 -> + 00000000 @00
+Debug: 1701 3152 riscv-013.c:378 scan(): 40b 3i - 00000000 @10 -> + 00000000 @00
+Debug: 1702 3152 riscv-013.c:1370 deinit_target(): riscv_deinit_target()
+Debug: 1703 3152 target.c:1941 target_free_all_working_areas_restore(): freeing all working areas

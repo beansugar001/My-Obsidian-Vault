@@ -1,0 +1,7 @@
+{
+  "archived_readback": "C:\\Users\\24796\\Documents\\组\\CY63300_内存安全首轮\\program_20261119_183558_576423\\independent_readback\\readback.bin",
+  "archived_len": 65536,
+  "archived_prefix_matches_raw_image": false,
+  "archived_prefix_sha256": "52A966556A946563A1B6FEF8F0728C6B1263C10B8640E9172CA2C1A22C1114E8",
+  "note": "archived 2026-11-19 18:35 readback prefix equals the 388-byte FIRST image, so it does not certify the 428-byte RAW image; board certification is done in this run"
+}

@@ -1,0 +1,20 @@
+{
+  "when": "2026-11-20T17:17:06",
+  "firmware": {
+    "path": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\三方测试流程细节\\CY63300_整数溢出_长度计算_复测包_20261120\\01_固件\\firmware.bin",
+    "bytes": 428,
+    "sha256": "973407F8837981CA321D192EF2AFD8F1234CDEC6A1ADF51DAF20E146E0DC2921"
+  },
+  "rounds": [
+    {
+      "run": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\三方测试流程细节\\CY63300_整数溢出_长度计算_复测包_20261120\\runs\\round_20261120_171701_550417",
+      "label": "通过（主判据）/ 待确认（保持标志异常）"
+    },
+    {
+      "run": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\三方测试流程细节\\CY63300_整数溢出_长度计算_复测包_20261120\\runs\\round_20261120_171704_031483",
+      "label": "通过（主判据）/ 待确认（保持标志异常）"
+    }
+  ],
+  "verdict": "通过（主判据）/ 待确认",
+  "note": "返回 1 且目标两个字前后逐字一致 = 通过；保持标志 w7 与仿真不一致时另记为待确认"
+}

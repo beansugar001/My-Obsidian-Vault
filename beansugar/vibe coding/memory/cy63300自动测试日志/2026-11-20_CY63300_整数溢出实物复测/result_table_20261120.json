@@ -1,0 +1,127 @@
+{
+  "round": "poison_round_20261120_170142_598275",
+  "image": {
+    "branch": "RAW",
+    "bytes": 428,
+    "sha256": "973407F8837981CA321D192EF2AFD8F1234CDEC6A1ADF51DAF20E146E0DC2921",
+    "marker": "0x4D533132",
+    "sector_sha256": "F37C6834EE619B8DC971132A4E0C84A0A127DE32B5D69AF2F8A53D5C2046F58E"
+  },
+  "flash": {
+    "verified": true,
+    "pre_state_equals_live": true,
+    "readbacks_before_shutdown": true,
+    "same_openocd_session": true
+  },
+  "cases": [
+    {
+      "case": "legal_copy",
+      "counts": "2",
+      "ret": "0",
+      "addr": [
+        "0x2000F048",
+        "0x2000F04C"
+      ],
+      "cpu_before": [
+        "0x2468ACE0",
+        "0x13579BDF"
+      ],
+      "cpu_after": [
+        "0x2468ACE0",
+        "0x13579BDF"
+      ],
+      "jtag_before": [
+        "0xDEADBEEF",
+        "0xCAFEBABE"
+      ],
+      "jtag_after": [
+        "0xDEADBEEF",
+        "0xCAFEBABE"
+      ],
+      "read_before_shutdown": true,
+      "verdict": "pass"
+    },
+    {
+      "case": "oversize",
+      "counts": "3",
+      "ret": "1",
+      "addr": [
+        "0x2000F048",
+        "0x2000F04C"
+      ],
+      "cpu_before": [
+        "0x2468ACE0",
+        "0x13579BDF"
+      ],
+      "cpu_after": [
+        "0x2468ACE0",
+        "0x13579BDF"
+      ],
+      "jtag_before": [
+        "0xDEADBEEF",
+        "0xCAFEBABE"
+      ],
+      "jtag_after": [
+        "0xDEADBEEF",
+        "0xCAFEBABE"
+      ],
+      "read_before_shutdown": true,
+      "verdict": "pass",
+      "flags": {
+        "oversize_status": 1,
+        "oversize_preserved": 1
+      }
+    },
+    {
+      "case": "integer_overflow",
+      "counts": "0x40000001",
+      "ret": "1",
+      "addr": [
+        "0x2000F048",
+        "0x2000F04C"
+      ],
+      "cpu_before": [
+        "0x2468ACE0",
+        "0x13579BDF"
+      ],
+      "cpu_after": [
+        "0x2468ACE0",
+        "0x13579BDF"
+      ],
+      "jtag_before": [
+        "0xDEADBEEF",
+        "0xCAFEBABE"
+      ],
+      "jtag_after": [
+        "0xDEADBEEF",
+        "0xCAFEBABE"
+      ],
+      "read_before_shutdown": true,
+      "verdict": "pass_primary_with_open_flag",
+      "flags": {
+        "overflow_status": 1,
+        "overflow_preserved": 0,
+        "sim_expectation": 1
+      }
+    }
+  ],
+  "open_issues": [
+    "w7 overflow_preserved=0 vs simulation 1, reproducible 4/4 rounds",
+    "run_board.py RAW.previous points at FIRST-image readback (provenance defect)",
+    "single-step unsupported (catch step -> -4)",
+    "non-zero PC write rejected (reads back 0x2C062DF3); only PC=0 works",
+    "reset run unsupported (ndmreset), workaround halt+mww+reg pc 0+resume"
+  ],
+  "missing_materials": [
+    "CY63300_SRAM实物正对照_20261119.json",
+    "CY63300_ECALL_实物复测_20261119.json",
+    "SEHTAG_原版RTL合法访存验收记录_20261119.zip"
+  ],
+  "renamed_materials": [
+    "SEHTAG_硬件边界保护验收计划_20261119.md -> SEHTAG 硬件边界保护验收计划.md"
+  ],
+  "moved_materials": [
+    "raw_recheck/program_result.json -> raw_recheck/program_20261119_184321_421135/program_result.json",
+    "raw_recheck/memory_result.json -> raw_recheck/observe_20261119_184658_985686/memory_result.json and raw_recheck/observe_20261119_185731_685269/memory_result.json"
+  ]
+}

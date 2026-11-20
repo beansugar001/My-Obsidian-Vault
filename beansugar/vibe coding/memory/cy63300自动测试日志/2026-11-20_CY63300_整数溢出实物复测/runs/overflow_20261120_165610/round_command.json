@@ -1,0 +1,10 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {C:/Users/24796/Documents/组/CY63300_内存安全首轮/recheck_20261120/overflow_20261120_165610/round.tcl}"
+  ],
+  "tcl_sha256": "D6F9C4460BC68D4BFCD843FCE7B8CB8F00EF6B1362B7FAD3F160404D8D959A02"
+}

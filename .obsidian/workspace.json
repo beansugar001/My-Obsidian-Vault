@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/组/每周工作/2026-11-16_本周工作.md",
+                "file": "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "2026-11-16_本周工作"
+              "title": "CY63300_整数溢出_长度计算错误_实物复测报告_20261120"
             }
           }
         ]
@@ -208,21 +208,28 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "db687d117a9f4fa4",
+  "active": "70fe84cdd4b67d56",
   "lastOpenFiles": [
-    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-16_SEHTAG_CPU写入等待/SEHTAG_CPU写入等待集成报告.md",
+    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/补充_小白复测包位置_20261120.md",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/README_超级小白版.md",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/03_证据/result_table_20261120.json",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/03_证据/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/summary_20261120_171706.json",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/round_result.json",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/dest_b.bin",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/mbox_b.bin",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/dest_a.bin",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/mbox_a.bin",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/tmp.bin",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/round.tcl",
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/runs/round_20261120_171704_031483/openocd.log",
     "beansugar/组/每周工作/2026-11-16_本周工作.md",
+    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
+    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-16_SEHTAG_CPU写入等待/SEHTAG_CPU写入等待集成报告.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG 硬件边界保护验收计划.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V157_HARDWARE_I2C_OLED_DISPLAY/CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT.md",
-    "beansugar/组/每周工作",
-    "beansugar/组",
     "beansugar/vibe coding/memory/CY63300_LOGO1_SDEBUG接口审核与实物进度_20261118.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/run.tcl",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/result.json",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/openocd.log",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/command.json",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915/阶段结果.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_JTAG读取类型对照_20261117_143915",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V158_HARDWARE_I2C_OLED_HELLO/CY63300_V158_HARDWARE_I2C_OLED_HELLO_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V159B_PROGRAM_AND_BOOT/CY63300_V159B_PROGRAM_RESULT.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V159C_STANDALONE_HELLO/CY63300_V159C_STANDALONE_HELLO_RESULT.md",
@@ -231,9 +238,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V160C_REFRESH_RUNTIME/CY63300_V160C_REFRESH_RUNTIME_RESULT.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.svg",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/阶段结果.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/run.tcl",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/result.json",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG_双地址读取节奏_20261117_134255/cadence_20261117_134255_239411/openocd.log",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/JTAG排查经验.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/05-测试计划与软件工程详解.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/04-I2C排障指南.md",
@@ -243,10 +247,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109I_NATIVE_RESET_RELEASE_20261109_215000/47_V109I_NATIVE_RESET_RELEASE_RESULT_20261109.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109_FIFO_STALL_RESET_STATE_20261109_214425/46_V109_FIFO_STALL_RESET_STATE_UPDATE_20261109.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109D2_FIFO_ONLY_READBACK_RESULT/V109D2_FIFO_ONLY_READBACK_RESULT.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109D_FIFO_ENABLE_RESULT/V109D_FIFO_ENABLE_RESULT.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109C_PAD8_PAD9_AF3_RESULT/V109C_PAD8_PAD9_AF3_RESULT.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109B_I2C_CLOCK_GATE_BASELINE_RESULT/V109B_I2C_CLOCK_GATE_BASELINE_RESULT.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/reports_current/V109A2_GPIO_CLOCK_ENABLE_RESULT/V109A2_GPIO_CLOCK_ENABLE_RESULT.md",
     "beansugar/vibe coding/memory/CY63300芯片测试报告组/U5-JTAG接线图.png",
     "beansugar/论文笔记/BrainUICL_assets/fig1_uicl_paradigm.png",
     "beansugar/论文笔记/BrainUICL_assets/table4_ablation.png",

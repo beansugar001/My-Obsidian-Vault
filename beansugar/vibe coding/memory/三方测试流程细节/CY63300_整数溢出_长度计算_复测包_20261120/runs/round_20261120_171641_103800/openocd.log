@@ -1,0 +1,32 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0xc4
+Info : gdb port disabled
+R_IMAGE_OK
+R_POISON=3735928559 3405691582 3435973836 1431655765 3149642683 2863311530 1717986918 2004318071 286335522 858997828 2290649224 2576980377
+Error: Written PC (0x0) does not match read back value (0x2c062df3)
+R_POLLS=0
+R_MARKER=0x4D533132
+R_STATUS=0x00000001/0x00000001
+R_PRESERVED=0x00000001/0x00000000
+R_BEFORE=0x2468ACE0/0x13579BDF
+R_AFTER_OS=0x2468ACE0/0x13579BDF
+R_AFTER_OF=0x2468ACE0/0x13579BDF
+R_ORIG_DST=0x2468ACE0/0x13579BDF
+R_DONE
+shutdown command invoked

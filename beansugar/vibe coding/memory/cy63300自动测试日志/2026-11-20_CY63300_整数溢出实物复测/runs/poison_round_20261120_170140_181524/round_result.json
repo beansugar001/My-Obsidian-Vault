@@ -1,0 +1,85 @@
+{
+  "run": "C:\\Users\\24796\\Documents\\组\\CY63300_内存安全首轮\\recheck_20261120\\poison_round_20261120_170140_181524",
+  "exit_code": 0,
+  "log_sha256": "00CA399E134C01A060128701AE5450DF59ADA8E17311E318ED209E7FD9A6152F",
+  "echo": [
+    "R3_IMAGE_WORD_OK",
+    "R3_POISON_READ=3735928559 3405691582 3435973836 1431655765 3149642683 2863311530 1717986918 2004318071 286335522 858997828 2290649224 2576980377",
+    "R3_POLLS=0",
+    "R3_MARKER=0x4D533132",
+    "R3_STATUS=0x00000001/0x00000001",
+    "R3_FLAGS=0x13579BDF/0xAAAAAAAA",
+    "R3_AFTER_OS=0x2468ACE0/0x13579BDF",
+    "R3_AFTER_OF=0x2468ACE0/0x13579BDF",
+    "R3_ORIG_DST=0xDEADBEEF/0xCAFEBABE",
+    "R3_DONE",
+    "R3_SHUTDOWN_REQUEST"
+  ],
+  "mbox_stable": true,
+  "dest_stable": true,
+  "dest_read": [
+    "0xDEADBEEF",
+    "0xCAFEBABE"
+  ],
+  "mailbox": {
+    "completion": "0x4D533132",
+    "valid_status": "0x00000000",
+    "copy_word_0": "0x13579BDF",
+    "copy_word_1": "0x2468ACE0",
+    "oversize_status": "0x00000001",
+    "oversize_preserved": "0x00000001",
+    "overflow_status": "0x00000001",
+    "overflow_preserved": "0x00000000",
+    "initialized_word_0": "0x00000000",
+    "initialized_word_1": "0x00000000",
+    "reuse_word_0": "0x2468ACE0",
+    "reuse_word_1": "0x13579BDF",
+    "original_source_0": "0x13579BDF",
+    "original_source_1": "0x2468ACE0",
+    "original_destination_0": "0xDEADBEEF",
+    "original_destination_1": "0xCAFEBABE",
+    "restored_source_0": "0x13579BDF",
+    "restored_source_1": "0x2468ACE0",
+    "restored_destination_0": "0xDEADBEEF",
+    "restored_destination_1": "0xCAFEBABE",
+    "destination_before_0": "0x2468ACE0",
+    "destination_before_1": "0x13579BDF",
+    "destination_after_oversize_0": "0x2468ACE0",
+    "destination_after_oversize_1": "0x13579BDF",
+    "destination_after_overflow_0": "0x2468ACE0",
+    "destination_after_overflow_1": "0x13579BDF"
+  },
+  "store_reached": {
+    "w4_oversize_status": true,
+    "w5_oversize_preserved": true,
+    "w6_overflow_status": true,
+    "w7_overflow_preserved": true,
+    "w20_21_before": true,
+    "w22_23_after_oversize": true,
+    "w24_25_after_overflow": true
+  },
+  "snapshots": {
+    "before": [
+      "0x2468ACE0",
+      "0x13579BDF"
+    ],
+    "after_oversize": [
+      "0x2468ACE0",
+      "0x13579BDF"
+    ],
+    "after_overflow": [
+      "0x2468ACE0",
+      "0x13579BDF"
+    ],
+    "orig_dst": [
+      "0xDEADBEEF",
+      "0xCAFEBABE"
+    ]
+  },
+  "verdict": {
+    "overflow_return_code": "0x00000001",
+    "destination_unchanged_by_firmware_snapshots": true,
+    "firmware_preservation_flag_written": true,
+    "snapshots_match_pattern": true
+  }
+}
