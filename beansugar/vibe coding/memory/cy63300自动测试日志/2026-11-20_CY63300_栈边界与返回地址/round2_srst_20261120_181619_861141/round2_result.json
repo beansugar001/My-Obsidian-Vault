@@ -1,0 +1,64 @@
+{
+ "run": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\round2_srst_20261120_181619_861141",
+ "prepare": [
+  "P_STATE=halted",
+  "P_IMG=0x14128293 0x005D2823",
+  "P_RB_POISON=0xBBBBBBBB 0x99999999 0x88888888 0x77777777 0xAAAAAAAA",
+  "P_RB_MARK=0x00000000 R0=0x00000000 PH2=0x00000000",
+  "Error: JTAG scan chain interrogation failed: all zeroes",
+  "Error: Check JTAG interface, timings, target power, etc.",
+  "Error: Trying to use configured scan chain anyway...",
+  "Error: riscv.cpu: IR capture error; saw 0x00 not 0x01",
+  "Error: Debugger is not authenticated to target Debug Module. (dmstatus=0x0). Use `riscv authdata_read` and `riscv authdata_write` commands to authenticate.",
+  "Error: Debugger is not authenticated to target Debug Module. (dmstatus=0x0). Use `riscv authdata_read` and `riscv authdata_write` commands to authenticate.",
+  "P_RESET=FAIL:D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/round2_srst_20261120_181619_861141/prepare/main.tcl:44: Error: ",
+  "P_DONE"
+ ],
+ "check": [
+  "C_STATE=running",
+  "C_MARKER=0x4D533141",
+  "C_PHASE2=0x00000000",
+  "C_MCAUSE=0x00000000 MEPC=0x00000000",
+  "C_R0=0x00000001 R1=0x00000001",
+  "C_DONE"
+ ],
+ "words": {
+  "mbox": [
+   "0x4D533141",
+   "0x2001FF00",
+   "0x2001FEE0",
+   "0x11112222",
+   "0x33334444",
+   "0x00000000",
+   "0x13579BDF",
+   "0x2468ACE0",
+   "0x13579BDF",
+   "0x2468ACE0",
+   "0x00000001",
+   "0x13579BDF",
+   "0x2468ACE0",
+   "0x00000001",
+   "0x13579BDF",
+   "0x2468ACE0"
+  ],
+  "res": [
+   "0x00000001",
+   "0x00000001",
+   "0x00000000",
+   "0x00000000",
+   "0x00000000",
+   "0x00000000"
+  ],
+  "frame": [
+   "0x11112222",
+   "0x33334444",
+   "0xBBBBBBBB",
+   "0x466434E9",
+   "0x13579BDF",
+   "0x2468ACE0",
+   "0x77777777",
+   "0x000000E0"
+  ]
+ },
+ "image_sha256": "4451545F0678DA0546176F27C4659D2FF94DAA54FC691EA4676328565EA584CC"
+}

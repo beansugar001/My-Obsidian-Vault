@@ -1,0 +1,7 @@
+{
+  "exit_code": 0,
+  "log_sha256": "C5C8A4C551EF752765DB307E6A9E457CB5BB2A58A5882D48ACF69CEB82C8ED56",
+  "errors": [
+    "Error: Written PC (0x0) does not match read back value (0x2c062df3)"
+  ]
+}

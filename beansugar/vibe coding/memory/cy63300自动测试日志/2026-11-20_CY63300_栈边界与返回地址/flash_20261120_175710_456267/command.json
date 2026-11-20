@@ -1,0 +1,11 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/flash_20261120_175710_456267/snapshot.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "tcl_sha256": "06528F6BC05D05E432F01DA22253F3415ED0275F1422F8639D97A40D64666DD7"
+}

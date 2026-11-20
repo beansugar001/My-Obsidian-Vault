@@ -1,0 +1,49 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+Info : CMSIS-DAP: SWD  Supported
+Info : CMSIS-DAP: JTAG Supported
+Info : CMSIS-DAP: FW Version = 0254
+Info : CMSIS-DAP: Serial# = 07000001006700343500000a4e57354aa5a5a5a597969908
+Info : CMSIS-DAP: Interface Initialised (JTAG)
+Info : SWCLK/TCK = 1 SWDIO/TMS = 1 TDI = 1 TDO = 0 nTRST = 0 nRESET = 1
+Info : CMSIS-DAP: Interface ready
+Info : clock speed 100 kHz
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : JTAG tap: riscv.cpu tap/device found: 0x1e200a6f (mfg: 0x537 (Blue Liang), part: 0xe200, ver: 0x1)
+Info : datacount=3 progbufsize=1
+Info : Examined RISC-V core; found 1 harts
+Info :  hart 0: XLEN=32, misa=0x7800e0
+Info : gdb port disabled
+R4_STATE0=running
+R4_PC0=pc (/32): 0x2C062DF3
+
+R4_CFG=OK
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Info : cmsis-dap JTAG TLR_RESET
+Error: JTAG scan chain interrogation failed: all zeroes
+Error: Check JTAG interface, timings, target power, etc.
+Error: Trying to use configured scan chain anyway...
+Error: riscv.cpu: IR capture error; saw 0x00 not 0x01
+Info : cmsis-dap JTAG TLR_RESET
+Warn : Bypassing JTAG setup events due to errors
+Error: Debugger is not authenticated to target Debug Module. (dmstatus=0x0). Use `riscv authdata_read` and `riscv authdata_write` commands to authenticate.
+Error: Debugger is not authenticated to target Debug Module. (dmstatus=0x0). Use `riscv authdata_read` and `riscv authdata_write` commands to authenticate.
+R4_HALT=FAIL:D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/reset_probe4_20261120_1900/main.tcl:23: Error: 
+in procedure 'go' called at file "D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/reset_probe4_20261120_1900/main.tcl", line 23
+
+R4_PC1=pc (/32): 0x2C062DF3
+
+R4_STATE1=running
+R4_MARK1=0x4D533141
+R4_RES=OK
+Error: unable to halt hart 0
+Error:   dmcontrol=0x80000000
+Error:   dmstatus =0x00430c82
+Error: timed out while waiting for target halted
+R4_MARK2=0x4D533141 F16=0x13579BDF
+R4_DONE
+shutdown command invoked

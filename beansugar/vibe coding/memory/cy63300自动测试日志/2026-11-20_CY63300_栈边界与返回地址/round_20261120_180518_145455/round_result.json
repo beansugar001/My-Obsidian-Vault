@@ -1,0 +1,73 @@
+{
+  "run": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\round_20261120_180518_145455",
+  "exit_code": 0,
+  "image_sha256": "4451545F0678DA0546176F27C4659D2FF94DAA54FC691EA4676328565EA584CC",
+  "image_bytes": 436,
+  "echo": [
+    "ST_IMAGE_WORD_OK",
+    "ST_PRE_MARKER=0x4D533141",
+    "ST_POLLS=0",
+    "ST_MARKER=0x4D533141",
+    "ST_PHASE2=0x13579BDF",
+    "ST_MCAUSE=0x13579BDF",
+    "ST_MEPC=0x2468ACE0",
+    "ST_RA_OK=0x00000000",
+    "ST_DONE",
+    "ST_SHUTDOWN_REQUEST"
+  ],
+  "checks": {
+    "completion_marker": true,
+    "initial_sp": true,
+    "frame_sp": true,
+    "legal_stack_write_read": true,
+    "legal_local_copy_ok": true,
+    "oversize_rejected": true,
+    "oversize_preserved": true,
+    "overflow_rejected": true,
+    "overflow_preserved": true,
+    "ra_slot_holds_return_address": false,
+    "phase2_blocked_store": false,
+    "phase2_mcause_5": false,
+    "phase2_target_untouched": false,
+    "mbox_stable": true,
+    "res_stable": true,
+    "frame_stable": true
+  },
+  "all_pass": false,
+  "mailbox": {
+    "completion": "0x4D533141",
+    "sp_initial": "0x2001FF00",
+    "sp_frame": "0x2001FEE0",
+    "stack_word_0": "0x11112222",
+    "stack_word_1": "0x33334444",
+    "legal_copy_status": "0x00000000",
+    "local_after_legal_0": "0x13579BDF",
+    "local_after_legal_1": "0x2468ACE0",
+    "local_before_oversize_0": "0x13579BDF",
+    "local_before_oversize_1": "0x2468ACE0",
+    "oversize_status": "0x00000001",
+    "local_after_oversize_0": "0x13579BDF",
+    "local_after_oversize_1": "0x2468ACE0",
+    "overflow_status": "0x00000001",
+    "local_after_overflow_0": "0x13579BDF",
+    "local_after_overflow_1": "0x2468ACE0"
+  },
+  "result_block": {
+    "ra_slot_matches_return_address": "0x00000000",
+    "leaf_call_count": "0x00000001",
+    "mcause": "0x13579BDF",
+    "mepc": "0x2468ACE0",
+    "phase2_marker": "0x13579BDF",
+    "blocked_store_word_content": "0x2468ACE0"
+  },
+  "stack_frame_words": [
+    "0x11112222",
+    "0x33334444",
+    "0xBF80628B",
+    "0x466434E9",
+    "0x13579BDF",
+    "0x2468ACE0",
+    "0x97F26EBD",
+    "0x007800E0"
+  ]
+}

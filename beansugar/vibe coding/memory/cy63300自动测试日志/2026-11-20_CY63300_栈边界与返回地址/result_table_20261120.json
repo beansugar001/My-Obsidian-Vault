@@ -1,0 +1,224 @@
+{
+  "item": "1. 栈缓冲区溢出 / 返回地址保护",
+  "date": "2026-11-20",
+  "firmware": {
+    "image": "C:\\Users\\24796\\Documents\\组\\CY63300_内存安全首轮\\stack_check_20261120\\firmware.bin",
+    "bytes": 436,
+    "sha256": "4451545F0678DA0546176F27C4659D2FF94DAA54FC691EA4676328565EA584CC",
+    "completion_marker": "0x4D533141",
+    "sector_sha256_after_program": "6D399200DA5527E03792A0E423B17062F7B32567F084BE134B3F0FA2DCE1AA38"
+  },
+  "reset_method": {
+    "usable": "reset_config srst_only srst_nogate + reset run（命令返回 FAIL、TAP 掉线，但芯片重启），随后新会话读取",
+    "unusable": [
+      "reg pc 0x0 + resume（CPU 不执行）",
+      "reset halt/reset run 默认 ndmreset（dmstatus=0x430382）",
+      "单步 step（返回 -4）",
+      "STM32F103 主控（板未连接）"
+    ]
+  },
+  "poison_words": {
+    "0x2001FEE8": "0xBBBBBBBB",
+    "0x2001FEF0": "0x99999999",
+    "0x2001FEF4": "0x88888888",
+    "0x2001FEF8": "0x77777777",
+    "0x2001FEFC": "0xAAAAAAAA"
+  },
+  "rounds": [
+    {
+      "dir": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\round2_srst_20261120_181556_096895",
+      "completion": "0x4D533141",
+      "initial_sp": "0x2001FF00",
+      "frame_base": "0x2001FEE0",
+      "legal_stack_write_read": [
+        "0x11112222",
+        "0x33334444"
+      ],
+      "legal_copy": {
+        "status": 0,
+        "words": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "oversize": {
+        "count": 3,
+        "status": 1,
+        "preserved": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "integer_overflow": {
+        "count": "0x40000001",
+        "status": 1,
+        "preserved": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "ra_slot_matches_return_point": 1,
+      "leaf_call_count": 1,
+      "mcause": "0x0",
+      "mepc": "0x0",
+      "phase2_marker": "0x0",
+      "frame": [
+        "0x11112222",
+        "0x33334444",
+        "0xBBBBBBBB",
+        "0x466434E9",
+        "0x13579BDF",
+        "0x2468ACE0",
+        "0x77777777",
+        "0x000000E0"
+      ],
+      "readback_before_shutdown": true,
+      "mbox_a_eq_b": true,
+      "res_a_eq_b": true,
+      "frame_a_eq_b": true,
+      "verdict": "整段栈边界未成立（未登记栈写静默拦截+停摆、无异常）；返回地址基线通过但无金丝雀/影子栈；长度检查通过"
+    },
+    {
+      "dir": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\round2_srst_20261120_181619_861141",
+      "completion": "0x4D533141",
+      "initial_sp": "0x2001FF00",
+      "frame_base": "0x2001FEE0",
+      "legal_stack_write_read": [
+        "0x11112222",
+        "0x33334444"
+      ],
+      "legal_copy": {
+        "status": 0,
+        "words": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "oversize": {
+        "count": 3,
+        "status": 1,
+        "preserved": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "integer_overflow": {
+        "count": "0x40000001",
+        "status": 1,
+        "preserved": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "ra_slot_matches_return_point": 1,
+      "leaf_call_count": 1,
+      "mcause": "0x0",
+      "mepc": "0x0",
+      "phase2_marker": "0x0",
+      "frame": [
+        "0x11112222",
+        "0x33334444",
+        "0xBBBBBBBB",
+        "0x466434E9",
+        "0x13579BDF",
+        "0x2468ACE0",
+        "0x77777777",
+        "0x000000E0"
+      ],
+      "readback_before_shutdown": true,
+      "mbox_a_eq_b": true,
+      "res_a_eq_b": true,
+      "frame_a_eq_b": true,
+      "verdict": "整段栈边界未成立（未登记栈写静默拦截+停摆、无异常）；返回地址基线通过但无金丝雀/影子栈；长度检查通过"
+    },
+    {
+      "dir": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\round2_srst_20261120_181625_343804",
+      "completion": "0x4D533141",
+      "initial_sp": "0x2001FF00",
+      "frame_base": "0x2001FEE0",
+      "legal_stack_write_read": [
+        "0x11112222",
+        "0x33334444"
+      ],
+      "legal_copy": {
+        "status": 0,
+        "words": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "oversize": {
+        "count": 3,
+        "status": 1,
+        "preserved": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "integer_overflow": {
+        "count": "0x40000001",
+        "status": 1,
+        "preserved": [
+          "0x13579BDF",
+          "0x2468ACE0"
+        ]
+      },
+      "ra_slot_matches_return_point": 1,
+      "leaf_call_count": 1,
+      "mcause": "0x0",
+      "mepc": "0x0",
+      "phase2_marker": "0x0",
+      "frame": [
+        "0x11112222",
+        "0x33334444",
+        "0xBBBBBBBB",
+        "0x466434E9",
+        "0x13579BDF",
+        "0x2468ACE0",
+        "0x77777777",
+        "0x000000E0"
+      ],
+      "readback_before_shutdown": true,
+      "mbox_a_eq_b": true,
+      "res_a_eq_b": true,
+      "frame_a_eq_b": true,
+      "verdict": "整段栈边界未成立（未登记栈写静默拦截+停摆、无异常）；返回地址基线通过但无金丝雀/影子栈；长度检查通过"
+    }
+  ],
+  "table_four_rows": [
+    {
+      "item": "① 实际栈范围与对象登记",
+      "layer": "样片",
+      "verdict": "未通过（前置缺失）",
+      "note": "sp=0x2001FF00，帧基址 0x2001FEE0，32B 帧；无 .map/.ld/crt0；CSR 写只有 mtvec 与 0x803，无任何 HAT/BNB 登记"
+    },
+    {
+      "item": "② 栈区域硬件边界判定",
+      "layer": "参考 RTL 189fff5 模块仿真 + 样片",
+      "verdict": "部分通过 + 行为缺口",
+      "note": "参考仿真闭区间、只比起始地址、滞后一拍；样片未登记栈写被静默拦下且停摆，无异常（mcause=0）；登记后判定无法闭环"
+    },
+    {
+      "item": "③ 局部缓冲区软件长度检查",
+      "layer": "样片 3/3 + 参考全 SoC 仿真",
+      "verdict": "通过",
+      "note": "count 2→0 复制；3→1 保持；0x40000001→1 保持；拒绝路径未发起复制"
+    },
+    {
+      "item": "④ 返回地址保护",
+      "layer": "样片 3/3 + 反汇编",
+      "verdict": "正常返回基线通过、保护机制缺失",
+      "note": "sw ra,28(sp) 落地 0xE0；CPU 读回比较一致 r0=1；无金丝雀无影子栈"
+    }
+  ],
+  "open_issues": [
+    "第 ② 项无法闭环：固件无登记指令，参考 RTL hat_enable 固定 0",
+    "停摆性质未定性（单步不可用）",
+    "v2 固件需先说明差异再确认烧录"
+  ],
+  "reference_rtl": {
+    "commit": "189fff578a44b61a328af08e32e60ac890b19a91",
+    "path": "D:\\project\\RISCV-63300\\三方测试\\Repo_Fanglongrui",
+    "caveat": "hat_enable 固定 0（tinyriscv.v:1240–1276）；流片版 hat_enable 非零，流片 RTL 在堡垒机"
+  }
+}

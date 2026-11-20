@@ -1,0 +1,17 @@
+{
+  "argv": [
+    "D:\\project\\tools\\tinyriscv-master\\tools\\openocd\\openocd.exe",
+    "-f",
+    "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+    "-c",
+    "source {D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/reflash_reboot_20261120_1855/flash_image.tcl}"
+  ],
+  "cwd": "D:\\project\\tools\\tinyriscv-master\\tools\\openocd",
+  "env": {
+    "V160B_PHASE": "snapshot",
+    "V160B_DUMP": "D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/reflash_reboot_20261120_1855/independent_readback/readback.bin",
+    "V160B_IMAGE": "C:/Users/24796/Documents/组/CY63300_内存安全首轮/stack_check_20261120/firmware.bin",
+    "V160B_TRIGGER": "0x0"
+  },
+  "tcl_sha256": "A4B904B62457BAF8480023D1F4752D302573FC55286613A23F3B983C40CDA622"
+}
