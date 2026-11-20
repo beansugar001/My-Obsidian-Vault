@@ -1,0 +1,136 @@
+
+firmware.elf:     file format elf32-littleriscv
+
+
+Disassembly of section .text:
+
+00000000 <_start>:
+   0:	2000f437          	lui	s0,0x2000f
+   4:	2000f4b7          	lui	s1,0x2000f
+   8:	04048493          	addi	s1,s1,64 # 2000f040 <__global_pointer$+0x2000d68c>
+   c:	00042023          	sw	zero,0(s0) # 2000f000 <__global_pointer$+0x2000d64c>
+  10:	00000297          	auipc	t0,0x0
+  14:	17828293          	addi	t0,t0,376 # 188 <trap_entry>
+  18:	30529073          	csrw	mtvec,t0
+  1c:	20020137          	lui	sp,0x20020
+  20:	f0010113          	addi	sp,sp,-256 # 2001ff00 <__global_pointer$+0x2001e54c>
+  24:	2000fd37          	lui	s10,0x2000f
+  28:	100d0d13          	addi	s10,s10,256 # 2000f100 <__global_pointer$+0x2000d74c>
+  2c:	00242223          	sw	sp,4(s0)
+  30:	fe010113          	addi	sp,sp,-32
+  34:	00242423          	sw	sp,8(s0)
+  38:	111122b7          	lui	t0,0x11112
+  3c:	22228293          	addi	t0,t0,546 # 11112222 <__global_pointer$+0x1111086e>
+  40:	33334337          	lui	t1,0x33334
+  44:	44430313          	addi	t1,t1,1092 # 33334444 <__global_pointer$+0x33332a90>
+  48:	00512023          	sw	t0,0(sp)
+  4c:	00612223          	sw	t1,4(sp)
+  50:	00012383          	lw	t2,0(sp)
+  54:	00412e03          	lw	t3,4(sp)
+  58:	00742623          	sw	t2,12(s0)
+  5c:	01c42823          	sw	t3,16(s0)
+  60:	1357a2b7          	lui	t0,0x1357a
+  64:	bdf28293          	addi	t0,t0,-1057 # 13579bdf <__global_pointer$+0x1357822b>
+  68:	2468b337          	lui	t1,0x2468b
+  6c:	ce030313          	addi	t1,t1,-800 # 2468ace0 <__global_pointer$+0x2468932c>
+  70:	0054a023          	sw	t0,0(s1)
+  74:	0064a223          	sw	t1,4(s1)
+  78:	00200513          	li	a0,2
+  7c:	0b0000ef          	jal	ra,12c <stack_copy>
+  80:	00a42a23          	sw	a0,20(s0)
+  84:	01012283          	lw	t0,16(sp)
+  88:	01412303          	lw	t1,20(sp)
+  8c:	00542c23          	sw	t0,24(s0)
+  90:	00642e23          	sw	t1,28(s0)
+  94:	02542023          	sw	t0,32(s0)
+  98:	02642223          	sw	t1,36(s0)
+  9c:	00300513          	li	a0,3
+  a0:	08c000ef          	jal	ra,12c <stack_copy>
+  a4:	02a42423          	sw	a0,40(s0)
+  a8:	01012283          	lw	t0,16(sp)
+  ac:	01412303          	lw	t1,20(sp)
+  b0:	02542623          	sw	t0,44(s0)
+  b4:	02642823          	sw	t1,48(s0)
+  b8:	40000537          	lui	a0,0x40000
+  bc:	00150513          	addi	a0,a0,1 # 40000001 <__global_pointer$+0x3fffe64d>
+  c0:	06c000ef          	jal	ra,12c <stack_copy>
+  c4:	02a42a23          	sw	a0,52(s0)
+  c8:	01012283          	lw	t0,16(sp)
+  cc:	01412303          	lw	t1,20(sp)
+  d0:	02542c23          	sw	t0,56(s0)
+  d4:	02642e23          	sw	t1,60(s0)
+  d8:	00000f13          	li	t5,0
+  dc:	094000ef          	jal	ra,170 <framer>
+
+000000e0 <after_call>:
+  e0:	00000297          	auipc	t0,0x0
+  e4:	00028293          	mv	t0,t0
+  e8:	01c12303          	lw	t1,28(sp)
+  ec:	0062c3b3          	xor	t2,t0,t1
+  f0:	0013b393          	seqz	t2,t2
+  f4:	007d2023          	sw	t2,0(s10)
+  f8:	01ed2223          	sw	t5,4(s10)
+  fc:	4d5332b7          	lui	t0,0x4d533
+ 100:	14128293          	addi	t0,t0,321 # 4d533141 <__global_pointer$+0x4d53178d>
+ 104:	00542023          	sw	t0,0(s0)
+ 108:	00100293          	li	t0,1
+ 10c:	80329073          	csrw	0x803,t0
+ 110:	5555b337          	lui	t1,0x5555b
+ 114:	aaa30313          	addi	t1,t1,-1366 # 5555aaaa <__global_pointer$+0x555590f6>
+ 118:	00612423          	sw	t1,8(sp)
+ 11c:	4d5332b7          	lui	t0,0x4d533
+ 120:	14328293          	addi	t0,t0,323 # 4d533143 <__global_pointer$+0x4d53178f>
+ 124:	005d2823          	sw	t0,16(s10)
+
+00000128 <phase2_stop>:
+ 128:	0000006f          	j	128 <phase2_stop>
+
+0000012c <stack_copy>:
+ 12c:	00200293          	li	t0,2
+ 130:	02a2ec63          	bltu	t0,a0,168 <sc_reject>
+ 134:	00251293          	slli	t0,a0,0x2
+ 138:	00048313          	mv	t1,s1
+ 13c:	01010393          	addi	t2,sp,16
+ 140:	005382b3          	add	t0,t2,t0
+
+00000144 <sc_loop>:
+ 144:	00538e63          	beq	t2,t0,160 <sc_done>
+ 148:	00032e03          	lw	t3,0(t1)
+ 14c:	00000013          	nop
+ 150:	01c3a023          	sw	t3,0(t2)
+ 154:	00430313          	addi	t1,t1,4
+ 158:	00438393          	addi	t2,t2,4
+ 15c:	fe9ff06f          	j	144 <sc_loop>
+
+00000160 <sc_done>:
+ 160:	00000513          	li	a0,0
+ 164:	00008067          	ret
+
+00000168 <sc_reject>:
+ 168:	00100513          	li	a0,1
+ 16c:	00008067          	ret
+
+00000170 <framer>:
+ 170:	00112e23          	sw	ra,28(sp)
+ 174:	00c000ef          	jal	ra,180 <leaf>
+ 178:	01c12083          	lw	ra,28(sp)
+ 17c:	00008067          	ret
+
+00000180 <leaf>:
+ 180:	001f0f13          	addi	t5,t5,1
+ 184:	00008067          	ret
+
+00000188 <trap_entry>:
+ 188:	80301073          	csrw	0x803,zero
+ 18c:	34202373          	csrr	t1,mcause
+ 190:	341023f3          	csrr	t2,mepc
+ 194:	006d2423          	sw	t1,8(s10)
+ 198:	007d2623          	sw	t2,12(s10)
+ 19c:	00812e03          	lw	t3,8(sp)
+ 1a0:	01cd2a23          	sw	t3,20(s10)
+ 1a4:	4d5332b7          	lui	t0,0x4d533
+ 1a8:	14228293          	addi	t0,t0,322 # 4d533142 <__global_pointer$+0x4d53178e>
+ 1ac:	005d2823          	sw	t0,16(s10)
+
+000001b0 <tj_stop>:
+ 1b0:	0000006f          	j	1b0 <tj_stop>

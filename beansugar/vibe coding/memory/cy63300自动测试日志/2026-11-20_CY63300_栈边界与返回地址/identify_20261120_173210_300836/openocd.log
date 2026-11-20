@@ -1,0 +1,7 @@
+Open On-Chip Debugger 0.10.0+dev-00914-g4cb81306a-dirty (2020-01-28-21:35)
+Licensed under GNU GPL v2
+For bug reports, read
+	http://openocd.org/doc/doxygen/bugs.html
+D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/identify_20261120_173210_300836/main.tcl:1: Error: wrong # args: should be "proc name arglist ?statics? body"
+at file "D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/identify_20261120_173210_300836/main.tcl", line 1
+Error: Target has not been initialized

@@ -1,0 +1,101 @@
+{
+ "task": "CY63300 第1项 栈缓冲区溢出/返回地址保护",
+ "date": "2026-11-20",
+ "debugger": {
+  "ocd": "D:/project/tools/tinyriscv-master/tools/openocd/openocd.exe",
+  "cfg": "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/03_experiments/bbx_v76a_100k.cfg",
+  "tcl": "C:/Users/24796/Documents/组/CY63300_I2C_BLACKBOX/V160_CPU_OLED_REFRESH/flash_v160_address_park.tcl"
+ },
+ "board_image_in_use": {
+  "file": "C:/Users/24796/Documents/组/CY63300_内存安全首轮/raw_recheck/firmware.bin",
+  "bytes": 428,
+  "sha256": "973407F8837981CA321D192EF2AFD8F1234CDEC6A1ADF51DAF20E146E0DC2921",
+  "marker": "0x4D533132"
+ },
+ "candidate_stack_image": {
+  "file": "C:/Users/24796/Documents/组/CY63300_内存安全首轮/stack_check_20261120/firmware.bin",
+  "bytes": 436,
+  "sha256": "4451545F0678DA0546176F27C4659D2FF94DAA54FC691EA4676328565EA584CC",
+  "marker_complete": "0x4D533141",
+  "marker_trap": "0x4D533142",
+  "marker_no_trap": "0x4D533143"
+ },
+ "items": [
+  {
+   "id": 1,
+   "name": "实际栈范围与对象登记",
+   "fw_or_rtl": "样片 RAW 428B 973407F8…2921",
+   "layer": "样片只读(Flash回读/JTAG/反汇编)",
+   "verdict": "未通过(前置条件缺失)",
+   "facts": [
+    "镜像无 .map/.ld/crt0",
+    "反汇编 sp 命中 0、sw ra/lw ra 0、jal 5、CSR 写仅 mtvec",
+    "实测 sp=0x3C262DB0 不在 DataRAM",
+    "ra=0x000000C4 与 0xc0 jal destination_equal 吻合",
+    "无 WRPLM/LDBNB/WRTAG，未写 0x803",
+    "手册 DataRAM 0x2000_0000-0x2001_FFFF 128KB，最高字 0x2001FFFC"
+   ],
+   "log": "D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/identify_20261120_173224_056837/identify.json + D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/regsample_20261120_173718_076449/regsample_result.json"
+  },
+  {
+   "id": 2,
+   "name": "栈区域硬件边界判定",
+   "fw_or_rtl": "参考 RTL 189fff5 core/bnbcache.v",
+   "layer": "参考 RTL 模块级仿真",
+   "verdict": "参考层部分通过+已知缺口 / 样片待确认",
+   "facts": [
+    "base=0x2001FEE0 bound=0x2001FEFF ptr_id=7",
+    "base+16 允许; base-4 拒绝; bound+1 拒绝; bound 允许(闭区间)",
+    "bound-2 起 4B 仍允许 -> 只比较起始地址",
+    "判定滞后一拍; index_valid=0 时 check_valid 默认 1"
+   ],
+   "log": "C:/Users/24796/Documents/组/CY63300_内存安全首轮/stack_check_20261120/bnb_boundary_20261120/sim.log"
+  },
+  {
+   "id": 3,
+   "name": "局部缓冲区软件长度检查",
+   "fw_or_rtl": "栈用例 436B 4451545F…84CC",
+   "layer": "参考 RTL 全 SoC 仿真",
+   "verdict": "仿真通过 / 样片待确认",
+   "facts": [
+    "count=2 返回0 目标=0x13579BDF/0x2468ACE0",
+    "count=3 返回1 目标保持",
+    "count=0x40000001 返回1 目标保持",
+    "bltu 在 slli 之前"
+   ],
+   "log": "C:/Users/24796/Documents/组/CY63300_内存安全首轮/stack_check_20261120/sim_stack.log"
+  },
+  {
+   "id": 4,
+   "name": "返回地址保护",
+   "fw_or_rtl": "RAW ELF + 栈用例 framer",
+   "layer": "反汇编审查 + 参考 RTL 仿真",
+   "verdict": "机制=无 / 正常返回仿真通过 / 样片待确认",
+   "facts": [
+    "RAW 镜像无栈帧/金丝雀/影子栈, ra 全程在寄存器",
+    "framer: sw ra,28(sp)->jal leaf->lw ra,28(sp)",
+    "返回后槽值=调用点地址 r0=1, leaf 计数 r1=1"
+   ],
+   "log": "C:/Users/24796/Documents/组/CY63300_内存安全首轮/raw_recheck/firmware_disasm.log + C:/Users/24796/Documents/组/CY63300_内存安全首轮/stack_check_20261120/sim_stack.log"
+  }
+ ],
+ "alias_probe": {
+  "result": "写 0x20020000/4 后 0x20000000/4 读回同样内容; 0x20030000 读到 0x20010000; 0x20040000/0x20080000/0x20100000/0x21000000 全部读到 0x5A5A0003",
+  "conclusion": "0x20xx_xxxx 低位取模别名, 不能用越界写失败证明上界",
+  "side_effect": "0x20000000/4 原值未知, 现为 0x5A5A0003/0x5A5A0004",
+  "restored": [
+   "0x2001FFF0=0x91490EBF",
+   "0x2001FFF4=0x19309FFE",
+   "0x2001FFF8=0x37F656DE",
+   "0x2001FFFC=0xBDC000DA",
+   "0x20010000=0xEFD0DF0E",
+   "0x20010004=0x9F4C95D4"
+  ]
+ },
+ "anomalies": [
+  "仿真未登记写被拒时 mcause=5(load access fault) 而操作为 store, mepc=0",
+  "板上 DM 读 pc 恒为 0x2C062DF3(工具限制)",
+  "板上 RAW 镜像 w7(overflow_preserved)=0 与同镜像仿真 1 冲突(上轮遗留)"
+ ],
+ "blocker": "样片栈用例需烧录 436B 镜像, 待用户确认烧录"
+}

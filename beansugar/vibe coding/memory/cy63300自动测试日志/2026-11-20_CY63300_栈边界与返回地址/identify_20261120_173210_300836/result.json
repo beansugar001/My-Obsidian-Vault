@@ -1,0 +1,8 @@
+{
+  "exit_code": 1,
+  "log_sha256": "CCB1DAF7AC7D8C9E05CBF2FB88C7846E14F430727B5A80082C76EF002E451F82",
+  "errors": [
+    "D:/obsidianvaults/笔记/beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/identify_20261120_173210_300836/main.tcl:1: Error: wrong # args: should be \"proc name arglist ?statics? body\"",
+    "Error: Target has not been initialized"
+  ]
+}

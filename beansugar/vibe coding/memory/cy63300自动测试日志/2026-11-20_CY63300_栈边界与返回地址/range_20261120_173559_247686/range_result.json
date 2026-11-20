@@ -1,0 +1,76 @@
+{
+  "run": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\range_20261120_173559_247686",
+  "exit_code": 0,
+  "echo": [
+    "RG_CURSTATE=running",
+    "RG_DONE"
+  ],
+  "probe": {
+    "0x2001FFE0": {
+      "unchanged": true,
+      "value": "0xDD415915"
+    },
+    "0x2001FFF0": {
+      "before": "0x91490EBF",
+      "written": "0xA5A5C002",
+      "readback": "0xA5A5C002",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x2001FFF4": {
+      "before": "0x19309FFE",
+      "written": "0xA5A5C003",
+      "readback": "0xA5A5C003",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x2001FFF8": {
+      "before": "0x37F656DE",
+      "written": "0xA5A5C004",
+      "readback": "0xA5A5C004",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x2001FFFC": {
+      "before": "0xBDC000DA",
+      "written": "0xA5A5C005",
+      "readback": "0xA5A5C005",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x20010000": {
+      "before": "0xEFD0DF0E",
+      "written": "0x5A5A0001",
+      "readback": "0x5A5A0001",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x20010004": {
+      "before": "0x9F4C95D4",
+      "written": "0x5A5A0002",
+      "readback": "0x5A5A0002",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x20020000": {
+      "before": "0x3FF21852",
+      "written": "0x5A5A0003",
+      "readback": "0x5A5A0003",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x20020004": {
+      "before": "0x40042457",
+      "written": "0x5A5A0004",
+      "readback": "0x5A5A0004",
+      "written_visible": true,
+      "aliases_0x2000F000": false
+    },
+    "0x2000F000": {
+      "unchanged": true,
+      "value": "0x4D533132"
+    }
+  },
+  "restored": false,
+  "errors": []
+}

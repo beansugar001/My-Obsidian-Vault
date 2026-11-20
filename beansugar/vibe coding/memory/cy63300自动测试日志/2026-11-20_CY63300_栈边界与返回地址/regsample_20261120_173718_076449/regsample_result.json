@@ -1,0 +1,38 @@
+{
+  "run": "D:\\obsidianvaults\\笔记\\beansugar\\vibe coding\\memory\\cy63300自动测试日志\\2026-11-20_CY63300_栈边界与返回地址\\regsample_20261120_173718_076449",
+  "exit_code": 0,
+  "samples": [
+    {
+      "i": null,
+      "pc": "pc",
+      "sp": "sp",
+      "ra": "ra",
+      "gp": "gp",
+      "tp": "tp"
+    },
+    {
+      "i": null,
+      "pc": "pc",
+      "sp": "sp",
+      "ra": "ra",
+      "gp": "gp",
+      "tp": "tp"
+    },
+    {
+      "i": null,
+      "pc": "pc",
+      "sp": "sp",
+      "ra": "ra",
+      "gp": "gp",
+      "tp": "tp"
+    }
+  ],
+  "sp_constant": true,
+  "pc_constant": true,
+  "echo": [
+    "RS_CURSTATE0=running",
+    "RS_CURSTATE1=halted",
+    "RS_DONE"
+  ],
+  "errors": []
+}
