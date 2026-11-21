@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
+                "file": "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/README_超级小白版.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "CY63300_整数溢出_长度计算错误_实物复测报告_20261120"
+              "title": "README_超级小白版"
             }
           }
         ]
@@ -208,8 +208,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "70fe84cdd4b67d56",
+  "active": "db687d117a9f4fa4",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/README_目录索引.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/scripts/stack_round2.py",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/scripts",
@@ -227,7 +228,6 @@
     "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/README_超级小白版.md",
     "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/03_证据/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
     "beansugar/组/每周工作/2026-11-16_本周工作.md",
-    "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-16_SEHTAG_CPU写入等待/SEHTAG_CPU写入等待集成报告.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/SEHTAG 硬件边界保护验收计划.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-11_V157_HARDWARE_I2C_OLED_DISPLAY/CY63300_V157_HARDWARE_I2C_OLED_DISPLAY_RESULT.md",
