@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "a0502dff252f2849",
+        "id": "271b7e09344212a1",
         "type": "tabs",
         "children": [
           {
-            "id": "db687d117a9f4fa4",
+            "id": "657f71f0943cdc8e",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/README_超级小白版.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "README_超级小白版"
+              "title": "新标签页"
             }
           }
         ]
@@ -208,8 +204,9 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "db687d117a9f4fa4",
+  "active": "657f71f0943cdc8e",
   "lastOpenFiles": [
+    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/README_超级小白版.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/README_目录索引.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/scripts/stack_round2.py",
@@ -225,7 +222,6 @@
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/round2_srst_20261120_181625_343804/check/mbox_a.bin",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_栈边界与返回地址/CY63300_栈缓冲区边界与返回地址保护_验证报告_20261120.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-20_CY63300_整数溢出实物复测/补充_小白复测包位置_20261120.md",
-    "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/README_超级小白版.md",
     "beansugar/vibe coding/memory/三方测试流程细节/CY63300_整数溢出_长度计算_复测包_20261120/03_证据/CY63300_整数溢出_长度计算错误_实物复测报告_20261120.md",
     "beansugar/组/每周工作/2026-11-16_本周工作.md",
     "beansugar/vibe coding/memory/cy63300自动测试日志/2026-11-16_SEHTAG_CPU写入等待/SEHTAG_CPU写入等待集成报告.md",
